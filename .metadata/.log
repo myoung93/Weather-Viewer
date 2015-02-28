@@ -72,3 +72,13 @@ org.eclipse.core.internal.resources.ResourceException: The project description f
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2015-02-27 13:29:34.938
 !MESSAGE The project description file (.project) for 'weatherviewer' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SESSION 2015-02-28 10:37:43.271 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-02-28 10:37:52.698
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
