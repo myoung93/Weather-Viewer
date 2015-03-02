@@ -1,4 +1,4 @@
-package group17.weatherviewer;
+package project;
 
 /**
  * Personalized Exception for handling locations

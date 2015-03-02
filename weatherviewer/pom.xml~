@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>group17</groupId>
+  <groupId>ca.uwo.csd.cs2212.team17</groupId>
   <artifactId>weatherviewer</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -25,6 +25,16 @@
 
   <build>
    <plugins>
+
+   <plugin>
+    <groupId> org.apache.maven/plugins </groupId>
+    <artifactId> maven-compiler-plugin </artifactId>
+    <version> 2.3 </version>
+    <configuration>
+     <source> 1.6 </source>
+     <target> 1.6 </target>
+    </configuration>
+   </plugin>
 
     <plugin>
      <groupId> org.apache.maven.plugins </groupId>
