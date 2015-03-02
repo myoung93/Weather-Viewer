@@ -1,14 +1,15 @@
 package group17.weatherviewer;
 import javax.swing.*;
 
-//will add more in future
-enum SkyConditions { SUNNY, OVERCAST, RAINING}
-
 public class SimpleWeather {
 
     private int temp, minTemp, maxTemp;
-    private ImageIcon skyIcon;
-    private SkyConditions cnd;
+    //private ImageIcon skyIcon;
+	//are we going to store this here or elsewhere? 
+
+	public SimpleWeather(JSONObject js) {
+		//parse JSON and assign fields
+	}
 
     public int getTemp() {
         return temp;
@@ -22,11 +23,7 @@ public class SimpleWeather {
         return maxTemp;
     }
 
-    public ImageIcon getSkyIcon() {
+    /*public ImageIcon getSkyIcon() {
         return skyIcon;
-    }
-
-    public SkyConditions getCnd() {
-        return cnd;
-    }
+    }*/
 }
