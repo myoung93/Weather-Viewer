@@ -1,5 +1,4 @@
 package group17.weatherviewer;
-import javax.swing.*;
 
 public class SimpleWeather {
 
@@ -7,9 +6,10 @@ public class SimpleWeather {
     //private ImageIcon skyIcon;
 	//are we going to store this here or elsewhere? 
 
-	public SimpleWeather(JSONObject js) {
+	//commenting out the method below beacause it's incomplete
+	/*public SimpleWeather(JSONObject js) {
 		//parse JSON and assign fields
-	}
+	}*/
 
     public int getTemp() {
         return temp;
