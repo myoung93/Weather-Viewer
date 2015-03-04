@@ -73,6 +73,8 @@ public class MainFrame {
 	private JButton buttonLongTerm;
 	private JButton buttonShortTerm;
 	private JButton buttonRefresh;
+	private JButton buttonToCelsius;
+	private JButton buttonToFahrenheit;
 	private JLabel label12AM;
 	private JLabel label3AM;
 	private JLabel label6AM;
@@ -91,6 +93,7 @@ public class MainFrame {
 	private JScrollPane scrollPane;
 	private JLabel lblWind;
 	private JLabel lblHumidity;
+	
 
 	/**
 	 * Launch the application.
@@ -168,13 +171,12 @@ public class MainFrame {
 		//begin initialize buttons
 		
 		// refresh button
-		JButton buttonRefresh = new JButton("");
+		buttonRefresh = new JButton("");
 		buttonRefresh.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		buttonRefresh.setIcon(new ImageIcon(
-				"/Users/Mom/Desktop/GUI images/refresh_icon.png"));
+		buttonRefresh.setIcon(new ImageIcon(MainFrame.class.getResource("/group17/weatherviewer/star_icon.png")));
 		buttonRefresh.setBounds(540, 16, 41, 37);
 		buttonRefresh.setOpaque(false);
 		buttonRefresh.setContentAreaFilled(false);
@@ -183,8 +185,7 @@ public class MainFrame {
 
 		// favorite Button
 		buttonFavourite = new JButton("");
-		buttonFavourite.setIcon(new ImageIcon(
-				"/Users/Mom/Desktop/GUI images/star_icon.png"));
+		buttonFavourite.setIcon(new ImageIcon(MainFrame.class.getResource("/group17/weatherviewer/star_icon.png")));
 		buttonFavourite.setOpaque(false);
 		buttonFavourite.setContentAreaFilled(false);
 		buttonFavourite.setBorderPainted(false);
@@ -222,6 +223,35 @@ public class MainFrame {
 		buttonLongTerm.setBounds(95, 328, 127, 29);
 		backgroundImage.add(buttonLongTerm);
 
+		buttonToCelsius = new JButton("°C");
+		buttonToCelsius.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonToFahrenheit.setForeground(Color.WHITE);
+			}
+		});
+		buttonToCelsius.setOpaque(false);
+		buttonToCelsius.setForeground(Color.WHITE);
+		buttonToCelsius.setFont(new Font("Helvetica", Font.PLAIN, 18));
+		buttonToCelsius.setContentAreaFilled(false);
+		buttonToCelsius.setBorderPainted(false);
+		buttonToCelsius.setBounds(475, 283, 96, 29);
+		backgroundImage.add(buttonToCelsius);
+		
+		
+		buttonToFahrenheit = new JButton("°F");
+		buttonToFahrenheit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonToCelsius.setForeground(Color.GRAY);
+			}
+		});
+		buttonToFahrenheit.setOpaque(false);
+		buttonToFahrenheit.setForeground(Color.GRAY);
+		buttonToFahrenheit.setFont(new Font("Helvetica", Font.PLAIN, 18));
+		buttonToFahrenheit.setContentAreaFilled(false);
+		buttonToFahrenheit.setBorderPainted(false);
+		buttonToFahrenheit.setBounds(520, 283, 70, 29);
+		backgroundImage.add(buttonToFahrenheit);
+	
 		//end initialize buttons
 		
 		//begin initialize MyLocations panel
@@ -460,7 +490,7 @@ public class MainFrame {
 		labelSun.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelSun.setBounds(490, 360, 58, 15);
 		backgroundImage.add(labelSun);
-	
+
 		//end initialize Long-Term Conditions
 	}
 	
