@@ -136,25 +136,16 @@ public class MainFrame {
 
 		// set background to sky condition
 		Background backgroundImage = new Background(
-		Toolkit.getDefaultToolkit().getImage(
-		MainFrame.class.getResource("/main/resources/default_background.jpg")));
+				Toolkit.getDefaultToolkit().getImage(
+		MainFrame.class.getResource("main/resources/default_background.jpg")));
 		if (skyCondition == "Sunny") {
-		backgroundImage = new Background(
-		Toolkit.getDefaultToolkit()
-		.getImage(
-		MainFrame.class
-		.getResource("/main/resources/sunny_background.jpg")));
-		} else if (skyCondition == "Cloudy") {
-		backgroundImage = new Background(Toolkit.getDefaultToolkit()
-		.getImage(
-		MainFrame.class
-		.getResource("/main/resources/cloudy_background.jpg")));
-		} else if (skyCondition == "Rainy") {
-		backgroundImage = new Background(
-		Toolkit.getDefaultToolkit()
-		.getImage(
-		MainFrame.class
-		.getResource("/main/resources/rainy_background.jpg")));
+			backgroundImage = new Background(Toolkit.getDefaultToolkit().getImage(MainFrame.class.getResource("main/resources/sunny_background.jpg")));
+		} 
+		else if (skyCondition == "Cloudy") {
+			backgroundImage = new Background(Toolkit.getDefaultToolkit().getImage(MainFrame.class.getResource("main/resources/cloudy_background.jpg")));
+		} 
+		else if (skyCondition == "Rainy") {
+			backgroundImage = new Background(Toolkit.getDefaultToolkit().getImage(MainFrame.class.getResource("/main/resources/rainy_background.jpg")));
 		} 
 		
 		frame = new JFrame();
@@ -321,7 +312,7 @@ public class MainFrame {
 		backgroundImage.add(labelHumidity);
 		
 		//air pressure info
-		labelAirPressure = new JLabel(airPressure + "");
+		labelAirPressure = new JLabel(airPressure + "kPa");
 		labelAirPressure.setForeground(Color.WHITE);
 		labelAirPressure.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelAirPressure.setBounds(145, 210, 200, 15);
