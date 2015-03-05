@@ -10,16 +10,26 @@ public class UserPreferences implements java.io.Serializable {
     private boolean isCelsius;               //celsius is the default unit
     private ArrayList<String> locations;
 
+    /**
+     * Constructor of user preferences, initializes locations list and sets default values
+     */
     public UserPreferences() {
         isCelsius = true;
         locations = new ArrayList<String>();
     }
 
-    //set Temperature type to c or f
+    /**
+     * Sets temperature type to celsius (c) or fahrenheit (f)
+     * @param b boolean to indicate if temperature type is celsius (true) or fahrenheit (false)
+     */
     public void setCelsius (boolean b) {
         isCelsius = b;
     }
 
+    /**
+     * Gets temperature type
+     * @return true if temperature type is celsius
+     */
     public boolean isCelsius() {
         return isCelsius;
     }
@@ -53,7 +63,7 @@ public class UserPreferences implements java.io.Serializable {
     /**
      * Gives a favorite location identified by index
      * @param index index of the array (from 0 to size - 1)
-     * @return the value of the array in given position, or blank string if index out of bounds
+     * @return the value of the array in given position if index is not out of bounds
      */
     public String getLocation(int index) throws WeatherException {
         try {
@@ -64,12 +74,19 @@ public class UserPreferences implements java.io.Serializable {
         }
     }
 
+    /**
+     *
+     * @param up
+     */
     public static void savePrefs(UserPreferences up) throws IOException {
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(FILENAME));
         oos.writeObject(up);
         oos.close();
     }
 
+    /**
+     * 
+     */
     public static UserPreferences getPrefs() throws IOException, ClassNotFoundException {
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream(FILENAME));
         Object o = ois.readObject();

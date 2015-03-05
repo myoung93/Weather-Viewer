@@ -11,21 +11,53 @@ public class SimpleWeather {
 		//parse JSON and assign fields
 	}*/
 
-    //assuming that JSON gives us the temperature in Fahrenheit
+    //assuming that JSON gives us the temperature in Kelvin
+    /**
+     * Converts temperature from Kelvin to Fahrenheit
+     * @return Fahrenheit temperature as a String
+     */
     public String getTempF() {
-        return String.valueOf(temp);
+        return String.valueOf(((temp - 273) * 9 / 5.0) + 32);
     }
-    
+ 
+    /**
+     * Converts temperature from Kelvin to Celsius
+     * @return Celsius temperature as a String
+     */    
     public String getTempC() {
-        return String.valueOf((temp-32) * 5 / 9.0); //9.0 is just to make sure the division is not between two integers
+        return String.valueOf(temp - 273); 
     }
 
-    public String getMinTemp() {
-        return String.valueOf(minTemp);
+    /**
+     * Converts minimum temperature from Kelvin to Fahrenheit
+     * @return Fahrenheit minimum temperature as a String
+     */
+    public String getMinTempF() {
+        return String.valueOf(((minTemp - 273) * 9 / 5.0) + 32);
     }
 
-    public String getMaxTemp() {
-        return String.valueOf(maxTemp);
+    /**
+     * Converts minimum temperature from Kelvin to Celsius
+     * @return Celsius minimum temperature as a String
+     */    
+    public String getMinTempC() {
+        return String.valueOf(minTemp - 273);
+    }
+
+    /**
+     * Converts maximum temperature from Kelvin to Fahrenheit
+     * @return Fahrenheit maximum temperature as a String
+     */
+    public String getMaxTempF() {
+        return String.valueOf(((maxTemp - 273) * 9 / 5.0) + 32);
+    }
+
+    /**
+     * Converts maximum temperature from Kelvin to Celsius
+     * @return Celsius maximum temperature as a String
+     */    
+    public String getMaxTempC() {
+        return String.valueOf(maxTemp - 273);
     }
 
     /*public ImageIcon getSkyIcon() {
