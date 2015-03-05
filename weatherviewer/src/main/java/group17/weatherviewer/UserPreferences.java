@@ -4,7 +4,7 @@ import java.io.*;
 
 public class UserPreferences implements java.io.Serializable {
 
-    private static final transient String FILENAME = "weather_prefs.prefs";
+    private static final transient String FILENAME = "weather.prefs";
 
     private boolean isCelsius = true;               //celsius is the default unit
 
@@ -13,9 +13,8 @@ public class UserPreferences implements java.io.Serializable {
         isCelsius = b;
     }
 
-    public char getTempUnits() {
-        if(isCelsius)   return 'c';
-        else            return 'f';
+    public boolean isCelsius() {
+        return isCelsius;
     }
 
     public static void savePrefs(UserPreferences up) throws IOException {

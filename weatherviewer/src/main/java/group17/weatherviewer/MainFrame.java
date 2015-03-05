@@ -460,16 +460,16 @@ public class MainFrame {
         try {
             UserPreferences prefs = new UserPreferences();
             //prints c (default)
-            System.out.println(prefs.getTempUnits());
+            System.out.println(prefs.isCelsius()?"Celsius":"Fahrenheit");
             prefs.setCelsius(false);
             //prints f
-            System.out.println(prefs.getTempUnits());
+			System.out.println(prefs.isCelsius()?"Celsius":"Fahrenheit");
             UserPreferences.savePrefs(prefs);
 
             //create a new preferences and load the old one
             UserPreferences new_prefs = UserPreferences.getPrefs();
             //still f instead of default c because we saved & loaded it
-            System.out.println(new_prefs.getTempUnits());
+			System.out.println(prefs.isCelsius()?"Celsius":"Fahrenheit");
         }
         catch(Exception e) {
             e.printStackTrace();
