@@ -20,12 +20,12 @@ public class MainFrame {
 	private JLabel lblMinTemp;
 	private JLabel lblSunrise;
 	private JLabel lblSunset;
-	private JLabel labelHumidity;
-	private JLabel labelAirPressure;
-	private JLabel labelMaxTemp;
-	private JLabel labelMinTemp;
-	private JLabel labelSunrise;
-	private JLabel labelSunset;
+	private JLabel labelHumidityInfo;
+	private JLabel labelAirPressureInfo;
+	private JLabel labelMaxTempInfo;
+	private JLabel labelMinTempInfo;
+	private JLabel labelSunriseInfo;
+	private JLabel labelSunsetInfo;
 	private JLabel labelSkyCondition;
 	private JButton buttonLongTerm;
 	private JButton buttonShortTerm;
@@ -174,7 +174,8 @@ public class MainFrame {
 		buttonLongTerm.setBorderPainted(false);
 		buttonLongTerm.setBounds(95, 328, 127, 29);
 		backgroundImage.add(buttonLongTerm);
-
+		
+		//toCelsius button
 		buttonToCelsius = new JButton("°C");
 		buttonToCelsius.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -189,7 +190,7 @@ public class MainFrame {
 		buttonToCelsius.setBounds(475, 283, 96, 29);
 		backgroundImage.add(buttonToCelsius);
 		
-		
+		//toFarenheit button
 		buttonToFahrenheit = new JButton("°F");
 		buttonToFahrenheit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -239,7 +240,7 @@ public class MainFrame {
 		labelTemp = new JLabel(temp + "°C");
 		labelTemp.setFont(new Font("Helvetica", Font.PLAIN, 93));
 		labelTemp.setForeground(Color.WHITE);
-		labelTemp.setBounds(50, 64, 260, 94);
+		labelTemp.setBounds(50, 64, 318, 94);
 		backgroundImage.add(labelTemp);
 		
 		//wind label
@@ -253,7 +254,7 @@ public class MainFrame {
 		lblHumidity = new JLabel("Humidity:");
 		lblHumidity.setForeground(Color.LIGHT_GRAY);
 		lblHumidity.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		lblHumidity.setBounds(50, 190, 61, 15);
+		lblHumidity.setBounds(50, 190, 70, 15);
 		backgroundImage.add(lblHumidity);
 		
 		//air pressure label
@@ -295,48 +296,56 @@ public class MainFrame {
 		
 		// begin initialize LocalWeather conditions
 		
+		//wind info
+		
+		JLabel labelWindInfo = new JLabel(windSpeed + " km/h " + windDirection);
+		labelWindInfo.setForeground(Color.WHITE);
+		labelWindInfo.setFont(new Font("SansSerif", Font.PLAIN, 15));
+		labelWindInfo.setBounds(103, 170, 200, 15);
+		backgroundImage.add(labelWindInfo);
+		
 		//humidity info
-		labelHumidity = new JLabel(humidity + "%");
-		labelHumidity.setForeground(Color.WHITE);
-		labelHumidity.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelHumidity.setBounds(120, 190, 200, 15);
-		backgroundImage.add(labelHumidity);
+		labelHumidityInfo = new JLabel(humidity + "%");
+		labelHumidityInfo.setForeground(Color.WHITE);
+		labelHumidityInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelHumidityInfo.setBounds(130, 190, 200, 15);
+		backgroundImage.add(labelHumidityInfo);
 		
 		//air pressure info
-		labelAirPressure = new JLabel(airPressure + "kPa");
-		labelAirPressure.setForeground(Color.WHITE);
-		labelAirPressure.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelAirPressure.setBounds(145, 210, 200, 15);
-		backgroundImage.add(labelAirPressure);
+		labelAirPressureInfo = new JLabel(airPressure + "kPa");
+		labelAirPressureInfo.setForeground(Color.WHITE);
+		labelAirPressureInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelAirPressureInfo.setBounds(158, 210, 200, 15);
+		backgroundImage.add(labelAirPressureInfo);
 		
 		//max temp info
-		labelMaxTemp = new JLabel(maxTemp + "°C");
-		labelMaxTemp.setForeground(Color.WHITE);
-		labelMaxTemp.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelMaxTemp.setBounds(130, 230, 200, 15);
-		backgroundImage.add(labelMaxTemp);
+		labelMaxTempInfo = new JLabel(maxTemp + "°C");
+		labelMaxTempInfo.setForeground(Color.WHITE);
+		labelMaxTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelMaxTempInfo.setBounds(145, 230, 200, 15);
+		backgroundImage.add(labelMaxTempInfo);
 		
 		//min temp info
-		labelMinTemp = new JLabel(minTemp + "°C");
-		labelMinTemp.setForeground(Color.WHITE);
-		labelMinTemp.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelMinTemp.setBounds(130, 250, 200, 15);
-		backgroundImage.add(labelMinTemp);
+		labelMinTempInfo = new JLabel(minTemp + "°C");
+		labelMinTempInfo.setForeground(Color.WHITE);
+		labelMinTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelMinTempInfo.setBounds(145, 250, 200, 15);
+		backgroundImage.add(labelMinTempInfo);
 		
 		
 		//sunrise info
-		labelSunrise = new JLabel(sunRise + "");
-		labelSunrise.setForeground(Color.WHITE);
-		labelSunrise.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelSunrise.setBounds(110, 270, 200, 15);
-		backgroundImage.add(labelSunrise);
+		labelSunriseInfo = new JLabel(sunRise + "");
+		labelSunriseInfo.setForeground(Color.WHITE);
+		labelSunriseInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelSunriseInfo.setBounds(130, 270, 200, 15);
+		backgroundImage.add(labelSunriseInfo);
 		
 		//sunset info
-		labelSunset = new JLabel(sunSet + "");
-		labelSunset.setForeground(Color.WHITE);
-		labelSunset.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelSunset.setBounds(110, 290, 200, 15);
-		backgroundImage.add(labelSunset);
+		labelSunsetInfo = new JLabel(sunSet + "");
+		labelSunsetInfo.setForeground(Color.WHITE);
+		labelSunsetInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelSunsetInfo.setBounds(130, 291, 200, 15);
+		backgroundImage.add(labelSunsetInfo);
 		
 		//sky condition info
 		labelSkyCondition = new JLabel(skyCondition);
@@ -442,6 +451,8 @@ public class MainFrame {
 		labelSun.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelSun.setBounds(490, 360, 58, 15);
 		backgroundImage.add(labelSun);
+		
+		
 
 		//end initialize Long-Term Conditions
 
