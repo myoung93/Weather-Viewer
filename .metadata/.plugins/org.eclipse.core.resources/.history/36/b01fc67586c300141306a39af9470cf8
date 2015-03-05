@@ -177,8 +177,7 @@ public class MainFrame {
 		buttonToCelsius = new JButton("°C");
 		buttonToCelsius.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				buttonToCelsius.setForeground(Color.WHITE);
-				buttonToFahrenheit.setForeground(Color.GRAY);
+				buttonToFahrenheit.setForeground(Color.WHITE);
 			}
 		});
 		buttonToCelsius.setOpaque(false);
@@ -186,14 +185,13 @@ public class MainFrame {
 		buttonToCelsius.setFont(new Font("Helvetica", Font.PLAIN, 18));
 		buttonToCelsius.setContentAreaFilled(false);
 		buttonToCelsius.setBorderPainted(false);
-		buttonToCelsius.setBounds(475, 283, 75, 29);
+		buttonToCelsius.setBounds(475, 283, 96, 29);
 		backgroundImage.add(buttonToCelsius);
 		
 		//toFarenheit button
 		buttonToFahrenheit = new JButton("°F");
 		buttonToFahrenheit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				buttonToFahrenheit.setForeground(Color.WHITE);
 				buttonToCelsius.setForeground(Color.GRAY);
 			}
 		});

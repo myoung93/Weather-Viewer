@@ -182,11 +182,11 @@ public class MainFrame {
 			}
 		});
 		buttonToCelsius.setOpaque(false);
-		buttonToCelsius.setForeground(Color.WHITE);
+		buttonToCelsius.setForeground(Color.CYAN);
 		buttonToCelsius.setFont(new Font("Helvetica", Font.PLAIN, 18));
 		buttonToCelsius.setContentAreaFilled(false);
 		buttonToCelsius.setBorderPainted(false);
-		buttonToCelsius.setBounds(475, 283, 75, 29);
+		buttonToCelsius.setBounds(407, 283, 96, 29);
 		backgroundImage.add(buttonToCelsius);
 		
 		//toFarenheit button
