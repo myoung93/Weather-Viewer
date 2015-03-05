@@ -2,7 +2,7 @@ package group17.weatherviewer;
 
 public class SimpleWeather {
 
-    private int temp, minTemp, maxTemp;
+    protected int temp, minTemp, maxTemp;
     //private ImageIcon skyIcon;
 	//are we going to store this here or elsewhere? 
 
