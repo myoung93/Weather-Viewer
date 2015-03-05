@@ -1,52 +1,9 @@
 package group17.weatherviewer;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-
-import java.awt.BorderLayout;
-
-import javax.swing.SpringLayout;
-
-import java.awt.Color;
-
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-
-import java.awt.CardLayout;
-import java.awt.GridBagLayout;
-import java.awt.GridLayout;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
-import java.awt.Toolkit;
-
-import javax.swing.BoxLayout;
-import javax.swing.JList;
-import javax.swing.JButton;
-
-import java.awt.Component;
-
-import javax.swing.Box;
-import javax.swing.JMenuBar;
-import javax.swing.JMenu;
-import javax.swing.JCheckBoxMenuItem;
-import javax.swing.JTextField;
-
-import java.awt.event.ActionListener;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
-
-import javax.swing.JSeparator;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JMenuItem;
-import javax.swing.JPopupMenu;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.Font;
-import javax.swing.JScrollBar;
-import javax.swing.JScrollPane;
-import javax.swing.ScrollPaneConstants;
+import java.awt.event.ActionListener;
 
 public class MainFrame {
 
@@ -73,6 +30,8 @@ public class MainFrame {
 	private JButton buttonLongTerm;
 	private JButton buttonShortTerm;
 	private JButton buttonRefresh;
+	private JButton buttonToCelsius;
+	private JButton buttonToFahrenheit;
 	private JLabel label12AM;
 	private JLabel label3AM;
 	private JLabel label6AM;
@@ -91,6 +50,7 @@ public class MainFrame {
 	private JScrollPane scrollPane;
 	private JLabel lblWind;
 	private JLabel lblHumidity;
+	
 
 	/**
 	 * Launch the application.
@@ -122,6 +82,7 @@ public class MainFrame {
 		// attributes
 		String temp, windSpeed, airPressure, humidity, minTemp, maxTemp, sunRise, sunSet, windDirection, skyCondition, location;
 		// hard coded initializations
+        //in the future none of these actually have to be stored, we can just do weatherObject.getTemp() etc. -TE
 		location = "Toronto, Ont.";
 		temp = "999";
 		windSpeed = "999";
@@ -139,13 +100,16 @@ public class MainFrame {
 				Toolkit.getDefaultToolkit().getImage(
 		MainFrame.class.getResource("main/resources/default_background.jpg")));
 		if (skyCondition == "Sunny") {
-			backgroundImage = new Background(Toolkit.getDefaultToolkit().getImage(MainFrame.class.getResource("main/resources/sunny_background.jpg")));
-		} 
-		else if (skyCondition == "Cloudy") {
-			backgroundImage = new Background(Toolkit.getDefaultToolkit().getImage(MainFrame.class.getResource("main/resources/cloudy_background.jpg")));
-		} 
-		else if (skyCondition == "Rainy") {
-			backgroundImage = new Background(Toolkit.getDefaultToolkit().getImage(MainFrame.class.getResource("/main/resources/rainy_background.jpg")));
+
+            backgroundImage = new Background(Toolkit.getDefaultToolkit()
+                .getImage(getClass().getResource("/main/resources/sunny_background.jpg")));
+		} else if (skyCondition == "Cloudy") {
+            backgroundImage = new Background(Toolkit.getDefaultToolkit()
+                .getImage(getClass().getResource("/main/resources/cloudy_background.jpg")));
+		} else if (skyCondition == "Rainy") {
+            backgroundImage = new Background(Toolkit.getDefaultToolkit()
+            .getImage(getClass().getResource("/main/resources/rainy_background.jpg")));
+>>>>>>> 1a0a4fb46f3522f9cf3032ac54a3b8373d7610e1
 		} 
 		
 		frame = new JFrame();
@@ -159,13 +123,13 @@ public class MainFrame {
 		//begin initialize buttons
 		
 		// refresh button
-		JButton buttonRefresh = new JButton("");
+		buttonRefresh = new JButton("");
 		buttonRefresh.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-			}
+                //update weather here
+            }
 		});
-		buttonRefresh.setIcon(new ImageIcon(
-				"/Users/Mom/Desktop/GUI images/refresh_icon.png"));
+		buttonRefresh.setIcon(new ImageIcon(getClass().getResource("/star_icon.png")));
 		buttonRefresh.setBounds(540, 16, 41, 37);
 		buttonRefresh.setOpaque(false);
 		buttonRefresh.setContentAreaFilled(false);
@@ -174,9 +138,8 @@ public class MainFrame {
 
 		// favorite Button
 		buttonFavourite = new JButton("");
-		buttonFavourite.setIcon(new ImageIcon(
-				"/Users/Mom/Desktop/GUI images/star_icon.png"));
-		buttonFavourite.setOpaque(false);
+		buttonFavourite.setIcon(new ImageIcon(getClass().getResource("/star_icon.png")));
+        buttonFavourite.setOpaque(false);
 		buttonFavourite.setContentAreaFilled(false);
 		buttonFavourite.setBorderPainted(false);
 		buttonFavourite.setBounds(759, 16, 41, 37);
@@ -213,6 +176,35 @@ public class MainFrame {
 		buttonLongTerm.setBounds(95, 328, 127, 29);
 		backgroundImage.add(buttonLongTerm);
 
+		buttonToCelsius = new JButton("°C");
+		buttonToCelsius.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonToFahrenheit.setForeground(Color.WHITE);
+			}
+		});
+		buttonToCelsius.setOpaque(false);
+		buttonToCelsius.setForeground(Color.WHITE);
+		buttonToCelsius.setFont(new Font("Helvetica", Font.PLAIN, 18));
+		buttonToCelsius.setContentAreaFilled(false);
+		buttonToCelsius.setBorderPainted(false);
+		buttonToCelsius.setBounds(475, 283, 96, 29);
+		backgroundImage.add(buttonToCelsius);
+		
+		
+		buttonToFahrenheit = new JButton("°F");
+		buttonToFahrenheit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonToCelsius.setForeground(Color.GRAY);
+			}
+		});
+		buttonToFahrenheit.setOpaque(false);
+		buttonToFahrenheit.setForeground(Color.GRAY);
+		buttonToFahrenheit.setFont(new Font("Helvetica", Font.PLAIN, 18));
+		buttonToFahrenheit.setContentAreaFilled(false);
+		buttonToFahrenheit.setBorderPainted(false);
+		buttonToFahrenheit.setBounds(520, 283, 70, 29);
+		backgroundImage.add(buttonToFahrenheit);
+	
 		//end initialize buttons
 		
 		//begin initialize MyLocations panel
@@ -451,8 +443,27 @@ public class MainFrame {
 		labelSun.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelSun.setBounds(490, 360, 58, 15);
 		backgroundImage.add(labelSun);
-	
+
 		//end initialize Long-Term Conditions
+
+        //testing code to prove that UserPreferences functions at least at a basic level - TE
+        try {
+            UserPreferences prefs = new UserPreferences();
+            //prints c (default)
+            System.out.println(prefs.getTempUnits());
+            prefs.setCelsius(false);
+            //prints f
+            System.out.println(prefs.getTempUnits());
+            UserPreferences.savePrefs(prefs);
+
+            UserPreferences new_prefs = UserPreferences.getPrefs();
+            //still f instead of default c because we saved & loaded it
+            System.out.println(new_prefs.getTempUnits());
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+
 	}
 	
 		
