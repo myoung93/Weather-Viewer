@@ -145,13 +145,14 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_oFGXpcElEeSjoJdLO1XOUg" elementId="org.eclipse.ui.editorss" selectedElement="_oFGXpsElEeSjoJdLO1XOUg">
-      <children xsi:type="basic:PartStack" xmi:id="_oFGXpsElEeSjoJdLO1XOUg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_NclwQMOIEeS2G7yABh4iQw">
+      <children xsi:type="basic:PartStack" xmi:id="_oFGXpsElEeSjoJdLO1XOUg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_5N3eEMOQEeSTub4wmEwspg">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
+        <tags>noFocus</tags>
         <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_NclwQMOIEeS2G7yABh4iQw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MainFrame.java" iconURI="platform:/plugin/org.eclipse.wb.core.ui/icons/gui_editor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;MainFrame.java&quot; partName=&quot;MainFrame.java&quot; title=&quot;MainFrame.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/MainFrame.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/MainFrame.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;5724&quot; selectionTopPixel=&quot;2337&quot;/>&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_5N3eEMOQEeSTub4wmEwspg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MainFrame.java" iconURI="platform:/plugin/org.eclipse.wb.core.ui/icons/gui_editor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;MainFrame.java&quot; partName=&quot;MainFrame.java&quot; title=&quot;MainFrame.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/MainFrame.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/MainFrame.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;317&quot; selectionTopPixel=&quot;3855&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.wb.core.guiEditor</tags>
           <tags>removeOnHide</tags>
@@ -368,7 +369,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_oFHmAMElEeSjoJdLO1XOUg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_WS5poMOIEeS6pLOIITZx3Q" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_oFQvpMElEeSjoJdLO1XOUg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_jSAH4MOJEeSTub4wmEwspg" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_oFQvpMElEeSjoJdLO1XOUg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_oFHmDsElEeSjoJdLO1XOUg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -392,7 +393,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_oFINF8ElEeSjoJdLO1XOUg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_WTDaoMOIEeS6pLOIITZx3Q" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_oFO638ElEeSjoJdLO1XOUg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_jSIDscOJEeSTub4wmEwspg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_oFO638ElEeSjoJdLO1XOUg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_oFINIsElEeSjoJdLO1XOUg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -793,7 +794,7 @@
       <tags>platform:cocoa</tags>
       <parameters xmi:id="_oFJbS8ElEeSjoJdLO1XOUg" elementId="org.eclipse.ui.views.showView.viewId" name="org.eclipse.ui.views.showView.viewId" value="org.eclipse.team.ui.GenericHistoryView"/>
     </bindings>
-    <bindings xmi:id="_V3lmoMOIEeS6pLOIITZx3Q" keySequence="COMMAND+CTRL+F" command="_oFRXLcElEeSjoJdLO1XOUg"/>
+    <bindings xmi:id="_i3nR8MOJEeSTub4wmEwspg" keySequence="COMMAND+CTRL+F" command="_oFRXLcElEeSjoJdLO1XOUg"/>
   </bindingTables>
   <bindingTables xmi:id="_oFJbTcElEeSjoJdLO1XOUg" elementId="org.eclipse.ui.textEditorScope" bindingContext="_oFKpK8ElEeSjoJdLO1XOUg">
     <bindings xmi:id="_oFJbTsElEeSjoJdLO1XOUg" keySequence="CTRL+ARROW_UP" command="_oFQvoMElEeSjoJdLO1XOUg"/>
@@ -1016,7 +1017,7 @@
   <bindingTables xmi:id="_oFKpG8ElEeSjoJdLO1XOUg" bindingContext="_oFKpa8ElEeSjoJdLO1XOUg"/>
   <bindingTables xmi:id="_oFKpHMElEeSjoJdLO1XOUg" bindingContext="_oFKpbMElEeSjoJdLO1XOUg"/>
   <bindingTables xmi:id="_oFKpHcElEeSjoJdLO1XOUg" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_oFKpQ8ElEeSjoJdLO1XOUg">
-    <bindings xmi:id="_V3m0wMOIEeS6pLOIITZx3Q" keySequence="M1+W" command="_oFRXL8ElEeSjoJdLO1XOUg"/>
+    <bindings xmi:id="_i3ogEMOJEeSTub4wmEwspg" keySequence="M1+W" command="_oFRXL8ElEeSjoJdLO1XOUg"/>
   </bindingTables>
   <rootContext xmi:id="_oFKpH8ElEeSjoJdLO1XOUg" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs and Windows" description="Either a dialog or a window is open">
     <children xmi:id="_oFKpIMElEeSjoJdLO1XOUg" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.platform" name="In Windows" description="A window is open">
