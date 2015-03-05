@@ -51,7 +51,6 @@ public class MainFrame {
 	private JLabel lblWind;
 	private JLabel lblHumidity;
 	
-
 	/**
 	 * Launch the application.
 	 */
@@ -99,14 +98,13 @@ public class MainFrame {
 		Background backgroundImage = new Background(
 				Toolkit.getDefaultToolkit().getImage(
 		MainFrame.class.getResource("default_background.jpg")));
-		if (skyCondition == "Sunny") {
-
+		if (skyCondition.equalsIgnoreCase("Sunny")) {
             backgroundImage = new Background(Toolkit.getDefaultToolkit()
                 .getImage(getClass().getResource("sunny_background.jpg")));
-		} else if (skyCondition == "Cloudy") {
+		} else if (skyCondition.equalsIgnoreCase("Cloudy")) {
             backgroundImage = new Background(Toolkit.getDefaultToolkit()
                 .getImage(getClass().getResource("cloudy_background.jpg")));
-		} else if (skyCondition == "Rainy") {
+		} else if (skyCondition.equalsIgnoreCase("Rainy")) {
             backgroundImage = new Background(Toolkit.getDefaultToolkit()
             .getImage(getClass().getResource("rainy_background.jpg")));
 		} 
@@ -117,7 +115,7 @@ public class MainFrame {
 		frame.getContentPane().add(backgroundImage);
 		backgroundImage.setLayout(null);
 		frame.setResizable(false);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
 		//begin initialize buttons
 		
@@ -451,12 +449,11 @@ public class MainFrame {
 		labelSun.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelSun.setBounds(490, 360, 58, 15);
 		backgroundImage.add(labelSun);
-		
-		
 
 		//end initialize Long-Term Conditions
 
         //testing code to prove that UserPreferences functions at least at a basic level - TE
+		/*
         try {
             UserPreferences prefs = new UserPreferences();
             //prints c (default)
@@ -473,7 +470,7 @@ public class MainFrame {
         }
         catch(Exception e) {
             e.printStackTrace();
-        }
+        }*/
 
 	}
 	

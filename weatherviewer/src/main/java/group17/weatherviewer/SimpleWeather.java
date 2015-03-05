@@ -2,30 +2,30 @@ package group17.weatherviewer;
 
 public class SimpleWeather {
 
-    protected int temp, minTemp, maxTemp;
+    protected double temp, minTemp, maxTemp;
     //private ImageIcon skyIcon;
 	//are we going to store this here or elsewhere? 
 
-	//commenting out the method below beacause it's incomplete
-	/*public SimpleWeather(JSONObject js) {
+	//commenting out the method below because it's incomplete
+	/*public SimpleWeather(JSONObject jso) {
 		//parse JSON and assign fields
 	}*/
 
     //assuming that JSON gives us the temperature in Fahrenheit
-    public int getTempF() {
-        return temp;
+    public String getTempF() {
+        return String.valueOf(temp);
     }
     
-    public int getTempC() {
-        return (temp-32) * 5 / 9.0; //9.0 is just to make sure the division is not between two integers
+    public String getTempC() {
+        return String.valueOf((temp-32) * 5 / 9.0); //9.0 is just to make sure the division is not between two integers
     }
 
-    public int getMinTemp() {
-        return minTemp;
+    public String getMinTemp() {
+        return String.valueOf(minTemp);
     }
 
-    public int getMaxTemp() {
-        return maxTemp;
+    public String getMaxTemp() {
+        return String.valueOf(maxTemp);
     }
 
     /*public ImageIcon getSkyIcon() {

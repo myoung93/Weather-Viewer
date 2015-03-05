@@ -2,35 +2,41 @@ package group17.weatherviewer;
 
 public class CurrentWeather extends SimpleWeather {
 
-    private int windSpeed,
-                pressure,
-                humidity,
-                sunriseTime,
-                sunsetTime;
+    private String  windSpeed,
+                    pressure,
+                    humidity,
+                    sunriseTime,
+                    sunsetTime,
+                    windDirection;
 
-    private String windDirection;
+    /*public CurrentWeather(JSONObject jso) {
+        //initialize fields INCLUDING superclass temperature fields from JSON
+        //initialize temperature fields in super
+        super(jso);
+        //initialize fields specific to CurrentWeather
+    }*/
 
-    public int getWindSpeed() {
+    public String getWindSpeed() {
         return windSpeed;
     }
 
-    public int getPressure() {
+    public String getPressure() {
         return pressure;
     }
 
-    public int getHumidity() {
+    public String getHumidity() {
         return humidity;
     }
 
-    public int getSunriseTime() {
+    public String getSunriseTime() {
         return sunriseTime;
     }
 
-    public int getSunsetTime() {
+    public String getSunsetTime() {
         return sunsetTime;
     }
 
-    public String getWindDirections() {
+    public String getWindDirection() {
         return windDirection;
     }
 }
