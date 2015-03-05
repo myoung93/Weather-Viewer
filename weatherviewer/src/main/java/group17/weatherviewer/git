@@ -1,0 +1,16 @@
+git init
+
+git remote add origin [URL]
+
+git pull origin master 
+username/pw
+
+add your files
+
+git add .
+
+git commit -m "Commit message"
+
+git push
+
+
