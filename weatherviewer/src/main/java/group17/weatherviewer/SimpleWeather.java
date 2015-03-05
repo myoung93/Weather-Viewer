@@ -11,8 +11,13 @@ public class SimpleWeather {
 		//parse JSON and assign fields
 	}*/
 
-    public int getTemp() {
+    //assuming that JSON gives us the temperature in Fahrenheit
+    public int getTempF() {
         return temp;
+    }
+    
+    public int getTempC() {
+        return (temp-32) * 5 / 9.0; //9.0 is just to make sure the division is not between two integers
     }
 
     public int getMinTemp() {
