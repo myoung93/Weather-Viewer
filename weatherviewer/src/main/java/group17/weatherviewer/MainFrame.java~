@@ -100,15 +100,7 @@ public class MainFrame {
 				Toolkit.getDefaultToolkit().getImage(
 		MainFrame.class.getResource("main/resources/default_background.jpg")));
 		if (skyCondition == "Sunny") {
-<<<<<<< HEAD
-			backgroundImage = new Background(Toolkit.getDefaultToolkit().getImage(MainFrame.class.getResource("main/resources/sunny_background.jpg")));
-		} 
-		else if (skyCondition == "Cloudy") {
-			backgroundImage = new Background(Toolkit.getDefaultToolkit().getImage(MainFrame.class.getResource("main/resources/cloudy_background.jpg")));
-		} 
-		else if (skyCondition == "Rainy") {
-			backgroundImage = new Background(Toolkit.getDefaultToolkit().getImage(MainFrame.class.getResource("/main/resources/rainy_background.jpg")));
-=======
+
             backgroundImage = new Background(Toolkit.getDefaultToolkit()
                 .getImage(getClass().getResource("/main/resources/sunny_background.jpg")));
 		} else if (skyCondition == "Cloudy") {
@@ -117,7 +109,6 @@ public class MainFrame {
 		} else if (skyCondition == "Rainy") {
             backgroundImage = new Background(Toolkit.getDefaultToolkit()
             .getImage(getClass().getResource("/main/resources/rainy_background.jpg")));
->>>>>>> 1a0a4fb46f3522f9cf3032ac54a3b8373d7610e1
 		} 
 		
 		frame = new JFrame();

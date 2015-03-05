@@ -109,7 +109,6 @@ public class MainFrame {
 		} else if (skyCondition == "Rainy") {
             backgroundImage = new Background(Toolkit.getDefaultToolkit()
             .getImage(getClass().getResource("/main/resources/rainy_background.jpg")));
->>>>>>> 1a0a4fb46f3522f9cf3032ac54a3b8373d7610e1
 		} 
 		
 		frame = new JFrame();
