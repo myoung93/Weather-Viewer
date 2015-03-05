@@ -98,17 +98,17 @@ public class MainFrame {
 		// set background to sky condition
 		Background backgroundImage = new Background(
 				Toolkit.getDefaultToolkit().getImage(
-		MainFrame.class.getResource("main/resources/default_background.jpg")));
+		MainFrame.class.getResource("default_background.jpg")));
 		if (skyCondition == "Sunny") {
 
             backgroundImage = new Background(Toolkit.getDefaultToolkit()
-                .getImage(getClass().getResource("/main/resources/sunny_background.jpg")));
+                .getImage(getClass().getResource("sunny_background.jpg")));
 		} else if (skyCondition == "Cloudy") {
             backgroundImage = new Background(Toolkit.getDefaultToolkit()
-                .getImage(getClass().getResource("/main/resources/cloudy_background.jpg")));
+                .getImage(getClass().getResource("cloudy_background.jpg")));
 		} else if (skyCondition == "Rainy") {
             backgroundImage = new Background(Toolkit.getDefaultToolkit()
-            .getImage(getClass().getResource("/main/resources/rainy_background.jpg")));
+            .getImage(getClass().getResource("rainy_background.jpg")));
 		} 
 		
 		frame = new JFrame();
