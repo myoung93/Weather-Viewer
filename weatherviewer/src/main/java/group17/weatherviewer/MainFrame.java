@@ -128,7 +128,7 @@ public class MainFrame {
                 //update weather here
             }
 		});
-		buttonRefresh.setIcon(new ImageIcon(getClass().getResource("/star_icon.png")));
+		buttonRefresh.setIcon(new ImageIcon(getClass().getResource("/refresh_icon.png")));
 		buttonRefresh.setBounds(540, 16, 41, 37);
 		buttonRefresh.setOpaque(false);
 		buttonRefresh.setContentAreaFilled(false);
