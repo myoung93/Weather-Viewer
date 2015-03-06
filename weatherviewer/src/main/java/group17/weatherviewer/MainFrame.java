@@ -8,30 +8,35 @@ import java.awt.event.ActionListener;
 public class MainFrame {
 
 	private JFrame frame;
+	private ImageIcon backgroundImage;
+	private JLabel backgroundLabel;
 	private JTextField textField;
-	private JButton buttonFavourite;
 	private JTextField barSearch;
-	private JLabel labelCity;
-	private JLabel labelTemp;
-	private JLabel labelWind;
+	private JScrollPane scrollPane;
+	private JButton buttonFavourite;
+	private JButton buttonLongTerm;
+	private JButton buttonShortTerm;
+	private JButton buttonRefresh;
+	private JButton buttonToCelsius;
+	private JButton buttonToFahrenheit;
 	private JLabel iconSkyCondition;
-	private JLabel lblAirPressure;
-	private JLabel lblMaxTemp;
-	private JLabel lblMinTemp;
-	private JLabel lblSunrise;
-	private JLabel lblSunset;
+	private JLabel labelAirPressure;
+	private JLabel labelMaxTemp;
+	private JLabel labelMinTemp;
+	private JLabel labelSunrise;
+	private JLabel labelSunset;
+	private JLabel labelWind;
+	private JLabel labelHumidity;
+	private JLabel labelCityInfo;
+	private JLabel labelTempInfo;
+	private JLabel labelWindInfo;
 	private JLabel labelHumidityInfo;
 	private JLabel labelAirPressureInfo;
 	private JLabel labelMaxTempInfo;
 	private JLabel labelMinTempInfo;
 	private JLabel labelSunriseInfo;
 	private JLabel labelSunsetInfo;
-	private JLabel labelSkyCondition;
-	private JButton buttonLongTerm;
-	private JButton buttonShortTerm;
-	private JButton buttonRefresh;
-	private JButton buttonToCelsius;
-	private JButton buttonToFahrenheit;
+	private JLabel labelSkyConditionInfo;
 	private JLabel label12AM;
 	private JLabel label3AM;
 	private JLabel label6AM;
@@ -47,11 +52,7 @@ public class MainFrame {
 	private JLabel labelFri;
 	private JLabel labelSat;
 	private JLabel labelSun;
-	private JScrollPane scrollPane;
-	private JLabel lblWind;
-	private JLabel lblHumidity;
-	private JLabel labelWindInfo;
-	
+
 	/**
 	 * Launch the application.
 	 */
@@ -82,7 +83,8 @@ public class MainFrame {
 		// attributes
 		String temp, windSpeed, airPressure, humidity, minTemp, maxTemp, sunRise, sunSet, windDirection, skyCondition, location;
 		// hard coded initializations
-        //in the future none of these actually have to be stored, we can just do weatherObject.getTemp() etc. -TE
+		// in the future none of these actually have to be stored, we can just
+		// do weatherObject.getTemp() etc. -TE
 		location = "Toronto, Ont.";
 		temp = "999";
 		windSpeed = "999";
@@ -95,20 +97,24 @@ public class MainFrame {
 		sunSet = "9999";
 		skyCondition = "Rainy";
 
-		//set up background
-		ImageIcon backgroundImage = new ImageIcon("src/main/resources/default_background.jpg");
+		// set up background
+		backgroundImage = new ImageIcon(
+				"src/main/resources/default_background.jpg");
 		if (skyCondition.equalsIgnoreCase("Sunny")) {
-			backgroundImage = new ImageIcon("src/main/resources/sunny_background.jpg");
+			backgroundImage = new ImageIcon(
+					"src/main/resources/sunny_background.jpg");
 		} else if (skyCondition.equalsIgnoreCase("Cloudy")) {
-			backgroundImage = new ImageIcon("src/main/resources/cloudy_background.jpg");
+			backgroundImage = new ImageIcon(
+					"src/main/resources/cloudy_background.jpg");
 		} else if (skyCondition.equalsIgnoreCase("Rainy")) {
-			backgroundImage = new ImageIcon("src/main/resources/rainy_background.jpg");
-		} 
-		
-		JLabel backgroundLabel = new JLabel(backgroundImage);
+			backgroundImage = new ImageIcon(
+					"src/main/resources/rainy_background.jpg");
+		}
+
+		backgroundLabel = new JLabel(backgroundImage);
 		backgroundLabel.setSize(800, 520);
-		
-		//Initialize Frame
+
+		// Initialize Frame
 		frame = new JFrame();
 		frame.setLocationRelativeTo(null);
 		frame.setSize(800, 520);
@@ -117,33 +123,33 @@ public class MainFrame {
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
 		// set background to sky condition
-		
-		
-		//begin initialize buttons
-		
+
+		// begin initialize buttons
+
 		// refresh button
 		buttonRefresh = new JButton("");
 		buttonRefresh.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-                //update weather here
-            }
+				refresh();
+			}
 		});
-		buttonRefresh.setIcon(new ImageIcon("src/main/resources/refresh_icon.png"));
+		buttonRefresh.setIcon(new ImageIcon(
+				"src/main/resources/refresh_icon.png"));
 		buttonRefresh.setBounds(540, 16, 41, 37);
 		buttonRefresh.setOpaque(false);
 		buttonRefresh.setContentAreaFilled(false);
 		buttonRefresh.setBorderPainted(false);
-		frame.add(buttonRefresh);
+		frame.getContentPane().add(buttonRefresh);
 
-		
 		// favorite Button
 		buttonFavourite = new JButton("");
-		buttonFavourite.setIcon(new ImageIcon("src/main/resources/star_icon.png"));
-        buttonFavourite.setOpaque(false);
+		buttonFavourite.setIcon(new ImageIcon(
+				"src/main/resources/star_icon.png"));
+		buttonFavourite.setOpaque(false);
 		buttonFavourite.setContentAreaFilled(false);
 		buttonFavourite.setBorderPainted(false);
 		buttonFavourite.setBounds(759, 16, 41, 37);
-		frame.add(buttonFavourite);
+		frame.getContentPane().add(buttonFavourite);
 
 		// Short Term Button
 		buttonShortTerm = new JButton("Short Term");
@@ -158,7 +164,7 @@ public class MainFrame {
 		buttonShortTerm.setContentAreaFilled(false);
 		buttonShortTerm.setBorderPainted(false);
 		buttonShortTerm.setBounds(19, 328, 120, 29);
-		frame.add(buttonShortTerm);
+		frame.getContentPane().add(buttonShortTerm);
 
 		// Long Term Button
 		buttonLongTerm = new JButton("Long Term");
@@ -169,19 +175,19 @@ public class MainFrame {
 		});
 
 		buttonLongTerm.setOpaque(false);
-		buttonLongTerm.setForeground(Color.GRAY);
+		buttonLongTerm.setForeground(Color.DARK_GRAY);
 		buttonLongTerm.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		buttonLongTerm.setContentAreaFilled(false);
 		buttonLongTerm.setBorderPainted(false);
 		buttonLongTerm.setBounds(95, 328, 127, 29);
-		frame.add(buttonLongTerm);
-		
-		//toCelsius button
+		frame.getContentPane().add(buttonLongTerm);
+
+		// toCelsius button
 		buttonToCelsius = new JButton("°C");
 		buttonToCelsius.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				buttonToCelsius.setForeground(Color.WHITE);
-				buttonToFahrenheit.setForeground(Color.GRAY);
+				buttonToFahrenheit.setForeground(Color.DARK_GRAY);
 			}
 		});
 		buttonToCelsius.setOpaque(false);
@@ -190,301 +196,332 @@ public class MainFrame {
 		buttonToCelsius.setContentAreaFilled(false);
 		buttonToCelsius.setBorderPainted(false);
 		buttonToCelsius.setBounds(475, 283, 75, 29);
-		frame.add(buttonToCelsius);
-		
-		//toFarenheit button
+		frame.getContentPane().add(buttonToCelsius);
+
+		// toFarenheit button
 		buttonToFahrenheit = new JButton("°F");
 		buttonToFahrenheit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				buttonToFahrenheit.setForeground(Color.WHITE);
-				buttonToCelsius.setForeground(Color.GRAY);
+				buttonToCelsius.setForeground(Color.DARK_GRAY);
 			}
 		});
 		buttonToFahrenheit.setOpaque(false);
-		buttonToFahrenheit.setForeground(Color.GRAY);
+		buttonToFahrenheit.setForeground(Color.DARK_GRAY);
 		buttonToFahrenheit.setFont(new Font("Helvetica", Font.PLAIN, 18));
 		buttonToFahrenheit.setContentAreaFilled(false);
 		buttonToFahrenheit.setBorderPainted(false);
 		buttonToFahrenheit.setBounds(520, 283, 70, 29);
-		frame.add(buttonToFahrenheit);
-	
-		//end initialize buttons
-		
-		//begin initialize MyLocations panel
-		
-		//Scroll Pane
+		frame.getContentPane().add(buttonToFahrenheit);
+
+		// end initialize buttons
+
+		// begin initialize MyLocations panel
+
+		// Scroll Pane
 		scrollPane = new JScrollPane();
-		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		scrollPane
+				.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		scrollPane.setBounds(595, 56, 195, 422);
 		scrollPane.setOpaque(false);
 		scrollPane.getViewport().setOpaque(false);
-		frame.add(scrollPane);
-		
+		frame.getContentPane().add(scrollPane);
+
 		// search bar
 		barSearch = new JTextField();
 		barSearch.setText("Search (City, Country)");
 		barSearch.setBounds(590, 16, 171, 37);
 		barSearch.setOpaque(false);
 		barSearch.setColumns(10);
-		frame.add(barSearch);
-		//end initialize MyLocations panel
-		
-		//begin initialize LocalWeather panel
-		
+		frame.getContentPane().add(barSearch);
+		// end initialize MyLocations panel
+
+		// begin initialize LocalWeather panel
+
 		// city label
-		labelCity = new JLabel(location);
-		labelCity.setForeground(Color.WHITE);
-		labelCity.setFont(new Font("Helvetica", Font.PLAIN, 17));
-		labelCity.setBounds(50, 25, 200, 37);
-		frame.add(labelCity);
+		labelCityInfo = new JLabel(location);
+		labelCityInfo.setForeground(Color.WHITE);
+		labelCityInfo.setFont(new Font("Helvetica", Font.PLAIN, 17));
+		labelCityInfo.setBounds(50, 25, 200, 37);
+		frame.getContentPane().add(labelCityInfo);
 
 		// temperature label
-		labelTemp = new JLabel(temp + "°C");
-		labelTemp.setFont(new Font("Helvetica", Font.PLAIN, 93));
-		labelTemp.setForeground(Color.WHITE);
-		labelTemp.setBounds(50, 64, 318, 94);
-		frame.add(labelTemp);
-		
-		//wind label
-		lblWind = new JLabel("Wind:");
-		lblWind.setForeground(Color.LIGHT_GRAY);
-		lblWind.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		lblWind.setBounds(50, 170, 61, 15);
-		frame.add(lblWind);
-		
-		//humidity label
-		lblHumidity = new JLabel("Humidity:");
-		lblHumidity.setForeground(Color.LIGHT_GRAY);
-		lblHumidity.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		lblHumidity.setBounds(50, 190, 70, 15);
-		frame.add(lblHumidity);
-		
-		//air pressure label
-		lblAirPressure = new JLabel("Air Pressure:");
-		lblAirPressure.setForeground(Color.LIGHT_GRAY);
-		lblAirPressure.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		lblAirPressure.setBounds(50, 210, 96, 15);
-		frame.add(lblAirPressure);
-		
-		//max temp label
-		lblMaxTemp = new JLabel("Max Temp:");
-		lblMaxTemp.setForeground(Color.LIGHT_GRAY);
-		lblMaxTemp.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		lblMaxTemp.setBounds(50, 230, 96, 15);
-		frame.add(lblMaxTemp);
-		
-		//min temp label
-		lblMinTemp = new JLabel("Min. Temp:");
-		lblMinTemp.setForeground(Color.LIGHT_GRAY);
-		lblMinTemp.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		lblMinTemp.setBounds(50, 250, 96, 15);
-		frame.add(lblMinTemp);
-		
-		//sunrise label
-		lblSunrise = new JLabel("Sunrise:");
-		lblSunrise.setForeground(Color.LIGHT_GRAY);
-		lblSunrise.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		lblSunrise.setBounds(50, 270, 61, 15);
-		frame.add(lblSunrise);
-		
-		//sunset label
-		lblSunset = new JLabel("Sunset:");
-		lblSunset.setForeground(Color.LIGHT_GRAY);
-		lblSunset.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		lblSunset.setBounds(50, 290, 58, 15);
-		frame.add(lblSunset);
-	
-		//end initialize LocalWeather panel
-		
+		labelTempInfo = new JLabel(temp + "°C");
+		labelTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 93));
+		labelTempInfo.setForeground(Color.WHITE);
+		labelTempInfo.setBounds(50, 64, 318, 94);
+		frame.getContentPane().add(labelTempInfo);
+
+		// wind label
+		labelWind = new JLabel("Wind:");
+		labelWind.setForeground(Color.LIGHT_GRAY);
+		labelWind.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelWind.setBounds(50, 170, 61, 15);
+		frame.getContentPane().add(labelWind);
+
+		// humidity label
+		labelHumidity = new JLabel("Humidity:");
+		labelHumidity.setForeground(Color.LIGHT_GRAY);
+		labelHumidity.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelHumidity.setBounds(50, 190, 70, 15);
+		frame.getContentPane().add(labelHumidity);
+
+		// air pressure label
+		labelAirPressure = new JLabel("Air Pressure:");
+		labelAirPressure.setForeground(Color.LIGHT_GRAY);
+		labelAirPressure.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelAirPressure.setBounds(50, 210, 96, 15);
+		frame.getContentPane().add(labelAirPressure);
+
+		// max temp label
+		labelMaxTemp = new JLabel("Max Temp:");
+		labelMaxTemp.setForeground(Color.LIGHT_GRAY);
+		labelMaxTemp.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelMaxTemp.setBounds(50, 230, 96, 15);
+		frame.getContentPane().add(labelMaxTemp);
+
+		// min temp label
+		labelMinTemp = new JLabel("Min. Temp:");
+		labelMinTemp.setForeground(Color.LIGHT_GRAY);
+		labelMinTemp.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelMinTemp.setBounds(50, 250, 96, 15);
+		frame.getContentPane().add(labelMinTemp);
+
+		// sunrise label
+		labelSunrise = new JLabel("Sunrise:");
+		labelSunrise.setForeground(Color.LIGHT_GRAY);
+		labelSunrise.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelSunrise.setBounds(50, 270, 61, 15);
+		frame.getContentPane().add(labelSunrise);
+
+		// sunset label
+		labelSunset = new JLabel("Sunset:");
+		labelSunset.setForeground(Color.LIGHT_GRAY);
+		labelSunset.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelSunset.setBounds(50, 290, 58, 15);
+		frame.getContentPane().add(labelSunset);
+
+		// end initialize LocalWeather panel
+
 		// begin initialize LocalWeather conditions
-		
-		//wind info
-		
+
+		// wind info
+
 		labelWindInfo = new JLabel(windSpeed + " km/h " + windDirection);
 		labelWindInfo.setForeground(Color.WHITE);
 		labelWindInfo.setFont(new Font("SansSerif", Font.PLAIN, 15));
 		labelWindInfo.setBounds(103, 170, 200, 15);
-		frame.add(labelWindInfo);
-		
-		//humidity info
+		frame.getContentPane().add(labelWindInfo);
+
+		// humidity info
 		labelHumidityInfo = new JLabel(humidity + "%");
 		labelHumidityInfo.setForeground(Color.WHITE);
 		labelHumidityInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelHumidityInfo.setBounds(130, 190, 200, 15);
-		frame.add(labelHumidityInfo);
-		
-		//air pressure info
+		frame.getContentPane().add(labelHumidityInfo);
+
+		// air pressure info
 		labelAirPressureInfo = new JLabel(airPressure + "kPa");
 		labelAirPressureInfo.setForeground(Color.WHITE);
 		labelAirPressureInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelAirPressureInfo.setBounds(158, 210, 200, 15);
-		frame.add(labelAirPressureInfo);
-		
-		//max temp info
+		frame.getContentPane().add(labelAirPressureInfo);
+
+		// max temp info
 		labelMaxTempInfo = new JLabel(maxTemp + "°C");
 		labelMaxTempInfo.setForeground(Color.WHITE);
 		labelMaxTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelMaxTempInfo.setBounds(145, 230, 200, 15);
-		frame.add(labelMaxTempInfo);
-		
-		//min temp info
+		frame.getContentPane().add(labelMaxTempInfo);
+
+		// min temp info
 		labelMinTempInfo = new JLabel(minTemp + "°C");
 		labelMinTempInfo.setForeground(Color.WHITE);
 		labelMinTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelMinTempInfo.setBounds(145, 250, 200, 15);
-		frame.add(labelMinTempInfo);
-		
-		
-		//sunrise info
+		frame.getContentPane().add(labelMinTempInfo);
+
+		// sunrise info
 		labelSunriseInfo = new JLabel(sunRise + "");
 		labelSunriseInfo.setForeground(Color.WHITE);
 		labelSunriseInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelSunriseInfo.setBounds(130, 270, 200, 15);
-		frame.add(labelSunriseInfo);
-		
-		//sunset info
+		frame.getContentPane().add(labelSunriseInfo);
+
+		// sunset info
 		labelSunsetInfo = new JLabel(sunSet + "");
 		labelSunsetInfo.setForeground(Color.WHITE);
 		labelSunsetInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelSunsetInfo.setBounds(130, 291, 200, 15);
-		frame.add(labelSunsetInfo);
-		
-		//sky condition info
-		labelSkyCondition = new JLabel(skyCondition);
-		labelSkyCondition.setForeground(Color.WHITE);
-		labelSkyCondition.setFont(new Font("Helvetica", Font.PLAIN, 17));
-		labelSkyCondition.setBounds(381, 25, 200, 37);
-		frame.add(labelSkyCondition);
-		
-		//end initialize LocalWeather conditions
-		
-		//being initialize short-term forecast panel
-		
+		frame.getContentPane().add(labelSunsetInfo);
+
+		// sky condition info
+		labelSkyConditionInfo = new JLabel(skyCondition);
+		labelSkyConditionInfo.setForeground(Color.WHITE);
+		labelSkyConditionInfo.setFont(new Font("Helvetica", Font.PLAIN, 17));
+		labelSkyConditionInfo.setBounds(381, 25, 200, 37);
+		frame.getContentPane().add(labelSkyConditionInfo);
+
+		// end initialize LocalWeather conditions
+
+		// being initialize short-term forecast panel
+
 		label12AM = new JLabel("12:00am");
 		label12AM.setForeground(Color.LIGHT_GRAY);
 		label12AM.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		label12AM.setBounds(50, 360, 58, 15);
-		frame.add(label12AM);
-		
+		frame.getContentPane().add(label12AM);
+
 		label3AM = new JLabel("  3:00am");
 		label3AM.setForeground(Color.LIGHT_GRAY);
 		label3AM.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		label3AM.setBounds(115, 360, 58, 15);
-		frame.add(label3AM);
-		
+		frame.getContentPane().add(label3AM);
+
 		label6AM = new JLabel("  6:00am");
 		label6AM.setForeground(Color.LIGHT_GRAY);
 		label6AM.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		label6AM.setBounds(180, 360, 58, 15);
-		frame.add(label6AM);
-		
+		frame.getContentPane().add(label6AM);
+
 		label9AM = new JLabel("  9:00am");
 		label9AM.setForeground(Color.LIGHT_GRAY);
 		label9AM.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		label9AM.setBounds(245, 360, 58, 15);
-		frame.add(label9AM);
-		
+		frame.getContentPane().add(label9AM);
+
 		label12PM = new JLabel("12:00pm");
 		label12PM.setForeground(Color.LIGHT_GRAY);
 		label12PM.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		label12PM.setBounds(310, 360, 58, 15);
-		frame.add(label12PM);
-		
+		frame.getContentPane().add(label12PM);
+
 		label3PM = new JLabel("  3:00pm");
 		label3PM.setForeground(Color.LIGHT_GRAY);
 		label3PM.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		label3PM.setBounds(375, 360, 58, 15);
-		frame.add(label3PM);
-		
+		frame.getContentPane().add(label3PM);
+
 		label6PM = new JLabel("  6:00pm");
 		label6PM.setForeground(Color.LIGHT_GRAY);
 		label6PM.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		label6PM.setBounds(440, 360, 58, 15);
-		frame.add(label6PM);
-		
+		frame.getContentPane().add(label6PM);
+
 		label9PM = new JLabel("  9:00pm");
 		label9PM.setForeground(Color.LIGHT_GRAY);
 		label9PM.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		label9PM.setBounds(505, 360, 58, 15);
-		frame.add(label9PM);
-		
-		//end initialize Short-Term Forecast panel
-		
-		//begin initialize Long-Term Forecast panel
-		
+		frame.getContentPane().add(label9PM);
+
+		// end initialize Short-Term Forecast panel
+
+		// begin initialize Long-Term Forecast panel
+
 		labelMon = new JLabel("Mon.");
 		labelMon.setForeground(Color.LIGHT_GRAY);
 		labelMon.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelMon.setBounds(100, 360, 58, 15);
-		frame.add(labelMon);
-		
+		frame.getContentPane().add(labelMon);
+
 		labelTues = new JLabel("Tues.");
 		labelTues.setForeground(Color.LIGHT_GRAY);
 		labelTues.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelTues.setBounds(165, 360, 58, 15);
-		frame.add(labelTues);
-		
+		frame.getContentPane().add(labelTues);
+
 		labelWed = new JLabel("Wed.");
 		labelWed.setForeground(Color.LIGHT_GRAY);
 		labelWed.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelWed.setBounds(230, 360, 58, 15);
-		frame.add(labelWed);
-		
+		frame.getContentPane().add(labelWed);
+
 		labelThurs = new JLabel("Thurs.");
 		labelThurs.setForeground(Color.LIGHT_GRAY);
 		labelThurs.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelThurs.setBounds(290, 360, 58, 15);
-		frame.add(labelThurs);
-		
+		frame.getContentPane().add(labelThurs);
+
 		labelFri = new JLabel("Fri.");
 		labelFri.setForeground(Color.LIGHT_GRAY);
 		labelFri.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelFri.setBounds(365, 360, 58, 15);
-		frame.add(labelFri);
-		
+		frame.getContentPane().add(labelFri);
+
 		labelSat = new JLabel("Sat.");
 		labelSat.setForeground(Color.LIGHT_GRAY);
 		labelSat.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelSat.setBounds(425, 360, 58, 15);
-		frame.add(labelSat);
-		
+		frame.getContentPane().add(labelSat);
+
 		labelSun = new JLabel("Sun.");
 		labelSun.setForeground(Color.LIGHT_GRAY);
 		labelSun.setFont(new Font("Helvetica", Font.PLAIN, 15));
 		labelSun.setBounds(490, 360, 58, 15);
-		frame.add(labelSun);
+		frame.getContentPane().add(labelSun);
 
 		shortTermView();
-		//end initialize Long-Term Conditions
+		// end initialize Long-Term Conditions
 
-        //testing code to prove that UserPreferences functions at least at a basic level - TE
+		// testing code to prove that UserPreferences functions at least at a
+		// basic level - TE
 		/*
-        try {
-            UserPreferences prefs = new UserPreferences();
-            //prints c (default)
-            System.out.println(prefs.isCelsius()?"Celsius":"Fahrenheit");
-            prefs.setCelsius(false);
-            //prints f
-			System.out.println(prefs.isCelsius()?"Celsius":"Fahrenheit");
-            UserPreferences.savePrefs(prefs);
+		 * try { UserPreferences prefs = new UserPreferences(); //prints c
+		 * (default)
+		 * System.out.println(prefs.isCelsius()?"Celsius":"Fahrenheit");
+		 * prefs.setCelsius(false); //prints f
+		 * System.out.println(prefs.isCelsius()?"Celsius":"Fahrenheit");
+		 * UserPreferences.savePrefs(prefs);
+		 * 
+		 * //create a new preferences and load the old one UserPreferences
+		 * new_prefs = UserPreferences.getPrefs(); //still f instead of default
+		 * c because we saved & loaded it
+		 * System.out.println(prefs.isCelsius()?"Celsius":"Fahrenheit"); }
+		 * catch(Exception e) { e.printStackTrace(); }
+		 */
 
-            //create a new preferences and load the old one
-            UserPreferences new_prefs = UserPreferences.getPrefs();
-            //still f instead of default c because we saved & loaded it
-			System.out.println(prefs.isCelsius()?"Celsius":"Fahrenheit");
-        }
-        catch(Exception e) {
-            e.printStackTrace();
-        }*/
-
-		
 	}
-	
+
+	public void refresh() {
+		//code to reinitialize all variables replace this once back end is hooked up
+		String temp, windSpeed, airPressure, humidity, minTemp, maxTemp, sunRise, sunSet, windDirection, skyCondition, location;
+		location = "London, Ont.";
+		temp = "777";
+		windSpeed = "777";
+		windDirection = "West";
+		humidity = "777";
+		airPressure = "777";
+		maxTemp = "777";
+		minTemp = "777";
+		sunRise = "7777";
+		sunSet = "7777";
+		skyCondition = "Sunny";
 		
-	
-	//enable short term view
-	public void shortTermView (){
-		buttonLongTerm.setForeground(Color.GRAY);
+		//current location panel
+		labelCityInfo.setText(location);
+		labelSkyConditionInfo.setText(skyCondition);
+		labelTempInfo.setText(temp + "°C");
+		labelWindInfo.setText(windSpeed + " km/h " + windDirection);
+		labelHumidityInfo.setText(humidity + "%");
+		labelAirPressureInfo.setText(airPressure + "kPa");
+		labelMaxTempInfo.setText(maxTemp + "°C");
+		labelMinTempInfo.setText(minTemp + "°C");
+		labelSunriseInfo.setText(sunRise);
+		labelSunsetInfo.setText(sunSet);
+		
+		//set background
+		if (skyCondition.equalsIgnoreCase("Sunny")) {
+			backgroundLabel.setIcon(new ImageIcon("src/main/resources/sunny_background.jpg"));
+		} else if (skyCondition.equalsIgnoreCase("Cloudy")) {
+			backgroundLabel.setIcon(new ImageIcon("src/main/resources/cloudy_background.jpg"));
+		} else if (skyCondition.equalsIgnoreCase("Rainy")) {
+			backgroundLabel.setIcon(new ImageIcon("src/main/resources/rainy_background.jpg"));
+		}
+	}
+
+	// enable short term view
+	public void shortTermView() {
+		buttonLongTerm.setForeground(Color.DARK_GRAY);
 		buttonShortTerm.setForeground(Color.WHITE);
 		labelMon.setVisible(false);
 		labelTues.setVisible(false);
@@ -502,10 +539,11 @@ public class MainFrame {
 		label6PM.setVisible(true);
 		label9PM.setVisible(true);
 	}
-	//enable long term view
-	public void longTermView (){
+
+	// enable long term view
+	public void longTermView() {
 		buttonLongTerm.setForeground(Color.WHITE);
-		buttonShortTerm.setForeground(Color.GRAY);
+		buttonShortTerm.setForeground(Color.DARK_GRAY);
 		labelMon.setVisible(true);
 		labelTues.setVisible(true);
 		labelWed.setVisible(true);
