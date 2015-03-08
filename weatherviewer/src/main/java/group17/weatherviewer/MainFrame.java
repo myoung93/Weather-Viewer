@@ -53,6 +53,8 @@ public class MainFrame {
 	private JLabel labelFri;
 	private JLabel labelSat;
 	private JLabel labelSun;
+	private JList listLocations;
+	private JScrollBar scrollBarLocations;
 
 	/**
 	 * Launch the application.
@@ -224,12 +226,19 @@ public class MainFrame {
 
 		// Scroll Pane
 		scrollPane = new JScrollPane();
-		scrollPane
-				.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		scrollPane.setBounds(595, 56, 195, 422);
 		scrollPane.setOpaque(false);
 		scrollPane.getViewport().setOpaque(false);
 		frame.getContentPane().add(scrollPane);
+		
+		// Locations list
+		listLocations = new JList();
+		scrollPane.setViewportView(listLocations);
+		
+		//scroll bar for Locations list
+		scrollBarLocations = new JScrollBar();
+		scrollPane.setRowHeaderView(scrollBarLocations);
 
 		// search bar
 		barSearch = new JTextField();
