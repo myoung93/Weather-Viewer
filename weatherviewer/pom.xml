@@ -2,12 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>ca.uwo.csd.cs2212.team17</groupId>
-  <artifactId>weatherviewer</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>weatherviewer</name>
+  <name>17_weatherviewer</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -89,4 +87,6 @@
    </plugins>
   </build>
 
+  <artifactId>17_weatherviewer</artifactId>
+  <groupId>ca.uwo.csd.cs2212.team17</groupId>
 </project>
