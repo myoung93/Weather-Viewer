@@ -55,6 +55,7 @@ public class MainFrame {
 	private JLabel labelSun;
 	private JList listLocations;
 	private JScrollBar scrollBarLocations;
+	private JButton btnGetWeather;
 
 	/**
 	 * Launch the application.
@@ -100,22 +101,22 @@ public class MainFrame {
 		sunSet = "9999";
 		skyCondition = "Rainy";
 
-		// set up background
+		// set up background and weather icon
 		backgroundImage = new ImageIcon(
-				"src/main/resources/default_background.jpg");
-		weatherIcon = new ImageIcon("src/main/resources/sun_icon.png");
+				"src/main/resources/backgrounds/default_background.jpg");
+		weatherIcon = new ImageIcon("src/main/resources/icons/sun_icon.png");
 		if (skyCondition.equalsIgnoreCase("Sunny")) {
 			backgroundImage = new ImageIcon(
-					"src/main/resources/sunny_background.jpg");
-			weatherIcon = new ImageIcon("src/main/resources/sun_icon.png");
+					"src/main/resources/backgrounds/sunny_background.jpg");
+			weatherIcon = new ImageIcon("src/main/resources/icons/sun_icon.png");
 		} else if (skyCondition.equalsIgnoreCase("Cloudy")) {
 			backgroundImage = new ImageIcon(
-					"src/main/resources/cloudy_background.jpg");
-			weatherIcon = new ImageIcon("src/main/resources/cloud_heavy_icon.png");
+					"src/main/resources/backgrounds/cloudy_background.jpg");
+			weatherIcon = new ImageIcon("src/main/resources/icons/cloud_heavy_icon.png");
 		} else if (skyCondition.equalsIgnoreCase("Rainy")) {
 			backgroundImage = new ImageIcon(
-					"src/main/resources/rainy_background.jpg");
-			weatherIcon = new ImageIcon("src/main/resources/rain_heavy_icon.png");
+					"src/main/resources/backgrounds/rainy_background.jpg");
+			weatherIcon = new ImageIcon("src/main/resources/icons/rain_heavy_icon.png");
 		}
 		backgroundLabel = new JLabel(backgroundImage);
 		backgroundLabel.setSize(800, 520);
@@ -149,6 +150,10 @@ public class MainFrame {
 
 		// favorite Button
 		buttonFavourite = new JButton("");
+		buttonFavourite.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		buttonFavourite.setIcon(new ImageIcon(
 				"src/main/resources/star_icon.png"));
 		buttonFavourite.setOpaque(false);
@@ -239,6 +244,9 @@ public class MainFrame {
 		//scroll bar for Locations list
 		scrollBarLocations = new JScrollBar();
 		scrollPane.setRowHeaderView(scrollBarLocations);
+		
+		btnGetWeather = new JButton("Get Weather");
+		scrollPane.setColumnHeaderView(btnGetWeather);
 
 		// search bar
 		barSearch = new JTextField();
