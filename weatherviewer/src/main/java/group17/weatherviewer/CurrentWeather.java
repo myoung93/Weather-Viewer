@@ -115,18 +115,39 @@ public class CurrentWeather {
         if(City != null)    return City;
         else                return "ERR";
 	}
-	//returns temperature in [°K]
+	//returns temperature in [°C]
+	//just a provisory function, you should call getTempC or getTempF as needed
 	public String getTemp() {
-		return String.valueOf(Temp);
+		return getTempC();
 	}
-	//returns max temperature in [°K]
+	public String getTempC() {
+        return String.valueOf(Temp - 273); 
+    }
+	public String getTempF() {
+        return String.valueOf(((Temp - 273) * 9 / 5.0) + 32);
+    }
+	//returns max temperature in [°C]
+	//just a provisory function
 	public String getTempMax() {
-		return String.valueOf(TempMax);
+		return getMaxTempC();
 	}
-	//returns min tmperature in [°K]
+	public String getMaxTempC() {
+        return String.valueOf(TempMax - 273);
+    }
+	public String getTempMaxF() {
+        return String.valueOf(((TempMax - 273) * 9 / 5.0) + 32);
+    }
+	//returns min tmperature in [°C]
+	//just a provisory function
 	public String getTempMin() {
-		return String.valueOf(TempMin);
+		return getTempMinC();
 	}
+	public String getTempMinC() {
+        return String.valueOf(TempMin - 273);
+    }
+    public String getTempMinF() {
+        return String.valueOf(((TempMin - 273) * 9 / 5.0) + 32);
+    }
 	//returns country name
 	public String getCountry() {
 		return Country;
