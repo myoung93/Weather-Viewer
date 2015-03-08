@@ -9,6 +9,7 @@ public class MainFrame {
 
 	private JFrame frame;
 	private ImageIcon backgroundImage;
+	private ImageIcon weatherIcon;
 	private JLabel backgroundLabel;
 	private JTextField textField;
 	private JTextField barSearch;
@@ -19,7 +20,7 @@ public class MainFrame {
 	private JButton buttonRefresh;
 	private JButton buttonToCelsius;
 	private JButton buttonToFahrenheit;
-	private JLabel iconSkyCondition;
+	private JLabel labelSkyConditionIcon;
 	private JLabel labelAirPressure;
 	private JLabel labelMaxTemp;
 	private JLabel labelMinTemp;
@@ -100,17 +101,20 @@ public class MainFrame {
 		// set up background
 		backgroundImage = new ImageIcon(
 				"src/main/resources/default_background.jpg");
+		weatherIcon = new ImageIcon("src/main/resources/sun_icon.png");
 		if (skyCondition.equalsIgnoreCase("Sunny")) {
 			backgroundImage = new ImageIcon(
 					"src/main/resources/sunny_background.jpg");
+			weatherIcon = new ImageIcon("src/main/resources/sun_icon.png");
 		} else if (skyCondition.equalsIgnoreCase("Cloudy")) {
 			backgroundImage = new ImageIcon(
 					"src/main/resources/cloudy_background.jpg");
+			weatherIcon = new ImageIcon("src/main/resources/cloud_heavy_icon.png");
 		} else if (skyCondition.equalsIgnoreCase("Rainy")) {
 			backgroundImage = new ImageIcon(
 					"src/main/resources/rainy_background.jpg");
+			weatherIcon = new ImageIcon("src/main/resources/rain_heavy_icon.png");
 		}
-
 		backgroundLabel = new JLabel(backgroundImage);
 		backgroundLabel.setSize(800, 520);
 
@@ -362,6 +366,12 @@ public class MainFrame {
 		labelSkyConditionInfo.setBounds(381, 25, 200, 37);
 		frame.getContentPane().add(labelSkyConditionInfo);
 
+		// sky condition info
+		labelSkyConditionIcon = new JLabel(weatherIcon);
+		labelSkyConditionIcon.setBounds(355, 70, 204, 200);
+		frame.getContentPane().add(labelSkyConditionIcon);
+		
+		
 		// end initialize LocalWeather conditions
 
 		// being initialize short-term forecast panel
@@ -483,7 +493,8 @@ public class MainFrame {
 	}
 
 	public void refresh() {
-		//code to reinitialize all variables replace this once back end is hooked up
+		// code to reinitialize all variables replace this once back end is
+		// hooked up
 		String temp, windSpeed, airPressure, humidity, minTemp, maxTemp, sunRise, sunSet, windDirection, skyCondition, location;
 		location = "London, Ont.";
 		temp = "777";
@@ -496,8 +507,8 @@ public class MainFrame {
 		sunRise = "7777";
 		sunSet = "7777";
 		skyCondition = "Sunny";
-		
-		//current location panel
+
+		// current location panel
 		labelCityInfo.setText(location);
 		labelSkyConditionInfo.setText(skyCondition);
 		labelTempInfo.setText(temp + "°C");
@@ -508,14 +519,20 @@ public class MainFrame {
 		labelMinTempInfo.setText(minTemp + "°C");
 		labelSunriseInfo.setText(sunRise);
 		labelSunsetInfo.setText(sunSet);
-		
-		//set background
+
+		// set background
 		if (skyCondition.equalsIgnoreCase("Sunny")) {
-			backgroundLabel.setIcon(new ImageIcon("src/main/resources/sunny_background.jpg"));
+			backgroundLabel.setIcon(new ImageIcon(
+					"src/main/resources/sunny_background.jpg"));
+			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/sun_icon.png"));
 		} else if (skyCondition.equalsIgnoreCase("Cloudy")) {
-			backgroundLabel.setIcon(new ImageIcon("src/main/resources/cloudy_background.jpg"));
+			backgroundLabel.setIcon(new ImageIcon(
+					"src/main/resources/cloudy_background.jpg"));
+			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/cloud_heavy_icon.png"));
 		} else if (skyCondition.equalsIgnoreCase("Rainy")) {
-			backgroundLabel.setIcon(new ImageIcon("src/main/resources/rainy_background.jpg"));
+			backgroundLabel.setIcon(new ImageIcon(
+					"src/main/resources/rainy_background.jpg"));
+			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/rain_heavy_icon.png"));
 		}
 	}
 
