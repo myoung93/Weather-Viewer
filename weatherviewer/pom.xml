@@ -10,7 +10,6 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <!-- maven-compiler-plugin , aka JAVA Compiler 1.7 -->
       <maven.compiler.target>1.7</maven.compiler.target>
       <maven.compiler.source>1.7</maven.compiler.source>
   </properties>

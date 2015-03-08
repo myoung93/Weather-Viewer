@@ -1,9 +1,9 @@
 package group17.weatherviewer;
 
 import javax.swing.*;
+import javax.swing.event.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
@@ -59,6 +59,7 @@ public class MainFrame {
 	private JLabel labelSun;
 	private JList listLocations;
 	private JScrollBar scrollBarLocations;
+    private DefaultListModel listModel;
     //prefs file
     UserPreferences prefs;
 
@@ -89,7 +90,7 @@ public class MainFrame {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-
+		/*
         try {
             prefs = UserPreferences.getPrefs();
         }
@@ -107,9 +108,13 @@ public class MainFrame {
             prefs.addLocation("Toronto, CA");
             currentWeather = new CurrentWeather(prefs.getLocation(0));
         }
-        catch(UnsupportedEncodingException | WeatherException e) {
+        catch(UnsupportedEncodingException e) {
             System.out.println("Something went wrong retrieving current weather");
             e.printStackTrace();
+        }
+        catch(WeatherException e) {
+        	System.out.println("Something went wrong retrieving current weather");
+            e.printStackTrace();        	
         }
 
 		// attributes
@@ -132,8 +137,7 @@ public class MainFrame {
 		skyCondition =  currentWeather.getSkyCondition();
 
 		// set up background -> this is returning the ugly grey background only it seems
-		backgroundImage = new ImageIcon(
-				"src/main/resources/backgrounds/default_background.jpg");
+		
 		if (skyCondition.equalsIgnoreCase("sky is clear")) {
 			backgroundImage = new ImageIcon(
 					"src/main/resources/backgrounds/sunny_background.jpg");
@@ -147,11 +151,12 @@ public class MainFrame {
 					"src/main/resources/backgrounds/rainy_background.jpg");
 			weatherIcon = new ImageIcon("src/main/resources/icons/rain_heavy_icon.png");
 		}
-
+		*/
+		
+		/// BEING INITIALIZING FRAME ///
+		backgroundImage = new ImageIcon("src/main/resources/backgrounds/default_background.jpg");
 		backgroundLabel = new JLabel(backgroundImage);
 		backgroundLabel.setSize(800, 520);
-
-		// Initialize Frame
 		frame = new JFrame();
 		frame.setLocationRelativeTo(null);
 		frame.setSize(800, 520);
@@ -159,14 +164,139 @@ public class MainFrame {
 		frame.setResizable(false);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-		// set background to sky condition
+		/// END INITIALIZING FRAME ///
+		
+		/// BEGIN INITIALIZING LOCAL WEATHER VIEW PANEL ///
 
-		// begin initialize buttons
-
-		// refresh button
+		// city label
+		labelLocation = new JLabel("");
+		labelLocation.setForeground(Color.WHITE);
+		labelLocation.setFont(new Font("Helvetica", Font.PLAIN, 17));
+		labelLocation.setBounds(50, 25, 200, 37);
+		frame.getContentPane().add(labelLocation);
+		
+		// temperature label
+		labelTempInfo = new JLabel("");
+		labelTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 93));
+		labelTempInfo.setForeground(Color.WHITE);
+		labelTempInfo.setBounds(50, 64, 318, 94);
+		frame.getContentPane().add(labelTempInfo);
+		
+		// wind label
+		labelWind = new JLabel("Wind:");
+		labelWind.setForeground(Color.LIGHT_GRAY);
+		labelWind.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelWind.setBounds(50, 170, 61, 15);
+		frame.getContentPane().add(labelWind);
+		
+		// humidity label
+		labelHumidity = new JLabel("Humidity:");
+		labelHumidity.setForeground(Color.LIGHT_GRAY);
+		labelHumidity.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelHumidity.setBounds(50, 190, 70, 15);
+		frame.getContentPane().add(labelHumidity);
+		
+		// air pressure label
+		labelAirPressure = new JLabel("Air Pressure:");
+		labelAirPressure.setForeground(Color.LIGHT_GRAY);
+		labelAirPressure.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelAirPressure.setBounds(50, 210, 96, 15);
+		frame.getContentPane().add(labelAirPressure);
+		
+		// max temp label
+		labelMaxTemp = new JLabel("Max Temp:");
+		labelMaxTemp.setForeground(Color.LIGHT_GRAY);
+		labelMaxTemp.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelMaxTemp.setBounds(50, 230, 96, 15);
+		frame.getContentPane().add(labelMaxTemp);
+		
+		// min temp label
+		labelMinTemp = new JLabel("Min. Temp:");
+		labelMinTemp.setForeground(Color.LIGHT_GRAY);
+		labelMinTemp.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelMinTemp.setBounds(50, 250, 96, 15);
+		frame.getContentPane().add(labelMinTemp);
+		
+		// sunrise label
+		labelSunrise = new JLabel("Sunrise:");
+		labelSunrise.setForeground(Color.LIGHT_GRAY);
+		labelSunrise.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelSunrise.setBounds(50, 270, 61, 15);
+		frame.getContentPane().add(labelSunrise);
+		
+		// sunset label
+		labelSunset = new JLabel("Sunset:");
+		labelSunset.setForeground(Color.LIGHT_GRAY);
+		labelSunset.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelSunset.setBounds(50, 290, 58, 15);
+		frame.getContentPane().add(labelSunset);
+		
+		// wind info
+		
+		labelWindInfo = new JLabel("");
+		labelWindInfo.setForeground(Color.WHITE);
+		labelWindInfo.setFont(new Font("SansSerif", Font.PLAIN, 15));
+		labelWindInfo.setBounds(103, 170, 200, 15);
+		frame.getContentPane().add(labelWindInfo);
+			
+		// humidity info
+		labelHumidityInfo = new JLabel("");
+		labelHumidityInfo.setForeground(Color.WHITE);
+		labelHumidityInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelHumidityInfo.setBounds(130, 190, 200, 15);
+		frame.getContentPane().add(labelHumidityInfo);
+			
+		// air pressure info
+		labelAirPressureInfo = new JLabel("");
+		labelAirPressureInfo.setForeground(Color.WHITE);
+		labelAirPressureInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelAirPressureInfo.setBounds(158, 210, 200, 15);
+		frame.getContentPane().add(labelAirPressureInfo);
+			
+		// max temp info
+		labelMaxTempInfo = new JLabel("");
+		labelMaxTempInfo.setForeground(Color.WHITE);
+		labelMaxTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelMaxTempInfo.setBounds(145, 230, 200, 15);
+		frame.getContentPane().add(labelMaxTempInfo);
+			
+		// min temp info
+		labelMinTempInfo = new JLabel("");
+		labelMinTempInfo.setForeground(Color.WHITE);
+		labelMinTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelMinTempInfo.setBounds(145, 250, 200, 15);
+		frame.getContentPane().add(labelMinTempInfo);
+			
+		// sunrise info
+		labelSunriseInfo = new JLabel("");
+		labelSunriseInfo.setForeground(Color.WHITE);
+		labelSunriseInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelSunriseInfo.setBounds(130, 270, 200, 15);
+		frame.getContentPane().add(labelSunriseInfo);
+			
+		// sunset info
+		labelSunsetInfo = new JLabel("");
+		labelSunsetInfo.setForeground(Color.WHITE);
+		labelSunsetInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelSunsetInfo.setBounds(130, 291, 200, 15);
+		frame.getContentPane().add(labelSunsetInfo);
+			
+		// sky condition info
+		labelSkyConditionInfo = new JLabel("");
+		labelSkyConditionInfo.setForeground(Color.WHITE);
+		labelSkyConditionInfo.setFont(new Font("Helvetica", Font.PLAIN, 17));
+		labelSkyConditionInfo.setBounds(381, 25, 200, 37);
+		frame.getContentPane().add(labelSkyConditionInfo);
+			
+		// sky condition Icon info
+		labelSkyConditionIcon = new JLabel();
+		labelSkyConditionIcon.setBounds(355, 70, 204, 200);
+		frame.getContentPane().add(labelSkyConditionIcon);
+		
+		// Refresh button
 		buttonRefresh = new JButton("");
 		buttonRefresh.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+			public void	actionPerformed(ActionEvent arg0) {
 				refresh();
 			}
 		});
@@ -177,16 +307,6 @@ public class MainFrame {
 		buttonRefresh.setContentAreaFilled(false);
 		buttonRefresh.setBorderPainted(false);
 		frame.getContentPane().add(buttonRefresh);
-
-		// favorite Button
-		buttonFavourite = new JButton("");
-		buttonFavourite.setIcon(new ImageIcon(
-				"src/main/resources/icons/star_icon.png"));
-		buttonFavourite.setOpaque(false);
-		buttonFavourite.setContentAreaFilled(false);
-		buttonFavourite.setBorderPainted(false);
-		buttonFavourite.setBounds(759, 16, 41, 37);
-		frame.getContentPane().add(buttonFavourite);
 
 		// Short Term Button
 		buttonShortTerm = new JButton("Short Term");
@@ -251,9 +371,10 @@ public class MainFrame {
 		buttonToFahrenheit.setBounds(520, 283, 70, 29);
 		frame.getContentPane().add(buttonToFahrenheit);
 
-		// end initialize buttons
+		/// END INITIALIZATION OF LOCAL WEATHER VIEW PANEL ///
 
-		// begin initialize MyLocations panel
+		
+		/// BEING INITIALIZATION OF LOCATIONS PANEL ///
 
 		// Scroll Pane
 		scrollPane = new JScrollPane();
@@ -264,157 +385,41 @@ public class MainFrame {
 		frame.getContentPane().add(scrollPane);
 		
 		// Locations list
-		listLocations = new JList();
+		listModel = new DefaultListModel(); 
+		listLocations = new JList(listModel);
 		scrollPane.setViewportView(listLocations);
 		
 		//scroll bar for Locations list
 		scrollBarLocations = new JScrollBar();
 		scrollPane.setRowHeaderView(scrollBarLocations);
 
-		// search bar
+		// favorite Button
+		buttonFavourite = new JButton();
+		AddLocation addlocation = new AddLocation(buttonFavourite);
+		buttonFavourite.addActionListener(addlocation);
+		buttonFavourite.setEnabled(false);
+		buttonFavourite.setIcon(new ImageIcon(
+				"src/main/resources/icons/star_icon.png"));
+		buttonFavourite.setOpaque(false);
+		buttonFavourite.setContentAreaFilled(false);
+		buttonFavourite.setBorderPainted(false);
+		buttonFavourite.setBounds(759, 16, 41, 37);
+		frame.getContentPane().add(buttonFavourite);
+		
+		//search bar
 		barSearch = new JTextField();
 		barSearch.setText("Search (City, Country)");
+		barSearch.addActionListener(addlocation);
+        barSearch.getDocument().addDocumentListener(addlocation);
 		barSearch.setBounds(590, 16, 171, 37);
 		barSearch.setOpaque(false);
 		barSearch.setColumns(10);
 		frame.getContentPane().add(barSearch);
-		// end initialize MyLocations panel
-
-		// begin initialize LocalWeather panel
-
-		// city label
-		labelLocation = new JLabel(location);
-		labelLocation.setForeground(Color.WHITE);
-		labelLocation.setFont(new Font("Helvetica", Font.PLAIN, 17));
-		labelLocation.setBounds(50, 25, 200, 37);
-		frame.getContentPane().add(labelLocation);
-
-		// temperature label
-		labelTempInfo = new JLabel(temp + "°C");
-		labelTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 93));
-		labelTempInfo.setForeground(Color.WHITE);
-		labelTempInfo.setBounds(50, 64, 318, 94);
-		frame.getContentPane().add(labelTempInfo);
-
-		// wind label
-		labelWind = new JLabel("Wind:");
-		labelWind.setForeground(Color.LIGHT_GRAY);
-		labelWind.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelWind.setBounds(50, 170, 61, 15);
-		frame.getContentPane().add(labelWind);
-
-		// humidity label
-		labelHumidity = new JLabel("Humidity:");
-		labelHumidity.setForeground(Color.LIGHT_GRAY);
-		labelHumidity.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelHumidity.setBounds(50, 190, 70, 15);
-		frame.getContentPane().add(labelHumidity);
-
-		// air pressure label
-		labelAirPressure = new JLabel("Air Pressure:");
-		labelAirPressure.setForeground(Color.LIGHT_GRAY);
-		labelAirPressure.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelAirPressure.setBounds(50, 210, 96, 15);
-		frame.getContentPane().add(labelAirPressure);
-
-		// max temp label
-		labelMaxTemp = new JLabel("Max Temp:");
-		labelMaxTemp.setForeground(Color.LIGHT_GRAY);
-		labelMaxTemp.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelMaxTemp.setBounds(50, 230, 96, 15);
-		frame.getContentPane().add(labelMaxTemp);
-
-		// min temp label
-		labelMinTemp = new JLabel("Min. Temp:");
-		labelMinTemp.setForeground(Color.LIGHT_GRAY);
-		labelMinTemp.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelMinTemp.setBounds(50, 250, 96, 15);
-		frame.getContentPane().add(labelMinTemp);
-
-		// sunrise label
-		labelSunrise = new JLabel("Sunrise:");
-		labelSunrise.setForeground(Color.LIGHT_GRAY);
-		labelSunrise.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelSunrise.setBounds(50, 270, 61, 15);
-		frame.getContentPane().add(labelSunrise);
-
-		// sunset label
-		labelSunset = new JLabel("Sunset:");
-		labelSunset.setForeground(Color.LIGHT_GRAY);
-		labelSunset.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelSunset.setBounds(50, 290, 58, 15);
-		frame.getContentPane().add(labelSunset);
-
-		// end initialize LocalWeather panel
-
-		// begin initialize LocalWeather conditions
-
-		// wind info
-
-		labelWindInfo = new JLabel(windSpeed + " km/h " + windDirection);
-		labelWindInfo.setForeground(Color.WHITE);
-		labelWindInfo.setFont(new Font("SansSerif", Font.PLAIN, 15));
-		labelWindInfo.setBounds(103, 170, 200, 15);
-		frame.getContentPane().add(labelWindInfo);
-
-		// humidity info
-		labelHumidityInfo = new JLabel(humidity + "%");
-		labelHumidityInfo.setForeground(Color.WHITE);
-		labelHumidityInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelHumidityInfo.setBounds(130, 190, 200, 15);
-		frame.getContentPane().add(labelHumidityInfo);
-
-		// air pressure info
-		labelAirPressureInfo = new JLabel(airPressure + "kPa");
-		labelAirPressureInfo.setForeground(Color.WHITE);
-		labelAirPressureInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelAirPressureInfo.setBounds(158, 210, 200, 15);
-		frame.getContentPane().add(labelAirPressureInfo);
-
-		// max temp info
-		labelMaxTempInfo = new JLabel(maxTemp + "°C");
-		labelMaxTempInfo.setForeground(Color.WHITE);
-		labelMaxTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelMaxTempInfo.setBounds(145, 230, 200, 15);
-		frame.getContentPane().add(labelMaxTempInfo);
-
-		// min temp info
-		labelMinTempInfo = new JLabel(minTemp + "°C");
-		labelMinTempInfo.setForeground(Color.WHITE);
-		labelMinTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelMinTempInfo.setBounds(145, 250, 200, 15);
-		frame.getContentPane().add(labelMinTempInfo);
-
-		// sunrise info
-		labelSunriseInfo = new JLabel(sunRise + "");
-		labelSunriseInfo.setForeground(Color.WHITE);
-		labelSunriseInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelSunriseInfo.setBounds(130, 270, 200, 15);
-		frame.getContentPane().add(labelSunriseInfo);
-
-		// sunset info
-		labelSunsetInfo = new JLabel(sunSet + "");
-		labelSunsetInfo.setForeground(Color.WHITE);
-		labelSunsetInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
-		labelSunsetInfo.setBounds(130, 291, 200, 15);
-		frame.getContentPane().add(labelSunsetInfo);
-
-		// sky condition info
-		labelSkyConditionInfo = new JLabel(skyCondition);
-		labelSkyConditionInfo.setForeground(Color.WHITE);
-		labelSkyConditionInfo.setFont(new Font("Helvetica", Font.PLAIN, 17));
-		labelSkyConditionInfo.setBounds(381, 25, 200, 37);
-		frame.getContentPane().add(labelSkyConditionInfo);
-
-		// sky condition info
-		labelSkyConditionIcon = new JLabel(weatherIcon);
-		labelSkyConditionIcon.setBounds(355, 70, 204, 200);
-		frame.getContentPane().add(labelSkyConditionIcon);
 		
 		
-		// end initialize LocalWeather conditions
+		/// END INITIALIZATION OF LOCATIONS PANEL///
 
-		// being initialize short-term forecast panel
+		// BEGIN INITIALIZATION OF SHORT-TERM FORECAST PANEL ///
 
 		label12AM = new JLabel("12:00am");
 		label12AM.setForeground(Color.LIGHT_GRAY);
@@ -464,9 +469,9 @@ public class MainFrame {
 		label9PM.setBounds(505, 360, 58, 15);
 		frame.getContentPane().add(label9PM);
 
-		// end initialize Short-Term Forecast panel
-
-		// begin initialize Long-Term Forecast panel
+		/// END INITIALIZATION OF SHORT-TERM FORECAST PANEL ///
+		
+		/// BEGIN INITIALIZATION OF LONG-TERM FORECAST PANEL ///
 
 		labelMon = new JLabel("Mon.");
 		labelMon.setForeground(Color.LIGHT_GRAY);
@@ -510,8 +515,7 @@ public class MainFrame {
 		labelSun.setBounds(490, 360, 58, 15);
 		frame.getContentPane().add(labelSun);
 
-		shortTermView();
-		// end initialize Long-Term Conditions
+		/// END INITIALIZATION OF LONG-TERM CONDITIONS ///
 
 		// testing code to prove that UserPreferences functions at least at a
 		// basic level - TE
@@ -571,6 +575,87 @@ public class MainFrame {
 		}
 	}
 
+	//This listener is shared by the barSearch TextField and the AddLocation Button.
+    class AddLocation implements ActionListener, DocumentListener {
+        private boolean alreadyEnabled = false;
+        private JButton button;
+
+        public AddLocation(JButton button) {
+            this.button = button;
+        }
+
+        //Required by ActionListener.
+        public void actionPerformed(ActionEvent e) {
+            String name = barSearch.getText();
+
+            //User didn't type in a unique name...
+            if (name.equals("") || alreadyInList(name)) {
+                Toolkit.getDefaultToolkit().beep();
+                barSearch.requestFocusInWindow();
+                barSearch.selectAll();
+                return;
+            }
+
+            int index = listLocations.getSelectedIndex(); //get selected index
+            if (index == -1) { //no selection, so insert at beginning
+                index = 0;
+            } else {           //add after the selected item
+                index++;
+            }
+
+            listModel.insertElementAt(barSearch.getText(), index);
+            //If we just wanted to add to the end, we'd do this:
+            //listModel.addElement(employeeName.getText());
+
+            //Reset the text field.
+            barSearch.requestFocusInWindow();
+            barSearch.setText("");
+
+            //Select the new item and make it visible.
+            listLocations.setSelectedIndex(index);
+            listLocations.ensureIndexIsVisible(index);
+        }
+
+        //This method tests for string equality. You could certainly
+        //get more sophisticated about the algorithm.  For example,
+        //you might want to ignore white space and capitalization.
+        protected boolean alreadyInList(String name) {
+            return listModel.contains(name);
+        }
+
+        //Required by DocumentListener.
+        public void insertUpdate(DocumentEvent e) {
+            enableButton();
+        }
+
+        //Required by DocumentListener.
+        public void removeUpdate(DocumentEvent e) {
+            handleEmptyTextField(e);
+        }
+
+        //Required by DocumentListener.
+        public void changedUpdate(DocumentEvent e) {
+            if (!handleEmptyTextField(e)) {
+                enableButton();
+            }
+        }
+
+        private void enableButton() {
+            if (!alreadyEnabled) {
+                button.setEnabled(true);
+            }
+        }
+
+        private boolean handleEmptyTextField(DocumentEvent e) {
+            if (e.getDocument().getLength() <= 0) {
+                button.setEnabled(false);
+                alreadyEnabled = false;
+                return true;
+            }
+            return false;
+        }
+    }
+	
 	// enable short term view
 	public void shortTermView() {
 		buttonLongTerm.setForeground(Color.DARK_GRAY);
