@@ -88,9 +88,18 @@ public class UserPreferences implements java.io.Serializable {
      * 
      */
     public static UserPreferences getPrefs() throws IOException, ClassNotFoundException {
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(FILENAME));
-        Object o = ois.readObject();
-        ois.close();
+        ObjectInputStream ois = null;
+        Object o;
+        try {
+            ois = new ObjectInputStream(new FileInputStream(FILENAME));
+            o = ois.readObject();
+        }
+        catch(FileNotFoundException | NullPointerException e) {
+            return new UserPreferences();
+        } finally {
+            if(ois != null)
+                ois.close();
+        }
         return (UserPreferences)o;
     }
 }

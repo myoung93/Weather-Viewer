@@ -112,7 +112,8 @@ public class CurrentWeather {
 	}
 	//returns city name
 	public String getCity() {
-		return City;
+        if(City != null)    return City;
+        else                return "ERR";
 	}
 	//returns temperature in [°C]
 	//just a provisory function, you should call getTempC or getTempF as needed

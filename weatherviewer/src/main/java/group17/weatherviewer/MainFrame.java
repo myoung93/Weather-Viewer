@@ -4,10 +4,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
 public class MainFrame {
 
+    //this is incredibly messy, we'll have to clean this up later
+    // a lot of these can be local fields too, but memory isn't really a big deal
 	private JFrame frame;
 	private ImageIcon backgroundImage;
 	private ImageIcon weatherIcon;
@@ -56,6 +59,8 @@ public class MainFrame {
 	private JLabel labelSun;
 	private JList listLocations;
 	private JScrollBar scrollBarLocations;
+    //prefs file
+    UserPreferences prefs;
 
 	/**
 	 * Launch the application.
@@ -85,11 +90,24 @@ public class MainFrame {
 	 */
 	private void initialize() {
 
+        try {
+            prefs = UserPreferences.getPrefs();
+        }
+        catch(IOException e) {
+            System.out.println("Error retrieving prefs");
+            e.printStackTrace();
+        }
+        catch(ClassNotFoundException e) {
+            System.out.println("Error retrieving prefs");
+            e.printStackTrace();
+        }
+
         CurrentWeather currentWeather = null;
         try {
-            currentWeather = new CurrentWeather("Toronto,CA");
+            prefs.addLocation("Toronto, CA");
+            currentWeather = new CurrentWeather(prefs.getLocation(0));
         }
-        catch(UnsupportedEncodingException e) {
+        catch(UnsupportedEncodingException | WeatherException e) {
             System.out.println("Something went wrong retrieving current weather");
             e.printStackTrace();
         }
@@ -99,8 +117,8 @@ public class MainFrame {
 		// hard coded initializations
 		// in the future none of these actually have to be stored, we can just
 		// do weatherObject.getTemp() etc. -TE
-		location = currentWeather.getCity();
         //still need to implement converter methods/class so that we don't have temperatures in kelvin.
+        location = currentWeather.getCity();
         temp = currentWeather.getTemp();
 		windSpeed = currentWeather.getWindSpeed();
 		windDirection = currentWeather.getWindDirection();
