@@ -9,7 +9,6 @@ public class MainFrame {
 
 	private JFrame frame;
 	private ImageIcon backgroundImage;
-	private ImageIcon weatherIcon;
 	private JLabel backgroundLabel;
 	private JTextField textField;
 	private JTextField barSearch;
@@ -53,8 +52,6 @@ public class MainFrame {
 	private JLabel labelFri;
 	private JLabel labelSat;
 	private JLabel labelSun;
-	private JList listLocations;
-	private JScrollBar scrollBarLocations;
 
 	/**
 	 * Launch the application.
@@ -103,20 +100,17 @@ public class MainFrame {
 		// set up background
 		backgroundImage = new ImageIcon(
 				"src/main/resources/default_background.jpg");
-		weatherIcon = new ImageIcon("src/main/resources/sun_icon.png");
 		if (skyCondition.equalsIgnoreCase("Sunny")) {
 			backgroundImage = new ImageIcon(
 					"src/main/resources/sunny_background.jpg");
-			weatherIcon = new ImageIcon("src/main/resources/sun_icon.png");
 		} else if (skyCondition.equalsIgnoreCase("Cloudy")) {
 			backgroundImage = new ImageIcon(
 					"src/main/resources/cloudy_background.jpg");
-			weatherIcon = new ImageIcon("src/main/resources/cloud_heavy_icon.png");
 		} else if (skyCondition.equalsIgnoreCase("Rainy")) {
 			backgroundImage = new ImageIcon(
 					"src/main/resources/rainy_background.jpg");
-			weatherIcon = new ImageIcon("src/main/resources/rain_heavy_icon.png");
 		}
+
 		backgroundLabel = new JLabel(backgroundImage);
 		backgroundLabel.setSize(800, 520);
 
@@ -226,19 +220,12 @@ public class MainFrame {
 
 		// Scroll Pane
 		scrollPane = new JScrollPane();
-		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		scrollPane
+				.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		scrollPane.setBounds(595, 56, 195, 422);
 		scrollPane.setOpaque(false);
 		scrollPane.getViewport().setOpaque(false);
 		frame.getContentPane().add(scrollPane);
-		
-		// Locations list
-		listLocations = new JList();
-		scrollPane.setViewportView(listLocations);
-		
-		//scroll bar for Locations list
-		scrollBarLocations = new JScrollBar();
-		scrollPane.setRowHeaderView(scrollBarLocations);
 
 		// search bar
 		barSearch = new JTextField();
@@ -376,11 +363,9 @@ public class MainFrame {
 		frame.getContentPane().add(labelSkyConditionInfo);
 
 		// sky condition info
-		labelSkyConditionIcon = new JLabel(weatherIcon);
-		labelSkyConditionIcon.setBounds(355, 70, 204, 200);
-		frame.getContentPane().add(labelSkyConditionIcon);
-		
-		
+		labelSkyConditionIcon = new JLabel(new ImageIcon("src/main/resources/sun_icon.png"));
+		labelSkyConditionInfo.setBounds(381, 25, 200, 37);
+		frame.getContentPane().add(labelSkyConditionInfo);
 		// end initialize LocalWeather conditions
 
 		// being initialize short-term forecast panel
@@ -533,15 +518,12 @@ public class MainFrame {
 		if (skyCondition.equalsIgnoreCase("Sunny")) {
 			backgroundLabel.setIcon(new ImageIcon(
 					"src/main/resources/sunny_background.jpg"));
-			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/sun_icon.png"));
 		} else if (skyCondition.equalsIgnoreCase("Cloudy")) {
 			backgroundLabel.setIcon(new ImageIcon(
 					"src/main/resources/cloudy_background.jpg"));
-			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/cloud_heavy_icon.png"));
 		} else if (skyCondition.equalsIgnoreCase("Rainy")) {
 			backgroundLabel.setIcon(new ImageIcon(
 					"src/main/resources/rainy_background.jpg"));
-			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/rain_heavy_icon.png"));
 		}
 	}
 
