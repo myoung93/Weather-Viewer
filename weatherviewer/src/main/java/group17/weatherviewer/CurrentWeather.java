@@ -1,5 +1,8 @@
 package group17.weatherviewer;
 
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,8 +10,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 
 public class CurrentWeather {
 
@@ -51,7 +52,7 @@ public class CurrentWeather {
 		// parse JSON data, JSON_Data:WeatherData
 
 		JSONObject JsonData = JSONObject.fromObject(WeatherData);
-		// Save all weather information��
+        // Save all weather information��
 
 		// get information from sys object
 		JSONObject Obj_Sys = JsonData.getJSONObject("sys");// country
@@ -83,17 +84,17 @@ public class CurrentWeather {
 		
 	}
 
-	// Getters
-	public double getWindSpeed() {
-		return WindSpeed;
+	// Getters -> Modified to return Strings instead of Doubles -TE
+	public String getWindSpeed() {
+		return String.valueOf(WindSpeed);
 	}
 
-	public double getPressure() {
-		return Pressure;
+	public String getPressure() {
+		return String.valueOf(Pressure);
 	}
 
-	public double getHumidity() {
-		return Humidity;
+	public String getHumidity() {
+		return String.valueOf(Humidity);
 	}
 
 	public String getSunriseTime() {
@@ -104,23 +105,23 @@ public class CurrentWeather {
 		return Sunset;
 	}
 
-	public double getWindDirection() {
-		return WindDir;
+	public String getWindDirection() {
+		return String.valueOf(WindDir);
 	}
 
 	public String getCity() {
 		return City;
 	}
 
-	public double getTemp() {
-		return Temp;
+	public String getTemp() {
+		return String.valueOf(Temp);
 	}
 
-	public double getTempMax() {
-		return TempMax;
+	public String getTempMax() {
+		return String.valueOf(TempMax);
 	}
-	public double getTempMin() {
-		return TempMin;
+	public String getTempMin() {
+		return String.valueOf(TempMin);
 	}
 
 	public String getCountry() {
@@ -131,7 +132,7 @@ public class CurrentWeather {
 		return Sky;
 	}
 
-	// Setters
+	// Setters (probably not needed)
 	public void setCity(String City) {
 		this.City = City;
 	}

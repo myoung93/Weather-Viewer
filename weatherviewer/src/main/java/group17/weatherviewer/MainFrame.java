@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.UnsupportedEncodingException;
 
 public class MainFrame {
 
@@ -55,7 +56,6 @@ public class MainFrame {
 	private JLabel labelSun;
 	private JList listLocations;
 	private JScrollBar scrollBarLocations;
-	private JButton btnGetWeather;
 
 	/**
 	 * Launch the application.
@@ -84,28 +84,39 @@ public class MainFrame {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+
+        CurrentWeather currentWeather = null;
+        try {
+            currentWeather = new CurrentWeather("Toronto,CA");
+        }
+        catch(UnsupportedEncodingException e) {
+            System.out.println("Something went wrong retrieving current weather");
+            e.printStackTrace();
+        }
+
 		// attributes
 		String temp, windSpeed, airPressure, humidity, minTemp, maxTemp, sunRise, sunSet, windDirection, skyCondition, location;
 		// hard coded initializations
 		// in the future none of these actually have to be stored, we can just
 		// do weatherObject.getTemp() etc. -TE
-		location = "Toronto, Ont.";
-		temp = "999";
-		windSpeed = "999";
-		windDirection = "East";
-		humidity = "999";
-		airPressure = "999";
-		maxTemp = "999";
-		minTemp = "999";
-		sunRise = "9999";
-		sunSet = "9999";
-		skyCondition = "Rainy";
+		location = currentWeather.getCity();
+        //still need to implement converter methods/class so that we don't have temperatures in kelvin.
+        temp = currentWeather.getTemp();
+		windSpeed = currentWeather.getWindSpeed();
+		windDirection = currentWeather.getWindDirection();
+		humidity = currentWeather.getHumidity();
+		airPressure = currentWeather.getPressure();
+		maxTemp =  currentWeather.getTempMax();
+		minTemp = currentWeather.getTempMin();
+        //Sunrise and sunset need to be converted from Unix time, preferably in the CurrentWeather class itself.
+		sunRise =  currentWeather.getSunriseTime();
+		sunSet =  currentWeather.getSunsetTime();
+		skyCondition =  currentWeather.getSkyCondition();
 
-		// set up background and weather icon
+		// set up background -> this is returning the ugly grey background only it seems
 		backgroundImage = new ImageIcon(
 				"src/main/resources/backgrounds/default_background.jpg");
-		weatherIcon = new ImageIcon("src/main/resources/icons/sun_icon.png");
-		if (skyCondition.equalsIgnoreCase("Sunny")) {
+		if (skyCondition.equalsIgnoreCase("sky is clear")) {
 			backgroundImage = new ImageIcon(
 					"src/main/resources/backgrounds/sunny_background.jpg");
 			weatherIcon = new ImageIcon("src/main/resources/icons/sun_icon.png");
@@ -118,6 +129,7 @@ public class MainFrame {
 					"src/main/resources/backgrounds/rainy_background.jpg");
 			weatherIcon = new ImageIcon("src/main/resources/icons/rain_heavy_icon.png");
 		}
+
 		backgroundLabel = new JLabel(backgroundImage);
 		backgroundLabel.setSize(800, 520);
 
@@ -141,7 +153,7 @@ public class MainFrame {
 			}
 		});
 		buttonRefresh.setIcon(new ImageIcon(
-				"src/main/resources/refresh_icon.png"));
+				"src/main/resources/icons/refresh_icon.png"));
 		buttonRefresh.setBounds(540, 16, 41, 37);
 		buttonRefresh.setOpaque(false);
 		buttonRefresh.setContentAreaFilled(false);
@@ -150,12 +162,8 @@ public class MainFrame {
 
 		// favorite Button
 		buttonFavourite = new JButton("");
-		buttonFavourite.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
 		buttonFavourite.setIcon(new ImageIcon(
-				"src/main/resources/star_icon.png"));
+				"src/main/resources/icons/star_icon.png"));
 		buttonFavourite.setOpaque(false);
 		buttonFavourite.setContentAreaFilled(false);
 		buttonFavourite.setBorderPainted(false);
@@ -244,9 +252,6 @@ public class MainFrame {
 		//scroll bar for Locations list
 		scrollBarLocations = new JScrollBar();
 		scrollPane.setRowHeaderView(scrollBarLocations);
-		
-		btnGetWeather = new JButton("Get Weather");
-		scrollPane.setColumnHeaderView(btnGetWeather);
 
 		// search bar
 		barSearch = new JTextField();
@@ -537,7 +542,7 @@ public class MainFrame {
 		labelSunriseInfo.setText(sunRise);
 		labelSunsetInfo.setText(sunSet);
 
-		// set background
+		// set background and weather icon
 		if (skyCondition.equalsIgnoreCase("Sunny")) {
 			backgroundLabel.setIcon(new ImageIcon(
 					"src/main/resources/sunny_background.jpg"));
