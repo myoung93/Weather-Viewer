@@ -29,7 +29,7 @@ public class MainFrame {
 	private JLabel labelSunset;
 	private JLabel labelWind;
 	private JLabel labelHumidity;
-	private JLabel labelCityInfo;
+	private JLabel labelLocation;
 	private JLabel labelTempInfo;
 	private JLabel labelWindInfo;
 	private JLabel labelHumidityInfo;
@@ -265,11 +265,11 @@ public class MainFrame {
 		// begin initialize LocalWeather panel
 
 		// city label
-		labelCityInfo = new JLabel(location);
-		labelCityInfo.setForeground(Color.WHITE);
-		labelCityInfo.setFont(new Font("Helvetica", Font.PLAIN, 17));
-		labelCityInfo.setBounds(50, 25, 200, 37);
-		frame.getContentPane().add(labelCityInfo);
+		labelLocation = new JLabel(location);
+		labelLocation.setForeground(Color.WHITE);
+		labelLocation.setFont(new Font("Helvetica", Font.PLAIN, 17));
+		labelLocation.setBounds(50, 25, 200, 37);
+		frame.getContentPane().add(labelLocation);
 
 		// temperature label
 		labelTempInfo = new JLabel(temp + "°C");
@@ -513,10 +513,9 @@ public class MainFrame {
 		 */
 
 	}
-
+	//updates the labels current weather view to the new weather conditions
 	public void refresh() {
-		// code to reinitialize all variables replace this once back end is
-		// hooked up
+		
 		CurrentWeather new_weather = null;
         try {
             new_weather = new CurrentWeather("London,CA");
@@ -527,7 +526,7 @@ public class MainFrame {
         }
 
 		// current location panel
-		labelCityInfo.setText(new_weather.getCity());
+		labelLocation.setText(new_weather.getCity() + ", " + new_weather.getCountry());
 		labelSkyConditionInfo.setText(new_weather.getSkyCondition());
 		labelTempInfo.setText(new_weather.getTemp() + "°C");
 		labelWindInfo.setText(new_weather.getWindSpeed() + " km/h " + new_weather.getWindDirection());
@@ -541,16 +540,16 @@ public class MainFrame {
 		// set background and weather icon
 		if (new_weather.getSkyCondition().equalsIgnoreCase("sky is clear")) {
 			backgroundLabel.setIcon(new ImageIcon(
-					"src/main/resources/sunny_background.jpg"));
-			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/sun_icon.png"));
-		} else if (new_weather.getSkyCondition().equalsIgnoreCase("Cloudy")) {
+					"src/main/resources/backgrounds/sunny_background.jpg"));
+			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/icons/sun_icon.png"));
+		} else if (new_weather.getSkyCondition().equalsIgnoreCase("few clouds")) {
 			backgroundLabel.setIcon(new ImageIcon(
-					"src/main/resources/cloudy_background.jpg"));
-			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/cloud_heavy_icon.png"));
+					"src/main/resources/backgrounds/cloudy_background.jpg"));
+			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/icons/cloud_heavy_icon.png"));
 		} else if (new_weather.getSkyCondition().equalsIgnoreCase("Rainy")) {
 			backgroundLabel.setIcon(new ImageIcon(
-					"src/main/resources/rainy_background.jpg"));
-			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/rain_heavy_icon.png"));
+					"src/main/resources/backgournds/rainy_background.jpg"));
+			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/icons/rain_heavy_icon.png"));
 		}
 	}
 

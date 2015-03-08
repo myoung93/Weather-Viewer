@@ -85,45 +85,48 @@ public class CurrentWeather {
 	}
 
 	// Getters -> Modified to return Strings instead of Doubles -TE
+	
+	//returns wind speed in [km/h]
 	public String getWindSpeed() {
 		return String.valueOf(WindSpeed);
 	}
-
+	//returns air pressure in [?]
 	public String getPressure() {
 		return String.valueOf(Pressure);
 	}
-
+	//returns humidity in [%]
 	public String getHumidity() {
 		return String.valueOf(Humidity);
 	}
-
+	//returns sunrise time in [?]
 	public String getSunriseTime() {
 		return Sunrise;
 	}
-
+	//returns sunset time in [?]
 	public String getSunsetTime() {
 		return Sunset;
 	}
-
+	//returns wind direction in [?]
 	public String getWindDirection() {
 		return String.valueOf(WindDir);
 	}
-
+	//returns city name
 	public String getCity() {
 		return City;
 	}
-
+	//returns temperature in [°K]
 	public String getTemp() {
 		return String.valueOf(Temp);
 	}
-
+	//returns max temperature in [°K]
 	public String getTempMax() {
 		return String.valueOf(TempMax);
 	}
+	//returns min tmperature in [°K]
 	public String getTempMin() {
 		return String.valueOf(TempMin);
 	}
-
+	//returns country name
 	public String getCountry() {
 		return Country;
 	}
