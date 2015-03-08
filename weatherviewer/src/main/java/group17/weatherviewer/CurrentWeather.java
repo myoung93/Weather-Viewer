@@ -110,7 +110,8 @@ public class CurrentWeather {
 	}
 
 	public String getCity() {
-		return City;
+        if(City != null)    return City;
+        else                return "ERR";
 	}
 
 	public String getTemp() {
