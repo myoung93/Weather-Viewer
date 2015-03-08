@@ -517,41 +517,37 @@ public class MainFrame {
 	public void refresh() {
 		// code to reinitialize all variables replace this once back end is
 		// hooked up
-		String temp, windSpeed, airPressure, humidity, minTemp, maxTemp, sunRise, sunSet, windDirection, skyCondition, location;
-		location = "London, Ont.";
-		temp = "777";
-		windSpeed = "777";
-		windDirection = "West";
-		humidity = "777";
-		airPressure = "777";
-		maxTemp = "777";
-		minTemp = "777";
-		sunRise = "7777";
-		sunSet = "7777";
-		skyCondition = "Sunny";
+		CurrentWeather new_weather = null;
+        try {
+            new_weather = new CurrentWeather("London,CA");
+        }
+        catch(UnsupportedEncodingException e) {
+            System.out.println("Something went wrong retrieving current weather");
+            e.printStackTrace();
+        }
 
 		// current location panel
-		labelCityInfo.setText(location);
-		labelSkyConditionInfo.setText(skyCondition);
-		labelTempInfo.setText(temp + "°C");
-		labelWindInfo.setText(windSpeed + " km/h " + windDirection);
-		labelHumidityInfo.setText(humidity + "%");
-		labelAirPressureInfo.setText(airPressure + "kPa");
-		labelMaxTempInfo.setText(maxTemp + "°C");
-		labelMinTempInfo.setText(minTemp + "°C");
-		labelSunriseInfo.setText(sunRise);
-		labelSunsetInfo.setText(sunSet);
+		labelCityInfo.setText(new_weather.getCity());
+		labelSkyConditionInfo.setText(new_weather.getSkyCondition());
+		labelTempInfo.setText(new_weather.getTemp() + "°C");
+		labelWindInfo.setText(new_weather.getWindSpeed() + " km/h " + new_weather.getWindDirection());
+		labelHumidityInfo.setText(new_weather.getHumidity() + "%");
+		labelAirPressureInfo.setText(new_weather.getPressure() + "kPa");
+		labelMaxTempInfo.setText(new_weather.getTempMax() + "°C");
+		labelMinTempInfo.setText(new_weather.getTempMin() + "°C");
+		labelSunriseInfo.setText(new_weather.getSunriseTime());
+		labelSunsetInfo.setText(new_weather.getSunsetTime());
 
 		// set background and weather icon
-		if (skyCondition.equalsIgnoreCase("Sunny")) {
+		if (new_weather.getSkyCondition().equalsIgnoreCase("sky is clear")) {
 			backgroundLabel.setIcon(new ImageIcon(
 					"src/main/resources/sunny_background.jpg"));
 			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/sun_icon.png"));
-		} else if (skyCondition.equalsIgnoreCase("Cloudy")) {
+		} else if (new_weather.getSkyCondition().equalsIgnoreCase("Cloudy")) {
 			backgroundLabel.setIcon(new ImageIcon(
 					"src/main/resources/cloudy_background.jpg"));
 			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/cloud_heavy_icon.png"));
-		} else if (skyCondition.equalsIgnoreCase("Rainy")) {
+		} else if (new_weather.getSkyCondition().equalsIgnoreCase("Rainy")) {
 			backgroundLabel.setIcon(new ImageIcon(
 					"src/main/resources/rainy_background.jpg"));
 			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/rain_heavy_icon.png"));
