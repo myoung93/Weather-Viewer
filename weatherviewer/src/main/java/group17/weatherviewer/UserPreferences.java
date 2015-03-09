@@ -5,16 +5,20 @@ import java.util.ArrayList;
 
 public class UserPreferences implements java.io.Serializable {
 
+    //filename for serialized object
     private static final transient String FILENAME = "weather.prefs";
 
-    private boolean isCelsius;               //celsius is the default unit
+    //these will be preference fields, many more in final version
+    private boolean isCelsius;
     private ArrayList<String> locations;
 
     /**
      * Constructor of user preferences, initializes locations list and sets default values
      */
     public UserPreferences() {
+        //we use celsius by default
         isCelsius = true;
+        //intialize empty locations (in the future we will have to prompt user so this will change)
         locations = new ArrayList<String>();
     }
 
@@ -75,8 +79,8 @@ public class UserPreferences implements java.io.Serializable {
     }
 
     /**
-     *
-     * @param up
+     * Saves a copy of the provided preferences object to the working directory in a file called FILENAME.
+     * @param up is the preferences object to be serialized to a file for the next run.
      */
     public static void savePrefs(UserPreferences up) throws IOException {
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(FILENAME));
@@ -85,7 +89,8 @@ public class UserPreferences implements java.io.Serializable {
     }
 
     /**
-     * 
+     * Finds the FILENAME file in the working directory and loaded the serialized object, then returns it.
+     * Allows loading of preferences at the start of a program run.
      */
     public static UserPreferences getPrefs() throws IOException, ClassNotFoundException {
         ObjectInputStream ois = null;
@@ -95,6 +100,7 @@ public class UserPreferences implements java.io.Serializable {
             o = ois.readObject();
         }
         catch(FileNotFoundException | NullPointerException e) {
+            //need to create a new set of preferences if one doesn't exist
             return new UserPreferences();
         } finally {
             if(ois != null)
