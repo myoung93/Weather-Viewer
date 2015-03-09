@@ -102,7 +102,7 @@ public class MainFrame {
             System.out.println("Error retrieving prefs");
             e.printStackTrace();
         }
-
+		
         CurrentWeather currentWeather = null;
         try {
             prefs.addLocation("Toronto, CA");
@@ -116,7 +116,7 @@ public class MainFrame {
         	System.out.println("Something went wrong retrieving current weather");
             e.printStackTrace();        	
         }
-
+		
 		// attributes
 		String temp, windSpeed, airPressure, humidity, minTemp, maxTemp, sunRise, sunSet, windDirection, skyCondition, location;
 		// hard coded initializations
