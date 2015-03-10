@@ -61,7 +61,7 @@ public class MainFrame {
 	private JScrollBar scrollBarLocations;
     private DefaultListModel listModel;
     //prefs file
-    UserPreferences prefs;
+    //UserPreferences prefs;
 
 	/**
 	 * Launch the application.
