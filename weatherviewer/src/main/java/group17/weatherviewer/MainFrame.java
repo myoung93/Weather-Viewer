@@ -2,15 +2,19 @@ package group17.weatherviewer;
 
 import javax.swing.*;
 import javax.swing.event.*;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 
 public class MainFrame {
 
-    //this is incredibly messy, we'll have to clean this up later
-    // a lot of these can be local fields too, but memory isn't really a big deal
+	// this is incredibly messy, we'll have to clean this up later
+	// a lot of these can be local fields too, but memory isn't really a big
+	// deal
+	private static Font font;
 	private JFrame frame;
 	private ImageIcon backgroundImage;
 	private ImageIcon weatherIcon;
@@ -59,9 +63,10 @@ public class MainFrame {
 	private JLabel labelSun;
 	private JList listLocations;
 	private JScrollBar scrollBarLocations;
-    private DefaultListModel listModel;
-    //prefs file
-    //UserPreferences prefs;
+	private DefaultListModel listModel;
+
+	// prefs file
+	// UserPreferences prefs;
 
 	/**
 	 * Launch the application.
@@ -91,70 +96,60 @@ public class MainFrame {
 	 */
 	private void initialize() {
 		/*
-        try {
-            prefs = UserPreferences.getPrefs();
-        }
-        catch(IOException e) {
-            System.out.println("Error retrieving prefs");
-            e.printStackTrace();
-        }
-        catch(ClassNotFoundException e) {
-            System.out.println("Error retrieving prefs");
-            e.printStackTrace();
-        }
-		
-        CurrentWeather currentWeather = null;
-        try {
-            prefs.addLocation("Toronto, CA");
-            currentWeather = new CurrentWeather(prefs.getLocation(0));
-        }
-        catch(UnsupportedEncodingException e) {
-            System.out.println("Something went wrong retrieving current weather");
-            e.printStackTrace();
-        }
-        catch(WeatherException e) {
-        	System.out.println("Something went wrong retrieving current weather");
-            e.printStackTrace();        	
-        }
-		
-		// attributes
-		String temp, windSpeed, airPressure, humidity, minTemp, maxTemp, sunRise, sunSet, windDirection, skyCondition, location;
-		// hard coded initializations
-		// in the future none of these actually have to be stored, we can just
-		// do weatherObject.getTemp() etc. -TE
-        //still need to implement converter methods/class so that we don't have temperatures in kelvin.
-        location = currentWeather.getCity();
-        temp = currentWeather.getTemp();
-		windSpeed = currentWeather.getWindSpeed();
-		windDirection = currentWeather.getWindDirection();
-		humidity = currentWeather.getHumidity();
-		airPressure = currentWeather.getPressure();
-		maxTemp =  currentWeather.getTempMax();
-		minTemp = currentWeather.getTempMin();
-        //Sunrise and sunset need to be converted from Unix time, preferably in the CurrentWeather class itself.
-		sunRise =  currentWeather.getSunriseTime();
-		sunSet =  currentWeather.getSunsetTime();
-		skyCondition =  currentWeather.getSkyCondition();
+		 * try { prefs = UserPreferences.getPrefs(); } catch(IOException e) {
+		 * System.out.println("Error retrieving prefs"); e.printStackTrace(); }
+		 * catch(ClassNotFoundException e) {
+		 * System.out.println("Error retrieving prefs"); e.printStackTrace(); }
+		 * 
+		 * CurrentWeather currentWeather = null; try {
+		 * prefs.addLocation("Toronto, CA"); currentWeather = new
+		 * CurrentWeather(prefs.getLocation(0)); }
+		 * catch(UnsupportedEncodingException e) {
+		 * System.out.println("Something went wrong retrieving current weather"
+		 * ); e.printStackTrace(); } catch(WeatherException e) {
+		 * System.out.println
+		 * ("Something went wrong retrieving current weather");
+		 * e.printStackTrace(); }
+		 * 
+		 * // attributes String temp, windSpeed, airPressure, humidity, minTemp,
+		 * maxTemp, sunRise, sunSet, windDirection, skyCondition, location; //
+		 * hard coded initializations // in the future none of these actually
+		 * have to be stored, we can just // do weatherObject.getTemp() etc. -TE
+		 * //still need to implement converter methods/class so that we don't
+		 * have temperatures in kelvin. location = currentWeather.getCity();
+		 * temp = currentWeather.getTemp(); windSpeed =
+		 * currentWeather.getWindSpeed(); windDirection =
+		 * currentWeather.getWindDirection(); humidity =
+		 * currentWeather.getHumidity(); airPressure =
+		 * currentWeather.getPressure(); maxTemp = currentWeather.getTempMax();
+		 * minTemp = currentWeather.getTempMin(); //Sunrise and sunset need to
+		 * be converted from Unix time, preferably in the CurrentWeather class
+		 * itself. sunRise = currentWeather.getSunriseTime(); sunSet =
+		 * currentWeather.getSunsetTime(); skyCondition =
+		 * currentWeather.getSkyCondition();
+		 * 
+		 * // set up background -> this is returning the ugly grey background
+		 * only it seems
+		 * 
+		 * if (skyCondition.equalsIgnoreCase("sky is clear")) { backgroundImage
+		 * = new ImageIcon(
+		 * "src/main/resources/backgrounds/sunny_background.jpg"); weatherIcon =
+		 * new ImageIcon("src/main/resources/icons/sun_icon.png"); } else if
+		 * (skyCondition.equalsIgnoreCase("Cloudy")) { backgroundImage = new
+		 * ImageIcon( "src/main/resources/backgrounds/cloudy_background.jpg");
+		 * weatherIcon = new
+		 * ImageIcon("src/main/resources/icons/cloud_heavy_icon.png"); } else if
+		 * (skyCondition.equalsIgnoreCase("Rainy")) { backgroundImage = new
+		 * ImageIcon( "src/main/resources/backgrounds/rainy_background.jpg");
+		 * weatherIcon = new
+		 * ImageIcon("src/main/resources/icons/rain_heavy_icon.png"); }
+		 */
 
-		// set up background -> this is returning the ugly grey background only it seems
+		createFont();
 		
-		if (skyCondition.equalsIgnoreCase("sky is clear")) {
-			backgroundImage = new ImageIcon(
-					"src/main/resources/backgrounds/sunny_background.jpg");
-			weatherIcon = new ImageIcon("src/main/resources/icons/sun_icon.png");
-		} else if (skyCondition.equalsIgnoreCase("Cloudy")) {
-			backgroundImage = new ImageIcon(
-					"src/main/resources/backgrounds/cloudy_background.jpg");
-			weatherIcon = new ImageIcon("src/main/resources/icons/cloud_heavy_icon.png");
-		} else if (skyCondition.equalsIgnoreCase("Rainy")) {
-			backgroundImage = new ImageIcon(
-					"src/main/resources/backgrounds/rainy_background.jpg");
-			weatherIcon = new ImageIcon("src/main/resources/icons/rain_heavy_icon.png");
-		}
-		*/
-		
-		/// BEING INITIALIZING FRAME ///
-		backgroundImage = new ImageIcon("src/main/resources/backgrounds/default_background.jpg");
+		// / BEING INITIALIZING FRAME ///
+		backgroundImage = new ImageIcon(
+				"src/main/resources/backgrounds/default_background.jpg");
 		backgroundLabel = new JLabel(backgroundImage);
 		backgroundLabel.setSize(800, 520);
 		frame = new JFrame();
@@ -164,139 +159,156 @@ public class MainFrame {
 		frame.setResizable(false);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-		/// END INITIALIZING FRAME ///
-		
-		/// BEGIN INITIALIZING LOCAL WEATHER VIEW PANEL ///
+		// / END INITIALIZING FRAME ///
+
+		// / BEGIN INITIALIZING LOCAL WEATHER VIEW PANEL ///
 
 		// city label
 		labelLocation = new JLabel("");
 		labelLocation.setForeground(Color.WHITE);
-		labelLocation.setFont(new Font("Helvetica", Font.PLAIN, 17));
+		//labelLocation.setFont(new Font("Helvetica", Font.PLAIN, 17));
+		labelLocation.setFont(font.deriveFont(17f));
 		labelLocation.setBounds(50, 25, 200, 37);
 		frame.getContentPane().add(labelLocation);
-		
+
 		// temperature label
 		labelTempInfo = new JLabel("");
-		labelTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 93));
+		//labelTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 93));
+		labelTempInfo.setFont(font.deriveFont(85f));
 		labelTempInfo.setForeground(Color.WHITE);
 		labelTempInfo.setBounds(50, 64, 318, 94);
 		frame.getContentPane().add(labelTempInfo);
-		
+
 		// wind label
 		labelWind = new JLabel("Wind:");
 		labelWind.setForeground(Color.LIGHT_GRAY);
-		labelWind.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelWind.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelWind.setFont(font.deriveFont(15f));
 		labelWind.setBounds(50, 170, 61, 15);
 		frame.getContentPane().add(labelWind);
-		
+
 		// humidity label
 		labelHumidity = new JLabel("Humidity:");
 		labelHumidity.setForeground(Color.LIGHT_GRAY);
-		labelHumidity.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelHumidity.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelHumidity.setFont(font.deriveFont(15f));
 		labelHumidity.setBounds(50, 190, 70, 15);
 		frame.getContentPane().add(labelHumidity);
-		
+
 		// air pressure label
 		labelAirPressure = new JLabel("Air Pressure:");
 		labelAirPressure.setForeground(Color.LIGHT_GRAY);
-		labelAirPressure.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelAirPressure.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelAirPressure.setFont(font.deriveFont(15f));
 		labelAirPressure.setBounds(50, 210, 96, 15);
 		frame.getContentPane().add(labelAirPressure);
-		
+
 		// max temp label
 		labelMaxTemp = new JLabel("Max Temp:");
 		labelMaxTemp.setForeground(Color.LIGHT_GRAY);
-		labelMaxTemp.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelMaxTemp.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelMaxTemp.setFont(font.deriveFont(15f));
 		labelMaxTemp.setBounds(50, 230, 96, 15);
 		frame.getContentPane().add(labelMaxTemp);
-		
+
 		// min temp label
 		labelMinTemp = new JLabel("Min. Temp:");
 		labelMinTemp.setForeground(Color.LIGHT_GRAY);
-		labelMinTemp.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelMinTemp.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelMinTemp.setFont(font.deriveFont(15f));
 		labelMinTemp.setBounds(50, 250, 96, 15);
 		frame.getContentPane().add(labelMinTemp);
-		
+
 		// sunrise label
 		labelSunrise = new JLabel("Sunrise:");
 		labelSunrise.setForeground(Color.LIGHT_GRAY);
-		labelSunrise.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelSunrise.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelSunrise.setFont(font.deriveFont(15f));
 		labelSunrise.setBounds(50, 270, 61, 15);
 		frame.getContentPane().add(labelSunrise);
-		
+
 		// sunset label
 		labelSunset = new JLabel("Sunset:");
 		labelSunset.setForeground(Color.LIGHT_GRAY);
-		labelSunset.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelSunset.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelSunset.setFont(font.deriveFont(15f));
 		labelSunset.setBounds(50, 290, 58, 15);
 		frame.getContentPane().add(labelSunset);
-		
+
 		// wind info
-		
+
 		labelWindInfo = new JLabel("");
 		labelWindInfo.setForeground(Color.WHITE);
-		labelWindInfo.setFont(new Font("SansSerif", Font.PLAIN, 15));
+		//labelWindInfo.setFont(new Font("SansSerif", Font.PLAIN, 15));
+		labelWindInfo.setFont(font.deriveFont(15f));
 		labelWindInfo.setBounds(103, 170, 200, 15);
 		frame.getContentPane().add(labelWindInfo);
-			
+
 		// humidity info
 		labelHumidityInfo = new JLabel("");
 		labelHumidityInfo.setForeground(Color.WHITE);
-		labelHumidityInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelHumidityInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelHumidityInfo.setFont(font.deriveFont(15f));
 		labelHumidityInfo.setBounds(130, 190, 200, 15);
 		frame.getContentPane().add(labelHumidityInfo);
-			
+
 		// air pressure info
 		labelAirPressureInfo = new JLabel("");
 		labelAirPressureInfo.setForeground(Color.WHITE);
-		labelAirPressureInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelAirPressureInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelAirPressureInfo.setFont(font.deriveFont(15f));
 		labelAirPressureInfo.setBounds(158, 210, 200, 15);
 		frame.getContentPane().add(labelAirPressureInfo);
-			
+
 		// max temp info
 		labelMaxTempInfo = new JLabel("");
 		labelMaxTempInfo.setForeground(Color.WHITE);
-		labelMaxTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelMaxTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelMaxTempInfo.setFont(font.deriveFont(15f));
 		labelMaxTempInfo.setBounds(145, 230, 200, 15);
 		frame.getContentPane().add(labelMaxTempInfo);
-			
+
 		// min temp info
 		labelMinTempInfo = new JLabel("");
 		labelMinTempInfo.setForeground(Color.WHITE);
-		labelMinTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelMinTempInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelMinTempInfo.setFont(font.deriveFont(15f));
 		labelMinTempInfo.setBounds(145, 250, 200, 15);
 		frame.getContentPane().add(labelMinTempInfo);
-			
+
 		// sunrise info
 		labelSunriseInfo = new JLabel("");
 		labelSunriseInfo.setForeground(Color.WHITE);
-		labelSunriseInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelSunriseInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelSunriseInfo.setFont(font.deriveFont(15f));
 		labelSunriseInfo.setBounds(130, 270, 200, 15);
 		frame.getContentPane().add(labelSunriseInfo);
-			
+
 		// sunset info
 		labelSunsetInfo = new JLabel("");
 		labelSunsetInfo.setForeground(Color.WHITE);
-		labelSunsetInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelSunsetInfo.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelSunsetInfo.setFont(font.deriveFont(15f));
 		labelSunsetInfo.setBounds(130, 291, 200, 15);
 		frame.getContentPane().add(labelSunsetInfo);
-			
+
 		// sky condition info
 		labelSkyConditionInfo = new JLabel("");
 		labelSkyConditionInfo.setForeground(Color.WHITE);
-		labelSkyConditionInfo.setFont(new Font("Helvetica", Font.PLAIN, 17));
+		//labelSkyConditionInfo.setFont(new Font("Helvetica", Font.PLAIN, 17));
+		labelSkyConditionInfo.setFont(font.deriveFont(17f));
 		labelSkyConditionInfo.setBounds(381, 25, 200, 37);
 		frame.getContentPane().add(labelSkyConditionInfo);
-			
+
 		// sky condition Icon info
 		labelSkyConditionIcon = new JLabel();
 		labelSkyConditionIcon.setBounds(355, 70, 204, 200);
 		frame.getContentPane().add(labelSkyConditionIcon);
-		
+
 		// Refresh button
 		buttonRefresh = new JButton("");
 		buttonRefresh.addActionListener(new ActionListener() {
-			public void	actionPerformed(ActionEvent arg0) {
+			public void actionPerformed(ActionEvent arg0) {
 				refresh();
 			}
 		});
@@ -311,7 +323,8 @@ public class MainFrame {
 		// Short Term Button
 		buttonShortTerm = new JButton("Short Term");
 		buttonShortTerm.setForeground(Color.WHITE);
-		buttonShortTerm.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//buttonShortTerm.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		buttonShortTerm.setFont(font.deriveFont(14f));
 		buttonShortTerm.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				shortTermView();
@@ -333,7 +346,8 @@ public class MainFrame {
 
 		buttonLongTerm.setOpaque(false);
 		buttonLongTerm.setForeground(Color.DARK_GRAY);
-		buttonLongTerm.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//buttonLongTerm.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		buttonLongTerm.setFont(font.deriveFont(14f));
 		buttonLongTerm.setContentAreaFilled(false);
 		buttonLongTerm.setBorderPainted(false);
 		buttonLongTerm.setBounds(95, 328, 127, 29);
@@ -349,7 +363,8 @@ public class MainFrame {
 		});
 		buttonToCelsius.setOpaque(false);
 		buttonToCelsius.setForeground(Color.WHITE);
-		buttonToCelsius.setFont(new Font("Helvetica", Font.PLAIN, 18));
+		//buttonToCelsius.setFont(new Font("Helvetica", Font.PLAIN, 18));
+		buttonToCelsius.setFont(font.deriveFont(18f));
 		buttonToCelsius.setContentAreaFilled(false);
 		buttonToCelsius.setBorderPainted(false);
 		buttonToCelsius.setBounds(475, 283, 75, 29);
@@ -365,31 +380,32 @@ public class MainFrame {
 		});
 		buttonToFahrenheit.setOpaque(false);
 		buttonToFahrenheit.setForeground(Color.DARK_GRAY);
-		buttonToFahrenheit.setFont(new Font("Helvetica", Font.PLAIN, 18));
+		//buttonToFahrenheit.setFont(new Font("Helvetica", Font.PLAIN, 18));
+		buttonToFahrenheit.setFont(font.deriveFont(18f));
 		buttonToFahrenheit.setContentAreaFilled(false);
 		buttonToFahrenheit.setBorderPainted(false);
 		buttonToFahrenheit.setBounds(520, 283, 70, 29);
 		frame.getContentPane().add(buttonToFahrenheit);
 
-		/// END INITIALIZATION OF LOCAL WEATHER VIEW PANEL ///
+		// / END INITIALIZATION OF LOCAL WEATHER VIEW PANEL ///
 
-		
-		/// BEING INITIALIZATION OF LOCATIONS PANEL ///
+		// / BEING INITIALIZATION OF LOCATIONS PANEL ///
 
 		// Scroll Pane
 		scrollPane = new JScrollPane();
-		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		scrollPane
+				.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		scrollPane.setBounds(595, 56, 195, 422);
 		scrollPane.setOpaque(false);
 		scrollPane.getViewport().setOpaque(false);
 		frame.getContentPane().add(scrollPane);
-		
+
 		// Locations list
-		listModel = new DefaultListModel(); 
+		listModel = new DefaultListModel();
 		listLocations = new JList(listModel);
 		scrollPane.setViewportView(listLocations);
-		
-		//scroll bar for Locations list
+
+		// scroll bar for Locations list
 		scrollBarLocations = new JScrollBar();
 		scrollPane.setRowHeaderView(scrollBarLocations);
 
@@ -405,117 +421,131 @@ public class MainFrame {
 		buttonFavourite.setBorderPainted(false);
 		buttonFavourite.setBounds(759, 16, 41, 37);
 		frame.getContentPane().add(buttonFavourite);
-		
-		//search bar
+
+		// search bar
 		barSearch = new JTextField();
 		barSearch.setText("Search (City, Country)");
 		barSearch.addActionListener(addlocation);
-        barSearch.getDocument().addDocumentListener(addlocation);
+		barSearch.getDocument().addDocumentListener(addlocation);
 		barSearch.setBounds(590, 16, 171, 37);
 		barSearch.setOpaque(false);
 		barSearch.setColumns(10);
 		frame.getContentPane().add(barSearch);
-		
-		
-		/// END INITIALIZATION OF LOCATIONS PANEL///
+
+		// / END INITIALIZATION OF LOCATIONS PANEL///
 
 		// BEGIN INITIALIZATION OF SHORT-TERM FORECAST PANEL ///
 
 		label12AM = new JLabel("12:00am");
 		label12AM.setForeground(Color.LIGHT_GRAY);
-		label12AM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//label12AM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		label12AM.setFont(font.deriveFont(15f));
 		label12AM.setBounds(50, 360, 58, 15);
 		frame.getContentPane().add(label12AM);
 
 		label3AM = new JLabel("  3:00am");
 		label3AM.setForeground(Color.LIGHT_GRAY);
-		label3AM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//label3AM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		label3AM.setFont(font.deriveFont(15f));
 		label3AM.setBounds(115, 360, 58, 15);
 		frame.getContentPane().add(label3AM);
 
 		label6AM = new JLabel("  6:00am");
 		label6AM.setForeground(Color.LIGHT_GRAY);
-		label6AM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//label6AM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		label6AM.setFont(font.deriveFont(15f));
 		label6AM.setBounds(180, 360, 58, 15);
 		frame.getContentPane().add(label6AM);
 
 		label9AM = new JLabel("  9:00am");
 		label9AM.setForeground(Color.LIGHT_GRAY);
-		label9AM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//label9AM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		label9AM.setFont(font.deriveFont(15f));
 		label9AM.setBounds(245, 360, 58, 15);
 		frame.getContentPane().add(label9AM);
 
 		label12PM = new JLabel("12:00pm");
 		label12PM.setForeground(Color.LIGHT_GRAY);
-		label12PM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//label12PM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		label12PM.setFont(font.deriveFont(15f));
 		label12PM.setBounds(310, 360, 58, 15);
 		frame.getContentPane().add(label12PM);
 
 		label3PM = new JLabel("  3:00pm");
 		label3PM.setForeground(Color.LIGHT_GRAY);
-		label3PM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//label3PM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		label3PM.setFont(font.deriveFont(15f));
 		label3PM.setBounds(375, 360, 58, 15);
 		frame.getContentPane().add(label3PM);
 
 		label6PM = new JLabel("  6:00pm");
 		label6PM.setForeground(Color.LIGHT_GRAY);
-		label6PM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//label6PM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		label6PM.setFont(font.deriveFont(15f));
 		label6PM.setBounds(440, 360, 58, 15);
 		frame.getContentPane().add(label6PM);
 
 		label9PM = new JLabel("  9:00pm");
 		label9PM.setForeground(Color.LIGHT_GRAY);
-		label9PM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//label9PM.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		label9PM.setFont(font.deriveFont(15f));
 		label9PM.setBounds(505, 360, 58, 15);
 		frame.getContentPane().add(label9PM);
 
-		/// END INITIALIZATION OF SHORT-TERM FORECAST PANEL ///
-		
-		/// BEGIN INITIALIZATION OF LONG-TERM FORECAST PANEL ///
+		// / END INITIALIZATION OF SHORT-TERM FORECAST PANEL ///
+
+		// / BEGIN INITIALIZATION OF LONG-TERM FORECAST PANEL ///
 
 		labelMon = new JLabel("Mon.");
 		labelMon.setForeground(Color.LIGHT_GRAY);
-		labelMon.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelMon.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelMon.setFont(font.deriveFont(15f));
 		labelMon.setBounds(100, 360, 58, 15);
 		frame.getContentPane().add(labelMon);
 
 		labelTues = new JLabel("Tues.");
 		labelTues.setForeground(Color.LIGHT_GRAY);
-		labelTues.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelTues.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelTues.setFont(font.deriveFont(15f));
 		labelTues.setBounds(165, 360, 58, 15);
 		frame.getContentPane().add(labelTues);
 
 		labelWed = new JLabel("Wed.");
 		labelWed.setForeground(Color.LIGHT_GRAY);
-		labelWed.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelWed.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelWed.setFont(font.deriveFont(15f));
 		labelWed.setBounds(230, 360, 58, 15);
 		frame.getContentPane().add(labelWed);
 
 		labelThurs = new JLabel("Thurs.");
 		labelThurs.setForeground(Color.LIGHT_GRAY);
-		labelThurs.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelThurs.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelThurs.setFont(font.deriveFont(15f));
 		labelThurs.setBounds(290, 360, 58, 15);
 		frame.getContentPane().add(labelThurs);
 
 		labelFri = new JLabel("Fri.");
 		labelFri.setForeground(Color.LIGHT_GRAY);
-		labelFri.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelFri.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelFri.setFont(font.deriveFont(15f));
 		labelFri.setBounds(365, 360, 58, 15);
 		frame.getContentPane().add(labelFri);
 
 		labelSat = new JLabel("Sat.");
 		labelSat.setForeground(Color.LIGHT_GRAY);
-		labelSat.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelSat.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelSat.setFont(font.deriveFont(15f));
 		labelSat.setBounds(425, 360, 58, 15);
 		frame.getContentPane().add(labelSat);
 
 		labelSun = new JLabel("Sun.");
 		labelSun.setForeground(Color.LIGHT_GRAY);
-		labelSun.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		//labelSun.setFont(new Font("Helvetica", Font.PLAIN, 15));
+		labelSun.setFont(font.deriveFont(15f));
 		labelSun.setBounds(490, 360, 58, 15);
 		frame.getContentPane().add(labelSun);
 
-		/// END INITIALIZATION OF LONG-TERM CONDITIONS ///
+		// / END INITIALIZATION OF LONG-TERM CONDITIONS ///
 
 		// testing code to prove that UserPreferences functions at least at a
 		// basic level - TE
@@ -533,25 +563,40 @@ public class MainFrame {
 		 * System.out.println(prefs.isCelsius()?"Celsius":"Fahrenheit"); }
 		 * catch(Exception e) { e.printStackTrace(); }
 		 */
-
+		// call short term view
+		shortTermView();
 	}
-	//updates the labels current weather view to the new weather conditions
+
+	// font method
+	private void createFont() {
+		InputStream inputStream = this.getClass().getResourceAsStream(
+				"HelveticaNeue-Medium.otf");
+		try {
+			font = Font.createFont(Font.TRUETYPE_FONT, inputStream);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	// updates the labels current weather view to the new weather conditions
 	public void refresh() {
-		
+
 		CurrentWeather new_weather = null;
-        try {
-            new_weather = new CurrentWeather("London,CA");
-        }
-        catch(UnsupportedEncodingException e) {
-            System.out.println("Something went wrong retrieving current weather");
-            e.printStackTrace();
-        }
+		try {
+			new_weather = new CurrentWeather("London,CA");
+		} catch (UnsupportedEncodingException e) {
+			System.out
+					.println("Something went wrong retrieving current weather");
+			e.printStackTrace();
+		}
 
 		// current location panel
-		labelLocation.setText(new_weather.getCity() + ", " + new_weather.getCountry());
+		labelLocation.setText(new_weather.getCity() + ", "
+				+ new_weather.getCountry());
 		labelSkyConditionInfo.setText(new_weather.getSkyCondition());
 		labelTempInfo.setText(new_weather.getTemp() + "°C");
-		labelWindInfo.setText(new_weather.getWindSpeed() + " km/h " + new_weather.getWindDirection());
+		labelWindInfo.setText(new_weather.getWindSpeed() + " km/h "
+				+ new_weather.getWindDirection());
 		labelHumidityInfo.setText(new_weather.getHumidity() + "%");
 		labelAirPressureInfo.setText(new_weather.getPressure() + "kPa");
 		labelMaxTempInfo.setText(new_weather.getTempMax() + "°C");
@@ -563,99 +608,103 @@ public class MainFrame {
 		if (new_weather.getSkyCondition().equalsIgnoreCase("sky is clear")) {
 			backgroundLabel.setIcon(new ImageIcon(
 					"src/main/resources/backgrounds/sunny_background.jpg"));
-			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/icons/sun_icon.png"));
+			labelSkyConditionIcon.setIcon(new ImageIcon(
+					"src/main/resources/icons/sun_icon.png"));
 		} else if (new_weather.getSkyCondition().equalsIgnoreCase("few clouds")) {
 			backgroundLabel.setIcon(new ImageIcon(
 					"src/main/resources/backgrounds/cloudy_background.jpg"));
-			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/icons/cloud_heavy_icon.png"));
+			labelSkyConditionIcon.setIcon(new ImageIcon(
+					"src/main/resources/icons/cloud_heavy_icon.png"));
 		} else if (new_weather.getSkyCondition().equalsIgnoreCase("Rainy")) {
 			backgroundLabel.setIcon(new ImageIcon(
 					"src/main/resources/backgournds/rainy_background.jpg"));
-			labelSkyConditionIcon.setIcon(new ImageIcon("src/main/resources/icons/rain_heavy_icon.png"));
+			labelSkyConditionIcon.setIcon(new ImageIcon(
+					"src/main/resources/icons/rain_heavy_icon.png"));
 		}
 	}
 
-	//This listener is shared by the barSearch TextField and the AddLocation Button.
-    class AddLocation implements ActionListener, DocumentListener {
-        private boolean alreadyEnabled = false;
-        private JButton button;
+	// This listener is shared by the barSearch TextField and the AddLocation
+	// Button.
+	class AddLocation implements ActionListener, DocumentListener {
+		private boolean alreadyEnabled = false;
+		private JButton button;
 
-        public AddLocation(JButton button) {
-            this.button = button;
-        }
+		public AddLocation(JButton button) {
+			this.button = button;
+		}
 
-        //Required by ActionListener.
-        public void actionPerformed(ActionEvent e) {
-            String name = barSearch.getText();
+		// Required by ActionListener.
+		public void actionPerformed(ActionEvent e) {
+			String name = barSearch.getText();
 
-            //User didn't type in a unique name...
-            if (name.equals("") || alreadyInList(name)) {
-                Toolkit.getDefaultToolkit().beep();
-                barSearch.requestFocusInWindow();
-                barSearch.selectAll();
-                return;
-            }
+			// User didn't type in a unique name...
+			if (name.equals("") || alreadyInList(name)) {
+				Toolkit.getDefaultToolkit().beep();
+				barSearch.requestFocusInWindow();
+				barSearch.selectAll();
+				return;
+			}
 
-            int index = listLocations.getSelectedIndex(); //get selected index
-            if (index == -1) { //no selection, so insert at beginning
-                index = 0;
-            } else {           //add after the selected item
-                index++;
-            }
+			int index = listLocations.getSelectedIndex(); // get selected index
+			if (index == -1) { // no selection, so insert at beginning
+				index = 0;
+			} else { // add after the selected item
+				index++;
+			}
 
-            listModel.insertElementAt(barSearch.getText(), index);
-            //If we just wanted to add to the end, we'd do this:
-            //listModel.addElement(employeeName.getText());
+			listModel.insertElementAt(barSearch.getText(), index);
+			// If we just wanted to add to the end, we'd do this:
+			// listModel.addElement(employeeName.getText());
 
-            //Reset the text field.
-            barSearch.requestFocusInWindow();
-            barSearch.setText("");
+			// Reset the text field.
+			barSearch.requestFocusInWindow();
+			barSearch.setText("");
 
-            //Select the new item and make it visible.
-            listLocations.setSelectedIndex(index);
-            listLocations.ensureIndexIsVisible(index);
-        }
+			// Select the new item and make it visible.
+			listLocations.setSelectedIndex(index);
+			listLocations.ensureIndexIsVisible(index);
+		}
 
-        //This method tests for string equality. You could certainly
-        //get more sophisticated about the algorithm.  For example,
-        //you might want to ignore white space and capitalization.
-        protected boolean alreadyInList(String name) {
-            return listModel.contains(name);
-        }
+		// This method tests for string equality. You could certainly
+		// get more sophisticated about the algorithm. For example,
+		// you might want to ignore white space and capitalization.
+		protected boolean alreadyInList(String name) {
+			return listModel.contains(name);
+		}
 
-        //Required by DocumentListener.
-        public void insertUpdate(DocumentEvent e) {
-            enableButton();
-        }
+		// Required by DocumentListener.
+		public void insertUpdate(DocumentEvent e) {
+			enableButton();
+		}
 
-        //Required by DocumentListener.
-        public void removeUpdate(DocumentEvent e) {
-            handleEmptyTextField(e);
-        }
+		// Required by DocumentListener.
+		public void removeUpdate(DocumentEvent e) {
+			handleEmptyTextField(e);
+		}
 
-        //Required by DocumentListener.
-        public void changedUpdate(DocumentEvent e) {
-            if (!handleEmptyTextField(e)) {
-                enableButton();
-            }
-        }
+		// Required by DocumentListener.
+		public void changedUpdate(DocumentEvent e) {
+			if (!handleEmptyTextField(e)) {
+				enableButton();
+			}
+		}
 
-        private void enableButton() {
-            if (!alreadyEnabled) {
-                button.setEnabled(true);
-            }
-        }
+		private void enableButton() {
+			if (!alreadyEnabled) {
+				button.setEnabled(true);
+			}
+		}
 
-        private boolean handleEmptyTextField(DocumentEvent e) {
-            if (e.getDocument().getLength() <= 0) {
-                button.setEnabled(false);
-                alreadyEnabled = false;
-                return true;
-            }
-            return false;
-        }
-    }
-	
+		private boolean handleEmptyTextField(DocumentEvent e) {
+			if (e.getDocument().getLength() <= 0) {
+				button.setEnabled(false);
+				alreadyEnabled = false;
+				return true;
+			}
+			return false;
+		}
+	}
+
 	// enable short term view
 	public void shortTermView() {
 		buttonLongTerm.setForeground(Color.DARK_GRAY);
