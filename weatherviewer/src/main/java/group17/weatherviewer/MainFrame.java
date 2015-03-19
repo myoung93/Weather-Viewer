@@ -77,6 +77,9 @@ public class MainFrame {
 				try {
 					MainFrame window = new MainFrame();
 					window.frame.setVisible(true);
+                    window.frame.setTitle("Group 17 Weather Viewer");
+                    //should we allow resizing?
+                    window.frame.setResizable(false);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -130,7 +133,7 @@ public class MainFrame {
 		 * 
 		 * // set up background -> this is returning the ugly grey background
 		 * only it seems
-		 * 
+		 *
 		 * if (skyCondition.equalsIgnoreCase("sky is clear")) { backgroundImage
 		 * = new ImageIcon(
 		 * "src/main/resources/backgrounds/sunny_background.jpg"); weatherIcon =

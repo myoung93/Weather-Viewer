@@ -9,7 +9,7 @@ public class UserPreferences implements java.io.Serializable {
      * Filename for serialized object
      */
     private static final transient String FILENAME = "weather.prefs";
-
+    private static final long serialVersionUID =  5423608160937997909L;
     //these will be preference fields, many more in final version
     private char tempUnit;
     private char speedUnit;
