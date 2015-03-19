@@ -1,11 +1,11 @@
 package group17.weatherviewer;
 
 import javax.swing.*;
-import javax.swing.event.*;
-
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 import java.awt.*;
-import java.awt.event.*;
-import java.io.IOException;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 
@@ -574,6 +574,8 @@ public class MainFrame {
 		try {
 			font = Font.createFont(Font.TRUETYPE_FONT, inputStream);
 		} catch (Exception e) {
+            //failsafe, temp workaround -TE
+            font = new Font("Helvetica", Font.PLAIN, 20);
 			e.printStackTrace();
 		}
 	}
