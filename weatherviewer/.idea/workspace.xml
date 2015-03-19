@@ -1,101 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting 3.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting4.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting_1.odt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting_1.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting_2.odt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting_2.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting_5.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting_6.odt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting_6.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UML_final_draft.vsdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/[Content_Types].xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/_rels/.rels" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/docProps/app.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/docProps/core.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/docProps/custom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/docProps/thumbnail.emf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/_rels/document.xml.rels" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/document.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/_rels/masters.xml.rels" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/master1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/master2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/master3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/master4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/master5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/master6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/masters.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/pages/_rels/page1.xml.rels" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/pages/_rels/pages.xml.rels" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/pages/page1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/pages/pages.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/theme/theme1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/windows.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/final_draft.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/first_ideas.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Useful_Information/project_specification2.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Useful_Information/project_stage2.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Useful_Information/stage1.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.mylyn/.taskListIndex/segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.mylyn/.taskListIndex/segments_1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.mylyn/repositories.xml.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.discovery.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.context.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.monitor.ui.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.cvs.ui.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.ui.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/invalidArchivesCache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core.ui/dialog_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_0.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/write.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_0.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/write.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/d095a3fe8766af7fd6b7ac187d0a4451/_0.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/d095a3fe8766af7fd6b7ac187d0a4451/segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/d095a3fe8766af7fd6b7ac187d0a4451/segments_2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/d095a3fe8766af7fd6b7ac187d0a4451/write.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.5.1.20150109-1820.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.team.cvs.core/.running" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/group17/weatherviewer/AppTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weather.prefs" afterPath="" />
+    <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="Added time conversion method">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weatherviewer.iml" afterPath="$PROJECT_DIR$/weatherviewer.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -125,8 +34,8 @@
       <file leaf-file-name="UserPreferences.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1633" max-vertical-offset="3186">
-              <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="3009">
+              <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,20 +43,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43307087" vertical-offset="5953" max-vertical-offset="12420">
-              <caret line="365" column="35" selection-start-line="365" selection-start-column="35" selection-end-line="365" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="9770" max-vertical-offset="11628">
+              <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
               <folding>
-                <element signature="e#2167#2534#0" expanded="true" />
-                <element signature="e#2533#2534#0" expanded="true" />
-                <element signature="e#2599#2600#0" expanded="true" />
-                <element signature="e#2618#2619#0" expanded="true" />
-                <element signature="e#10657#10900#0" expanded="true" />
-                <element signature="e#10899#10900#0" expanded="true" />
-                <element signature="e#11392#11629#0" expanded="true" />
-                <element signature="e#11628#11629#0" expanded="true" />
+                <element signature="e#10650#10893#0" expanded="true" />
+                <element signature="e#10892#10893#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Conversion.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.62460566" vertical-offset="114" max-vertical-offset="748">
+              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,8 +71,8 @@
       <file leaf-file-name="CurrentWeather.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="4572">
-              <caret line="42" column="78" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3663" max-vertical-offset="4284">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -166,13 +81,9 @@
       <file leaf-file-name="WeatherException.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1098">
+            <state vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1003">
               <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="e#1633#1634#0" expanded="false" />
-                <element signature="e#1666#1667#0" expanded="false" />
-                <marker date="1426779868657" expanded="true" signature="32:168" placeholder="/**...*/" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -190,9 +101,10 @@
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/SimpleWeather.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java" />
       </list>
     </option>
   </component>
@@ -207,10 +119,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="-5" />
-    <option name="width" value="1368" />
-    <option name="height" value="774" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1870" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -357,11 +269,126 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Libraries/JSON/json-lib.jar!/" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Users\TIM\Programs\weatherviewer\weatherviewer\src\main\resources" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../Meeting_Minutes/Meeting_7.odt</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../Meeting_Minutes/Meeting_8.pdf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../Useful_Information/stage2_feedback_t17.pdf</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
   </component>
   <component name="RunManager" selected="Application.MainFrame">
     <configuration default="false" name="MainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -578,33 +605,33 @@
     <option name="totallyTimeSpent" value="245000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-5" width="1368" height="774" extended-state="6" />
+    <frame x="-8" y="-8" width="1870" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299595" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919094" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299595" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -636,6 +663,43 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="3281">
+          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12393">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#10650#10893#0" expanded="true" />
+            <element signature="e#10892#10893#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="4318">
+          <caret line="42" column="78" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1003">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1404">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
@@ -649,14 +713,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="7938" max-vertical-offset="9216">
           <caret line="454" column="38" selection-start-line="454" selection-start-column="38" selection-end-line="454" selection-end-column="38" />
           <folding>
-            <element signature="e#2167#2534#0" expanded="true" />
-            <element signature="e#2533#2534#0" expanded="true" />
-            <element signature="e#2599#2600#0" expanded="true" />
-            <element signature="e#2618#2619#0" expanded="true" />
-            <element signature="e#10657#10900#0" expanded="true" />
-            <element signature="e#10899#10900#0" expanded="true" />
-            <element signature="e#11392#11629#0" expanded="true" />
-            <element signature="e#11628#11629#0" expanded="true" />
+            <element signature="e#10650#10893#0" expanded="true" />
+            <element signature="e#10892#10893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -673,11 +731,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="648">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-            <marker date="1426779868657" expanded="true" signature="32:168" placeholder="/**...*/" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -696,14 +750,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1870" max-vertical-offset="8534">
           <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
           <folding>
-            <element signature="e#2167#2534#0" expanded="true" />
-            <element signature="e#2533#2534#0" expanded="true" />
-            <element signature="e#2599#2600#0" expanded="true" />
-            <element signature="e#2618#2619#0" expanded="true" />
-            <element signature="e#10657#10900#0" expanded="true" />
-            <element signature="e#10899#10900#0" expanded="true" />
-            <element signature="e#11392#11629#0" expanded="true" />
-            <element signature="e#11628#11629#0" expanded="true" />
+            <element signature="e#10650#10893#0" expanded="true" />
+            <element signature="e#10892#10893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -720,11 +768,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="612">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-            <marker date="1426779868657" expanded="true" signature="32:168" placeholder="/**...*/" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -743,14 +787,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1870" max-vertical-offset="8534">
           <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
           <folding>
-            <element signature="e#2167#2534#0" expanded="true" />
-            <element signature="e#2533#2534#0" expanded="true" />
-            <element signature="e#2599#2600#0" expanded="true" />
-            <element signature="e#2618#2619#0" expanded="true" />
-            <element signature="e#10657#10900#0" expanded="true" />
-            <element signature="e#10899#10900#0" expanded="true" />
-            <element signature="e#11392#11629#0" expanded="true" />
-            <element signature="e#11628#11629#0" expanded="true" />
+            <element signature="e#10650#10893#0" expanded="true" />
+            <element signature="e#10892#10893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -767,11 +805,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="612">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-            <marker date="1426779868657" expanded="true" signature="32:168" placeholder="/**...*/" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -790,14 +824,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8534">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2167#2534#0" expanded="true" />
-            <element signature="e#2533#2534#0" expanded="true" />
-            <element signature="e#2599#2600#0" expanded="true" />
-            <element signature="e#2618#2619#0" expanded="true" />
-            <element signature="e#10657#10900#0" expanded="true" />
-            <element signature="e#10899#10900#0" expanded="true" />
-            <element signature="e#11392#11629#0" expanded="true" />
-            <element signature="e#11628#11629#0" expanded="true" />
+            <element signature="e#10650#10893#0" expanded="true" />
+            <element signature="e#10892#10893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -806,11 +834,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="612">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-            <marker date="1426779868657" expanded="true" signature="32:168" placeholder="/**...*/" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -826,26 +850,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1098">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-            <marker date="1426779868657" expanded="true" signature="32:168" placeholder="/**...*/" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="4572">
-          <caret line="42" column="78" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3663" max-vertical-offset="4284">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1633" max-vertical-offset="3186">
-          <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="3179">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -854,17 +874,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43307087" vertical-offset="5953" max-vertical-offset="12420">
-          <caret line="365" column="35" selection-start-line="365" selection-start-column="35" selection-end-line="365" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="10586" max-vertical-offset="11628">
+          <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
           <folding>
-            <element signature="e#2167#2534#0" expanded="true" />
-            <element signature="e#2533#2534#0" expanded="true" />
-            <element signature="e#2599#2600#0" expanded="true" />
-            <element signature="e#2618#2619#0" expanded="true" />
-            <element signature="e#10657#10900#0" expanded="true" />
-            <element signature="e#10899#10900#0" expanded="true" />
-            <element signature="e#11392#11629#0" expanded="true" />
-            <element signature="e#11628#11629#0" expanded="true" />
+            <element signature="e#10650#10893#0" expanded="true" />
+            <element signature="e#10892#10893#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62460566" vertical-offset="114" max-vertical-offset="748">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -926,7 +950,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -945,7 +968,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>.mylyn</last-edited>
+          <last-edited>Maven: org.json:json:20141113</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

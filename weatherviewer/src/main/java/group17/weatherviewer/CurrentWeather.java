@@ -83,8 +83,6 @@ public class CurrentWeather {
 		JSONArray Array_Weather = JsonData.getJSONArray("weather");
 		JSONObject Obj_Wea = Array_Weather.getJSONObject(0);
 		Sky = Obj_Wea.getString("description");
-
-		
 	}
 
 	// Getters -> Modified to return Strings instead of Doubles -TE
