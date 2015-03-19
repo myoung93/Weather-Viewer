@@ -3,11 +3,14 @@ package group17.weatherviewer;
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
+import java.net.URL;
 
 public class MainFrame {
 
@@ -527,15 +530,15 @@ public class MainFrame {
 		shortTermView();
 	}
 
-	// font method
+	// font method I think I fixed it?
 	private void createFont() {
-		InputStream inputStream = this.getClass().getResourceAsStream(
-				"HelveticaNeue-Medium.otf");
+		//InputStream inputStream = this.getClass().getResourceAsStream(
+			//	"src/main/resources/HelveticaNeue-Medium.otf");
 		try {
-			font = Font.createFont(Font.TRUETYPE_FONT, inputStream);
+			font = Font.createFont(Font.TRUETYPE_FONT, new File("src/main/resources/fonts/HelveticaNeue-Medium.otf"));
 		} catch (Exception e) {
             //failsafe, temp workaround -TE
-            font = new Font("Helvetica", Font.PLAIN, 20);
+            //font = new Font("Helvetica", Font.PLAIN, 20);
 			e.printStackTrace();
 		}
 	}
