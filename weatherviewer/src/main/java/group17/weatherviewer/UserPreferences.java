@@ -5,11 +5,17 @@ import java.util.ArrayList;
 
 public class UserPreferences implements java.io.Serializable {
 
-    //filename for serialized object
+    /**
+     * Filename for serialized object
+     */
     private static final transient String FILENAME = "weather.prefs";
 
     //these will be preference fields, many more in final version
-    private boolean isCelsius;
+    private char tempUnit;
+    private char speedUnit;
+    private char pressureUnit;
+    private char timeUnit;
+    private boolean isCelsius; //temporary?
     private ArrayList<String> locations;
 
     /**
@@ -28,13 +34,97 @@ public class UserPreferences implements java.io.Serializable {
      */
     public void setCelsius (boolean b) {
         isCelsius = b;
+    } //temporary?
+
+    /**
+     * Sets temperature type to celsius (c) or fahrenheit (f)
+     * @param unit char to indicate temperature type, can be either celsius (c) or fahrenheit (f)
+     */
+    public void setTempUnit(char unit) {
+        if(unit == 'c' || unit == 'f') { //maybe a try/catch?
+            tempUnit = unit;
+        }
+        else {
+            ;//?
+        }
+    }
+
+    /**
+     * Sets speed unit to meters per second (m), kilometers per hour (k), miles per hour (i), knots (n), or feet per second (f)
+     * @param unit char to indicate speed unit, either m for m/s, k for km/h, i for mi/h, n for kn, or f for ft/s
+     */
+    public void setSpeedUnit(char unit) {
+        if(unit == 'm' || unit == 'k' || unit == 'i' || unit == 'n' || unit == 'f') {//i know i is not so intuitive, sugggestions?
+            speedUnit = unit;
+        }
+        else {
+            ;//?
+        }
+    }
+
+    /**
+     * Sets pressure unit to pascal (p), newton per square meter (n), or bar (b) ???
+     * @param unit char to indicate pressure unit, can be either pascal (p), newton per square meter (n), or bar (b)
+     */
+    public void setPressureUnit(char unit) {
+        if(unit == 'p' || unit == 'n' || unit == 'b') { //maybe a try/catch?
+            pressureUnit = unit;
+        }
+        else {
+            ;//?
+        }
+    }
+
+    /**
+     * Sets time type to 12-hour (1) or 24-hour (2)
+     * @param unit char to indicate time type, can be either 12-hour (1) or 24-hour (2)
+     */
+    public void setTimeUnit(char unit) {
+        if(unit == '1' || unit == '2') { //maybe a try/catch?
+            timeUnit = unit;
+        }
+        else {
+            ;//?
+        }
+    }
+
+    /**
+     * Gets temperature unit
+     * @return c for celsius, f for fahrenheit
+     */
+    public char getTempUnit() {
+        return tempUnit;
+    }
+
+    /**
+     * Gets speed unit
+     * @return m for meters per second, k for kilometers per hour, i for miles per hour, n for knots, f for feet per second
+     */
+    public char getSpeedUnit() {
+        return speedUnit;
+    }
+
+    /**
+     * Gets pressure unit
+     * @return p for pascal, n for newton per square meter, b for bar
+     */
+    public char getPressureUnit() {
+        return pressureUnit;
+    }
+
+    /**
+     * Gets time unit
+     * @return 1 for 12-hour, 2 for 24-hour
+     */
+    public char getTimeUnit() {
+        return timeUnit;
     }
 
     /**
      * Gets temperature type
      * @return true if temperature type is celsius
      */
-    public boolean isCelsius() {
+    public boolean isCelsius() { //temporary?
         return isCelsius;
     }
 
