@@ -150,7 +150,7 @@ public class MainFrame {
 
 		createFont();
 		
-		// / BEING INITIALIZING FRAME ///
+		// / BEGIN INITIALIZING FRAME ///
 		backgroundImage = new ImageIcon(
 				"src/main/resources/backgrounds/default_background.jpg");
 		backgroundLabel = new JLabel(backgroundImage);
