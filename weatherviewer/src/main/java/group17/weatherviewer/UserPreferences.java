@@ -11,30 +11,20 @@ public class UserPreferences implements java.io.Serializable {
     private static final transient String FILENAME = "weather.prefs";
     private static final long serialVersionUID =  5423608160937997909L;
     //these will be preference fields, many more in final version
-    private char tempUnit;
-    private char speedUnit;
-    private char pressureUnit;
-    private char timeUnit;
-    private boolean isCelsius; //temporary?
+    private char    tempUnit,
+                    speedUnit,
+                    pressureUnit,
+                    timeUnit;
     private ArrayList<String> locations;
 
     /**
      * Constructor of user preferences, initializes locations list and sets default values
      */
     public UserPreferences() {
-        //we use celsius by default
-        isCelsius = true;
         //intialize empty locations (in the future we will have to prompt user so this will change)
-        locations = new ArrayList<String>();
+        locations = new ArrayList<>();
+        //add london as default
     }
-
-    /**
-     * Sets temperature type to celsius (c) or fahrenheit (f)
-     * @param b boolean to indicate if temperature type is celsius (true) or fahrenheit (false)
-     */
-    public void setCelsius (boolean b) {
-        isCelsius = b;
-    } //temporary?
 
     /**
      * Sets temperature type to celsius (c) or fahrenheit (f)
@@ -120,14 +110,6 @@ public class UserPreferences implements java.io.Serializable {
         return timeUnit;
     }
 
-    /**
-     * Gets temperature type
-     * @return true if temperature type is celsius
-     */
-    public boolean isCelsius() { //temporary?
-        return isCelsius;
-    }
-
     public ArrayList<String> getLocations() {
         return locations;
     }
@@ -182,19 +164,17 @@ public class UserPreferences implements java.io.Serializable {
      * Finds the FILENAME file in the working directory and loaded the serialized object, then returns it.
      * Allows loading of preferences at the start of a program run.
      */
-    public static UserPreferences getPrefs() throws IOException, ClassNotFoundException {
-        ObjectInputStream ois = null;
+    public static UserPreferences getPrefs() {
+        ObjectInputStream ois;
         Object o;
         try {
             ois = new ObjectInputStream(new FileInputStream(FILENAME));
             o = ois.readObject();
+            ois.close();
         }
-        catch(FileNotFoundException | NullPointerException e) {
+        catch(IOException | NullPointerException | ClassNotFoundException e) {
             //need to create a new set of preferences if one doesn't exist
             return new UserPreferences();
-        } finally {
-            if(ois != null)
-                ois.close();
         }
         return (UserPreferences)o;
     }

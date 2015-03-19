@@ -2,8 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting 3.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting4.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting_1.odt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting_1.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting_2.odt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting_2.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting_5.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting_6.odt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Meeting_Minutes/Meeting_6.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UML_final_draft.vsdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/[Content_Types].xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/_rels/.rels" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/docProps/app.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/docProps/core.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/docProps/custom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/docProps/thumbnail.emf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/_rels/document.xml.rels" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/document.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/_rels/masters.xml.rels" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/master1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/master2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/master3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/master4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/master5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/master6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/masters/masters.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/pages/_rels/page1.xml.rels" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/pages/_rels/pages.xml.rels" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/pages/page1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/pages/pages.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/theme/theme1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/UMLv1.vsdx_FILES/visio/windows.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/final_draft.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UML_Class_Diagram/first_ideas.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Useful_Information/project_specification2.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Useful_Information/project_stage2.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Useful_Information/stage1.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.mylyn/.taskListIndex/segments.gen" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.mylyn/.taskListIndex/segments_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.mylyn/repositories.xml.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.discovery.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.context.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.monitor.ui.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.cvs.ui.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.ui.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/invalidArchivesCache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core.ui/dialog_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_0.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments.gen" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_0.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/d095a3fe8766af7fd6b7ac187d0a4451/_0.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/d095a3fe8766af7fd6b7ac187d0a4451/segments.gen" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/d095a3fe8766af7fd6b7ac187d0a4451/segments_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/d095a3fe8766af7fd6b7ac187d0a4451/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.5.1.20150109-1820.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.team.cvs.core/.running" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/group17/weatherviewer/AppTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weather.prefs" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weatherviewer.iml" afterPath="$PROJECT_DIR$/weatherviewer.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="weatherviewer.iws" />
@@ -29,31 +122,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4535433" vertical-offset="936" max-vertical-offset="12325">
-              <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CurrentWeather.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3683" max-vertical-offset="4318">
-              <caret line="219" column="14" selection-start-line="219" selection-start-column="14" selection-end-line="219" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserPreferences.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3281">
-              <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1633" max-vertical-offset="3186">
+              <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,12 +134,45 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.43307087" vertical-offset="5953" max-vertical-offset="12420">
+              <caret line="365" column="35" selection-start-line="365" selection-start-column="35" selection-end-line="365" selection-end-column="35" />
+              <folding>
+                <element signature="e#2167#2534#0" expanded="true" />
+                <element signature="e#2533#2534#0" expanded="true" />
+                <element signature="e#2599#2600#0" expanded="true" />
+                <element signature="e#2618#2619#0" expanded="true" />
+                <element signature="e#10657#10900#0" expanded="true" />
+                <element signature="e#10899#10900#0" expanded="true" />
+                <element signature="e#11392#11629#0" expanded="true" />
+                <element signature="e#11628#11629#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CurrentWeather.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="4572">
+              <caret line="42" column="78" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="WeatherException.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="43" max-vertical-offset="1003">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1098">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <element signature="e#1633#1634#0" expanded="false" />
+                <element signature="e#1666#1667#0" expanded="false" />
+                <marker date="1426779868657" expanded="true" signature="32:168" placeholder="/**...*/" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,31 +189,36 @@
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MyLocationsList.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/SimpleWeather.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
       </list>
     </option>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1870" />
-    <option name="height" value="1096" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
+    <option name="y" value="-5" />
+    <option name="width" value="1368" />
+    <option name="height" value="774" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <OptionsSetting value="true" id="Undo Check Out" />
-    <OptionsSetting value="true" id="Get Latest Version" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
@@ -235,7 +346,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -243,6 +354,9 @@
     <property name="FullScreen" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -272,14 +386,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -299,6 +405,14 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -382,6 +496,21 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -408,21 +537,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <list size="1">
@@ -464,36 +578,33 @@
     <option name="totallyTimeSpent" value="245000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1870" height="1096" extended-state="6" />
+    <frame x="-1" y="-5" width="1368" height="774" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299595" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -523,60 +634,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2312" max-vertical-offset="12444">
-          <caret line="145" column="11" selection-start-line="145" selection-start-column="11" selection-end-line="145" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3936" max-vertical-offset="4896">
-          <caret line="219" column="14" selection-start-line="219" selection-start-column="14" selection-end-line="219" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="1887">
-          <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1404">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1853" max-vertical-offset="10217">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1632" max-vertical-offset="2550">
-          <caret line="117" column="33" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="910" max-vertical-offset="1887">
-          <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -585,85 +646,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1887" max-vertical-offset="10421">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1632" max-vertical-offset="2550">
-          <caret line="117" column="33" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="910" max-vertical-offset="1887">
-          <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1921" max-vertical-offset="10472">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1564" max-vertical-offset="2499">
-          <caret line="113" column="39" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="910" max-vertical-offset="1887">
-          <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10217">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1440">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6615" max-vertical-offset="7680">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7938" max-vertical-offset="9216">
           <caret line="454" column="38" selection-start-line="454" selection-start-column="38" selection-end-line="454" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="e#2167#2534#0" expanded="true" />
+            <element signature="e#2533#2534#0" expanded="true" />
+            <element signature="e#2599#2600#0" expanded="true" />
+            <element signature="e#2618#2619#0" expanded="true" />
+            <element signature="e#10657#10900#0" expanded="true" />
+            <element signature="e#10899#10900#0" expanded="true" />
+            <element signature="e#11392#11629#0" expanded="true" />
+            <element signature="e#11628#11629#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="540">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="648">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
@@ -671,8 +671,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="540">
+        <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="648">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#1666#1667#0" expanded="false" />
+            <marker date="1426779868657" expanded="true" signature="32:168" placeholder="/**...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -690,7 +695,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1870" max-vertical-offset="8534">
           <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
-          <folding />
+          <folding>
+            <element signature="e#2167#2534#0" expanded="true" />
+            <element signature="e#2533#2534#0" expanded="true" />
+            <element signature="e#2599#2600#0" expanded="true" />
+            <element signature="e#2618#2619#0" expanded="true" />
+            <element signature="e#10657#10900#0" expanded="true" />
+            <element signature="e#10899#10900#0" expanded="true" />
+            <element signature="e#11392#11629#0" expanded="true" />
+            <element signature="e#11628#11629#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -706,6 +720,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="612">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#1666#1667#0" expanded="false" />
+            <marker date="1426779868657" expanded="true" signature="32:168" placeholder="/**...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -723,7 +742,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1870" max-vertical-offset="8534">
           <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
-          <folding />
+          <folding>
+            <element signature="e#2167#2534#0" expanded="true" />
+            <element signature="e#2533#2534#0" expanded="true" />
+            <element signature="e#2599#2600#0" expanded="true" />
+            <element signature="e#2618#2619#0" expanded="true" />
+            <element signature="e#10657#10900#0" expanded="true" />
+            <element signature="e#10899#10900#0" expanded="true" />
+            <element signature="e#11392#11629#0" expanded="true" />
+            <element signature="e#11628#11629#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -739,6 +767,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="612">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#1666#1667#0" expanded="false" />
+            <marker date="1426779868657" expanded="true" signature="32:168" placeholder="/**...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -756,7 +789,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8534">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2167#2534#0" expanded="true" />
+            <element signature="e#2533#2534#0" expanded="true" />
+            <element signature="e#2599#2600#0" expanded="true" />
+            <element signature="e#2618#2619#0" expanded="true" />
+            <element signature="e#10657#10900#0" expanded="true" />
+            <element signature="e#10899#10900#0" expanded="true" />
+            <element signature="e#11392#11629#0" expanded="true" />
+            <element signature="e#11628#11629#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -764,29 +806,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="612">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#1666#1667#0" expanded="false" />
+            <marker date="1426779868657" expanded="true" signature="32:168" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53125" vertical-offset="0" max-vertical-offset="1445">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="43" max-vertical-offset="1003">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1098">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#1666#1667#0" expanded="false" />
+            <marker date="1426779868657" expanded="true" signature="32:168" placeholder="/**...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3936" max-vertical-offset="4896">
-          <caret line="219" column="14" selection-start-line="219" selection-start-column="14" selection-end-line="219" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="4572">
+          <caret line="42" column="78" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3281">
-          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1633" max-vertical-offset="3186">
+          <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -795,9 +854,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4535433" vertical-offset="936" max-vertical-offset="12325">
-          <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
-          <folding />
+        <state vertical-scroll-proportion="0.43307087" vertical-offset="5953" max-vertical-offset="12420">
+          <caret line="365" column="35" selection-start-line="365" selection-start-column="35" selection-end-line="365" selection-end-column="35" />
+          <folding>
+            <element signature="e#2167#2534#0" expanded="true" />
+            <element signature="e#2533#2534#0" expanded="true" />
+            <element signature="e#2599#2600#0" expanded="true" />
+            <element signature="e#2618#2619#0" expanded="true" />
+            <element signature="e#10657#10900#0" expanded="true" />
+            <element signature="e#10899#10900#0" expanded="true" />
+            <element signature="e#11392#11629#0" expanded="true" />
+            <element signature="e#11628#11629#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -853,11 +921,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>weatherviewer</last-edited>
+          <last-edited>main</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -865,7 +934,6 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -877,7 +945,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: junit:junit:3.8.1</last-edited>
+          <last-edited>.mylyn</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

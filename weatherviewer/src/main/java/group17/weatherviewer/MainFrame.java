@@ -98,56 +98,6 @@ public class MainFrame {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		/*
-		 * try { prefs = UserPreferences.getPrefs(); } catch(IOException e) {
-		 * System.out.println("Error retrieving prefs"); e.printStackTrace(); }
-		 * catch(ClassNotFoundException e) {
-		 * System.out.println("Error retrieving prefs"); e.printStackTrace(); }
-		 * 
-		 * CurrentWeather currentWeather = null; try {
-		 * prefs.addLocation("Toronto, CA"); currentWeather = new
-		 * CurrentWeather(prefs.getLocation(0)); }
-		 * catch(UnsupportedEncodingException e) {
-		 * System.out.println("Something went wrong retrieving current weather"
-		 * ); e.printStackTrace(); } catch(WeatherException e) {
-		 * System.out.println
-		 * ("Something went wrong retrieving current weather");
-		 * e.printStackTrace(); }
-		 * 
-		 * // attributes String temp, windSpeed, airPressure, humidity, minTemp,
-		 * maxTemp, sunRise, sunSet, windDirection, skyCondition, location; //
-		 * hard coded initializations // in the future none of these actually
-		 * have to be stored, we can just // do weatherObject.getTemp() etc. -TE
-		 * //still need to implement converter methods/class so that we don't
-		 * have temperatures in kelvin. location = currentWeather.getCity();
-		 * temp = currentWeather.getTemp(); windSpeed =
-		 * currentWeather.getWindSpeed(); windDirection =
-		 * currentWeather.getWindDirection(); humidity =
-		 * currentWeather.getHumidity(); airPressure =
-		 * currentWeather.getPressure(); maxTemp = currentWeather.getTempMax();
-		 * minTemp = currentWeather.getTempMin(); //Sunrise and sunset need to
-		 * be converted from Unix time, preferably in the CurrentWeather class
-		 * itself. sunRise = currentWeather.getSunriseTime(); sunSet =
-		 * currentWeather.getSunsetTime(); skyCondition =
-		 * currentWeather.getSkyCondition();
-		 * 
-		 * // set up background -> this is returning the ugly grey background
-		 * only it seems
-		 *
-		 * if (skyCondition.equalsIgnoreCase("sky is clear")) { backgroundImage
-		 * = new ImageIcon(
-		 * "src/main/resources/backgrounds/sunny_background.jpg"); weatherIcon =
-		 * new ImageIcon("src/main/resources/icons/sun_icon.png"); } else if
-		 * (skyCondition.equalsIgnoreCase("Cloudy")) { backgroundImage = new
-		 * ImageIcon( "src/main/resources/backgrounds/cloudy_background.jpg");
-		 * weatherIcon = new
-		 * ImageIcon("src/main/resources/icons/cloud_heavy_icon.png"); } else if
-		 * (skyCondition.equalsIgnoreCase("Rainy")) { backgroundImage = new
-		 * ImageIcon( "src/main/resources/backgrounds/rainy_background.jpg");
-		 * weatherIcon = new
-		 * ImageIcon("src/main/resources/icons/rain_heavy_icon.png"); }
-		 */
-
 		createFont();
 		
 		// / BEGIN INITIALIZING FRAME ///
@@ -165,6 +115,9 @@ public class MainFrame {
 		// / END INITIALIZING FRAME ///
 
 		// / BEGIN INITIALIZING LOCAL WEATHER VIEW PANEL ///
+
+		//preferences object to be referenced
+		final UserPreferences prefs = UserPreferences.getPrefs();
 
 		// city label
 		labelLocation = new JLabel("");
@@ -360,6 +313,8 @@ public class MainFrame {
 		buttonToCelsius = new JButton("°C");
 		buttonToCelsius.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				//set preferences to celsius
+				prefs.setTempUnit('c');
 				buttonToCelsius.setForeground(Color.WHITE);
 				buttonToFahrenheit.setForeground(Color.DARK_GRAY);
 			}
@@ -377,6 +332,8 @@ public class MainFrame {
 		buttonToFahrenheit = new JButton("°F");
 		buttonToFahrenheit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				//set preferences to f
+				prefs.setTempUnit('f');
 				buttonToFahrenheit.setForeground(Color.WHITE);
 				buttonToCelsius.setForeground(Color.DARK_GRAY);
 			}
@@ -585,7 +542,6 @@ public class MainFrame {
 
 	// updates the labels current weather view to the new weather conditions
 	public void refresh() {
-
 		CurrentWeather new_weather = null;
 		try {
 			new_weather = new CurrentWeather("London,CA");
@@ -610,6 +566,7 @@ public class MainFrame {
 		labelSunsetInfo.setText(new_weather.getSunsetTime());
 
 		// set background and weather icon
+		//need to revamp this so that background always works
 		if (new_weather.getSkyCondition().equalsIgnoreCase("sky is clear")) {
 			backgroundLabel.setIcon(new ImageIcon(
 					"src/main/resources/backgrounds/sunny_background.jpg"));
@@ -622,7 +579,7 @@ public class MainFrame {
 					"src/main/resources/icons/cloud_heavy_icon.png"));
 		} else if (new_weather.getSkyCondition().equalsIgnoreCase("Rainy")) {
 			backgroundLabel.setIcon(new ImageIcon(
-					"src/main/resources/backgournds/rainy_background.jpg"));
+					"src/main/resources/backgrounds/rainy_background.jpg"));
 			labelSkyConditionIcon.setIcon(new ImageIcon(
 					"src/main/resources/icons/rain_heavy_icon.png"));
 		}
