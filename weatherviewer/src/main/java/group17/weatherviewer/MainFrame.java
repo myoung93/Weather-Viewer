@@ -337,16 +337,12 @@ public class MainFrame {
 			}
 		});
 		buttonToCelsius.setOpaque(false);
-		if(prefs.getTempUnit() == 'c')
-			buttonToCelsius.setForeground(Color.WHITE);
-		else
-			buttonToCelsius.setForeground(Color.DARK_GRAY);
+
 		//buttonToCelsius.setFont(new Font("Helvetica", Font.PLAIN, 18));
 		buttonToCelsius.setFont(font.deriveFont(18f));
 		buttonToCelsius.setContentAreaFilled(false);
 		buttonToCelsius.setBorderPainted(false);
 		buttonToCelsius.setBounds(475, 283, 75, 29);
-		frame.getContentPane().add(buttonToCelsius);
 
 		// toFarenheit button
 		//NEED TO CHECK PREFERENCES to set the color initially!
@@ -360,15 +356,23 @@ public class MainFrame {
 			}
 		});
 		buttonToFahrenheit.setOpaque(false);
-		if(prefs.getTempUnit() == 'f')
-			buttonToFahrenheit.setForeground(Color.WHITE);
-		else
-			buttonToFahrenheit.setForeground(Color.DARK_GRAY);
+
 		//buttonToFahrenheit.setFont(new Font("Helvetica", Font.PLAIN, 18));
 		buttonToFahrenheit.setFont(font.deriveFont(18f));
 		buttonToFahrenheit.setContentAreaFilled(false);
 		buttonToFahrenheit.setBorderPainted(false);
 		buttonToFahrenheit.setBounds(520, 283, 70, 29);
+		//update the buttons to the color they should be initially
+		if(prefs.getTempUnit() == 'c') {
+			buttonToCelsius.setForeground(Color.WHITE);
+			buttonToFahrenheit.setForeground(Color.DARK_GRAY);
+		}
+		else {
+			buttonToCelsius.setForeground(Color.DARK_GRAY);
+			buttonToFahrenheit.setForeground(Color.WHITE);
+		}
+
+		frame.getContentPane().add(buttonToCelsius);
 		frame.getContentPane().add(buttonToFahrenheit);
 
 		// / END INITIALIZATION OF LOCAL WEATHER VIEW PANEL ///
@@ -390,6 +394,8 @@ public class MainFrame {
 		scrollPane.setViewportView(listLocations);
 
 		// scroll bar for Locations list
+		//i dont think this actually serves a purpose since the scrollpane
+		//should automatically add a scrollbar when needed
 		scrollBarLocations = new JScrollBar();
 		scrollPane.setRowHeaderView(scrollBarLocations);
 
@@ -552,6 +558,7 @@ public class MainFrame {
 
 	// updates the labels current weather view to the new weather conditions
 	//in the future, this should probably take a String city parameter to construct the CurrentWeather obj from.
+	//should probably show some kind of "updating" message
 	public void refresh() {
 		CurrentWeather new_weather = null;
 		try {

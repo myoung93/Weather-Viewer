@@ -2,7 +2,6 @@ package group17.weatherviewer;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -219,55 +218,6 @@ public class CurrentWeather {
 	public String getSkyCondition() {
 		return Sky;
 	}
-
-	/* Setters (almost certainly not needed)
-	public void setCity(String City) {
-		this.City = City;
-	}
-
-	public void setCountry(String Country) {
-		this.Country = Country;
-	}
-
-	public void setTemp(double Temp) {
-		this.Temp = Temp;
-	}
-
-	public void setPressure(double Pressure) {
-		this.Pressure = Pressure;
-	}
-
-	public void setHumidity(double Humidity) {
-		this.Humidity = Humidity;
-	}
-
-	public void setTempMin(double TempMin) {
-		this.TempMin = TempMin;
-	}
-
-	public void setTempMax(double TempMax) {
-		this.TempMax = TempMax;
-	}
-
-	public void setWinddirection(double WindDir) {
-		this.WindDir = WindDir;
-	}
-
-	public void setWindspeed(double Windspeed) {
-		this.WindSpeed = Windspeed;
-	}
-
-	public void setSky(String Sky) {
-		this.Sky = Sky;
-	}
-
-	public void setSunrise(String Sunrise) {
-		this.Sunrise = Sunrise;
-	}
-
-	public void setSunset(String Sunset) {
-		this.Sunset = Sunset;
-	}*/
 
     /**
      * Purely for testing purposes, will be taken out in later versions.

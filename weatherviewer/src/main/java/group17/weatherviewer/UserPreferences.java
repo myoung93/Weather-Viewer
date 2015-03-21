@@ -185,6 +185,7 @@ public class UserPreferences implements java.io.Serializable {
         if(o instanceof UserPreferences)
             return (UserPreferences)o;
         else {
+            //this block will never be executed
             System.out.println("Something went seriously wrong loading preferences");
             return new UserPreferences();
         }
