@@ -15,8 +15,7 @@ public class CurrentWeather {
 
     //Data fields required for Current Weather view
 	private String City, Sky, Sunrise, Sunset, Country;
-	private double Temp, Pressure, Humidity, TempMax, TempMin, WindSpeed,
-			WindDir;
+	private double Temp, Pressure, Humidity, TempMax, TempMin, WindSpeed, WindDir;
 
     /**
      * Constructor for CurrentWeather

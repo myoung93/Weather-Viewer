@@ -6,7 +6,8 @@ import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.UnsupportedEncodingException;
 
 public class MainFrame {
@@ -15,13 +16,20 @@ public class MainFrame {
 	// a lot of these can be local fields too, but memory isn't really a big
 	// deal
 	private static Font font;
+
 	private JFrame frame;
+
 	private ImageIcon backgroundImage;
 	private ImageIcon weatherIcon;
+
 	private JLabel backgroundLabel;
+
 	private JTextField textField;
 	private JTextField barSearch;
+
 	private JScrollPane scrollPane;
+	private JScrollBar scrollBarLocations;
+
 	private JButton buttonFavourite;
 	private JButton buttonLongTerm;
 	private JButton buttonShortTerm;
@@ -61,12 +69,11 @@ public class MainFrame {
 	private JLabel labelFri;
 	private JLabel labelSat;
 	private JLabel labelSun;
+
 	private JList listLocations;
-	private JScrollBar scrollBarLocations;
 	private DefaultListModel listModel;
 
-	// prefs file
-	// UserPreferences prefs;
+	private UserPreferences prefs;
 
 	/**
 	 * Launch the application.
@@ -77,9 +84,7 @@ public class MainFrame {
 				try {
 					MainFrame window = new MainFrame();
 					window.frame.setVisible(true);
-                    window.frame.setTitle("Group 17 Weather Viewer");
                     //should we allow resizing?
-                    window.frame.setResizable(false);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -98,26 +103,37 @@ public class MainFrame {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		prefs = UserPreferences.getPrefs();
 		createFont();
 		
 		// / BEGIN INITIALIZING FRAME ///
-		backgroundImage = new ImageIcon(
-				"src/main/resources/backgrounds/default_background.jpg");
+//		backgroundImage = new ImageIcon(
+//				"src/main/resources/backgrounds/default_background.jpg");
+		//better to use the classpath method, works on all systems (old method didn't work for me)
+		backgroundImage = new ImageIcon(getClass().getResource("/backgrounds/default_background.jpg"));
 		backgroundLabel = new JLabel(backgroundImage);
 		backgroundLabel.setSize(800, 520);
-		frame = new JFrame();
+		frame = new JFrame("Group 17 Weather Viewer");
 		frame.setLocationRelativeTo(null);
 		frame.setSize(800, 520);
 		frame.setContentPane(backgroundLabel);
 		frame.setResizable(false);
-		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
+		//this window listener contains a method windowClosing which is called whenever the windows is closed
+		//therefore, we need to save preferences and anything else we do upon closing here. -TE
+		frame.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent we) {
+				//save the preferences
+				UserPreferences.savePrefs(prefs);
+				frame.dispose();
+			}
+		});
+		//not required now that we have window listener
+		//frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
 		// / END INITIALIZING FRAME ///
 
 		// / BEGIN INITIALIZING LOCAL WEATHER VIEW PANEL ///
-
-		//preferences object to be referenced
-		final UserPreferences prefs = UserPreferences.getPrefs();
 
 		// city label
 		labelLocation = new JLabel("");
@@ -268,8 +284,9 @@ public class MainFrame {
 				refresh();
 			}
 		});
-		buttonRefresh.setIcon(new ImageIcon(
-				"src/main/resources/icons/refresh_icon.png"));
+//		buttonRefresh.setIcon(new ImageIcon(
+//				"src/main/resources/icons/refresh_icon.png"));
+		buttonRefresh.setIcon(new ImageIcon(getClass().getResource("/icons/refresh_icon.png")));
 		buttonRefresh.setBounds(540, 16, 41, 37);
 		buttonRefresh.setOpaque(false);
 		buttonRefresh.setContentAreaFilled(false);
@@ -320,7 +337,10 @@ public class MainFrame {
 			}
 		});
 		buttonToCelsius.setOpaque(false);
-		buttonToCelsius.setForeground(Color.WHITE);
+		if(prefs.getTempUnit() == 'c')
+			buttonToCelsius.setForeground(Color.WHITE);
+		else
+			buttonToCelsius.setForeground(Color.DARK_GRAY);
 		//buttonToCelsius.setFont(new Font("Helvetica", Font.PLAIN, 18));
 		buttonToCelsius.setFont(font.deriveFont(18f));
 		buttonToCelsius.setContentAreaFilled(false);
@@ -329,6 +349,7 @@ public class MainFrame {
 		frame.getContentPane().add(buttonToCelsius);
 
 		// toFarenheit button
+		//NEED TO CHECK PREFERENCES to set the color initially!
 		buttonToFahrenheit = new JButton("°F");
 		buttonToFahrenheit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -339,7 +360,10 @@ public class MainFrame {
 			}
 		});
 		buttonToFahrenheit.setOpaque(false);
-		buttonToFahrenheit.setForeground(Color.DARK_GRAY);
+		if(prefs.getTempUnit() == 'f')
+			buttonToFahrenheit.setForeground(Color.WHITE);
+		else
+			buttonToFahrenheit.setForeground(Color.DARK_GRAY);
 		//buttonToFahrenheit.setFont(new Font("Helvetica", Font.PLAIN, 18));
 		buttonToFahrenheit.setFont(font.deriveFont(18f));
 		buttonToFahrenheit.setContentAreaFilled(false);
@@ -374,8 +398,9 @@ public class MainFrame {
 		AddLocation addlocation = new AddLocation(buttonFavourite);
 		buttonFavourite.addActionListener(addlocation);
 		buttonFavourite.setEnabled(false);
-		buttonFavourite.setIcon(new ImageIcon(
-				"src/main/resources/icons/star_icon.png"));
+//		buttonFavourite.setIcon(new ImageIcon(
+//				"src/main/resources/icons/star_icon.png"));
+		buttonFavourite.setIcon(new ImageIcon(getClass().getResource("/icons/star_icon.png")));
 		buttonFavourite.setOpaque(false);
 		buttonFavourite.setContentAreaFilled(false);
 		buttonFavourite.setBorderPainted(false);
@@ -385,6 +410,7 @@ public class MainFrame {
 		// search bar
 		barSearch = new JTextField();
 		barSearch.setText("Search (City, Country)");
+		barSearch.setToolTipText("Enter new locations here!");
 		barSearch.addActionListener(addlocation);
 		barSearch.getDocument().addDocumentListener(addlocation);
 		barSearch.setBounds(590, 16, 171, 37);
@@ -507,47 +533,33 @@ public class MainFrame {
 
 		// / END INITIALIZATION OF LONG-TERM CONDITIONS ///
 
-		// testing code to prove that UserPreferences functions at least at a
-		// basic level - TE
-		/*
-		 * try { UserPreferences prefs = new UserPreferences(); //prints c
-		 * (default)
-		 * System.out.println(prefs.isCelsius()?"Celsius":"Fahrenheit");
-		 * prefs.setCelsius(false); //prints f
-		 * System.out.println(prefs.isCelsius()?"Celsius":"Fahrenheit");
-		 * UserPreferences.savePrefs(prefs);
-		 * 
-		 * //create a new preferences and load the old one UserPreferences
-		 * new_prefs = UserPreferences.getPrefs(); //still f instead of default
-		 * c because we saved & loaded it
-		 * System.out.println(prefs.isCelsius()?"Celsius":"Fahrenheit"); }
-		 * catch(Exception e) { e.printStackTrace(); }
-		 */
-		// call short term view
+		//show short term view by default
 		shortTermView();
 	}
 
-	// font method I think I fixed it?
 	private void createFont() {
-		//InputStream inputStream = this.getClass().getResourceAsStream(
-			//	"src/main/resources/HelveticaNeue-Medium.otf");
+		java.io.InputStream fontInputStream = this.getClass().getResourceAsStream(
+				"/fonts/HelveticaNeue-Medium.otf");
 		try {
-			font = Font.createFont(Font.TRUETYPE_FONT, new File("src/main/resources/fonts/HelveticaNeue-Medium.otf"));
+			font = Font.createFont(Font.TRUETYPE_FONT, fontInputStream);
 		} catch (Exception e) {
             //failsafe, temp workaround -TE
-            //font = new Font("Helvetica", Font.PLAIN, 20);
+            font = new Font("Helvetica", Font.PLAIN, 20);
+			System.out.println("Font loading failed");
 			e.printStackTrace();
 		}
 	}
 
 	// updates the labels current weather view to the new weather conditions
+	//in the future, this should probably take a String city parameter to construct the CurrentWeather obj from.
 	public void refresh() {
 		CurrentWeather new_weather = null;
 		try {
+			//constructor should take String city parameter in the future.
+			System.out.println("Retrieving weather data");
 			new_weather = new CurrentWeather("London,CA");
 		} catch (UnsupportedEncodingException e) {
-			System.out
-					.println("Something went wrong retrieving current weather");
+			System.out.println("Something went wrong retrieving current weather");
 			e.printStackTrace();
 		}
 

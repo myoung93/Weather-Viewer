@@ -154,10 +154,17 @@ public class UserPreferences implements java.io.Serializable {
      * Saves a copy of the provided preferences object to the working directory in a file called FILENAME.
      * @param up is the preferences object to be serialized to a file for the next run.
      */
-    public static void savePrefs(UserPreferences up) throws IOException {
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(FILENAME));
-        oos.writeObject(up);
-        oos.close();
+    public static void savePrefs(UserPreferences up) {
+        ObjectOutputStream oos;
+        try {
+            oos = new ObjectOutputStream(new FileOutputStream(FILENAME));
+            oos.writeObject(up);
+            oos.close();
+        }
+        catch(IOException e) {
+            System.out.println("Saving user preferences failed! Due to:");
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -170,12 +177,16 @@ public class UserPreferences implements java.io.Serializable {
         try {
             ois = new ObjectInputStream(new FileInputStream(FILENAME));
             o = ois.readObject();
-            ois.close();
         }
         catch(IOException | NullPointerException | ClassNotFoundException e) {
             //need to create a new set of preferences if one doesn't exist
             return new UserPreferences();
         }
-        return (UserPreferences)o;
+        if(o instanceof UserPreferences)
+            return (UserPreferences)o;
+        else {
+            System.out.println("Something went seriously wrong loading preferences");
+            return new UserPreferences();
+        }
     }
 }
