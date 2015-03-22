@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_9_X58My_EeS0v8S-T8sh-w" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_9_X58cy_EeS0v8S-T8sh-w" bindingContexts="_9_Zv8My_EeS0v8S-T8sh-w">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;MainFrame.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/MainFrame.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/MainFrame.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SimpleWeather.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/SimpleWeather.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/SimpleWeather.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MyLocationsList.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/MyLocationsList.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/MyLocationsList.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LocationException.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/LocationException.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/LocationException.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;mainFrame.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/mainFrame.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/mainFrame.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;background.java&quot; tooltip=&quot;/home/miguel/University/Compsci/2212/Team_Project/WeatherGUI/WeatherGUI/src/background.java&quot;>&#xA;&lt;persistable uri=&quot;file:/home/miguel/University/Compsci/2212/Team_Project/WeatherGUI/WeatherGUI/src/background.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AppTest.java&quot; tooltip=&quot;weatherviewer/src/test/java/group17/weatherviewer/AppTest.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/test/java/group17/weatherviewer/AppTest.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;App.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/App.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/App.java&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;MainFrame.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/MainFrame.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/MainFrame.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;JComponent.class&quot; tooltip=&quot;javax.swing.JComponent&quot;>&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=weatherviewer/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_25.jdk\/Contents\/Home\/jre\/lib\/rt.jar&amp;lt;javax.swing(JComponent.class&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;EventQueue.class&quot; tooltip=&quot;java.awt.EventQueue&quot;>&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=weatherviewer/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_25.jdk\/Contents\/Home\/jre\/lib\/rt.jar&amp;lt;java.awt(EventQueue.class&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CurrentWeather.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/CurrentWeather.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/CurrentWeather.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SimpleWeather.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/SimpleWeather.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/SimpleWeather.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MyLocationsList.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/MyLocationsList.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/MyLocationsList.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LocationException.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/LocationException.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/LocationException.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;mainFrame.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/mainFrame.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/mainFrame.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;background.java&quot; tooltip=&quot;/home/miguel/University/Compsci/2212/Team_Project/WeatherGUI/WeatherGUI/src/background.java&quot;>&#xA;&lt;persistable uri=&quot;file:/home/miguel/University/Compsci/2212/Team_Project/WeatherGUI/WeatherGUI/src/background.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AppTest.java&quot; tooltip=&quot;weatherviewer/src/test/java/group17/weatherviewer/AppTest.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/test/java/group17/weatherviewer/AppTest.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;App.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/App.java&quot;>&#xA;&lt;persistable path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/App.java&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_9_X58cy_EeS0v8S-T8sh-w" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_9_X58sy_EeS0v8S-T8sh-w" label="%trimmedwindow.label.eclipseSDK" x="75" y="34" width="1024" height="768">
@@ -89,7 +89,7 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_9_X6AMy_EeS0v8S-T8sh-w" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_9_YiCMy_EeS0v8S-T8sh-w"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_9_X6Acy_EeS0v8S-T8sh-w" containerData="7741" selectedElement="_9_X6Asy_EeS0v8S-T8sh-w">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_9_X6Acy_EeS0v8S-T8sh-w" containerData="7741" selectedElement="_9_X6C8y_EeS0v8S-T8sh-w">
               <children xsi:type="basic:PartSashContainer" xmi:id="_9_X6Asy_EeS0v8S-T8sh-w" containerData="7500" selectedElement="_9_X6A8y_EeS0v8S-T8sh-w" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_9_X6A8y_EeS0v8S-T8sh-w" elementId="org.eclipse.ui.editorss" containerData="9000" ref="_9_YhS8y_EeS0v8S-T8sh-w"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_9_X6BMy_EeS0v8S-T8sh-w" containerData="1000" selectedElement="_9_X6Bcy_EeS0v8S-T8sh-w">
@@ -109,6 +109,7 @@
               <children xsi:type="basic:PartStack" xmi:id="_9_X6C8y_EeS0v8S-T8sh-w" elementId="bottom" containerData="2500" selectedElement="_9_X6EMy_EeS0v8S-T8sh-w">
                 <tags>newtablook</tags>
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_9_X6DMy_EeS0v8S-T8sh-w" elementId="org.eclipse.ui.views.ProblemView" ref="_9_YhxMy_EeS0v8S-T8sh-w"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_9_X6Dcy_EeS0v8S-T8sh-w" elementId="org.eclipse.jdt.ui.JavadocView" ref="_9_YhzMy_EeS0v8S-T8sh-w"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_9_X6Dsy_EeS0v8S-T8sh-w" elementId="org.eclipse.jdt.ui.SourceView" ref="_9_Yh0My_EeS0v8S-T8sh-w"/>
@@ -145,19 +146,10 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_9_YhS8y_EeS0v8S-T8sh-w" elementId="org.eclipse.ui.editorss" selectedElement="_9_YhTMy_EeS0v8S-T8sh-w">
-      <children xsi:type="basic:PartStack" xmi:id="_9_YhTMy_EeS0v8S-T8sh-w" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_71TRIM5WEeSOAcfP0Nxnew">
+      <children xsi:type="basic:PartStack" xmi:id="_9_YhTMy_EeS0v8S-T8sh-w" elementId="org.eclipse.e4.primaryDataStack">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_71TRIM5WEeSOAcfP0Nxnew" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MainFrame.java" iconURI="platform:/plugin/org.eclipse.wb.core.ui/icons/gui_editor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;MainFrame.java&quot; partName=&quot;MainFrame.java&quot; title=&quot;MainFrame.java&quot; tooltip=&quot;weatherviewer/src/main/java/group17/weatherviewer/MainFrame.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/weatherviewer/src/main/java/group17/weatherviewer/MainFrame.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;19657&quot; selectionTopPixel=&quot;7651&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.wb.core.guiEditor</tags>
-          <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
-        </children>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_9_Yhn8y_EeS0v8S-T8sh-w" elementId="org.eclipse.jdt.ui.PackageExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Package Explorer" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/eview16/package.gif" closeable="true">
@@ -273,6 +265,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_9_Yh1sy_EeS0v8S-T8sh-w" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -418,7 +412,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_9_YiP8y_EeS0v8S-T8sh-w" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_XSmJMM5WEeSOAcfP0Nxnew" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_9_bmJsy_EeS0v8S-T8sh-w"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_fd20gNBFEeSmPsbKcwjObQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_9_bmJsy_EeS0v8S-T8sh-w"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_9_ZIGcy_EeS0v8S-T8sh-w" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -442,7 +436,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_9_ZIVsy_EeS0v8S-T8sh-w" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_XSusEc5WEeSOAcfP0Nxnew" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_9_bkUcy_EeS0v8S-T8sh-w"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_fd_XYdBFEeSmPsbKcwjObQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_9_bkUcy_EeS0v8S-T8sh-w"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_9_ZIYcy_EeS0v8S-T8sh-w" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -843,7 +837,7 @@
       <tags>platform:cocoa</tags>
       <parameters xmi:id="_9_ZvTsy_EeS0v8S-T8sh-w" elementId="org.eclipse.ui.views.showView.viewId" name="org.eclipse.ui.views.showView.viewId" value="org.eclipse.team.ui.GenericHistoryView"/>
     </bindings>
-    <bindings xmi:id="_WxUBEM5WEeSOAcfP0Nxnew" keySequence="COMMAND+CTRL+F" command="_9_cMCcy_EeS0v8S-T8sh-w"/>
+    <bindings xmi:id="_fDnIgdBFEeSmPsbKcwjObQ" keySequence="COMMAND+CTRL+F" command="_9_cMCcy_EeS0v8S-T8sh-w"/>
   </bindingTables>
   <bindingTables xmi:id="_9_ZvUMy_EeS0v8S-T8sh-w" elementId="org.eclipse.ui.textEditorScope" bindingContext="_9_Zv_My_EeS0v8S-T8sh-w">
     <bindings xmi:id="_9_ZvUcy_EeS0v8S-T8sh-w" keySequence="CTRL+ARROW_UP" command="_9_bmIsy_EeS0v8S-T8sh-w"/>
@@ -1066,7 +1060,7 @@
   <bindingTables xmi:id="_9_Zv7My_EeS0v8S-T8sh-w" bindingContext="_9_ZwPMy_EeS0v8S-T8sh-w"/>
   <bindingTables xmi:id="_9_Zv7cy_EeS0v8S-T8sh-w" bindingContext="_9_ZwPcy_EeS0v8S-T8sh-w"/>
   <bindingTables xmi:id="_9_Zv7sy_EeS0v8S-T8sh-w" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_9_ZwFMy_EeS0v8S-T8sh-w">
-    <bindings xmi:id="_WxUoIM5WEeSOAcfP0Nxnew" keySequence="M1+W" command="_9_cMC8y_EeS0v8S-T8sh-w"/>
+    <bindings xmi:id="_fDo9sNBFEeSmPsbKcwjObQ" keySequence="M1+W" command="_9_cMC8y_EeS0v8S-T8sh-w"/>
   </bindingTables>
   <rootContext xmi:id="_9_Zv8My_EeS0v8S-T8sh-w" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs and Windows" description="Either a dialog or a window is open">
     <children xmi:id="_9_Zv8cy_EeS0v8S-T8sh-w" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.platform" name="In Windows" description="A window is open">
