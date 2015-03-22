@@ -59,8 +59,9 @@ public class CurrentWeather {
 		// get information from sys object
 		JSONObject Obj_Sys = JsonData.getJSONObject("sys");// country
 		Country = Obj_Sys.getString("country");
-		Sunrise = Obj_Sys.getString("sunrise");
-		Sunset = Obj_Sys.getString("sunset");
+		//grab sunrise/sunset and convert to real time
+		Sunrise = Conversion.toTime(Obj_Sys.getString("sunrise"));
+		Sunset = Conversion.toTime(Obj_Sys.getString("sunset"));
 
 		// get information from string
 		City = JsonData.getString("name");// city
@@ -68,7 +69,8 @@ public class CurrentWeather {
 		// get information from main object
 		JSONObject Obj_Main = JsonData.getJSONObject("main");
 		Temp = Obj_Main.getDouble("temp");// temperature
-		Pressure = Obj_Main.getDouble("pressure"); // pressure
+		//divide by 10 to convert from hPa to kPa
+		Pressure = Obj_Main.getDouble("pressure")/10; // pressure
 		Humidity = Obj_Main.getDouble("humidity");// humidity
 		TempMin = Obj_Main.getDouble("temp_min");// min temperature
 		TempMax = Obj_Main.getDouble("temp_max");// max temperature
