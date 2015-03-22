@@ -15,6 +15,7 @@ public class CurrentWeather {
     //Data fields required for Current Weather view
 	private String City, Sky, Sunrise, Sunset, Country;
 	private double Temp, Pressure, Humidity, TempMax, TempMin, WindSpeed, WindDir;
+	private int weatherID;
 
     /**
      * Constructor for CurrentWeather
@@ -81,6 +82,9 @@ public class CurrentWeather {
 		JSONArray Array_Weather = JsonData.getJSONArray("weather");
 		JSONObject Obj_Wea = Array_Weather.getJSONObject(0);
 		Sky = Obj_Wea.getString("description");
+		
+		//get weatherID info
+		weatherID = Obj_Wea.getInt("id");
 	}
 
 	// Getters -> Modified to return Strings instead of Doubles -TE
@@ -219,6 +223,9 @@ public class CurrentWeather {
 		return Sky;
 	}
 
+	public int getWeatherID(){
+		return weatherID;
+	}
     /**
      * Purely for testing purposes, will be taken out in later versions.
      * @param args command line arguments
