@@ -115,12 +115,25 @@ public class UserPreferences implements java.io.Serializable {
     }
 
     /**
-     * Adds a location to the list of favorite locations
+     * Adds a location to the end of the list of favorite locations
      * @param s name of the location
+     * Maybe we don't need this one, since we don't add to the end - NK
      */
     public void addLocation(String s) throws WeatherException {
         if(!locations.contains(s))
             locations.add(s);
+        else
+            throw new WeatherException("Location already exists");
+    }
+
+    /**
+     * Adds a location to the list of favorite locations in a certain position
+     * @param index provides where in the list the element should be added
+     * @param s name of the location
+     */
+     public void addLocation(int index, String s) throws WeatherException {
+        if(!locations.contains(s))
+            locations.add(index, s);
         else
             throw new WeatherException("Location already exists");
     }
@@ -188,6 +201,16 @@ public class UserPreferences implements java.io.Serializable {
             //this block will never be executed
             System.out.println("Something went seriously wrong loading preferences");
             return new UserPreferences();
+        }
+    }
+
+    // Temporary method to print the locations list
+    public void printLocations() {
+
+        System.out.println("MyLocations: ");
+        
+        for(String loc : locations) {
+            System.out.println(loc);
         }
     }
 }

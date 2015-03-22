@@ -182,7 +182,7 @@ public class MainFrame {
 		frame.setResizable(false);
 
 		// this window listener contains a method windowClosing which is called
-		// whenever the windows is closed
+		// whenever the window is closed
 		// therefore, we need to save preferences and anything else we do upon
 		// closing here. -TE
 		frame.addWindowListener(new WindowAdapter() {
@@ -422,7 +422,7 @@ public class MainFrame {
 
 		// / END INITIALIZATION OF LOCAL WEATHER VIEW PANEL ///
 
-		// / BEING INITIALIZATION OF LOCATIONS PANEL ///
+		// / BEGIN INITIALIZATION OF LOCATIONS PANEL ///
 
 		// Scroll Pane
 		scrollPane = new JScrollPane();
@@ -435,6 +435,12 @@ public class MainFrame {
 
 		// Locations list
 		listModel = new DefaultListModel();
+
+		// add saved locations to current list -NK
+		for(String loc : prefs.getLocations()) { //loads the MyLocations arraylist into listModel
+			listModel.addElement(loc);
+		}
+
 		listLocations = new JList(listModel);
 		scrollPane.setViewportView(listLocations);
 
@@ -464,7 +470,7 @@ public class MainFrame {
 		barSearch.setColumns(10);
 		frame.getContentPane().add(barSearch);
 
-		// / END INITIALIZATION OF LOCATIONS PANEL///
+		// / END INITIALIZATION OF LOCATIONS PANEL ///
 
 		// BEGIN INITIALIZATION OF SHORT-TERM FORECAST PANEL ///
 
@@ -960,6 +966,16 @@ public class MainFrame {
 			listModel.insertElementAt(barSearch.getText(), index);
 			// If we just wanted to add to the end, we'd do this:
 			// listModel.addElement(employeeName.getText());
+
+			// Add element to user preferences as well - NK
+			try {
+				prefs.addLocation(index, barSearch.getText());	//adds to "index" position of the MyLocations list
+			}
+			catch(WeatherException exception) {
+				System.out.println(exception.getMessage());
+			}
+			prefs.printLocations(); // This is just to test addLocation on user preferences - NK
+
 
 			// Reset the text field.
 			barSearch.requestFocusInWindow();
