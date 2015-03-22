@@ -872,13 +872,14 @@ public class MainFrame {
 		labelLocation.setText(new_weather.getCity() + ", "
 				+ new_weather.getCountry());
 		labelSkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelTempInfo.setText(new_weather.getTemp() + "°C");
+		labelTempInfo.setText(new_weather.getTemp().substring(0,4) + "°C");
 		labelWindInfo.setText(new_weather.getWindSpeed() + " km/h "
 				+ new_weather.getWindDirection());
 		labelHumidityInfo.setText(new_weather.getHumidity() + "%");
 		labelAirPressureInfo.setText(new_weather.getPressure() + "kPa");
-		labelMaxTempInfo.setText(new_weather.getTempMax() + "°C");
-		labelMinTempInfo.setText(new_weather.getTempMin() + "°C");
+		//need to substring these so we don't have a million decimal places
+		labelMaxTempInfo.setText(new_weather.getTempMax().substring(0,4) + "°C");
+		labelMinTempInfo.setText(new_weather.getTempMin().substring(0,4) + "°C");
 		labelSunriseInfo.setText(new_weather.getSunriseTime());
 		labelSunsetInfo.setText(new_weather.getSunsetTime());
 		setSkyConditionImages(new_weather.getWeatherID());
