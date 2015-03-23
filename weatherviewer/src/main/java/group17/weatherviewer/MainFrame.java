@@ -132,7 +132,7 @@ public class MainFrame {
 
 	private UserPreferences prefs;
 
-    private CurrentWeather currentWeather;
+    private CurrentWeather currentWeather = null;
 
 	/**
 	 * Launch the application.
@@ -951,25 +951,27 @@ public class MainFrame {
 
     //moved these to a method because in the future we will have to re-initialize them when c/f is changed.
     private void setTemperatureFields() {
-        char tempUnit = prefs.getTempUnit();
-        labelTempInfo.setText(currentWeather.getTemp(tempUnit));
-        labelMaxTempInfo.setText(currentWeather.getMaxTemp(tempUnit));
-        labelMinTempInfo.setText(currentWeather.getMinTemp(tempUnit));
-        label12AMTempInfo.setText(currentWeather.getTemp(tempUnit));
-        label3AMTempInfo.setText(currentWeather.getTemp(tempUnit));
-        label6AMTempInfo.setText(currentWeather.getTemp(tempUnit));
-        label9AMTempInfo.setText(currentWeather.getTemp(tempUnit));
-        label12PMTempInfo.setText(currentWeather.getTemp(tempUnit));
-        label3PMTempInfo.setText(currentWeather.getTemp(tempUnit));
-        label6PMTempInfo.setText(currentWeather.getTemp(tempUnit));
-        label9PMTempInfo.setText(currentWeather.getTemp(tempUnit));
-        labelDay1TempInfo.setText(currentWeather.getTemp(tempUnit));
-        labelDay2TempInfo.setText(currentWeather.getTemp(tempUnit));
-        labelDay3TempInfo.setText(currentWeather.getTemp(tempUnit));
-        labelDay4TempInfo.setText(currentWeather.getTemp(tempUnit));
-        labelDay5TempInfo.setText(currentWeather.getTemp(tempUnit));
-        labelDay6TempInfo.setText(currentWeather.getTemp(tempUnit));
-        labelDay7TempInfo.setText(currentWeather.getTemp(tempUnit));
+        if(currentWeather != null) {
+            char tempUnit = prefs.getTempUnit();
+            labelTempInfo.setText(currentWeather.getTemp(tempUnit));
+            labelMaxTempInfo.setText(currentWeather.getMaxTemp(tempUnit));
+            labelMinTempInfo.setText(currentWeather.getMinTemp(tempUnit));
+            label12AMTempInfo.setText(currentWeather.getTemp(tempUnit));
+            label3AMTempInfo.setText(currentWeather.getTemp(tempUnit));
+            label6AMTempInfo.setText(currentWeather.getTemp(tempUnit));
+            label9AMTempInfo.setText(currentWeather.getTemp(tempUnit));
+            label12PMTempInfo.setText(currentWeather.getTemp(tempUnit));
+            label3PMTempInfo.setText(currentWeather.getTemp(tempUnit));
+            label6PMTempInfo.setText(currentWeather.getTemp(tempUnit));
+            label9PMTempInfo.setText(currentWeather.getTemp(tempUnit));
+            labelDay1TempInfo.setText(currentWeather.getTemp(tempUnit));
+            labelDay2TempInfo.setText(currentWeather.getTemp(tempUnit));
+            labelDay3TempInfo.setText(currentWeather.getTemp(tempUnit));
+            labelDay4TempInfo.setText(currentWeather.getTemp(tempUnit));
+            labelDay5TempInfo.setText(currentWeather.getTemp(tempUnit));
+            labelDay6TempInfo.setText(currentWeather.getTemp(tempUnit));
+            labelDay7TempInfo.setText(currentWeather.getTemp(tempUnit));
+        }
 }
 
 	// This listener is shared by the barSearch TextField and the AddLocation
