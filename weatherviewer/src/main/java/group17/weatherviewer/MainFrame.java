@@ -6,6 +6,8 @@ import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.UnsupportedEncodingException;
@@ -463,11 +465,24 @@ public class MainFrame {
 		barSearch = new JTextField();
 		barSearch.setText("Search (City, Country)");
 		barSearch.setToolTipText("Enter new locations here!");
+		barSearch.setForeground(Color.LIGHT_GRAY);
 		barSearch.addActionListener(addlocation);
 		barSearch.getDocument().addDocumentListener(addlocation);
 		barSearch.setBounds(590, 16, 171, 37);
 		barSearch.setOpaque(false);
 		barSearch.setColumns(10);
+		barSearch.addFocusListener(new FocusListener() {
+			@Override
+			public void focusGained(FocusEvent e) {
+				if(barSearch.getText().equals("Search (City, Country)"))
+					barSearch.setText("");
+			}
+			public void focusLost(FocusEvent e) {
+				if(barSearch.getText().equals(""))
+					barSearch.setText("Search (City, Country)");
+			}
+		});
+
 		frame.getContentPane().add(barSearch);
 
 		// / END INITIALIZATION OF LOCATIONS PANEL ///
