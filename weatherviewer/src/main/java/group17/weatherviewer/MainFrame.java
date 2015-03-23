@@ -11,6 +11,7 @@ import java.awt.event.FocusListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import javax.swing.event.*;
+import java.awt.event.*;
 import java.io.UnsupportedEncodingException;
 
 public class MainFrame {
@@ -238,14 +239,14 @@ public class MainFrame {
 		frame.getContentPane().add(labelAirPressure);
 
 		// max temp label
-		labelMaxTemp = new JLabel("Max Temp:");
+		labelMaxTemp = new JLabel("Maximum:");
 		labelMaxTemp.setForeground(Color.LIGHT_GRAY);
 		labelMaxTemp.setFont(font.deriveFont(15f));
 		labelMaxTemp.setBounds(50, 230, 96, 15);
 		frame.getContentPane().add(labelMaxTemp);
 
 		// min temp label
-		labelMinTemp = new JLabel("Min. Temp:");
+		labelMinTemp = new JLabel("Minimum:");
 		labelMinTemp.setForeground(Color.LIGHT_GRAY);
 		labelMinTemp.setFont(font.deriveFont(15f));
 		labelMinTemp.setBounds(50, 250, 96, 15);
@@ -349,7 +350,7 @@ public class MainFrame {
 		buttonShortTerm.setFont(font.deriveFont(14f));
 		buttonShortTerm.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				shortTermView();
+				toggleShortTerm(true);
 			}
 		});
 		buttonShortTerm.setOpaque(false);
@@ -362,7 +363,7 @@ public class MainFrame {
 		buttonLongTerm = new JButton("Long Term");
 		buttonLongTerm.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				longTermView();
+                toggleShortTerm(false);
 			}
 		});
 
@@ -386,14 +387,12 @@ public class MainFrame {
 		});
 		buttonToCelsius.setOpaque(false);
 
-		// buttonToCelsius.setFont(new Font("Helvetica", Font.PLAIN, 18));
 		buttonToCelsius.setFont(font.deriveFont(18f));
 		buttonToCelsius.setContentAreaFilled(false);
 		buttonToCelsius.setBorderPainted(false);
 		buttonToCelsius.setBounds(475, 283, 75, 29);
 
 		// toFarenheit button
-		// NEED TO CHECK PREFERENCES to set the color initially!
 		buttonToFahrenheit = new JButton("°F");
 		buttonToFahrenheit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -405,7 +404,6 @@ public class MainFrame {
 		});
 		buttonToFahrenheit.setOpaque(false);
 
-		// buttonToFahrenheit.setFont(new Font("Helvetica", Font.PLAIN, 18));
 		buttonToFahrenheit.setFont(font.deriveFont(18f));
 		buttonToFahrenheit.setContentAreaFilled(false);
 		buttonToFahrenheit.setBorderPainted(false);
@@ -858,7 +856,7 @@ public class MainFrame {
 		// / END INITIALIZATION OF LONG-TERM CONDITIONS ///
 
 		// show short term view by default
-		shortTermView();
+		toggleShortTerm(true);
 	}
 
 	///END GUI INITIALAZATION///
@@ -884,9 +882,10 @@ public class MainFrame {
 	// in the future, this should probably take a String city parameter to
 	// construct the CurrentWeather obj from.
 	// should probably show some kind of "updating" message
+
 	public void refresh(String location) {
 		
-		CurrentWeather new_weather = null;
+	CurrentWeather new_weather = null;
 		try {
 			// constructor should take String city parameter in the future.
 			System.out.println("Retrieving weather data");	
@@ -897,18 +896,18 @@ public class MainFrame {
 			e.printStackTrace();
 		}
 
+        //store tempUnit so we don't have to call prefs.getTempUnit() every time
 		// current location panel
 		labelLocation.setText(new_weather.getCity() + ", "
 				+ new_weather.getCountry());
 		labelSkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelTempInfo.setText(new_weather.getTemp().substring(0,4) + "°C");
+
 		labelWindInfo.setText(new_weather.getWindSpeed() + " km/h "
 				+ new_weather.getWindDirection());
 		labelHumidityInfo.setText(new_weather.getHumidity() + "%");
 		labelAirPressureInfo.setText(new_weather.getPressure() + "kPa");
 		//need to substring these so we don't have a million decimal places
-		labelMaxTempInfo.setText(new_weather.getTempMax().substring(0,4) + "°C");
-		labelMinTempInfo.setText(new_weather.getTempMin().substring(0,4) + "°C");
+
 		labelSunriseInfo.setText(new_weather.getSunriseTime());
 		labelSunsetInfo.setText(new_weather.getSunsetTime());
 		setSkyConditionImages(new_weather.getWeatherID());
@@ -916,57 +915,85 @@ public class MainFrame {
 		backgroundLabel.setIcon(new ImageIcon(skyConditionBackground));
 		// short/longterm icons will be the same has current weather, can be easily switched later
 		//shortterm
+        setTemperatureFields(new_weather);
+
+        //these really need to be done using a loop. the exact same thing is done to every single label.
 		label12AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		label12AMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label12AMTempInfo.setText(new_weather.getTemp() + "°C");
-		label3AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		label3AMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label3AMTempInfo.setText(new_weather.getTemp() + "°C");
-		label6AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+        label12AMSkyConditionInfo.setText(new_weather.getSkyCondition());
+
+        label3AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+        label3AMSkyConditionInfo.setText(new_weather.getSkyCondition());
+
+        label6AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		label6AMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label6AMTempInfo.setText(new_weather.getTemp() + "°C");
+
 		label9AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		label9AMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label9AMTempInfo.setText(new_weather.getTemp() + "°C");
+
 		label12PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		label12PMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label12PMTempInfo.setText(new_weather.getTemp() + "°C");
+
 		label3PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		label3PMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label3PMTempInfo.setText(new_weather.getTemp() + "°C");
+
 		label6PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		label6PMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label6PMTempInfo.setText(new_weather.getTemp() + "°C");
+
 		label9PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		label9PMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label9PMTempInfo.setText(new_weather.getTemp() + "°C");
+
 		//longterm
 		labelDay1SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		labelDay1SkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelDay1TempInfo.setText(new_weather.getTemp() + "°C");
+
 		labelDay2SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		labelDay2SkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelDay2TempInfo.setText(new_weather.getTemp() + "°C");
+
 		labelDay3SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		labelDay3SkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelDay3TempInfo.setText(new_weather.getTemp() + "°C");
+
 		labelDay4SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		labelDay4SkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelDay4TempInfo.setText(new_weather.getTemp() + "°C");
+
 		labelDay5SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		labelDay5SkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelDay5TempInfo.setText(new_weather.getTemp() + "°C");
+
 		labelDay6SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		labelDay6SkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelDay6TempInfo.setText(new_weather.getTemp() + "°C");
+
 		labelDay7SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		labelDay7SkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelDay7TempInfo.setText(new_weather.getTemp() + "°C");
+
 	}
 		
 
-	// This listener is shared by the barSearch TextField and the AddLocation Button.
-	// Adds a new location to the Location List
+
+    //moved these to a method because in the future we will have to re-initialize them when c/f is changed.
+    private void setTemperatureFields(CurrentWeather new_weather) {
+        char tempUnit = prefs.getTempUnit();
+        labelTempInfo.setText(new_weather.getTemp(tempUnit));
+        labelMaxTempInfo.setText(new_weather.getMaxTemp(tempUnit));
+        labelMinTempInfo.setText(new_weather.getMinTemp(tempUnit));
+        label12AMTempInfo.setText(new_weather.getTemp(tempUnit));
+        label3AMTempInfo.setText(new_weather.getTemp(tempUnit));
+        label6AMTempInfo.setText(new_weather.getTemp(tempUnit));
+        label9AMTempInfo.setText(new_weather.getTemp(tempUnit));
+        label12PMTempInfo.setText(new_weather.getTemp(tempUnit));
+        label3PMTempInfo.setText(new_weather.getTemp(tempUnit));
+        label6PMTempInfo.setText(new_weather.getTemp(tempUnit));
+        label9PMTempInfo.setText(new_weather.getTemp(tempUnit));
+        labelDay1TempInfo.setText(new_weather.getTemp(tempUnit));
+        labelDay2TempInfo.setText(new_weather.getTemp(tempUnit));
+        labelDay3TempInfo.setText(new_weather.getTemp(tempUnit));
+        labelDay4TempInfo.setText(new_weather.getTemp(tempUnit));
+        labelDay5TempInfo.setText(new_weather.getTemp(tempUnit));
+        labelDay6TempInfo.setText(new_weather.getTemp(tempUnit));
+        labelDay7TempInfo.setText(new_weather.getTemp(tempUnit));
+}
+
+	// This listener is shared by the barSearch TextField and the AddLocation
+	// Button.
+
 	class AddLocation implements ActionListener, DocumentListener {
 		private boolean alreadyEnabled = false;
 		private JButton button;
@@ -1056,9 +1083,89 @@ public class MainFrame {
 			return false;
 		}
 	}
-
 		
 	// enable short term view
+
+    /**
+     * toggles whether the short/long term display is shown
+     * i still don't like this, but it's half as bad as before.
+     * @param b whether to show or hide short term
+   */
+    public void toggleShortTerm(boolean b) {
+        if (b) {
+            buttonLongTerm.setForeground(Color.DARK_GRAY);
+            buttonShortTerm.setForeground(Color.WHITE);
+        }
+        else {
+            buttonLongTerm.setForeground(Color.WHITE);
+            buttonShortTerm.setForeground(Color.DARK_GRAY);
+        }
+        labelDay1Info.setVisible(!b);
+        labelDay1SkyConditionIcon.setVisible(!b);
+        labelDay1TempInfo.setVisible(!b);
+        labelDay1SkyConditionInfo.setVisible(!b);
+        labelDay2Info.setVisible(!b);
+        labelDay2SkyConditionIcon.setVisible(!b);
+        labelDay2TempInfo.setVisible(!b);
+        labelDay2SkyConditionInfo.setVisible(!b);
+        labelDay3Info.setVisible(!b);
+        labelDay3SkyConditionIcon.setVisible(!b);
+        labelDay3TempInfo.setVisible(!b);
+        labelDay3SkyConditionInfo.setVisible(!b);
+        labelDay4Info.setVisible(!b);
+        labelDay4SkyConditionIcon.setVisible(!b);
+        labelDay4TempInfo.setVisible(!b);
+        labelDay4SkyConditionInfo.setVisible(!b);
+        labelDay5Info.setVisible(!b);
+        labelDay5SkyConditionIcon.setVisible(!b);
+        labelDay5TempInfo.setVisible(!b);
+        labelDay5SkyConditionInfo.setVisible(!b);
+        labelDay6Info.setVisible(!b);
+        labelDay6SkyConditionIcon.setVisible(!b);
+        labelDay6TempInfo.setVisible(!b);
+        labelDay6SkyConditionInfo.setVisible(!b);
+        labelDay7Info.setVisible(!b);
+        labelDay7SkyConditionIcon.setVisible(!b);
+        labelDay7TempInfo.setVisible(!b);
+        labelDay7SkyConditionInfo.setVisible(!b);
+        label12AM.setVisible(b);
+        label12AMSkyConditionIcon.setVisible(b);
+        label12AMTempInfo.setVisible(b);
+        label12AMSkyConditionInfo.setVisible(b);
+        label3AM.setVisible(b);
+        label3AMSkyConditionIcon.setVisible(b);
+        label3AMTempInfo.setVisible(b);
+        label3AMSkyConditionInfo.setVisible(b);
+        label6AM.setVisible(b);
+        label6AMSkyConditionIcon.setVisible(b);
+        label6AMTempInfo.setVisible(b);
+        label6AMSkyConditionInfo.setVisible(b);
+        label9AM.setVisible(b);
+        label9AMSkyConditionIcon.setVisible(b);
+        label9AMTempInfo.setVisible(b);
+        label9AMSkyConditionInfo.setVisible(b);
+        label12PM.setVisible(b);
+        label12PMSkyConditionIcon.setVisible(b);
+        label12PMTempInfo.setVisible(b);
+        label12PMSkyConditionInfo.setVisible(b);
+        label3PM.setVisible(b);
+        label3PMSkyConditionIcon.setVisible(b);
+        label3PMTempInfo.setVisible(b);
+        label3PMSkyConditionInfo.setVisible(b);
+        label6PM.setVisible(b);
+        label6PMSkyConditionIcon.setVisible(b);
+        label6PMTempInfo.setVisible(b);
+        label6PMSkyConditionInfo.setVisible(b);
+        label9PM.setVisible(b);
+        label9PMSkyConditionIcon.setVisible(b);
+        label9PMTempInfo.setVisible(b);
+        label9PMSkyConditionInfo.setVisible(b);
+    }
+
+
+	// enable short term view\
+    /*
+
 	public void shortTermView() {
 		buttonLongTerm.setForeground(Color.DARK_GRAY);
 		buttonShortTerm.setForeground(Color.WHITE);
@@ -1125,7 +1232,7 @@ public class MainFrame {
 	}
 
 	// enable long term view
-	public void longTermView() {
+	/*public void longTermView() {
 		buttonLongTerm.setForeground(Color.WHITE);
 		buttonShortTerm.setForeground(Color.DARK_GRAY);
 		labelDay1Info.setVisible(true);
@@ -1188,539 +1295,781 @@ public class MainFrame {
 		label9PMSkyConditionIcon.setVisible(false);
 		label9PMTempInfo.setVisible(false);
 		label9PMSkyConditionInfo.setVisible(false);
-	}
+	}*/
 
 	public void setSkyConditionImages(int ID) {
+        String icon, background;
+
 		switch (ID) {
-		// THUNDERSTORM
-		// Thunderstorm with Light Rain
-		case 200:
-			skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
-			skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
-			break;
-		// Thunderstorm with Rain
-		case 201:
-			skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
-			skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
-			break;
-		// Thunderstorm with Heavy Rain
-		case 202:
-			skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
-			skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
-			break;
-
-		// Light Thunderstorm
-		case 210:
-			skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
-			skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
-			break;
-
-		// Thunderstorm
-		case 211:
-			skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
-			skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
-			break;
-
-		// Heavy Thunderstorm
-		case 212:
-			skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
-			skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
-			break;
-
-		// Ragged Thunderstorm
-		case 221:
-			skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
-			skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
-			break;
-
-		// Thunderstorm with Light Drizzle
-		case 230:
-			skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
-			skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
-			break;
-
-		// Thunderstorm with Drizzle
-		case 231:
-			skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
-			skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
-			break;
-
-		// Thunderstorm with Heavy Drizzle
-		case 232:
-			skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
-			skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
-			break;
-
-		// DRIZZLE
-
-		// Light Intensity Drizzle
-		case 300:
-			skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Drizzle
-		case 301:
-			skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Heavy Intensity Drizzle
-		case 302:
-			skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Light Intensity Drizzle Rain
-		case 310:
-			skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Drizzle Rain
-		case 311:
-			skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Heavy Intensity Drizzle Rain
-		case 312:
-			skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Shower Rain and Drizzle
-		case 313:
-			skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Heavy Shower Rain and Drizzle
-		case 314:
-			skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Shower Drizzle
-		case 321:
-			skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// RAIN
-
-		// Light Rain
-		case 500:
-			skyConditionIconLarge = "src/main/resources/icons/large/light_rain.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/light_rain.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Moderate Rain
-		case 501:
-			skyConditionIconLarge = "src/main/resources/icons/large/heavy_rain.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/heavy_rain.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Heavy Intensity Rain
-		case 502:
-			skyConditionIconLarge = "src/main/resources/icons/large/heavy_rain.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/heavy_rain.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Very Heavy Rain
-		case 503:
-			skyConditionIconLarge = "src/main/resources/icons/large/heavy_rain.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/heavy_rain.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Extreme Rain
-		case 504:
-			skyConditionIconLarge = "src/main/resources/icons/large/heavy_rain.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/heavy_rain.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Freezing Rain
-		case 511:
-			skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Light Intensity Shower Rain
-		case 520:
-			skyConditionIconLarge = "src/main/resources/icons/large/light_rain.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/light_rain.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Shower Rain
-		case 521:
-			skyConditionIconLarge = "src/main/resources/icons/large/heavy_rain.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/heavy_rain.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Heavy Intensity Shower Rain
-		case 522:
-			skyConditionIconLarge = "src/main/resources/icons/large/heavy_rain.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/heavy_rain.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Ragged Shower Rain
-		case 531:
-			skyConditionIconLarge = "src/main/resources/icons/large/heavy_rain.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/heavy_rain.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// SNOW
-
-		// Light Snow
-		case 600:
-			skyConditionIconLarge = "src/main/resources/icons/large/light_snow.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/light_snow.png";
-			skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
-			break;
-
-		// Snow
-		case 601:
-			skyConditionIconLarge = "src/main/resources/icons/large/light_snow.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/light_snow.png";
-			skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
-			break;
-
-		// Heavy Snow
-		case 602:
-			skyConditionIconLarge = "src/main/resources/icons/large/heavy_snow.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/heavy_snow.png";
-			skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
-			break;
-
-		// Sleet
-		case 611:
-			skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
-			skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
-			break;
-
-		// Shower Sleet
-		case 612:
-			skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Light Rain and Snow
-		case 615:
-			skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Rain and Snow
-		case 616:
-			skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Light Shower Snow
-		case 620:
-			skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
-			skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
-			break;
-
-		// Shower Snow
-		case 621:
-			skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
-			skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
-			break;
-
-		// Heavy Shower Snow
-		case 622:
-			skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
-			skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
-			break;
-
-		// Atmosphere
-
-		// Mist
-		case 701:
-			skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
-			skyConditionBackground = "src/main/resources/backgrounds/fog.jpg";
-			break;
-
-		// Smoke
-		case 711:
-			skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
-			skyConditionBackground = "src/main/resources/backgrounds/volcano.jpg";
-			break;
-
-		// Haze
-		case 721:
-			skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
-			skyConditionBackground = "src/main/resources/backgrounds/fog.jpg";
-			break;
-
-		// Sand/Dust Whirls
-		case 731:
-			skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
-			skyConditionBackground = "src/main/resources/backgrounds/sand.jpg";
-			break;
-
-		// Fog
-		case 741:
-			skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
-			skyConditionBackground = "src/main/resources/backgrounds/fog.jpg";
-			break;
-
-		// Sand
-		case 751:
-			skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
-			skyConditionBackground = "src/main/resources/backgrounds/sand.jpg";
-			break;
-
-		// Dust
-		case 761:
-			skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
-			skyConditionBackground = "src/main/resources/backgrounds/sand.jpg";
-			break;
-
-		// Volcanic Ash
-		case 762:
-			skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
-			skyConditionBackground = "src/main/resources/backgrounds/volcano.jpg";
-			break;
-
-		// Squalls
-		case 771:
-			skyConditionIconLarge = "src/main/resources/icons/large/tornado.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/torndao.png";
-			skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
-			break;
-
-		// Tornado
-		case 781:
-			skyConditionIconLarge = "src/main/resources/icons/large/tornado.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/torndao.png";
-			skyConditionBackground = "src/main/resources/backgrounds/tornado.jpg";
-			break;
-
-		// CLOUDS
-
-		// Sky is clear
-		case 800:
-			skyConditionIconLarge = "src/main/resources/icons/large/sun.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/sun.png";
-			skyConditionBackground = "src/main/resources/backgrounds/sun.jpg";
-			break;
-
-		// Calm
-		case 951:
-			skyConditionIconLarge = "src/main/resources/icons/large/sun.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/sun.png";
-			skyConditionBackground = "src/main/resources/backgrounds/partial_clouds.jpg";
-			break;
-
-		// Few Clouds
-		case 801:
-			skyConditionIconLarge = "src/main/resources/icons/large/light_clouds.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/light_clouds.png";
-			skyConditionBackground = "src/main/resources/backgrounds/partial_clouds.jpg";
-			break;
-
-		// Scattered Clouds
-		case 802:
-			skyConditionIconLarge = "src/main/resources/icons/large/light_clouds.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/light_clouds.png";
-			skyConditionBackground = "src/main/resources/backgrounds/partial_clouds.jpg";
-			break;
-
-		// Broken Clouds
-		case 803:
-			skyConditionIconLarge = "src/main/resources/icons/large/heavy_clouds.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/heavy_clouds.png";
-			skyConditionBackground = "src/main/resources/backgrounds/clouds.jpg";
-			break;
-
-		// Overcast Clouds
-		case 804:
-			skyConditionIconLarge = "src/main/resources/icons/large/heavy_clouds.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/heavy_clouds.png";
-			skyConditionBackground = "src/main/resources/backgrounds/clouds.jpg";
-			break;
-
-		// EXTREME
-
-		// Tornado
-		case 900:
-			skyConditionIconLarge = "src/main/resources/icons/large/tornado.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/torndao.png";
-			skyConditionBackground = "src/main/resources/backgrounds/tornado.jpg";
-			break;
-
-		// Tropical Storm
-		case 901:
-			skyConditionIconLarge = "src/main/resources/icons/large/tornado.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/torndao.png";
-			skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
-			break;
-
-		// Hurricane
-		case 902:
-			skyConditionIconLarge = "src/main/resources/icons/large/tornado.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/torndao.png";
-			skyConditionBackground = "src/main/resources/backgrounds/hurricane.jpg";
-			break;
-
-		// Cold
-		case 903:
-			skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
-			skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
-			break;
-
-		// Hot
-		case 904:
-			skyConditionIconLarge = "src/main/resources/icons/large/sun.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/sun.png";
-			skyConditionBackground = "src/main/resources/backgrounds/sun.jpg";
-			break;
-
-		// Windy
-		case 905:
-			skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
-			skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
-			break;
-
-		// Hail
-		case 906:
-			skyConditionIconLarge = "src/main/resources/icons/large/heavy_snow.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/heavy_snow.png";
-			skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
-			break;
-
-		// ADDITIONAL
-
-		// Setting
-		case 950:
-			skyConditionIconLarge = "src/main/resources/icons/large/sun.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/sun.png";
-			skyConditionBackground = "src/main/resources/backgrounds/sun.jpg";
-			break;
-
-		// Light Breeze
-		case 952:
-			skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
-			skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
-			break;
-
-		// Gentle Breeze
-		case 953:
-			skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
-			skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
-			break;
-
-		// Moderate breeze
-		case 954:
-			skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
-			skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
-			break;
-
-		// Fresh Breeze
-		case 955:
-			skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
-			skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
-			break;
-
-		// Strong Breeze
-		case 956:
-			skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
-			skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
-			break;
-
-		// High Wind, near Gale
-		case 957:
-			skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
-			skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
-			break;
-
-		// Gale
-		case 958:
-			skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
-			skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
-			break;
-
-		// Severe Gale
-		case 959:
-			skyConditionIconLarge = "src/main/resources/icons/large/sun.png";
-			skyConditionBackground = "src/main/resources/backgrounds/sun.jpg";
-			break;
-
-		// Storm
-		case 960:
-			skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
-			skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
-			break;
-
-		// Violent Storm
-		case 961:
-			skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
-			skyConditionBackground = "src/main/resources/backgrounds/tornado.jpg";
-			break;
-
-		// Hurricane
-		case 962:
-			skyConditionIconLarge = "src/main/resources/icons/large/tornado.png";
-			skyConditionIconSmall = "src/main/resources/icons/small/tornado.png";
-			skyConditionBackground = "src/main/resources/backgrounds/hurricane.jpg";
-			break;
-		}
+            // THUNDERSTORM
+            // Thunderstorm with Light Rain
+            case 200:
+            // Thunderstorm with Rain
+            case 201:
+            // Thunderstorm with Heavy Rain
+            case 202:
+            // Light Thunderstorm
+            case 210:
+            // Thunderstorm
+            case 211:
+            // Heavy Thunderstorm
+            case 212:
+            // Ragged Thunderstorm
+            case 221:
+            // Thunderstorm with Light Drizzle
+            case 230:
+            // Thunderstorm with Drizzle
+            case 231:
+            // Thunderstorm with Heavy Drizzle
+            case 232:
+                icon = "thunder";
+                background = "thunder";
+                break;
+            // DRIZZLE
+            // Light Intensity Drizzle
+            case 300:
+            // Drizzle
+            case 301:
+            // Heavy Intensity Drizzle
+            case 302:
+            // Light Intensity Drizzle Rain
+            case 310:
+            // Drizzle Rain
+            case 311:
+            // Heavy Intensity Drizzle Rain
+            case 312:
+            // Shower Rain and Drizzle
+            case 313:
+            // Heavy Shower Rain and Drizzle
+            case 314:
+            // Shower Drizzle
+            case 321:
+                icon = "drizzle";
+                background = "rain";
+                break;
+            // RAIN
+            // Light Rain
+            case 500:
+                // Moderate Rain
+            case 501:
+                // Heavy Intensity Rain
+            case 502:
+                // Very Heavy Rain
+            case 503:
+                // Extreme Rain
+            case 504:
+                // Shower Rain
+            case 521:
+                // Heavy Intensity Shower Rain
+            case 522:
+                // Ragged Shower Rain
+            case 531:
+                icon = "heavy_rain";
+                background = "rain";
+                break;
+            // Freezing Rain
+            case 511:
+                icon = "sleet";
+                background = "rain";
+                break;
+            // Light Intensity Shower Rain
+            case 520:
+                icon = "light_rain";
+                background = "rain";
+                break;
+            // SNOW
+            // Light Snow
+            case 600:
+                // Snow
+            case 601:
+                icon = "light_snow";
+                background = "snow";
+                break;
+            // Heavy Snow
+            case 602:
+                // Hurricane
+            case 902:
+                // Hail
+            case 906:
+                icon = "heavy_snow";
+                background = "snow";
+                break;
+            // Sleet
+            case 611:
+                // Shower Sleet
+            case 612:
+                // Light Rain and Snow
+            case 615:
+                // Rain and Snow
+            case 616:
+                icon = "sleet";
+                background = "rain";
+                break;
+            // Light Shower Snow
+            case 620:
+                // Shower Snow
+            case 621:
+                // Heavy Shower Snow
+            case 622:
+                icon = "sleet";
+                background = "snow";
+                break;
+            // ATMOSPHERE
+            // Mist
+            case 701:
+                // Fog
+            case 721:
+                //Haze
+            case 741:
+                icon = "mist";
+                background = "fog";
+                break;
+            // Smoke
+            case 711:
+                // Volcanic Ash
+            case 762:
+                icon = "mist";
+                background = "volcano";
+                break;
+            // Sand/Dust Whirls
+            case 731:
+                // Sand
+            case 751:
+                // Dust
+            case 761:
+                icon = "mist";
+                background = "sand";
+                break;
+            // Squalls
+            case 771:
+                icon = "tornado";
+                background = "snow";
+                break;
+            // Tornado
+            case 781:
+            case 900:
+                icon = "tornado";
+                background = "tornado";
+                break;
+            // CLOUDS
+            // Sky is clear
+            case 800:
+                icon = "sun";
+                background = "sun";
+                break;
+            // Calm
+            case 951:
+                icon = "sun";
+                background = "partial_clouds";
+                break;
+            // Few Clouds
+            case 801:
+                // Scattered Clouds
+            case 802:
+                icon = "light_clouds";
+                background = "partial_clouds";
+                break;
+            // Broken Clouds
+            case 803:
+                // Overcast Clouds
+            case 804:
+                icon = "heavy_clouds";
+                background = "clouds";
+                break;
+            // EXTREME
+            // Tropical Storm
+            case 901:
+                icon = "tornado";
+                background = "rain";
+                break;
+            // Cold
+            case 903:
+                icon = "wind";
+                background = "snow";
+                break;
+            // Hot
+            case 904:
+            case 950:
+                icon = "sun";
+                background = "sun";
+                break;
+            // Windy
+            case 905:
+                // Severe Gale
+            case 959:
+                // ADDITIONAL
+                // Setting
+                // Light Breeze
+            case 952:
+                // Gentle Breeze
+            case 953:
+                // Moderate breeze
+            case 954:
+                // Fresh Breeze
+            case 955:
+                // Strong Breeze
+            case 956:
+                // High Wind, near Gale
+            case 957:
+                // Gale
+            case 958:
+                // Storm
+            case 960:
+                icon = "wind";
+                background = "wind";
+                break;
+            // Violent Storm
+            case 961:
+                icon = "wind";
+                background = "tornado";
+                break;
+            // Hurricane
+            case 962:
+                icon = "tornado";
+                background = "hurricane";
+                break;
+            //failsafe, but shouldn't happen
+            default:
+                icon = "sun";
+                background = "sun";
+        }
+        skyConditionIconLarge = "src/main/resources/icons/large/" + icon + ".png";
+        skyConditionIconSmall = "src/main/resources/icons/small/" + icon + ".png";
+        skyConditionBackground = "src/main/resources/backgrounds/" + background + ".jpg";
 	}
+    /*
+    //old way
+    public void setSkyConditionImages(int ID) {
+        switch (ID) {
+            // THUNDERSTORM
+            // Thunderstorm with Light Rain
+            case 200:
+                skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
+                skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
+                break;
+            // Thunderstorm with Rain
+            case 201:
+                skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
+                skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
+                break;
+            // Thunderstorm with Heavy Rain
+            case 202:
+                skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
+                skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
+                break;
+
+            // Light Thunderstorm
+            case 210:
+                skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
+                skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
+                break;
+
+            // Thunderstorm
+            case 211:
+                skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
+                skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
+                break;
+
+            // Heavy Thunderstorm
+            case 212:
+                skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
+                skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
+                break;
+
+            // Ragged Thunderstorm
+            case 221:
+                skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
+                skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
+                break;
+
+            // Thunderstorm with Light Drizzle
+            case 230:
+                skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
+                skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
+                break;
+
+            // Thunderstorm with Drizzle
+            case 231:
+                skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
+                skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
+                break;
+
+            // Thunderstorm with Heavy Drizzle
+            case 232:
+                skyConditionIconLarge = "src/main/resources/icons/large/thunder.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/thunder.png";
+                skyConditionBackground = "src/main/resources/backgrounds/thunder.jpg";
+                break;
+
+            // DRIZZLE
+
+            // Light Intensity Drizzle
+            case 300:
+                skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Drizzle
+            case 301:
+                skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Heavy Intensity Drizzle
+            case 302:
+                skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Light Intensity Drizzle Rain
+            case 310:
+                skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Drizzle Rain
+            case 311:
+                skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Heavy Intensity Drizzle Rain
+            case 312:
+                skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Shower Rain and Drizzle
+            case 313:
+                skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Heavy Shower Rain and Drizzle
+            case 314:
+                skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Shower Drizzle
+            case 321:
+                skyConditionIconLarge = "src/main/resources/icons/large/drizzle.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/drizzle.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // RAIN
+
+            // Light Rain
+            case 500:
+                skyConditionIconLarge = "src/main/resources/icons/large/light_rain.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/light_rain.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Moderate Rain
+            case 501:
+                skyConditionIconLarge = "src/main/resources/icons/large/heavy_rain.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/heavy_rain.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Heavy Intensity Rain
+            case 502:
+                skyConditionIconLarge = "src/main/resources/icons/large/heavy_rain.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/heavy_rain.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Very Heavy Rain
+            case 503:
+                skyConditionIconLarge = "src/main/resources/icons/large/heavy_rain.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/heavy_rain.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Extreme Rain
+            case 504:
+                skyConditionIconLarge = "src/main/resources/icons/large/heavy_rain.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/heavy_rain.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Freezing Rain
+            case 511:
+                skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Light Intensity Shower Rain
+            case 520:
+                skyConditionIconLarge = "src/main/resources/icons/large/light_rain.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/light_rain.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Shower Rain
+            case 521:
+                skyConditionIconLarge = "src/main/resources/icons/large/heavy_rain.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/heavy_rain.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Heavy Intensity Shower Rain
+            case 522:
+                skyConditionIconLarge = "src/main/resources/icons/large/heavy_rain.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/heavy_rain.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Ragged Shower Rain
+            case 531:
+                skyConditionIconLarge = "src/main/resources/icons/large/heavy_rain.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/heavy_rain.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // SNOW
+
+            // Light Snow
+            case 600:
+                skyConditionIconLarge = "src/main/resources/icons/large/light_snow.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/light_snow.png";
+                skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
+                break;
+
+            // Snow
+            case 601:
+                skyConditionIconLarge = "src/main/resources/icons/large/light_snow.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/light_snow.png";
+                skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
+                break;
+
+            // Heavy Snow
+            case 602:
+                skyConditionIconLarge = "src/main/resources/icons/large/heavy_snow.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/heavy_snow.png";
+                skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
+                break;
+
+            // Sleet
+            case 611:
+                skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
+                skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
+                break;
+
+            // Shower Sleet
+            case 612:
+                skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Light Rain and Snow
+            case 615:
+                skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Rain and Snow
+            case 616:
+                skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Light Shower Snow
+            case 620:
+                skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
+                skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
+                break;
+
+            // Shower Snow
+            case 621:
+                skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
+                skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
+                break;
+
+            // Heavy Shower Snow
+            case 622:
+                skyConditionIconLarge = "src/main/resources/icons/large/sleet.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/sleet.png";
+                skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
+                break;
+
+            // Atmosphere
+
+            // Mist
+            case 701:
+                skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
+                skyConditionBackground = "src/main/resources/backgrounds/fog.jpg";
+                break;
+
+            // Smoke
+            case 711:
+                skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
+                skyConditionBackground = "src/main/resources/backgrounds/volcano.jpg";
+                break;
+
+            // Haze
+            case 721:
+                skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
+                skyConditionBackground = "src/main/resources/backgrounds/fog.jpg";
+                break;
+
+            // Sand/Dust Whirls
+            case 731:
+                skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
+                skyConditionBackground = "src/main/resources/backgrounds/sand.jpg";
+                break;
+
+            // Fog
+            case 741:
+                skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
+                skyConditionBackground = "src/main/resources/backgrounds/fog.jpg";
+                break;
+
+            // Sand
+            case 751:
+                skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
+                skyConditionBackground = "src/main/resources/backgrounds/sand.jpg";
+                break;
+
+            // Dust
+            case 761:
+                skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
+                skyConditionBackground = "src/main/resources/backgrounds/sand.jpg";
+                break;
+
+            // Volcanic Ash
+            case 762:
+                skyConditionIconLarge = "src/main/resources/icons/large/mist.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/mist.png";
+                skyConditionBackground = "src/main/resources/backgrounds/volcano.jpg";
+                break;
+
+            // Squalls
+            case 771:
+                skyConditionIconLarge = "src/main/resources/icons/large/tornado.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/torndao.png";
+                skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
+                break;
+
+            // Tornado
+            case 781:
+                skyConditionIconLarge = "src/main/resources/icons/large/tornado.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/torndao.png";
+                skyConditionBackground = "src/main/resources/backgrounds/tornado.jpg";
+                break;
+
+            // CLOUDS
+
+            // Sky is clear
+            case 800:
+                skyConditionIconLarge = "src/main/resources/icons/large/sun.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/sun.png";
+                skyConditionBackground = "src/main/resources/backgrounds/sun.jpg";
+                break;
+
+            // Calm
+            case 951:
+                skyConditionIconLarge = "src/main/resources/icons/large/sun.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/sun.png";
+                skyConditionBackground = "src/main/resources/backgrounds/partial_clouds.jpg";
+                break;
+
+            // Few Clouds
+            case 801:
+                skyConditionIconLarge = "src/main/resources/icons/large/light_clouds.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/light_clouds.png";
+                skyConditionBackground = "src/main/resources/backgrounds/partial_clouds.jpg";
+                break;
+
+            // Scattered Clouds
+            case 802:
+                skyConditionIconLarge = "src/main/resources/icons/large/light_clouds.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/light_clouds.png";
+                skyConditionBackground = "src/main/resources/backgrounds/partial_clouds.jpg";
+                break;
+
+            // Broken Clouds
+            case 803:
+                skyConditionIconLarge = "src/main/resources/icons/large/heavy_clouds.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/heavy_clouds.png";
+                skyConditionBackground = "src/main/resources/backgrounds/clouds.jpg";
+                break;
+
+            // Overcast Clouds
+            case 804:
+                skyConditionIconLarge = "src/main/resources/icons/large/heavy_clouds.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/heavy_clouds.png";
+                skyConditionBackground = "src/main/resources/backgrounds/clouds.jpg";
+                break;
+
+            // EXTREME
+
+            // Tornado
+            case 900:
+                skyConditionIconLarge = "src/main/resources/icons/large/tornado.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/torndao.png";
+                skyConditionBackground = "src/main/resources/backgrounds/tornado.jpg";
+                break;
+
+            // Tropical Storm
+            case 901:
+                skyConditionIconLarge = "src/main/resources/icons/large/tornado.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/torndao.png";
+                skyConditionBackground = "src/main/resources/backgrounds/rain.jpg";
+                break;
+
+            // Hurricane
+            case 902:
+                skyConditionIconLarge = "src/main/resources/icons/large/tornado.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/torndao.png";
+                skyConditionBackground = "src/main/resources/backgrounds/hurricane.jpg";
+                break;
+
+            // Cold
+            case 903:
+                skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
+                skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
+                break;
+
+            // Hot
+            case 904:
+                skyConditionIconLarge = "src/main/resources/icons/large/sun.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/sun.png";
+                skyConditionBackground = "src/main/resources/backgrounds/sun.jpg";
+                break;
+
+            // Windy
+            case 905:
+                skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
+                skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
+                break;
+
+            // Hail
+            case 906:
+                skyConditionIconLarge = "src/main/resources/icons/large/heavy_snow.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/heavy_snow.png";
+                skyConditionBackground = "src/main/resources/backgrounds/snow.jpg";
+                break;
+
+            // ADDITIONAL
+
+            // Setting
+            case 950:
+                skyConditionIconLarge = "src/main/resources/icons/large/sun.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/sun.png";
+                skyConditionBackground = "src/main/resources/backgrounds/sun.jpg";
+                break;
+
+            // Light Breeze
+            case 952:
+                skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
+                skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
+                break;
+
+            // Gentle Breeze
+            case 953:
+                skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
+                skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
+                break;
+
+            // Moderate breeze
+            case 954:
+                skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
+                skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
+                break;
+
+            // Fresh Breeze
+            case 955:
+                skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
+                skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
+                break;
+
+            // Strong Breeze
+            case 956:
+                skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
+                skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
+                break;
+
+            // High Wind, near Gale
+            case 957:
+                skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
+                skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
+                break;
+
+            // Gale
+            case 958:
+                skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
+                skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
+                break;
+
+            // Severe Gale
+            case 959:
+                skyConditionIconLarge = "src/main/resources/icons/large/sun.png";
+                skyConditionBackground = "src/main/resources/backgrounds/sun.jpg";
+                break;
+
+            // Storm
+            case 960:
+                skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
+                skyConditionBackground = "src/main/resources/backgrounds/wind.jpg";
+                break;
+
+            // Violent Storm
+            case 961:
+                skyConditionIconLarge = "src/main/resources/icons/large/wind.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/wind.png";
+                skyConditionBackground = "src/main/resources/backgrounds/tornado.jpg";
+                break;
+
+            // Hurricane
+            case 962:
+                skyConditionIconLarge = "src/main/resources/icons/large/tornado.png";
+                skyConditionIconSmall = "src/main/resources/icons/small/tornado.png";
+                skyConditionBackground = "src/main/resources/backgrounds/hurricane.jpg";
+                break;
+        }
+    }*/
 }
