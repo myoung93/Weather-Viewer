@@ -10,6 +10,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import javax.swing.event.*;
 import java.io.UnsupportedEncodingException;
 
 public class MainFrame {
@@ -325,12 +326,11 @@ public class MainFrame {
 		labelSkyConditionIcon = new JLabel();
 		labelSkyConditionIcon.setBounds(375, 55, 204, 181);
 		frame.getContentPane().add(labelSkyConditionIcon);
-
 		// Refresh button
 		buttonRefresh = new JButton("");
 		buttonRefresh.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				refresh();
+				refresh(labelLocation.getText());
 			}
 		});
 		// buttonRefresh.setIcon(new ImageIcon(
@@ -437,13 +437,20 @@ public class MainFrame {
 
 		// Locations list
 		listModel = new DefaultListModel();
-
+		
 		// add saved locations to current list -NK
 		for(String loc : prefs.getLocations()) { //loads the MyLocations arraylist into listModel
 			listModel.addElement(loc);
 		}
-
+		
 		listLocations = new JList(listModel);
+		ListSelectionModel listSelectionModel = listLocations.getSelectionModel();
+		listSelectionModel.addListSelectionListener(new ListSelectionListener(){
+			public void valueChanged(ListSelectionEvent e){
+				if (e.getValueIsAdjusting() == false)
+					refresh(listLocations.getSelectedValue().toString());
+			}
+		});
 		scrollPane.setViewportView(listLocations);
 
 		// favorite Button
@@ -854,6 +861,12 @@ public class MainFrame {
 		shortTermView();
 	}
 
+	///END GUI INITIALAZATION///
+	
+	
+	///MISCELLANIOUS METHODS///
+	
+	//initializes our custom fonts
 	private void createFont() {
 		java.io.InputStream fontInputStream = this.getClass()
 				.getResourceAsStream("/fonts/HelveticaNeue-Medium.otf");
@@ -871,12 +884,13 @@ public class MainFrame {
 	// in the future, this should probably take a String city parameter to
 	// construct the CurrentWeather obj from.
 	// should probably show some kind of "updating" message
-	public void refresh() {
+	public void refresh(String location) {
+		
 		CurrentWeather new_weather = null;
 		try {
 			// constructor should take String city parameter in the future.
-			System.out.println("Retrieving weather data");
-			new_weather = new CurrentWeather("London,CA");
+			System.out.println("Retrieving weather data");	
+			new_weather = new CurrentWeather(location);
 		} catch (UnsupportedEncodingException e) {
 			System.out
 					.println("Something went wrong retrieving current weather");
@@ -949,9 +963,10 @@ public class MainFrame {
 		labelDay7SkyConditionInfo.setText(new_weather.getSkyCondition());
 		labelDay7TempInfo.setText(new_weather.getTemp() + "°C");
 	}
+		
 
-	// This listener is shared by the barSearch TextField and the AddLocation
-	// Button.
+	// This listener is shared by the barSearch TextField and the AddLocation Button.
+	// Adds a new location to the Location List
 	class AddLocation implements ActionListener, DocumentListener {
 		private boolean alreadyEnabled = false;
 		private JButton button;
@@ -981,7 +996,7 @@ public class MainFrame {
 
 			listModel.insertElementAt(barSearch.getText(), index);
 			// If we just wanted to add to the end, we'd do this:
-			// listModel.addElement(employeeName.getText());
+			// listModel.addElement(barSearch.getText());
 
 			// Add element to user preferences as well - NK
 			try {
@@ -1042,6 +1057,7 @@ public class MainFrame {
 		}
 	}
 
+		
 	// enable short term view
 	public void shortTermView() {
 		buttonLongTerm.setForeground(Color.DARK_GRAY);
