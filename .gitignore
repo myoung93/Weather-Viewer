@@ -1,3 +1,6 @@
 *.class
 target/
 *.java~
+workspace.xml
+*.iml
+*.prefs

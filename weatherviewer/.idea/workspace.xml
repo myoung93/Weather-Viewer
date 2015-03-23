@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="Temperature fields now update upon">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather.prefs" afterPath="$PROJECT_DIR$/weather.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
+    <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="weatherviewer.iws" />
@@ -832,7 +831,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427154227870</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Temperature fields now update upon unit change. Updated .gitignore">
+      <created>1427154880120</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1427154880120</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -887,7 +892,8 @@
     <MESSAGE value="Added time conversion method" />
     <MESSAGE value="Made C/F work the way they should, except for updating without pressing the button. Combined shortTermView() and longTermView() into one. Temperature is all but finished." />
     <MESSAGE value="Considerably shortened setSkyConditionImages, but left the core of the method the same." />
-    <option name="LAST_COMMIT_MESSAGE" value="Considerably shortened setSkyConditionImages, but left the core of the method the same." />
+    <MESSAGE value="Temperature fields now update upon unit change. Updated .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Temperature fields now update upon unit change. Updated .gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
