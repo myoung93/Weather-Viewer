@@ -14,7 +14,7 @@ public class CurrentWeather {
 
     //Data fields required for Current Weather view
 	private String City, Sky, Sunrise, Sunset, Country;
-	private double Temp, Pressure, Humidity, TempMax, TempMin, WindSpeed, WindDir;
+	private double temp, pressure, humidity, maxTemp, minTemp, windSpeed, windDir;
 	private int weatherID;
 
     /**
@@ -68,17 +68,19 @@ public class CurrentWeather {
 
 		// get information from main object
 		JSONObject Obj_Main = JsonData.getJSONObject("main");
-		Temp = Obj_Main.getDouble("temp");// temperature
+        //we subtract 273 from each temperature value because there is no need to store the kelvin value
+		temp = Obj_Main.getDouble("temp") - 273;// temperature
+        minTemp = Obj_Main.getDouble("temp_min") - 273;// min temperature
+        maxTemp = Obj_Main.getDouble("temp_max") - 273;// max temperature
 		//divide by 10 to convert from hPa to kPa
-		Pressure = Obj_Main.getDouble("pressure")/10; // pressure
-		Humidity = Obj_Main.getDouble("humidity");// humidity
-		TempMin = Obj_Main.getDouble("temp_min");// min temperature
-		TempMax = Obj_Main.getDouble("temp_max");// max temperature
+		pressure = Obj_Main.getDouble("pressure")/10; // pressure
+		humidity = Obj_Main.getDouble("humidity");// humidity
+
 
 		// get information from wind object
 		JSONObject Obj_wind = JsonData.getJSONObject("wind");
-		WindSpeed = Obj_wind.getDouble("speed");// wind speed
-		WindDir = Obj_wind.getDouble("deg");// wind direction
+		windSpeed = Obj_wind.getDouble("speed");// wind speed
+		windDir = Obj_wind.getDouble("deg");// wind direction
 
 		// get information from weather object
 		JSONArray Array_Weather = JsonData.getJSONArray("weather");
@@ -101,26 +103,26 @@ public class CurrentWeather {
     }
 
     /**
-     * Getter method for WindSpeed
+     * Getter method for windSpeed
      * @return the current wind speed
      */
 	public String getWindSpeed() {
-		return String.valueOf(WindSpeed);
+		return String.valueOf(windSpeed);
 	}
     /**
-     * Getter method for Pressure
+     * Getter method for pressure
      * @return the current pressure
      */
 	public String getPressure() {
-		return String.valueOf(Pressure);
+		return String.valueOf(pressure);
 	}
 
     /**
-     * Getter method for Humidity
+     * Getter method for humidity
      * @return the current humidity in %
      */
 	public String getHumidity() {
-		return String.valueOf(Humidity);
+		return String.valueOf(humidity);
 	}
     /**
      * Getter method for Sunrise
@@ -141,74 +143,89 @@ public class CurrentWeather {
      * @return the current wind direction in degrees
      */
 	public String getWindDirection() {
-		return String.valueOf(WindDir);
+		return String.valueOf(windDir);
 	}
 
     /**
      * Getter method for Celsius temperature
-     * @return the current temp in degrees C (will be only Temp method in later versions)
+     * @return the current temp in degrees C (will be only temp method in later versions)
      */
-	public String getTemp() {
-		return getTempC();
+	public String getTemp(char tempUnit) {
+		if(tempUnit == 'f')
+            return cleanTemp(temp * 9 / 5 + 32, tempUnit);
+        else
+            return cleanTemp(temp, tempUnit);
 	}
+
+    public String getMaxTemp(char tempUnit) {
+        if(tempUnit == 'f')
+            return cleanTemp(maxTemp * 9 / 5 + 32, tempUnit);
+        else
+            return cleanTemp(maxTemp, tempUnit);
+    }
+
+    public String getMinTemp(char tempUnit) {
+        if(tempUnit == 'f')
+            return cleanTemp(minTemp * 9 / 5 + 32, tempUnit);
+        else
+            return cleanTemp(minTemp, tempUnit);
+    }
+
+    //puts the temperature into a readable form
+    private String cleanTemp(double t, char unit) {
+        return String.valueOf(t).substring(0,2) + '°' + Character.toUpperCase(unit);
+    }
     /**
      * Helper method for Celsius temperature
      * @return the current temp in degrees C (will phase this out in later versions)
      */
-	public String getTempC() {
-        return String.valueOf(Temp - 273); 
-    }
+//	 public String getTempC() {
+//        return String.valueOf(temp - 273);
+//    }
     /**
      * Getter method for Fahrenheit temperature
      * @return the current temp in degrees F (will phase this out in later versions)
      */
-	public String getTempF() {
-        return String.valueOf(((Temp - 273) * 9 / 5.0) + 32);
-    }
-    /**
-     * Getter method for max Celsius temperature
-     * Same story as getTemp()s, will be the only getTempMax method later.
-     * @return the current max temp in degrees C
-     */
-	public String getTempMax() {
-		return getMaxTempC();
-	}
+//	public String getTempF() {
+//        return String.valueOf(((temp - 273) * 9 / 5.0) + 32);
+//    }
+
     /**
      * Getter method for max Celsius temperature
      * @return the current max temp in degrees C
      */
-	public String getMaxTempC() {
-        return String.valueOf(TempMax - 273);
-    }
+//	public String getMaxTempC() {
+//        return String.valueOf(maxTemp - 273);
+//    }
     /**
      * Getter method for max F temperature
      * @return the current max temp in degrees F
      */
-	public String getTempMaxF() {
-        return String.valueOf(((TempMax - 273) * 9 / 5.0) + 32);
-    }
+//	public String getTempMaxF() {
+//        return String.valueOf(((maxTemp - 273) * 9 / 5.0) + 32);
+//    }
     /**
      * Getter method for min Celsius temperature
      * Same story as getTemp()s, will be the only getTempMax method later.
      * @return the current min temp in degrees C
      */
-	public String getTempMin() {
-		return getTempMinC();
-	}
+//	public String getTempMin() {
+//		return getTempMinC();
+//	}
     /**
      * Getter method for min Celsius temperature
      * @return the current min temp in degrees C
      */
-	public String getTempMinC() {
-        return String.valueOf(TempMin - 273);
-    }
+//	public String getTempMinC() {
+//        return String.valueOf(minTemp - 273);
+//    }
     /**
      * Getter method for min F temperature
      * @return the current min temp in degrees f
      */
-    public String getTempMinF() {
-        return String.valueOf(((TempMin - 273) * 9 / 5.0) + 32);
-    }
+//    public String getTempMinF() {
+//        return String.valueOf(((minTemp - 273) * 9 / 5.0) + 32);
+//    }
     /**
      * Getter method for country name
      * @return the name of the country the city is in
@@ -232,15 +249,15 @@ public class CurrentWeather {
      * Purely for testing purposes, will be taken out in later versions.
      * @param args command line arguments
      */
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		try {
 			CurrentWeather test = new CurrentWeather("Shanghai,CN"); // using shanghai CN to test
-			System.out.println( test.getCountry()+ "\n" + test.getCity() + "\n" + test.getTemp() + "\n"
+			System.out.println( test.getCountry()+ "\n" + test.getCity() + "\n" + test.getTemp('c') + "\n"
 					+ test.getPressure() + "\n" + test.getHumidity() + "\n" + test.getTempMin() + "\n" + test.getTempMax()
 					+ "\n" + test.getWindSpeed() + "\n" + test.getWindDirection() + "\n" + test.getSkyCondition() + "\n"
 					+ test.getSunriseTime() + "\n" + test.getSunsetTime());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 }

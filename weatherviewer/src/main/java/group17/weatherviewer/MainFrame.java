@@ -237,14 +237,14 @@ public class MainFrame {
 		frame.getContentPane().add(labelAirPressure);
 
 		// max temp label
-		labelMaxTemp = new JLabel("Max Temp:");
+		labelMaxTemp = new JLabel("Maximum:");
 		labelMaxTemp.setForeground(Color.LIGHT_GRAY);
 		labelMaxTemp.setFont(font.deriveFont(15f));
 		labelMaxTemp.setBounds(50, 230, 96, 15);
 		frame.getContentPane().add(labelMaxTemp);
 
 		// min temp label
-		labelMinTemp = new JLabel("Min. Temp:");
+		labelMinTemp = new JLabel("Minimum:");
 		labelMinTemp.setForeground(Color.LIGHT_GRAY);
 		labelMinTemp.setFont(font.deriveFont(15f));
 		labelMinTemp.setBounds(50, 250, 96, 15);
@@ -349,7 +349,7 @@ public class MainFrame {
 		buttonShortTerm.setFont(font.deriveFont(14f));
 		buttonShortTerm.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				shortTermView();
+				toggleShortTerm(true);
 			}
 		});
 		buttonShortTerm.setOpaque(false);
@@ -362,7 +362,7 @@ public class MainFrame {
 		buttonLongTerm = new JButton("Long Term");
 		buttonLongTerm.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				longTermView();
+                toggleShortTerm(false);
 			}
 		});
 
@@ -386,14 +386,12 @@ public class MainFrame {
 		});
 		buttonToCelsius.setOpaque(false);
 
-		// buttonToCelsius.setFont(new Font("Helvetica", Font.PLAIN, 18));
 		buttonToCelsius.setFont(font.deriveFont(18f));
 		buttonToCelsius.setContentAreaFilled(false);
 		buttonToCelsius.setBorderPainted(false);
 		buttonToCelsius.setBounds(475, 283, 75, 29);
 
 		// toFarenheit button
-		// NEED TO CHECK PREFERENCES to set the color initially!
 		buttonToFahrenheit = new JButton("°F");
 		buttonToFahrenheit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -405,7 +403,6 @@ public class MainFrame {
 		});
 		buttonToFahrenheit.setOpaque(false);
 
-		// buttonToFahrenheit.setFont(new Font("Helvetica", Font.PLAIN, 18));
 		buttonToFahrenheit.setFont(font.deriveFont(18f));
 		buttonToFahrenheit.setContentAreaFilled(false);
 		buttonToFahrenheit.setBorderPainted(false);
@@ -851,7 +848,7 @@ public class MainFrame {
 		// / END INITIALIZATION OF LONG-TERM CONDITIONS ///
 
 		// show short term view by default
-		shortTermView();
+		toggleShortTerm(true);
 	}
 
 	private void createFont() {
@@ -871,6 +868,7 @@ public class MainFrame {
 	// in the future, this should probably take a String city parameter to
 	// construct the CurrentWeather obj from.
 	// should probably show some kind of "updating" message
+
 	public void refresh() {
 		CurrentWeather new_weather = null;
 		try {
@@ -883,18 +881,18 @@ public class MainFrame {
 			e.printStackTrace();
 		}
 
+        //store tempUnit so we don't have to call prefs.getTempUnit() every time
 		// current location panel
 		labelLocation.setText(new_weather.getCity() + ", "
 				+ new_weather.getCountry());
 		labelSkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelTempInfo.setText(new_weather.getTemp().substring(0,4) + "°C");
+
 		labelWindInfo.setText(new_weather.getWindSpeed() + " km/h "
 				+ new_weather.getWindDirection());
 		labelHumidityInfo.setText(new_weather.getHumidity() + "%");
 		labelAirPressureInfo.setText(new_weather.getPressure() + "kPa");
 		//need to substring these so we don't have a million decimal places
-		labelMaxTempInfo.setText(new_weather.getTempMax().substring(0,4) + "°C");
-		labelMinTempInfo.setText(new_weather.getTempMin().substring(0,4) + "°C");
+
 		labelSunriseInfo.setText(new_weather.getSunriseTime());
 		labelSunsetInfo.setText(new_weather.getSunsetTime());
 		setSkyConditionImages(new_weather.getWeatherID());
@@ -902,53 +900,79 @@ public class MainFrame {
 		backgroundLabel.setIcon(new ImageIcon(skyConditionBackground));
 		// short/longterm icons will be the same has current weather, can be easily switched later
 		//shortterm
+        setTemperatureFields(new_weather);
+
+        //these really need to be done using a loop. the exact same thing is done to every single label.
 		label12AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		label12AMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label12AMTempInfo.setText(new_weather.getTemp() + "°C");
-		label3AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		label3AMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label3AMTempInfo.setText(new_weather.getTemp() + "°C");
-		label6AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+        label12AMSkyConditionInfo.setText(new_weather.getSkyCondition());
+
+        label3AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+        label3AMSkyConditionInfo.setText(new_weather.getSkyCondition());
+
+        label6AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		label6AMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label6AMTempInfo.setText(new_weather.getTemp() + "°C");
+
 		label9AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		label9AMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label9AMTempInfo.setText(new_weather.getTemp() + "°C");
+
 		label12PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		label12PMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label12PMTempInfo.setText(new_weather.getTemp() + "°C");
+
 		label3PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		label3PMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label3PMTempInfo.setText(new_weather.getTemp() + "°C");
+
 		label6PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		label6PMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label6PMTempInfo.setText(new_weather.getTemp() + "°C");
+
 		label9PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		label9PMSkyConditionInfo.setText(new_weather.getSkyCondition());
-		label9PMTempInfo.setText(new_weather.getTemp() + "°C");
+
 		//longterm
 		labelDay1SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		labelDay1SkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelDay1TempInfo.setText(new_weather.getTemp() + "°C");
+
 		labelDay2SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		labelDay2SkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelDay2TempInfo.setText(new_weather.getTemp() + "°C");
+
 		labelDay3SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		labelDay3SkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelDay3TempInfo.setText(new_weather.getTemp() + "°C");
+
 		labelDay4SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		labelDay4SkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelDay4TempInfo.setText(new_weather.getTemp() + "°C");
+
 		labelDay5SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		labelDay5SkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelDay5TempInfo.setText(new_weather.getTemp() + "°C");
+
 		labelDay6SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		labelDay6SkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelDay6TempInfo.setText(new_weather.getTemp() + "°C");
+
 		labelDay7SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
 		labelDay7SkyConditionInfo.setText(new_weather.getSkyCondition());
-		labelDay7TempInfo.setText(new_weather.getTemp() + "°C");
+
 	}
+
+    //moved these to a method because in the future we will have to re-initialize them when c/f is changed.
+    private void setTemperatureFields(CurrentWeather new_weather) {
+        char tempUnit = prefs.getTempUnit();
+        labelTempInfo.setText(new_weather.getTemp(tempUnit));
+        labelMaxTempInfo.setText(new_weather.getMaxTemp(tempUnit));
+        labelMinTempInfo.setText(new_weather.getMinTemp(tempUnit));
+        label12AMTempInfo.setText(new_weather.getTemp(tempUnit));
+        label3AMTempInfo.setText(new_weather.getTemp(tempUnit));
+        label6AMTempInfo.setText(new_weather.getTemp(tempUnit));
+        label9AMTempInfo.setText(new_weather.getTemp(tempUnit));
+        label12PMTempInfo.setText(new_weather.getTemp(tempUnit));
+        label3PMTempInfo.setText(new_weather.getTemp(tempUnit));
+        label6PMTempInfo.setText(new_weather.getTemp(tempUnit));
+        label9PMTempInfo.setText(new_weather.getTemp(tempUnit));
+        labelDay1TempInfo.setText(new_weather.getTemp(tempUnit));
+        labelDay2TempInfo.setText(new_weather.getTemp(tempUnit));
+        labelDay3TempInfo.setText(new_weather.getTemp(tempUnit));
+        labelDay4TempInfo.setText(new_weather.getTemp(tempUnit));
+        labelDay5TempInfo.setText(new_weather.getTemp(tempUnit));
+        labelDay6TempInfo.setText(new_weather.getTemp(tempUnit));
+        labelDay7TempInfo.setText(new_weather.getTemp(tempUnit));
+}
 
 	// This listener is shared by the barSearch TextField and the AddLocation
 	// Button.
@@ -1042,7 +1066,85 @@ public class MainFrame {
 		}
 	}
 
-	// enable short term view
+    /**
+     * toggles whether the short/long term display is shown
+     * i still don't like this, but it's half as bad as before.
+     * @param b whether to show or hide short term
+   */
+    public void toggleShortTerm(boolean b) {
+        if (b) {
+            buttonLongTerm.setForeground(Color.DARK_GRAY);
+            buttonShortTerm.setForeground(Color.WHITE);
+        }
+        else {
+            buttonLongTerm.setForeground(Color.WHITE);
+            buttonShortTerm.setForeground(Color.DARK_GRAY);
+        }
+        labelDay1Info.setVisible(!b);
+        labelDay1SkyConditionIcon.setVisible(!b);
+        labelDay1TempInfo.setVisible(!b);
+        labelDay1SkyConditionInfo.setVisible(!b);
+        labelDay2Info.setVisible(!b);
+        labelDay2SkyConditionIcon.setVisible(!b);
+        labelDay2TempInfo.setVisible(!b);
+        labelDay2SkyConditionInfo.setVisible(!b);
+        labelDay3Info.setVisible(!b);
+        labelDay3SkyConditionIcon.setVisible(!b);
+        labelDay3TempInfo.setVisible(!b);
+        labelDay3SkyConditionInfo.setVisible(!b);
+        labelDay4Info.setVisible(!b);
+        labelDay4SkyConditionIcon.setVisible(!b);
+        labelDay4TempInfo.setVisible(!b);
+        labelDay4SkyConditionInfo.setVisible(!b);
+        labelDay5Info.setVisible(!b);
+        labelDay5SkyConditionIcon.setVisible(!b);
+        labelDay5TempInfo.setVisible(!b);
+        labelDay5SkyConditionInfo.setVisible(!b);
+        labelDay6Info.setVisible(!b);
+        labelDay6SkyConditionIcon.setVisible(!b);
+        labelDay6TempInfo.setVisible(!b);
+        labelDay6SkyConditionInfo.setVisible(!b);
+        labelDay7Info.setVisible(!b);
+        labelDay7SkyConditionIcon.setVisible(!b);
+        labelDay7TempInfo.setVisible(!b);
+        labelDay7SkyConditionInfo.setVisible(!b);
+        label12AM.setVisible(b);
+        label12AMSkyConditionIcon.setVisible(b);
+        label12AMTempInfo.setVisible(b);
+        label12AMSkyConditionInfo.setVisible(b);
+        label3AM.setVisible(b);
+        label3AMSkyConditionIcon.setVisible(b);
+        label3AMTempInfo.setVisible(b);
+        label3AMSkyConditionInfo.setVisible(b);
+        label6AM.setVisible(b);
+        label6AMSkyConditionIcon.setVisible(b);
+        label6AMTempInfo.setVisible(b);
+        label6AMSkyConditionInfo.setVisible(b);
+        label9AM.setVisible(b);
+        label9AMSkyConditionIcon.setVisible(b);
+        label9AMTempInfo.setVisible(b);
+        label9AMSkyConditionInfo.setVisible(b);
+        label12PM.setVisible(b);
+        label12PMSkyConditionIcon.setVisible(b);
+        label12PMTempInfo.setVisible(b);
+        label12PMSkyConditionInfo.setVisible(b);
+        label3PM.setVisible(b);
+        label3PMSkyConditionIcon.setVisible(b);
+        label3PMTempInfo.setVisible(b);
+        label3PMSkyConditionInfo.setVisible(b);
+        label6PM.setVisible(b);
+        label6PMSkyConditionIcon.setVisible(b);
+        label6PMTempInfo.setVisible(b);
+        label6PMSkyConditionInfo.setVisible(b);
+        label9PM.setVisible(b);
+        label9PMSkyConditionIcon.setVisible(b);
+        label9PMTempInfo.setVisible(b);
+        label9PMSkyConditionInfo.setVisible(b);
+    }
+
+
+	// enable short term view\
+    /*
 	public void shortTermView() {
 		buttonLongTerm.setForeground(Color.DARK_GRAY);
 		buttonShortTerm.setForeground(Color.WHITE);
@@ -1106,10 +1208,10 @@ public class MainFrame {
 		label9PMSkyConditionIcon.setVisible(true);
 		label9PMTempInfo.setVisible(true);
 		label9PMSkyConditionInfo.setVisible(true);
-	}
+	}*/
 
 	// enable long term view
-	public void longTermView() {
+	/*public void longTermView() {
 		buttonLongTerm.setForeground(Color.WHITE);
 		buttonShortTerm.setForeground(Color.DARK_GRAY);
 		labelDay1Info.setVisible(true);
@@ -1172,7 +1274,7 @@ public class MainFrame {
 		label9PMSkyConditionIcon.setVisible(false);
 		label9PMTempInfo.setVisible(false);
 		label9PMSkyConditionInfo.setVisible(false);
-	}
+	}*/
 
 	public void setSkyConditionImages(int ID) {
 		switch (ID) {
