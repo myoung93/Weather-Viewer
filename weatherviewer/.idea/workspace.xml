@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="">
+    <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="No more NullPointerExceptions when user selects temperature unit before updating">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather.prefs" afterPath="$PROJECT_DIR$/weather.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="weatherviewer.iws" />
@@ -32,9 +33,10 @@
       <file leaf-file-name="UserPreferences.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="3604">
+            <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="3587">
               <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <element signature="e#2676#2677#0" expanded="false" />
                 <element signature="e#2707#2708#0" expanded="false" />
                 <element signature="e#2904#2905#0" expanded="false" />
@@ -46,47 +48,18 @@
                 <element signature="e#3313#3314#0" expanded="false" />
                 <element signature="e#3345#3346#0" expanded="false" />
                 <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
-                <marker date="1427146598697" expanded="true" signature="5056:5076" placeholder="/**...*/" />
-                <marker date="1427146598697" expanded="true" signature="5459:5561" placeholder="/**...*/" />
-                <marker date="1427146598697" expanded="true" signature="5921:5987" placeholder="/**...*/" />
-                <marker date="1427146598697" expanded="true" signature="6306:6404" placeholder="/**...*/" />
-                <marker date="1427146598697" expanded="true" signature="6816:6822" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79075736" vertical-offset="15925" max-vertical-offset="35020">
-              <caret line="973" column="9" selection-start-line="973" selection-start-column="9" selection-end-line="973" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="16183" max-vertical-offset="35207">
+              <caret line="972" column="71" selection-start-line="972" selection-start-column="71" selection-end-line="972" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4490#4719#0" expanded="true" />
-                <element signature="e#4718#4719#0" expanded="true" />
-                <element signature="e#4784#4785#0" expanded="true" />
-                <element signature="e#4803#4804#0" expanded="true" />
-                <element signature="e#5771#5935#0" expanded="true" />
-                <element signature="e#5934#5935#0" expanded="true" />
-                <element signature="e#10623#10720#0" expanded="true" />
-                <element signature="e#10719#10720#0" expanded="true" />
-                <element signature="e#11324#11433#0" expanded="true" />
-                <element signature="e#11432#11433#0" expanded="true" />
-                <element signature="e#11759#11878#0" expanded="true" />
-                <element signature="e#11877#11878#0" expanded="true" />
-                <element signature="e#12292#12576#0" expanded="true" />
-                <element signature="e#12575#12576#0" expanded="true" />
-                <element signature="e#12908#13186#0" expanded="true" />
-                <element signature="e#13185#13186#0" expanded="true" />
-                <element signature="e#36613#36614#0" expanded="true" />
-                <element signature="e#36642#36643#0" expanded="true" />
-                <element signature="e#38173#38174#0" expanded="true" />
-                <element signature="e#38213#38214#0" expanded="true" />
-                <element signature="e#38295#38296#0" expanded="true" />
-                <element signature="e#38318#38319#0" expanded="true" />
-                <element signature="e#38400#38401#0" expanded="true" />
-                <element signature="e#38432#38433#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-              <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+              <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,16 +77,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurrentWeather.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CurrentWeather.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2202" max-vertical-offset="4216">
-              <caret line="153" column="27" selection-start-line="153" selection-start-column="27" selection-end-line="153" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.4843342" vertical-offset="2553" max-vertical-offset="4590">
+              <caret line="179" column="46" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="46" />
               <folding>
                 <element signature="e#3833#3834#0" expanded="true" />
                 <element signature="e#3872#3873#0" expanded="true" />
-                <element signature="e#7330#7331#0" expanded="true" />
-                <element signature="e#7351#7352#0" expanded="true" />
+                <element signature="e#3989#3990#0" expanded="true" />
+                <element signature="e#4027#4028#0" expanded="true" />
+                <element signature="e#4150#4151#0" expanded="true" />
+                <element signature="e#4188#4189#0" expanded="true" />
+                <element signature="e#4324#4325#0" expanded="true" />
+                <element signature="e#4345#4346#0" expanded="true" />
+                <element signature="e#4478#4479#0" expanded="true" />
+                <element signature="e#4498#4499#0" expanded="true" />
+                <element signature="e#4643#4644#0" expanded="true" />
+                <element signature="e#4680#4681#0" expanded="true" />
+                <element signature="e#7643#7644#0" expanded="true" />
+                <element signature="e#7664#7665#0" expanded="true" />
+                <element signature="e#7806#7807#0" expanded="true" />
+                <element signature="e#7823#7824#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,8 +134,8 @@
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
       </list>
     </option>
   </component>
@@ -193,7 +178,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -309,6 +293,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,29 +336,8 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="false" />
             <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.log</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/.tasks.xml.zip</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/tasks.xml.zip</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.indexes/e4/b9/22/e5/fa/history.index</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.markers</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/29.tree</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3843881376.index</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments.gen</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments.gen</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/version.ini</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments.gen</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/org/eclipse/recommenders/index/0.0.0-SNAPSHOT/resolver-status.properties</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java</PATH>
             <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/weather.prefs</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
             <option name="myUpdateName" value="Created" />
@@ -381,142 +345,6 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="false" />
             <option name="myId" value="CREATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/10/10cb445d53d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/11/30cfdc9a54d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/16/c072b2305bd000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/17/f09daf7e5ad000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1c/c0c49b005ad000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/32/405afd6c58d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/39/504f7d545ad000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3a/c0c0ef2454d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3c/80f87ccb55d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/42/e0d6fbbc5bd000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/43/b0f2411e5ad000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/45/7050ea8559d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/51/40f01f0157d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/53/30f382760fcf00141b46ef4904bf46a2</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/54/70a642685ad000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/55/005b458654d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/56/80aa96a258d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5e/8073f7765ad000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5e/d0d524e156d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6/10675c970ccf00141b46ef4904bf46a2</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6/e0e7120753d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6c/80ad744d54d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6c/d03a5a3559d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/73/10ff3e725bd000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/74/3042d7b855d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8/80a317ac57d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/80/90bcfc9659d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/85/e03d114b5bd000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/87/e055a94f56d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8b/b04f41a70ccf00141b46ef4904bf46a2</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8c/405bd52553d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8d/b013240656d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/92/d0d580b454d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9b/b0d580a353d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a4/b03551a25bd000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b/902788b058d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/bd/00b3600954d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/bf/30d4d0225bd000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c0/a0f461155bd000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c8/40f632c00ccf00141b46ef4904bf46a2</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ca/5072b7ad0ecf00141b46ef4904bf46a2</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/cb/807dc42958d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/cc/30b34a9d5ad000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/cf/90a4ea8e54d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/cf/b0530a6053d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d5/80f458e554d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d7/4085f1ab54d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d7/60d73c2b31d000141dc7f5b2bf82b8c5</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d9/80b8a4d455d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/de/b0abe9370ecf00141b46ef4904bf46a2</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/df/80aef0f65ad000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e5/50fc63da59d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e8/70ead60e59d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/eb/604d58855bce00141b8cc5a131ca6ede</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f4/b085e69e56d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f6/e0fa12fd53d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fa/4058c8d85ad000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fb/60ea277359d000141b19c4fdce340445</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_u.cfs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_u_1.del</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_v.cfs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_v_1.del</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_w.cfs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_w_1.del</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_x.cfs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_x_1.del</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_y.cfs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_x</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_14.cfs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_14_1.del</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_15.cfs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_15_1.del</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_16.cfs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_16_1.del</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_17.cfs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_17_1.del</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_18.cfs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_18_1.del</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_19.cfs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_17</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_u.cfs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_u_1.del</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_v.cfs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_u</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.fdt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.fdx</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.fnm</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.frq</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.nrm</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.prx</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.tii</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.tis</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments_7</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/encodings.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/clouds.jpg</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/default.jpg</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/fog.jpg</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/hurricane.jpg</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/partial_clouds.jpg</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/rain.jpg</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/sand.jpg</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/snow.jpg</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/sun.jpg</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/thunder.jpg</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/tornado.jpg</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/volcano.jpg</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/wind.jpg</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/large/clouds.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/large/drizzle.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/large/heavy_clouds.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/large/heavy_rain.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/large/heavy_snow.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/large/light_clouds.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/large/light_rain.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/large/light_snow.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/large/mist.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/large/sleet.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/large/sun.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/large/thunder.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/large/tornado.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/large/wind.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/small/clouds.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/small/drizzle.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/small/heavy_clouds.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/small/heavy_rain.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/small/heavy_snow.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/small/light_clouds.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/small/light_rain.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/small/light_snow.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/small/mist.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/small/sleet.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/small/sun.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/small/thunder.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/small/tornado.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/small/wind.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/weather.prefs</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
             <option name="myUpdateName" value="Deleted" />
@@ -625,7 +453,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="weatherviewer" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -844,7 +678,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427154928817</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="No more NullPointerExceptions when user selects temperature unit before updating">
+      <created>1427155032562</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1427155032562</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -865,7 +705,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18319838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15890688" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14347357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -873,7 +713,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39979756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -900,10 +740,27 @@
     <MESSAGE value="Made C/F work the way they should, except for updating without pressing the button. Combined shortTermView() and longTermView() into one. Temperature is all but finished." />
     <MESSAGE value="Considerably shortened setSkyConditionImages, but left the core of the method the same." />
     <MESSAGE value="Temperature fields now update upon unit change. Updated .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Temperature fields now update upon unit change. Updated .gitignore" />
+    <MESSAGE value="No more NullPointerExceptions when user selects temperature unit before updating" />
+    <option name="LAST_COMMIT_MESSAGE" value="No more NullPointerExceptions when user selects temperature unit before updating" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java</url>
+          <line>158</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -913,9 +770,10 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="3009">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="3587">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="e#2676#2677#0" expanded="false" />
             <element signature="e#2707#2708#0" expanded="false" />
             <element signature="e#2904#2905#0" expanded="false" />
@@ -927,53 +785,24 @@
             <element signature="e#3313#3314#0" expanded="false" />
             <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5056:5076" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5459:5561" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5921:5987" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6306:6404" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6816:6822" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9214" max-vertical-offset="11594">
-          <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="34748">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4490#4719#0" expanded="true" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4784#4785#0" expanded="true" />
-            <element signature="e#4803#4804#0" expanded="true" />
-            <element signature="e#5771#5935#0" expanded="true" />
-            <element signature="e#5934#5935#0" expanded="true" />
-            <element signature="e#10623#10720#0" expanded="true" />
-            <element signature="e#10719#10720#0" expanded="true" />
-            <element signature="e#11324#11433#0" expanded="true" />
-            <element signature="e#11432#11433#0" expanded="true" />
-            <element signature="e#11759#11878#0" expanded="true" />
-            <element signature="e#11877#11878#0" expanded="true" />
-            <element signature="e#12292#12576#0" expanded="true" />
-            <element signature="e#12575#12576#0" expanded="true" />
-            <element signature="e#12908#13186#0" expanded="true" />
-            <element signature="e#13185#13186#0" expanded="true" />
-            <element signature="e#36613#36614#0" expanded="true" />
-            <element signature="e#36642#36643#0" expanded="true" />
-            <element signature="e#38173#38174#0" expanded="true" />
-            <element signature="e#38213#38214#0" expanded="true" />
-            <element signature="e#38295#38296#0" expanded="true" />
-            <element signature="e#38318#38319#0" expanded="true" />
-            <element signature="e#38400#38401#0" expanded="true" />
-            <element signature="e#38432#38433#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="731">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -982,13 +811,104 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3663" max-vertical-offset="4284">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2202" max-vertical-offset="4216">
+          <caret line="153" column="27" selection-start-line="153" selection-start-column="27" selection-end-line="153" selection-end-column="27" />
           <folding>
             <element signature="e#3833#3834#0" expanded="true" />
             <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#7330#7331#0" expanded="true" />
-            <element signature="e#7351#7352#0" expanded="true" />
+            <element signature="e#3989#3990#0" expanded="true" />
+            <element signature="e#4027#4028#0" expanded="true" />
+            <element signature="e#4150#4151#0" expanded="true" />
+            <element signature="e#4188#4189#0" expanded="true" />
+            <element signature="e#4324#4325#0" expanded="true" />
+            <element signature="e#4345#4346#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4498#4499#0" expanded="true" />
+            <element signature="e#4643#4644#0" expanded="true" />
+            <element signature="e#4680#4681#0" expanded="true" />
+            <element signature="e#7643#7644#0" expanded="true" />
+            <element signature="e#7664#7665#0" expanded="true" />
+            <element signature="e#7806#7807#0" expanded="true" />
+            <element signature="e#7823#7824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1003">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#1446#1447#0" expanded="false" />
+            <element signature="e#1481#1482#0" expanded="false" />
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#1666#1667#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="3587">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2676#2677#0" expanded="false" />
+            <element signature="e#2707#2708#0" expanded="false" />
+            <element signature="e#2904#2905#0" expanded="false" />
+            <element signature="e#2936#2937#0" expanded="false" />
+            <element signature="e#3085#3086#0" expanded="false" />
+            <element signature="e#3120#3121#0" expanded="false" />
+            <element signature="e#3235#3236#0" expanded="false" />
+            <element signature="e#3266#3267#0" expanded="false" />
+            <element signature="e#3313#3314#0" expanded="false" />
+            <element signature="e#3345#3346#0" expanded="false" />
+            <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="34918">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="731">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2202" max-vertical-offset="4216">
+          <caret line="153" column="27" selection-start-line="153" selection-start-column="27" selection-end-line="153" selection-end-column="27" />
+          <folding>
+            <element signature="e#3833#3834#0" expanded="true" />
+            <element signature="e#3872#3873#0" expanded="true" />
+            <element signature="e#3989#3990#0" expanded="true" />
+            <element signature="e#4027#4028#0" expanded="true" />
+            <element signature="e#4150#4151#0" expanded="true" />
+            <element signature="e#4188#4189#0" expanded="true" />
+            <element signature="e#4324#4325#0" expanded="true" />
+            <element signature="e#4345#4346#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4498#4499#0" expanded="true" />
+            <element signature="e#4643#4644#0" expanded="true" />
+            <element signature="e#4680#4681#0" expanded="true" />
+            <element signature="e#7643#7644#0" expanded="true" />
+            <element signature="e#7664#7665#0" expanded="true" />
+            <element signature="e#7806#7807#0" expanded="true" />
+            <element signature="e#7823#7824#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1011,6 +931,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="3009">
           <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="e#2676#2677#0" expanded="false" />
             <element signature="e#2707#2708#0" expanded="false" />
             <element signature="e#2904#2905#0" expanded="false" />
@@ -1022,45 +943,16 @@
             <element signature="e#3313#3314#0" expanded="false" />
             <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5056:5076" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5459:5561" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5921:5987" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6306:6404" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6816:6822" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9418" max-vertical-offset="11798">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9214" max-vertical-offset="11594">
           <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4490#4719#0" expanded="true" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4784#4785#0" expanded="true" />
-            <element signature="e#4803#4804#0" expanded="true" />
-            <element signature="e#5771#5935#0" expanded="true" />
-            <element signature="e#5934#5935#0" expanded="true" />
-            <element signature="e#10623#10720#0" expanded="true" />
-            <element signature="e#10719#10720#0" expanded="true" />
-            <element signature="e#11324#11433#0" expanded="true" />
-            <element signature="e#11432#11433#0" expanded="true" />
-            <element signature="e#11759#11878#0" expanded="true" />
-            <element signature="e#11877#11878#0" expanded="true" />
-            <element signature="e#12292#12576#0" expanded="true" />
-            <element signature="e#12575#12576#0" expanded="true" />
-            <element signature="e#12908#13186#0" expanded="true" />
-            <element signature="e#13185#13186#0" expanded="true" />
-            <element signature="e#36613#36614#0" expanded="true" />
-            <element signature="e#36642#36643#0" expanded="true" />
-            <element signature="e#38173#38174#0" expanded="true" />
-            <element signature="e#38213#38214#0" expanded="true" />
-            <element signature="e#38295#38296#0" expanded="true" />
-            <element signature="e#38318#38319#0" expanded="true" />
-            <element signature="e#38400#38401#0" expanded="true" />
-            <element signature="e#38432#38433#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1082,8 +974,99 @@
           <folding>
             <element signature="e#3833#3834#0" expanded="true" />
             <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#7330#7331#0" expanded="true" />
-            <element signature="e#7351#7352#0" expanded="true" />
+            <element signature="e#3989#3990#0" expanded="true" />
+            <element signature="e#4027#4028#0" expanded="true" />
+            <element signature="e#4150#4151#0" expanded="true" />
+            <element signature="e#4188#4189#0" expanded="true" />
+            <element signature="e#4324#4325#0" expanded="true" />
+            <element signature="e#4345#4346#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4498#4499#0" expanded="true" />
+            <element signature="e#4643#4644#0" expanded="true" />
+            <element signature="e#4680#4681#0" expanded="true" />
+            <element signature="e#7643#7644#0" expanded="true" />
+            <element signature="e#7664#7665#0" expanded="true" />
+            <element signature="e#7806#7807#0" expanded="true" />
+            <element signature="e#7823#7824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1003">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#1446#1447#0" expanded="false" />
+            <element signature="e#1481#1482#0" expanded="false" />
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#1666#1667#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="3009">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2676#2677#0" expanded="false" />
+            <element signature="e#2707#2708#0" expanded="false" />
+            <element signature="e#2904#2905#0" expanded="false" />
+            <element signature="e#2936#2937#0" expanded="false" />
+            <element signature="e#3085#3086#0" expanded="false" />
+            <element signature="e#3120#3121#0" expanded="false" />
+            <element signature="e#3235#3236#0" expanded="false" />
+            <element signature="e#3266#3267#0" expanded="false" />
+            <element signature="e#3313#3314#0" expanded="false" />
+            <element signature="e#3345#3346#0" expanded="false" />
+            <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9418" max-vertical-offset="11798">
+          <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3663" max-vertical-offset="4284">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#3833#3834#0" expanded="true" />
+            <element signature="e#3872#3873#0" expanded="true" />
+            <element signature="e#3989#3990#0" expanded="true" />
+            <element signature="e#4027#4028#0" expanded="true" />
+            <element signature="e#4150#4151#0" expanded="true" />
+            <element signature="e#4188#4189#0" expanded="true" />
+            <element signature="e#4324#4325#0" expanded="true" />
+            <element signature="e#4345#4346#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4498#4499#0" expanded="true" />
+            <element signature="e#4643#4644#0" expanded="true" />
+            <element signature="e#4680#4681#0" expanded="true" />
+            <element signature="e#7643#7644#0" expanded="true" />
+            <element signature="e#7664#7665#0" expanded="true" />
+            <element signature="e#7806#7807#0" expanded="true" />
+            <element signature="e#7823#7824#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1106,6 +1089,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="3281">
           <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="e#2676#2677#0" expanded="false" />
             <element signature="e#2707#2708#0" expanded="false" />
             <element signature="e#2904#2905#0" expanded="false" />
@@ -1117,11 +1101,6 @@
             <element signature="e#3313#3314#0" expanded="false" />
             <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5056:5076" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5459:5561" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5921:5987" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6306:6404" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6816:6822" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1132,30 +1111,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4490#4719#0" expanded="true" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4784#4785#0" expanded="true" />
-            <element signature="e#4803#4804#0" expanded="true" />
-            <element signature="e#5771#5935#0" expanded="true" />
-            <element signature="e#5934#5935#0" expanded="true" />
-            <element signature="e#10623#10720#0" expanded="true" />
-            <element signature="e#10719#10720#0" expanded="true" />
-            <element signature="e#11324#11433#0" expanded="true" />
-            <element signature="e#11432#11433#0" expanded="true" />
-            <element signature="e#11759#11878#0" expanded="true" />
-            <element signature="e#11877#11878#0" expanded="true" />
-            <element signature="e#12292#12576#0" expanded="true" />
-            <element signature="e#12575#12576#0" expanded="true" />
-            <element signature="e#12908#13186#0" expanded="true" />
-            <element signature="e#13185#13186#0" expanded="true" />
-            <element signature="e#36613#36614#0" expanded="true" />
-            <element signature="e#36642#36643#0" expanded="true" />
-            <element signature="e#38173#38174#0" expanded="true" />
-            <element signature="e#38213#38214#0" expanded="true" />
-            <element signature="e#38295#38296#0" expanded="true" />
-            <element signature="e#38318#38319#0" expanded="true" />
-            <element signature="e#38400#38401#0" expanded="true" />
-            <element signature="e#38432#38433#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1167,8 +1122,20 @@
           <folding>
             <element signature="e#3833#3834#0" expanded="true" />
             <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#7330#7331#0" expanded="true" />
-            <element signature="e#7351#7352#0" expanded="true" />
+            <element signature="e#3989#3990#0" expanded="true" />
+            <element signature="e#4027#4028#0" expanded="true" />
+            <element signature="e#4150#4151#0" expanded="true" />
+            <element signature="e#4188#4189#0" expanded="true" />
+            <element signature="e#4324#4325#0" expanded="true" />
+            <element signature="e#4345#4346#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4498#4499#0" expanded="true" />
+            <element signature="e#4643#4644#0" expanded="true" />
+            <element signature="e#4680#4681#0" expanded="true" />
+            <element signature="e#7643#7644#0" expanded="true" />
+            <element signature="e#7664#7665#0" expanded="true" />
+            <element signature="e#7806#7807#0" expanded="true" />
+            <element signature="e#7823#7824#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1191,6 +1158,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1404">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="e#2676#2677#0" expanded="false" />
             <element signature="e#2707#2708#0" expanded="false" />
             <element signature="e#2904#2905#0" expanded="false" />
@@ -1202,11 +1170,6 @@
             <element signature="e#3313#3314#0" expanded="false" />
             <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5056:5076" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5459:5561" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5921:5987" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6306:6404" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6816:6822" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1217,30 +1180,6 @@
           <caret line="454" column="38" selection-start-line="454" selection-start-column="38" selection-end-line="454" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4490#4719#0" expanded="true" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4784#4785#0" expanded="true" />
-            <element signature="e#4803#4804#0" expanded="true" />
-            <element signature="e#5771#5935#0" expanded="true" />
-            <element signature="e#5934#5935#0" expanded="true" />
-            <element signature="e#10623#10720#0" expanded="true" />
-            <element signature="e#10719#10720#0" expanded="true" />
-            <element signature="e#11324#11433#0" expanded="true" />
-            <element signature="e#11432#11433#0" expanded="true" />
-            <element signature="e#11759#11878#0" expanded="true" />
-            <element signature="e#11877#11878#0" expanded="true" />
-            <element signature="e#12292#12576#0" expanded="true" />
-            <element signature="e#12575#12576#0" expanded="true" />
-            <element signature="e#12908#13186#0" expanded="true" />
-            <element signature="e#13185#13186#0" expanded="true" />
-            <element signature="e#36613#36614#0" expanded="true" />
-            <element signature="e#36642#36643#0" expanded="true" />
-            <element signature="e#38173#38174#0" expanded="true" />
-            <element signature="e#38213#38214#0" expanded="true" />
-            <element signature="e#38295#38296#0" expanded="true" />
-            <element signature="e#38318#38319#0" expanded="true" />
-            <element signature="e#38400#38401#0" expanded="true" />
-            <element signature="e#38432#38433#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1252,8 +1191,20 @@
           <folding>
             <element signature="e#3833#3834#0" expanded="true" />
             <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#7330#7331#0" expanded="true" />
-            <element signature="e#7351#7352#0" expanded="true" />
+            <element signature="e#3989#3990#0" expanded="true" />
+            <element signature="e#4027#4028#0" expanded="true" />
+            <element signature="e#4150#4151#0" expanded="true" />
+            <element signature="e#4188#4189#0" expanded="true" />
+            <element signature="e#4324#4325#0" expanded="true" />
+            <element signature="e#4345#4346#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4498#4499#0" expanded="true" />
+            <element signature="e#4643#4644#0" expanded="true" />
+            <element signature="e#4680#4681#0" expanded="true" />
+            <element signature="e#7643#7644#0" expanded="true" />
+            <element signature="e#7664#7665#0" expanded="true" />
+            <element signature="e#7806#7807#0" expanded="true" />
+            <element signature="e#7823#7824#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1276,6 +1227,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="663">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="e#2676#2677#0" expanded="false" />
             <element signature="e#2707#2708#0" expanded="false" />
             <element signature="e#2904#2905#0" expanded="false" />
@@ -1287,11 +1239,6 @@
             <element signature="e#3313#3314#0" expanded="false" />
             <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5056:5076" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5459:5561" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5921:5987" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6306:6404" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6816:6822" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1302,30 +1249,6 @@
           <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4490#4719#0" expanded="true" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4784#4785#0" expanded="true" />
-            <element signature="e#4803#4804#0" expanded="true" />
-            <element signature="e#5771#5935#0" expanded="true" />
-            <element signature="e#5934#5935#0" expanded="true" />
-            <element signature="e#10623#10720#0" expanded="true" />
-            <element signature="e#10719#10720#0" expanded="true" />
-            <element signature="e#11324#11433#0" expanded="true" />
-            <element signature="e#11432#11433#0" expanded="true" />
-            <element signature="e#11759#11878#0" expanded="true" />
-            <element signature="e#11877#11878#0" expanded="true" />
-            <element signature="e#12292#12576#0" expanded="true" />
-            <element signature="e#12575#12576#0" expanded="true" />
-            <element signature="e#12908#13186#0" expanded="true" />
-            <element signature="e#13185#13186#0" expanded="true" />
-            <element signature="e#36613#36614#0" expanded="true" />
-            <element signature="e#36642#36643#0" expanded="true" />
-            <element signature="e#38173#38174#0" expanded="true" />
-            <element signature="e#38213#38214#0" expanded="true" />
-            <element signature="e#38295#38296#0" expanded="true" />
-            <element signature="e#38318#38319#0" expanded="true" />
-            <element signature="e#38400#38401#0" expanded="true" />
-            <element signature="e#38432#38433#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1337,8 +1260,20 @@
           <folding>
             <element signature="e#3833#3834#0" expanded="true" />
             <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#7330#7331#0" expanded="true" />
-            <element signature="e#7351#7352#0" expanded="true" />
+            <element signature="e#3989#3990#0" expanded="true" />
+            <element signature="e#4027#4028#0" expanded="true" />
+            <element signature="e#4150#4151#0" expanded="true" />
+            <element signature="e#4188#4189#0" expanded="true" />
+            <element signature="e#4324#4325#0" expanded="true" />
+            <element signature="e#4345#4346#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4498#4499#0" expanded="true" />
+            <element signature="e#4643#4644#0" expanded="true" />
+            <element signature="e#4680#4681#0" expanded="true" />
+            <element signature="e#7643#7644#0" expanded="true" />
+            <element signature="e#7664#7665#0" expanded="true" />
+            <element signature="e#7806#7807#0" expanded="true" />
+            <element signature="e#7823#7824#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1361,6 +1296,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="663">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="e#2676#2677#0" expanded="false" />
             <element signature="e#2707#2708#0" expanded="false" />
             <element signature="e#2904#2905#0" expanded="false" />
@@ -1372,11 +1308,6 @@
             <element signature="e#3313#3314#0" expanded="false" />
             <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5056:5076" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5459:5561" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5921:5987" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6306:6404" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6816:6822" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1387,30 +1318,6 @@
           <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4490#4719#0" expanded="true" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4784#4785#0" expanded="true" />
-            <element signature="e#4803#4804#0" expanded="true" />
-            <element signature="e#5771#5935#0" expanded="true" />
-            <element signature="e#5934#5935#0" expanded="true" />
-            <element signature="e#10623#10720#0" expanded="true" />
-            <element signature="e#10719#10720#0" expanded="true" />
-            <element signature="e#11324#11433#0" expanded="true" />
-            <element signature="e#11432#11433#0" expanded="true" />
-            <element signature="e#11759#11878#0" expanded="true" />
-            <element signature="e#11877#11878#0" expanded="true" />
-            <element signature="e#12292#12576#0" expanded="true" />
-            <element signature="e#12575#12576#0" expanded="true" />
-            <element signature="e#12908#13186#0" expanded="true" />
-            <element signature="e#13185#13186#0" expanded="true" />
-            <element signature="e#36613#36614#0" expanded="true" />
-            <element signature="e#36642#36643#0" expanded="true" />
-            <element signature="e#38173#38174#0" expanded="true" />
-            <element signature="e#38213#38214#0" expanded="true" />
-            <element signature="e#38295#38296#0" expanded="true" />
-            <element signature="e#38318#38319#0" expanded="true" />
-            <element signature="e#38400#38401#0" expanded="true" />
-            <element signature="e#38432#38433#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1422,8 +1329,20 @@
           <folding>
             <element signature="e#3833#3834#0" expanded="true" />
             <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#7330#7331#0" expanded="true" />
-            <element signature="e#7351#7352#0" expanded="true" />
+            <element signature="e#3989#3990#0" expanded="true" />
+            <element signature="e#4027#4028#0" expanded="true" />
+            <element signature="e#4150#4151#0" expanded="true" />
+            <element signature="e#4188#4189#0" expanded="true" />
+            <element signature="e#4324#4325#0" expanded="true" />
+            <element signature="e#4345#4346#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4498#4499#0" expanded="true" />
+            <element signature="e#4643#4644#0" expanded="true" />
+            <element signature="e#4680#4681#0" expanded="true" />
+            <element signature="e#7643#7644#0" expanded="true" />
+            <element signature="e#7664#7665#0" expanded="true" />
+            <element signature="e#7806#7807#0" expanded="true" />
+            <element signature="e#7823#7824#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1446,6 +1365,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="663">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="e#2676#2677#0" expanded="false" />
             <element signature="e#2707#2708#0" expanded="false" />
             <element signature="e#2904#2905#0" expanded="false" />
@@ -1457,11 +1377,6 @@
             <element signature="e#3313#3314#0" expanded="false" />
             <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5056:5076" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5459:5561" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5921:5987" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6306:6404" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6816:6822" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1472,30 +1387,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4490#4719#0" expanded="true" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4784#4785#0" expanded="true" />
-            <element signature="e#4803#4804#0" expanded="true" />
-            <element signature="e#5771#5935#0" expanded="true" />
-            <element signature="e#5934#5935#0" expanded="true" />
-            <element signature="e#10623#10720#0" expanded="true" />
-            <element signature="e#10719#10720#0" expanded="true" />
-            <element signature="e#11324#11433#0" expanded="true" />
-            <element signature="e#11432#11433#0" expanded="true" />
-            <element signature="e#11759#11878#0" expanded="true" />
-            <element signature="e#11877#11878#0" expanded="true" />
-            <element signature="e#12292#12576#0" expanded="true" />
-            <element signature="e#12575#12576#0" expanded="true" />
-            <element signature="e#12908#13186#0" expanded="true" />
-            <element signature="e#13185#13186#0" expanded="true" />
-            <element signature="e#36613#36614#0" expanded="true" />
-            <element signature="e#36642#36643#0" expanded="true" />
-            <element signature="e#38173#38174#0" expanded="true" />
-            <element signature="e#38213#38214#0" expanded="true" />
-            <element signature="e#38295#38296#0" expanded="true" />
-            <element signature="e#38318#38319#0" expanded="true" />
-            <element signature="e#38400#38401#0" expanded="true" />
-            <element signature="e#38432#38433#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1539,6 +1430,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="3604">
           <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="e#2676#2677#0" expanded="false" />
             <element signature="e#2707#2708#0" expanded="false" />
             <element signature="e#2904#2905#0" expanded="false" />
@@ -1550,11 +1442,27 @@
             <element signature="e#3313#3314#0" expanded="false" />
             <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5056:5076" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5459:5561" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="5921:5987" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6306:6404" placeholder="/**...*/" />
-            <marker date="1427146598697" expanded="true" signature="6816:6822" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/awt/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.7008986" vertical-offset="30273" max-vertical-offset="164628">
+          <caret line="2251" column="16" selection-start-line="2251" selection-start-column="16" selection-end-line="2251" selection-end-column="16" />
+          <folding>
+            <element signature="e#77012#77013#0" expanded="true" />
+            <element signature="e#77056#77057#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="16183" max-vertical-offset="35207">
+          <caret line="972" column="71" selection-start-line="972" selection-start-column="71" selection-end-line="972" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1562,56 +1470,42 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar!/net/sf/json/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3491461" vertical-offset="23276" max-vertical-offset="31705">
+          <caret line="1454" column="18" selection-start-line="1454" selection-start-column="18" selection-end-line="1454" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2202" max-vertical-offset="4216">
-          <caret line="153" column="27" selection-start-line="153" selection-start-column="27" selection-end-line="153" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.4843342" vertical-offset="2553" max-vertical-offset="4590">
+          <caret line="179" column="46" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="46" />
           <folding>
             <element signature="e#3833#3834#0" expanded="true" />
             <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#7330#7331#0" expanded="true" />
-            <element signature="e#7351#7352#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79075736" vertical-offset="15925" max-vertical-offset="35020">
-          <caret line="973" column="9" selection-start-line="973" selection-start-column="9" selection-end-line="973" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4490#4719#0" expanded="true" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4784#4785#0" expanded="true" />
-            <element signature="e#4803#4804#0" expanded="true" />
-            <element signature="e#5771#5935#0" expanded="true" />
-            <element signature="e#5934#5935#0" expanded="true" />
-            <element signature="e#10623#10720#0" expanded="true" />
-            <element signature="e#10719#10720#0" expanded="true" />
-            <element signature="e#11324#11433#0" expanded="true" />
-            <element signature="e#11432#11433#0" expanded="true" />
-            <element signature="e#11759#11878#0" expanded="true" />
-            <element signature="e#11877#11878#0" expanded="true" />
-            <element signature="e#12292#12576#0" expanded="true" />
-            <element signature="e#12575#12576#0" expanded="true" />
-            <element signature="e#12908#13186#0" expanded="true" />
-            <element signature="e#13185#13186#0" expanded="true" />
-            <element signature="e#36613#36614#0" expanded="true" />
-            <element signature="e#36642#36643#0" expanded="true" />
-            <element signature="e#38173#38174#0" expanded="true" />
-            <element signature="e#38213#38214#0" expanded="true" />
-            <element signature="e#38295#38296#0" expanded="true" />
-            <element signature="e#38318#38319#0" expanded="true" />
-            <element signature="e#38400#38401#0" expanded="true" />
-            <element signature="e#38432#38433#0" expanded="true" />
+            <element signature="e#3989#3990#0" expanded="true" />
+            <element signature="e#4027#4028#0" expanded="true" />
+            <element signature="e#4150#4151#0" expanded="true" />
+            <element signature="e#4188#4189#0" expanded="true" />
+            <element signature="e#4324#4325#0" expanded="true" />
+            <element signature="e#4345#4346#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4498#4499#0" expanded="true" />
+            <element signature="e#4643#4644#0" expanded="true" />
+            <element signature="e#4680#4681#0" expanded="true" />
+            <element signature="e#7643#7644#0" expanded="true" />
+            <element signature="e#7664#7665#0" expanded="true" />
+            <element signature="e#7806#7807#0" expanded="true" />
+            <element signature="e#7823#7824#0" expanded="true" />
           </folding>
         </state>
       </provider>

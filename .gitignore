@@ -2,5 +2,5 @@
 target/
 *.java~
 workspace.xml
-*.iml
-*.prefs
+weatherviewer/*.iml
+weatherviewer/*.prefs

@@ -173,7 +173,17 @@ public class CurrentWeather {
 
     //puts the temperature into a readable form
     private String cleanTemp(double t, char unit) {
-        return String.valueOf(t).substring(0,2) + '°' + Character.toUpperCase(unit);
+        int substring_length = 1;
+        //correct for negative zero
+        if(t < 0 && t >= -1)
+            t = 0;
+        //correct number of characters to take
+        if (t < 0 || t > 10) {
+            substring_length++;
+            if(t < -10)
+                substring_length++;
+        }
+        return String.valueOf(t).substring(0,substring_length) + '°' + Character.toUpperCase(unit);
     }
     /**
      * Helper method for Celsius temperature
