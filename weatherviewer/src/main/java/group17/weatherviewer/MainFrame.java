@@ -148,7 +148,7 @@ public class MainFrame {
 				try {
 					MainFrame window = new MainFrame();
 					window.frame.setVisible(true);
-					// should we allow resizing?
+					// should we allow resizing? -> nope, i think it's too hard -Miguel
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -1022,8 +1022,7 @@ public class MainFrame {
 			}
 
 			listModel.insertElementAt(barSearch.getText(), index);
-			// If we just wanted to add to the end, we'd do this:
-			// listModel.addElement(barSearch.getText());
+			
 
 			// Add element to user preferences as well - NK
 			try {
@@ -1040,7 +1039,7 @@ public class MainFrame {
 			barSearch.setText("");
 
 			// Select the new item and make it visible.
-			listLocations.setSelectedIndex(index);
+			//listLocations.setSelectedIndex(index);
 			listLocations.ensureIndexIsVisible(index);
 		}
 
