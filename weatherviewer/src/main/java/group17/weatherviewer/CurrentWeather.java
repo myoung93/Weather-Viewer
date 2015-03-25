@@ -45,8 +45,9 @@ public class CurrentWeather {
 			while ((line = BReader.readLine()) != null)
 				SBR.append(line + " ");
 			BReader.close();
-		} catch (IOException e) {
-            e.printStackTrace();
+		} 
+		catch (IOException e) {
+            System.out.println("There was an error retrieving the weather information");
         }
 
 		String WeatherData = SBR.toString();
