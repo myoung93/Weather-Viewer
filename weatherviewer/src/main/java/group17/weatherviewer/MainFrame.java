@@ -1059,7 +1059,7 @@ public class MainFrame {
 			catch(WeatherException exception) {
 				System.out.println(exception.getMessage());
 			}
-			prefs.printLocations(); // This is just to test addLocation on user preferences - NK
+			//prefs.printLocations(); // This is just to test addLocation on user preferences - NK
 
 
 			// Reset the text field.
