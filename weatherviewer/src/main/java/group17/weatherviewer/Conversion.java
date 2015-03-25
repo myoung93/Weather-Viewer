@@ -1,6 +1,5 @@
 package group17.weatherviewer;
 
-import java.lang.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;

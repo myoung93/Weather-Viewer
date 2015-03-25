@@ -43,7 +43,8 @@ public class WeatherException extends Exception {
      * Returns this WeatherException's message string
       * @return the message associated with this exception
      */
-    public String getMessage() {
+    @Override
+	public String getMessage() {
         return this.message;
     }
 
@@ -51,7 +52,8 @@ public class WeatherException extends Exception {
      * Returns this WeatherException's cause
      * @return the cause associated with this exception
      */
-    public Throwable getCause() {
+    @Override
+	public Throwable getCause() {
         return this.cause;
     }
 }
