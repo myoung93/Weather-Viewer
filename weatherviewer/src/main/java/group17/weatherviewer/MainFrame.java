@@ -2,10 +2,10 @@ package group17.weatherviewer;
 
 import javax.swing.*;
 import javax.swing.event.*;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
+
 import java.awt.*;
 import java.awt.event.*;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
 public class MainFrame {
@@ -133,8 +133,7 @@ public class MainFrame {
 
 	private UserPreferences prefs;
 
-    private CurrentWeather currentWeather = null;
-
+    private CurrentWeather currentWeather;
 	/**
 	 * Launch the application.
 	 */
@@ -878,7 +877,7 @@ public class MainFrame {
 	// should probably show some kind of "updating" message
 
 	public void refresh(String location) {
-
+		
 		try {
 			// constructor should take String city parameter in the future.
 			System.out.println("Retrieving weather data");
@@ -988,6 +987,7 @@ public class MainFrame {
 	class AddLocation implements ActionListener, DocumentListener {
 		private boolean alreadyEnabled = false;
 		private JButton button;
+		private CurrentWeather test;
 
 		public AddLocation(JButton button) {
 			this.button = button;
@@ -996,7 +996,18 @@ public class MainFrame {
 		// Required by ActionListener.
 		public void actionPerformed(ActionEvent e) {
 			String name = barSearch.getText();
-
+			
+			//User didn't enter a valid location...
+			try{
+			test = new CurrentWeather(name);	
+				
+			}
+			catch (IOException err){
+				System.out.println("An invalid location was entered.");
+				return;
+			}
+				
+			
 			// User didn't type in a unique name...
 			if (name.equals("") || alreadyInList(name)) {
 				Toolkit.getDefaultToolkit().beep();
