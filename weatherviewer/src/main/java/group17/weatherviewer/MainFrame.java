@@ -43,9 +43,11 @@ public class MainFrame {
 	private JLabel labelMinTemp;
 	private JLabel labelSunrise;
 	private JLabel labelSunset;
+	private JLabel labelSky;
 	private JLabel labelWind;
 	private JLabel labelHumidity;
 	private JLabel labelLocation;
+	private JLabel labelPrecipitation;
 	private JLabel labelTempInfo;
 	private JLabel labelWindInfo;
 	private JLabel labelHumidityInfo;
@@ -55,6 +57,9 @@ public class MainFrame {
 	private JLabel labelSunriseInfo;
 	private JLabel labelSunsetInfo;
 	private JLabel labelSkyConditionInfo;
+	private JLabel labelPrecipitationInfo;
+	private JLabel labelUpdated;
+	private JLabel labelUpdatedInfo;
 	private JLabel label12AM;
 	private JLabel label12AMSkyConditionIcon;
 	private JLabel label12AMTempInfo;
@@ -213,120 +218,154 @@ public class MainFrame {
 		labelTempInfo = new JLabel("");
 		labelTempInfo.setFont(font.deriveFont(85f));
 		labelTempInfo.setForeground(Color.WHITE);
-		labelTempInfo.setBounds(50, 64, 318, 94);
+		labelTempInfo.setBounds(50, 50, 318, 94);
 		frame.getContentPane().add(labelTempInfo);
 
+		// wind label
+		labelSky = new JLabel("Sky:");
+		labelSky.setForeground(Color.LIGHT_GRAY);
+		labelSky.setFont(font.deriveFont(15f));
+		labelSky.setBounds(50, 135, 61, 15);
+		frame.getContentPane().add(labelSky);
+		
 		// wind label
 		labelWind = new JLabel("Wind:");
 		labelWind.setForeground(Color.LIGHT_GRAY);
 		labelWind.setFont(font.deriveFont(15f));
-		labelWind.setBounds(50, 170, 61, 15);
+		labelWind.setBounds(50, 155, 61, 15);
 		frame.getContentPane().add(labelWind);
 
 		// humidity label
 		labelHumidity = new JLabel("Humidity:");
 		labelHumidity.setForeground(Color.LIGHT_GRAY);
 		labelHumidity.setFont(font.deriveFont(15f));
-		labelHumidity.setBounds(50, 190, 70, 15);
+		labelHumidity.setBounds(50, 175, 70, 15);
 		frame.getContentPane().add(labelHumidity);
 
 		// air pressure label
 		labelAirPressure = new JLabel("Air Pressure:");
 		labelAirPressure.setForeground(Color.LIGHT_GRAY);
 		labelAirPressure.setFont(font.deriveFont(15f));
-		labelAirPressure.setBounds(50, 210, 96, 15);
+		labelAirPressure.setBounds(50, 195, 96, 15);
 		frame.getContentPane().add(labelAirPressure);
 
 		// max temp label
 		labelMaxTemp = new JLabel("Maximum:");
 		labelMaxTemp.setForeground(Color.LIGHT_GRAY);
 		labelMaxTemp.setFont(font.deriveFont(15f));
-		labelMaxTemp.setBounds(50, 230, 96, 15);
+		labelMaxTemp.setBounds(50, 215, 96, 15);
 		frame.getContentPane().add(labelMaxTemp);
 
 		// min temp label
 		labelMinTemp = new JLabel("Minimum:");
 		labelMinTemp.setForeground(Color.LIGHT_GRAY);
 		labelMinTemp.setFont(font.deriveFont(15f));
-		labelMinTemp.setBounds(50, 250, 96, 15);
+		labelMinTemp.setBounds(50, 235, 96, 15);
 		frame.getContentPane().add(labelMinTemp);
 
 		// sunrise label
 		labelSunrise = new JLabel("Sunrise:");
 		labelSunrise.setForeground(Color.LIGHT_GRAY);
 		labelSunrise.setFont(font.deriveFont(15f));
-		labelSunrise.setBounds(50, 270, 61, 15);
+		labelSunrise.setBounds(50, 255, 61, 15);
 		frame.getContentPane().add(labelSunrise);
 
 		// sunset label
 		labelSunset = new JLabel("Sunset:");
 		labelSunset.setForeground(Color.LIGHT_GRAY);
 		labelSunset.setFont(font.deriveFont(15f));
-		labelSunset.setBounds(50, 290, 58, 15);
+		labelSunset.setBounds(50, 275, 58, 15);
 		frame.getContentPane().add(labelSunset);
-
+		
+		// Precipitation label
+		labelPrecipitation = new JLabel("Precipitation:");
+		labelPrecipitation.setForeground(Color.LIGHT_GRAY);
+		labelPrecipitation.setFont(font.deriveFont(15f));
+		labelPrecipitation.setBounds(50, 295, 98, 15);
+		frame.getContentPane().add(labelPrecipitation);
+		
+		// Updated label
+		labelUpdated = new JLabel("Last Updated:");
+		labelUpdated.setForeground(Color.LIGHT_GRAY);
+		labelUpdated.setFont(font.deriveFont(15f));
+		labelUpdated.setBounds(300, 35, 98, 15);
+		frame.getContentPane().add(labelUpdated);
+		
 		// wind info
 
 		labelWindInfo = new JLabel("");
 		labelWindInfo.setForeground(Color.WHITE);
 		labelWindInfo.setFont(font.deriveFont(15f));
-		labelWindInfo.setBounds(103, 170, 200, 15);
+		labelWindInfo.setBounds(103, 155, 200, 15);
 		frame.getContentPane().add(labelWindInfo);
 
 		// humidity info
 		labelHumidityInfo = new JLabel("");
 		labelHumidityInfo.setForeground(Color.WHITE);
 		labelHumidityInfo.setFont(font.deriveFont(15f));
-		labelHumidityInfo.setBounds(130, 190, 200, 15);
+		labelHumidityInfo.setBounds(130, 175, 200, 15);
 		frame.getContentPane().add(labelHumidityInfo);
 
 		// air pressure info
 		labelAirPressureInfo = new JLabel("");
 		labelAirPressureInfo.setForeground(Color.WHITE);
 		labelAirPressureInfo.setFont(font.deriveFont(15f));
-		labelAirPressureInfo.setBounds(158, 210, 200, 15);
+		labelAirPressureInfo.setBounds(158, 195, 200, 15);
 		frame.getContentPane().add(labelAirPressureInfo);
 
 		// max temp info
 		labelMaxTempInfo = new JLabel("");
 		labelMaxTempInfo.setForeground(Color.WHITE);
 		labelMaxTempInfo.setFont(font.deriveFont(15f));
-		labelMaxTempInfo.setBounds(145, 230, 200, 15);
+		labelMaxTempInfo.setBounds(145, 215, 200, 15);
 		frame.getContentPane().add(labelMaxTempInfo);
 
 		// min temp info
 		labelMinTempInfo = new JLabel("");
 		labelMinTempInfo.setForeground(Color.WHITE);
 		labelMinTempInfo.setFont(font.deriveFont(15f));
-		labelMinTempInfo.setBounds(145, 250, 200, 15);
+		labelMinTempInfo.setBounds(145, 235, 200, 15);
 		frame.getContentPane().add(labelMinTempInfo);
 
 		// sunrise info
 		labelSunriseInfo = new JLabel("");
 		labelSunriseInfo.setForeground(Color.WHITE);
 		labelSunriseInfo.setFont(font.deriveFont(15f));
-		labelSunriseInfo.setBounds(130, 270, 200, 15);
+		labelSunriseInfo.setBounds(130, 255, 200, 15);
 		frame.getContentPane().add(labelSunriseInfo);
 
 		// sunset info
 		labelSunsetInfo = new JLabel("");
 		labelSunsetInfo.setForeground(Color.WHITE);
 		labelSunsetInfo.setFont(font.deriveFont(15f));
-		labelSunsetInfo.setBounds(130, 291, 200, 15);
+		labelSunsetInfo.setBounds(130, 275, 200, 15);
 		frame.getContentPane().add(labelSunsetInfo);
+		
+		// Precipitation info
+		labelPrecipitationInfo = new JLabel("");
+		labelPrecipitationInfo.setForeground(Color.WHITE);
+		labelPrecipitationInfo.setFont(font.deriveFont(15f));
+		labelPrecipitationInfo.setBounds(160, 295, 200, 15);
+		frame.getContentPane().add(labelPrecipitationInfo);
 
-		// sky condition info
+		// sky condition info;
 		labelSkyConditionInfo = new JLabel("");
 		labelSkyConditionInfo.setForeground(Color.WHITE);
 		labelSkyConditionInfo.setFont(font.deriveFont(17f));
-		labelSkyConditionInfo.setBounds(381, 25, 200, 37);
+		labelSkyConditionInfo.setBounds(95, 125, 100, 30);
 		frame.getContentPane().add(labelSkyConditionInfo);
-
 		// sky condition Icon info
 		labelSkyConditionIcon = new JLabel();
-		labelSkyConditionIcon.setBounds(375, 55, 204, 181);
+		labelSkyConditionIcon.setBounds(305, 65, 204, 185);
 		frame.getContentPane().add(labelSkyConditionIcon);
 
+		// Updated label
+		labelUpdatedInfo = new JLabel("");
+		labelUpdatedInfo.setForeground(Color.WHITE);
+		labelUpdatedInfo.setFont(font.deriveFont(15f));
+		labelUpdatedInfo.setBounds(405, 35, 98, 15);
+		frame.getContentPane().add(labelUpdatedInfo);
+		
 		// Refresh button
 		buttonRefresh = new JButton("");
 		buttonRefresh.addActionListener(new ActionListener() {
@@ -924,6 +963,11 @@ public class MainFrame {
 
 		labelSunriseInfo.setText(currentWeather.getSunriseTime());
 		labelSunsetInfo.setText(currentWeather.getSunsetTime());
+		
+		//NEW HARD CODED LABELS HERE *BEEP BOOP*
+		labelPrecipitationInfo.setText("HardCoded");
+		labelUpdatedInfo.setText("HardCoded");
+		
 		setSkyConditionImages(currentWeather.getWeatherID());
 		labelSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconLarge));
 		backgroundLabel.setIcon(new ImageIcon(skyConditionBackground));
