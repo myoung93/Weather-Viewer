@@ -10,12 +10,12 @@ import java.net.URLConnection;
 
 public class JsonParaer {
 
-	String OwmUrl;
+	String owmUrl;
 	
 
 	// Current Weather Url
 	public JsonParaer(String url) throws UnsupportedEncodingException {
-		this.OwmUrl = url;
+		this.owmUrl = url;
 	}
 
 	public String getData() {
@@ -25,7 +25,7 @@ public class JsonParaer {
 		SBR = new StringBuffer();
 
 		try {
-			URL url = new URL(OwmUrl);
+			URL url = new URL(owmUrl);
 			URLConnection connection = url.openConnection();
 			BufferedReader BReader = new BufferedReader(new InputStreamReader(
 					connection.getInputStream()));

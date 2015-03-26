@@ -13,17 +13,17 @@ import java.net.URLConnection;
 public class CurrentWeather {
 
     //Data fields required for Current Weather view
-	private String City, Sky, Sunrise, Sunset, Country;
+	private String city, sky, sunrise, sunset, country;
 	private double temp, pressure, humidity, maxTemp, minTemp, windSpeed, windDir;
 	private int weatherID;
 
     /**
      * Constructor for CurrentWeather
-     * Takes a City name as parameter, retrieves and parses the JSON for that city and stores the data
-     * @param CityName is the name of the city for which we're storing and parsing information
+     * Takes a city name as parameter, retrieves and parses the JSON for that city and stores the data
+     * @param cityName is the name of the city for which we're storing and parsing information
      * @throws UnsupportedEncodingException if the JSOn retrieval fails
      */
-	public CurrentWeather(String CityName) throws UnsupportedEncodingException {
+	public CurrentWeather(String cityName) throws UnsupportedEncodingException {
 
 		StringBuffer SBR;
 
@@ -31,7 +31,7 @@ public class CurrentWeather {
 		// city
 		// 65da394090951035f3a346d9a356ddd9 api key from OpenWeatherMap
 		String OwmUrl = "http://api.openweathermap.org/data/2.5/weather?q="
-				+ CityName + "&APPID=65da394090951035f3a346d9a356ddd9";
+				+ cityName + "&APPID=65da394090951035f3a346d9a356ddd9";
 
 		// get current weather data from openweathermap.org in JSON format
 		SBR = new StringBuffer();
@@ -59,13 +59,13 @@ public class CurrentWeather {
 
 		// get information from sys object
 		JSONObject Obj_Sys = JsonData.getJSONObject("sys");// country
-		Country = Obj_Sys.getString("country");
+		country = Obj_Sys.getString("country");
 		//grab sunrise/sunset and convert to real time
-		Sunrise = Conversion.toTime(Obj_Sys.getString("sunrise"));
-		Sunset = Conversion.toTime(Obj_Sys.getString("sunset"));
+		sunrise = Conversion.toTime(Obj_Sys.getString("sunrise"));
+		sunset = Conversion.toTime(Obj_Sys.getString("sunset"));
 
 		// get information from string
-		City = JsonData.getString("name");// city
+		city = JsonData.getString("name");// city
 
 		// get information from main object
 		JSONObject Obj_Main = JsonData.getJSONObject("main");
@@ -86,7 +86,7 @@ public class CurrentWeather {
 		// get information from weather object
 		JSONArray Array_Weather = JsonData.getJSONArray("weather");
 		JSONObject Obj_Wea = Array_Weather.getJSONObject(0);
-		Sky = Obj_Wea.getString("description");
+		sky = Obj_Wea.getString("description");
 		
 		//get weatherID info
 		weatherID = Obj_Wea.getInt("id");
@@ -95,11 +95,11 @@ public class CurrentWeather {
 	// Getters -> Modified to return Strings instead of Doubles -TE
 
     /**
-     * Getter method for City
+     * Getter method for city
      * @return the city from which this weather data was gathered
      */
     public String getCity() {
-        if(City != null)    return City;
+        if(city != null)    return city;
         else                return "ERR";
     }
 
@@ -126,18 +126,18 @@ public class CurrentWeather {
 		return String.valueOf(humidity);
 	}
     /**
-     * Getter method for Sunrise
-     * @return the current Sunrise time in Unix time
+     * Getter method for sunrise
+     * @return the current sunrise time in Unix time
      */
 	public String getSunriseTime() {
-		return Sunrise;
+		return sunrise;
 	}
     /**
-     * Getter method for Sunset
-     * @return the current Sunset time in Unix time
+     * Getter method for sunset
+     * @return the current sunset time in Unix time
      */
 	public String getSunsetTime() {
-		return Sunset;
+		return sunset;
 	}
     /**
      * Getter method for wind direction
@@ -242,7 +242,7 @@ public class CurrentWeather {
      * @return the name of the country the city is in
      */
 	public String getCountry() {
-		return Country;
+		return country;
 	}
 
     /**
@@ -250,7 +250,7 @@ public class CurrentWeather {
      * @return a string representing sky condition
      */
 	public String getSkyCondition() {
-		return Sky;
+		return sky;
 	}
 
 	public int getWeatherID(){

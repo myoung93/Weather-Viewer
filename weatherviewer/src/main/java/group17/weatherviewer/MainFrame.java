@@ -139,7 +139,7 @@ public class MainFrame {
 	private JLabel labelDay7MaxTemp;
 	private JLabel labelDay7MinTemp;
 
-	private DateFormat dateFormat; //-NK
+	private DateFormat dateFormat;
 	private Calendar cal;
 	private String lastUpdated;
 
@@ -159,7 +159,6 @@ public class MainFrame {
 				try {
 					MainFrame window = new MainFrame();
 					window.frame.setVisible(true);
-					// should we allow resizing? -> nope, i think it's too hard -Miguel
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -283,14 +282,14 @@ public class MainFrame {
 		labelSunset.setBounds(50, 275, 58, 15);
 		frame.getContentPane().add(labelSunset);
 		
-		// Precipitation label
+		// precipitation label
 		labelPrecipitation = new JLabel("Precipitation:");
 		labelPrecipitation.setForeground(Color.LIGHT_GRAY);
 		labelPrecipitation.setFont(font.deriveFont(15f));
 		labelPrecipitation.setBounds(50, 295, 98, 15);
 		frame.getContentPane().add(labelPrecipitation);
 		
-		// Updated label
+		// updated label
 		labelUpdated = new JLabel("Last Updated:");
 		labelUpdated.setForeground(Color.LIGHT_GRAY);
 		labelUpdated.setFont(font.deriveFont(15f));
@@ -346,7 +345,7 @@ public class MainFrame {
 		labelSunsetInfo.setBounds(130, 275, 200, 15);
 		frame.getContentPane().add(labelSunsetInfo);
 		
-		// Precipitation info
+		// precipitation info
 		labelPrecipitationInfo = new JLabel("");
 		labelPrecipitationInfo.setForeground(Color.WHITE);
 		labelPrecipitationInfo.setFont(font.deriveFont(15f));
@@ -359,19 +358,20 @@ public class MainFrame {
 		labelSkyConditionInfo.setFont(font.deriveFont(17f));
 		labelSkyConditionInfo.setBounds(95, 125, 100, 30);
 		frame.getContentPane().add(labelSkyConditionInfo);
+
 		// sky condition Icon info
 		labelSkyConditionIcon = new JLabel();
 		labelSkyConditionIcon.setBounds(305, 65, 204, 185);
 		frame.getContentPane().add(labelSkyConditionIcon);
 
-		// Updated label
+		// updated label info
 		labelUpdatedInfo = new JLabel("");
 		labelUpdatedInfo.setForeground(Color.WHITE);
 		labelUpdatedInfo.setFont(font.deriveFont(15f));
 		labelUpdatedInfo.setBounds(405, 35, 98, 15);
 		frame.getContentPane().add(labelUpdatedInfo);
 
-		// Date to include in updated label -NK
+		// date format shown in updated label
 		dateFormat = new SimpleDateFormat("MMM dd HH:mm");
 		
 		// Refresh button
@@ -512,7 +512,7 @@ public class MainFrame {
 		});
 		scrollPane.setViewportView(listLocations);
 
-		// favorite Button
+		// Favorite Button
 		buttonFavourite = new JButton();
 		AddLocation addlocation = new AddLocation(buttonFavourite);
 		buttonFavourite.addActionListener(addlocation);
@@ -954,11 +954,11 @@ public class MainFrame {
 			e.printStackTrace();
 		}
 
-		// set time of lastUpdated to "now" -NK
+		// update time shown
 		cal =  Calendar.getInstance();
 		lastUpdated = dateFormat.format(cal.getTime());		
 
-        //store tempUnit so we don't have to call prefs.getTempUnit() every time
+        // store tempUnit so we don't have to call prefs.getTempUnit() every time
 		// current location panel
 		labelLocation.setText(currentWeather.getCity() + ", "
 				+ currentWeather.getCountry());
