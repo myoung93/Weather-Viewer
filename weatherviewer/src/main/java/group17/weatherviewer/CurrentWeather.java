@@ -30,14 +30,14 @@ public class CurrentWeather {
 		// get weather information from http://api.openweathermap.org for given
 		// city
 		// 65da394090951035f3a346d9a356ddd9 api key from OpenWeatherMap
-		String OwmUrl = "http://api.openweathermap.org/data/2.5/weather?q="
+		String owmUrl = "http://api.openweathermap.org/data/2.5/weather?q="
 				+ cityName + "&APPID=65da394090951035f3a346d9a356ddd9";
 
 		// get current weather data from openweathermap.org in JSON format
 		SBR = new StringBuffer();
 
 		try {
-			URL url = new URL(OwmUrl);
+			URL url = new URL(owmUrl);
 			URLConnection connection = url.openConnection();
 			BufferedReader BReader = new BufferedReader(new InputStreamReader(
 					connection.getInputStream()));
@@ -50,45 +50,45 @@ public class CurrentWeather {
             System.out.println("There was an error retrieving the weather information");
         }
 
-		String WeatherData = SBR.toString();
+		String weatherData = SBR.toString();
 
-		// parse JSON data, JSON_Data:WeatherData
+		// parse JSON data, JSON_Data:weatherData
 
-		JSONObject JsonData = JSONObject.fromObject(WeatherData);
+		JSONObject jsonData = JSONObject.fromObject(weatherData);
         // Save all weather information��
 
 		// get information from sys object
-		JSONObject Obj_Sys = JsonData.getJSONObject("sys");// country
-		country = Obj_Sys.getString("country");
+		JSONObject objSys = jsonData.getJSONObject("sys");// country
+		country = objSys.getString("country");
 		//grab sunrise/sunset and convert to real time
-		sunrise = Conversion.unixToTime(Obj_Sys.getString("sunrise"));
-		sunset = Conversion.unixToTime(Obj_Sys.getString("sunset"));
+		sunrise = Conversion.unixToTime(objSys.getString("sunrise"));
+		sunset = Conversion.unixToTime(objSys.getString("sunset"));
 
 		// get information from string
-		city = JsonData.getString("name");// city
+		city = jsonData.getString("name");// city
 
 		// get information from main object
-		JSONObject Obj_Main = JsonData.getJSONObject("main");
+		JSONObject objMain = jsonData.getJSONObject("main");
         //we subtract 273 from each temperature value because there is no need to store the kelvin value
-		temp = Obj_Main.getDouble("temp") - 273;// temperature
-        minTemp = Obj_Main.getDouble("temp_min") - 273;// min temperature
-        maxTemp = Obj_Main.getDouble("temp_max") - 273;// max temperature
+		temp = objMain.getDouble("temp") - 273;// temperature
+        minTemp = objMain.getDouble("temp_min") - 273;// min temperature
+        maxTemp = objMain.getDouble("temp_max") - 273;// max temperature
 		//divide by 10 to convert from hPa to kPa
-		pressure = Obj_Main.getDouble("pressure")/10; // pressure
-		humidity = Obj_Main.getDouble("humidity");// humidity
+		pressure = objMain.getDouble("pressure")/10; // pressure
+		humidity = objMain.getDouble("humidity");// humidity
 
 		// get information from wind object
-		JSONObject Obj_wind = JsonData.getJSONObject("wind");
-		windSpeed = Obj_wind.getDouble("speed");// wind speed
-		windDir = Obj_wind.getDouble("deg");// wind direction
+		JSONObject objWind = jsonData.getJSONObject("wind");
+		windSpeed = objWind.getDouble("speed");// wind speed
+		windDir = objWind.getDouble("deg");// wind direction
 
 		// get information from weather object
-		JSONArray Array_Weather = JsonData.getJSONArray("weather");
-		JSONObject Obj_Wea = Array_Weather.getJSONObject(0);
-		sky = Obj_Wea.getString("description");
+		JSONArray arrayWeather = jsonData.getJSONArray("weather");
+		JSONObject objWea = arrayWeather.getJSONObject(0);
+		sky = objWea.getString("description");
 
 		//get weatherID info
-		weatherID = Obj_Wea.getInt("id");
+		weatherID = objWea.getInt("id");
 	}
 
 	// Getters -> Modified to return Strings instead of Doubles -TE
@@ -114,13 +114,13 @@ public class CurrentWeather {
      * @return the current pressure
      */
 	public String getPressure() {
-		int substring_length;
+		int substringLength;
 		if(pressure > 100)
-			substring_length = 5;
+			substringLength = 5;
 		else
-			substring_length = 4;
+			substringLength = 4;
 
-		return String.valueOf(pressure).substring(0, substring_length);
+		return String.valueOf(pressure).substring(0, substringLength);
 	}
 
     /**
@@ -179,17 +179,17 @@ public class CurrentWeather {
 
     //puts the temperature into a readable form
     private String cleanTemp(double t, char unit) {
-        int substring_length = 1;
+        int substringLength = 1;
         //correct for negative zero
         if(t < 0 && t >= -1)
             t = 0;
         //correct number of characters to take
         if (t < 0 || t > 10) {
-            substring_length++;
+            substringLength++;
             if(t < -10)
-                substring_length++;
+                substringLength++;
         }
-        return String.valueOf(t).substring(0,substring_length) + '°' + Character.toUpperCase(unit);
+        return String.valueOf(t).substring(0,substringLength) + '°' + Character.toUpperCase(unit);
     }
     /**
      * Getter method for country name
