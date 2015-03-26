@@ -2456,3 +2456,24 @@
 2015-03-25 17:06:10,035 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2015-03-25 17:06:10,037 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2015-03-25 17:06:10,037 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Mom/GitHub/team17/weatherviewer/src/test/resources
+2015-03-26 14:28:50,899 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ca.uwo.csd.cs2212.team17:17_weatherviewer:0.0.1-SNAPSHOT @ /Users/Mom/GitHub/team17/weatherviewer/pom.xml.
+2015-03-26 14:28:51,977 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-03-26 14:28:51,996 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 53 resources
+2015-03-26 14:28:52,275 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-03-26 14:28:52,275 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Mom/GitHub/team17/weatherviewer/src/test/resources
+2015-03-26 14:30:05,577 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-03-26 14:30:05,630 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 53 resources
+2015-03-26 14:30:05,651 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-03-26 14:30:05,671 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Mom/GitHub/team17/weatherviewer/src/test/resources
+2015-03-26 14:30:41,571 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-03-26 14:30:41,595 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 53 resources
+2015-03-26 14:30:41,600 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-03-26 14:30:41,600 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Mom/GitHub/team17/weatherviewer/src/test/resources
+2015-03-26 14:30:42,877 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-03-26 14:30:42,878 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-03-26 14:30:42,881 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-03-26 14:30:42,881 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Mom/GitHub/team17/weatherviewer/src/test/resources
+2015-03-26 14:32:44,376 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-03-26 14:32:44,380 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 53 resources
+2015-03-26 14:32:44,386 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-03-26 14:32:44,387 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Mom/GitHub/team17/weatherviewer/src/test/resources
