@@ -213,7 +213,8 @@ public class MainFrame {
 		// / BEGIN INITIALIZING LOCAL WEATHER VIEW PANEL ///
 
 		// city label
-		labelLocation = new JLabel("");
+		final String labelLocationInit = "Please select a city";
+		labelLocation = new JLabel(labelLocationInit);
 		labelLocation.setForeground(Color.WHITE);
 		labelLocation.setFont(font.deriveFont(17f));
 		labelLocation.setBounds(50, 25, 200, 37);
@@ -379,7 +380,12 @@ public class MainFrame {
 		buttonRefresh.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				refresh(labelLocation.getText());
+				String loc;
+				loc = labelLocation.getText();
+				if(loc.equalsIgnoreCase(labelLocationInit))
+					refresh(labelLocation.getText());
+				else
+					labelLocation.setText(labelLocationInit);
 			}
 		});
 		buttonRefresh.setIcon(new ImageIcon(getClass().getResource(

@@ -9,27 +9,27 @@ import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 public class LongTermForecast {
-	String Url;
-	String Key = "&APPID=65da394090951035f3a346d9a356ddd9";// api key
+	private String url;
+	private final String KEY = "&APPID=65da394090951035f3a346d9a356ddd9";// api key
 
-	String city, sky, country, time;
-	String temp, pressure, humidity, tempMax, tempMin;
-	double windSpeed, windDir;
+	private String 	city, sky, country, time,
+					temp, pressure, humidity, tempMax, tempMin;
+	private double 	windSpeed, windDir;
 
-	Queue<String> DateList = new LinkedList<String>();
-	Queue<String> tempList = new LinkedList<String>();
-	Queue<String> pressureList = new LinkedList<String>();
-	Queue<String> humidityList = new LinkedList<String>();
-	Queue<String> tempMaxList = new LinkedList<String>();
-	Queue<String> tempMinList = new LinkedList<String>();
-	Queue<String> windSpeedList = new LinkedList<String>();
-	Queue<String> windDirList = new LinkedList<String>();
+	private Queue<String> 	dateList 		= new LinkedList<>(),
+							tempList 		= new LinkedList<>(),
+							pressureList 	= new LinkedList<>(),
+							humidityList 	= new LinkedList<>(),
+							tempMaxList  	= new LinkedList<>(),
+							tempMinList 	= new LinkedList<>(),
+							windSpeedList 	= new LinkedList<>(),
+							windDirList 	= new LinkedList<>();
 
 	public LongTermForecast(String cityName, int Term)
 			throws UnsupportedEncodingException {
-		Url= "http://api.openweathermap.org/data/2.5/forecast/daily?q="+cityName+"&mode=json&units=metric&cnt="+Term + Key;
+		url = "http://api.openweathermap.org/data/2.5/forecast/daily?q="+cityName+"&mode=json&units=metric&cnt="+Term + KEY;
 
-		JsonParaer data = new JsonParaer(Url);
+		JsonParser data = new JsonParser(url);
 		String dataStr = data.getData();
 
 		JSONObject jsonData = JSONObject.fromObject(dataStr);
@@ -43,7 +43,7 @@ public class LongTermForecast {
 
 		// Check the city we got from server is our request or not
 		String cityMatch = city + "," + country;
-		if (cityMatch.equalsIgnoreCase(cityName) == false)
+		if (!cityMatch.equalsIgnoreCase(cityName))
 			throw new RuntimeException("City not found");
 
 		for (int i = 0; i < Term; i++) {
@@ -67,7 +67,7 @@ public class LongTermForecast {
 
 			time = objWind.getString("dt");
 
-			DateList.add(Unix2Date(time));
+			dateList.add(Conversion.unixToDate(time));
 			tempList.add(temp);
 			pressureList.add(pressure);
 			humidityList.add(humidity);
@@ -75,15 +75,6 @@ public class LongTermForecast {
 			tempMinList.add(tempMin);
 			windSpeedList.add(windSpeedString);
 			windDirList.add(windDirString);
-
 		}
-
-	}
-
-	public String Unix2Date(String date) {
-		Long time = Long.parseLong(date) * 1000;
-		String Date = new java.text.SimpleDateFormat("yyyy/MM/dd")
-				.format(new java.util.Date(time));
-		return Date;
 	}
 }

@@ -32,7 +32,7 @@ public class ShortTermForecast {
 		Url = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName
 				+ "&type=accurate&mode=json" + Key;
 
-		JsonParaer Data = new JsonParaer(Url);
+		JsonParser Data = new JsonParser(Url);
 		String DataStr = Data.getData();
 		JSONObject JsonData = JSONObject.fromObject(DataStr);// Save all weather
 																// information

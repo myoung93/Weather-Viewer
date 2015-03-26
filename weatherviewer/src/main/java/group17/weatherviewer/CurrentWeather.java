@@ -21,7 +21,7 @@ public class CurrentWeather {
      * Constructor for CurrentWeather
      * Takes a city name as parameter, retrieves and parses the JSON for that city and stores the data
      * @param cityName is the name of the city for which we're storing and parsing information
-     * @throws UnsupportedEncodingException if the JSOn retrieval fails
+     * @throws UnsupportedEncodingException if the JSON retrieval fails
      */
 	public CurrentWeather(String cityName) throws UnsupportedEncodingException {
 
@@ -45,7 +45,7 @@ public class CurrentWeather {
 			while ((line = BReader.readLine()) != null)
 				SBR.append(line + " ");
 			BReader.close();
-		} 
+		}
 		catch (IOException e) {
             System.out.println("There was an error retrieving the weather information");
         }
@@ -61,8 +61,8 @@ public class CurrentWeather {
 		JSONObject Obj_Sys = JsonData.getJSONObject("sys");// country
 		country = Obj_Sys.getString("country");
 		//grab sunrise/sunset and convert to real time
-		sunrise = Conversion.toTime(Obj_Sys.getString("sunrise"));
-		sunset = Conversion.toTime(Obj_Sys.getString("sunset"));
+		sunrise = Conversion.unixToTime(Obj_Sys.getString("sunrise"));
+		sunset = Conversion.unixToTime(Obj_Sys.getString("sunset"));
 
 		// get information from string
 		city = JsonData.getString("name");// city
@@ -77,7 +77,6 @@ public class CurrentWeather {
 		pressure = Obj_Main.getDouble("pressure")/10; // pressure
 		humidity = Obj_Main.getDouble("humidity");// humidity
 
-
 		// get information from wind object
 		JSONObject Obj_wind = JsonData.getJSONObject("wind");
 		windSpeed = Obj_wind.getDouble("speed");// wind speed
@@ -87,7 +86,7 @@ public class CurrentWeather {
 		JSONArray Array_Weather = JsonData.getJSONArray("weather");
 		JSONObject Obj_Wea = Array_Weather.getJSONObject(0);
 		sky = Obj_Wea.getString("description");
-		
+
 		//get weatherID info
 		weatherID = Obj_Wea.getInt("id");
 	}
@@ -115,7 +114,13 @@ public class CurrentWeather {
      * @return the current pressure
      */
 	public String getPressure() {
-		return String.valueOf(pressure);
+		int substring_length;
+		if(pressure > 100)
+			substring_length = 5;
+		else
+			substring_length = 4;
+
+		return String.valueOf(pressure).substring(0, substring_length);
 	}
 
     /**
@@ -123,7 +128,7 @@ public class CurrentWeather {
      * @return the current humidity in %
      */
 	public String getHumidity() {
-		return String.valueOf(humidity);
+		return String.valueOf((int)humidity);
 	}
     /**
      * Getter method for sunrise
@@ -186,57 +191,6 @@ public class CurrentWeather {
         }
         return String.valueOf(t).substring(0,substring_length) + '°' + Character.toUpperCase(unit);
     }
-    /**
-     * Helper method for Celsius temperature
-     * @return the current temp in degrees C (will phase this out in later versions)
-     */
-//	 public String getTempC() {
-//        return String.valueOf(temp - 273);
-//    }
-    /**
-     * Getter method for Fahrenheit temperature
-     * @return the current temp in degrees F (will phase this out in later versions)
-     */
-//	public String getTempF() {
-//        return String.valueOf(((temp - 273) * 9 / 5.0) + 32);
-//    }
-
-    /**
-     * Getter method for max Celsius temperature
-     * @return the current max temp in degrees C
-     */
-//	public String getMaxTempC() {
-//        return String.valueOf(maxTemp - 273);
-//    }
-    /**
-     * Getter method for max F temperature
-     * @return the current max temp in degrees F
-     */
-//	public String getTempMaxF() {
-//        return String.valueOf(((maxTemp - 273) * 9 / 5.0) + 32);
-//    }
-    /**
-     * Getter method for min Celsius temperature
-     * Same story as getTemp()s, will be the only getTempMax method later.
-     * @return the current min temp in degrees C
-     */
-//	public String getTempMin() {
-//		return getTempMinC();
-//	}
-    /**
-     * Getter method for min Celsius temperature
-     * @return the current min temp in degrees C
-     */
-//	public String getTempMinC() {
-//        return String.valueOf(minTemp - 273);
-//    }
-    /**
-     * Getter method for min F temperature
-     * @return the current min temp in degrees f
-     */
-//    public String getTempMinF() {
-//        return String.valueOf(((minTemp - 273) * 9 / 5.0) + 32);
-//    }
     /**
      * Getter method for country name
      * @return the name of the country the city is in

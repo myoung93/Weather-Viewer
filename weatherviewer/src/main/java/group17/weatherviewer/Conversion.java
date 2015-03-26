@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Conversion {
+	//still is not used
 	public static String convert(String value, char unitFrom, char unitTo){
 		double number = Double.parseDouble(value);
 		double result = 0;
@@ -27,10 +28,17 @@ public class Conversion {
      * @param unixTime string representation of unix time
      * @return the time of day corresponding to the unix time
      */
-    public static String toTime(String unixTime) {
+    public static String unixToTime(String unixTime) {
         //we only care about hours and minutes
         DateFormat df = new SimpleDateFormat("HH:mm");
         //multiply by 1000 for milliseconds
         return df.format(new Date(1000*Long.parseLong(unixTime)));
     }
+
+	public static String unixToDate(String date) {
+		Long time = Long.parseLong(date) * 1000;
+		String Date = new java.text.SimpleDateFormat("yyyy/MM/dd")
+				.format(new java.util.Date(time));
+		return Date;
+	}
 }
