@@ -10,6 +10,10 @@ import java.awt.event.*;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
+import java.util.Calendar;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+
 public class MainFrame {
 
 	// this is incredibly messy, we'll have to clean this up later
@@ -134,6 +138,10 @@ public class MainFrame {
 	private JLabel labelDay7SkyConditionIcon;
 	private JLabel labelDay7MaxTemp;
 	private JLabel labelDay7MinTemp;
+
+	private DateFormat dateFormat; //-NK
+	private Calendar cal;
+	private String lastUpdated;
 
 	private JList listLocations;
 	private DefaultListModel listModel;
@@ -365,6 +373,10 @@ public class MainFrame {
 		labelUpdatedInfo.setFont(font.deriveFont(15f));
 		labelUpdatedInfo.setBounds(405, 35, 98, 15);
 		frame.getContentPane().add(labelUpdatedInfo);
+
+		// Date to include in updated label -NK
+		dateFormat = new SimpleDateFormat("MMM dd HH:mm");
+		cal =  Calendar.getInstance();
 		
 		// Refresh button
 		buttonRefresh = new JButton("");
@@ -486,7 +498,7 @@ public class MainFrame {
 		// Locations list
 		listModel = new DefaultListModel();
 
-		// add saved locations to current list -NK
+		// Add saved locations to current list
 		for(String loc : prefs.getLocations()) { //loads the MyLocations arraylist into listModel
 			listModel.addElement(loc);
 		}
@@ -938,7 +950,8 @@ public class MainFrame {
 	// should probably show some kind of "updating" message
 
 	public void refresh(String location) {
-		
+
+
 		try {
 			// constructor should take String city parameter in the future.
 			System.out.println("Retrieving weather data");
@@ -948,6 +961,10 @@ public class MainFrame {
 					.println("Something went wrong retrieving current weather");
 			e.printStackTrace();
 		}
+
+		// set time of lastUpdated to "now" -NK
+		lastUpdated = dateFormat.format(cal.getTime());
+		
 
         //store tempUnit so we don't have to call prefs.getTempUnit() every time
 		// current location panel
@@ -964,9 +981,10 @@ public class MainFrame {
 		labelSunriseInfo.setText(currentWeather.getSunriseTime());
 		labelSunsetInfo.setText(currentWeather.getSunsetTime());
 		
+		labelUpdatedInfo.setText(lastUpdated); //-NK
+		
 		//NEW HARD CODED LABELS HERE *BEEP BOOP*
 		labelPrecipitationInfo.setText("HardCoded");
-		labelUpdatedInfo.setText("HardCoded");
 		
 		setSkyConditionImages(currentWeather.getWeatherID());
 		labelSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconLarge));
@@ -1103,7 +1121,7 @@ public class MainFrame {
 			catch(WeatherException exception) {
 				System.out.println(exception.getMessage());
 			}
-			//prefs.printLocations(); // This is just to test addLocation on user preferences - NK
+			//prefs.printLocations(); // This is just to test addLocation on user preferences
 
 
 			// Reset the text field.
