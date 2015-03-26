@@ -376,7 +376,6 @@ public class MainFrame {
 
 		// Date to include in updated label -NK
 		dateFormat = new SimpleDateFormat("MMM dd HH:mm");
-		cal =  Calendar.getInstance();
 		
 		// Refresh button
 		buttonRefresh = new JButton("");
@@ -963,8 +962,8 @@ public class MainFrame {
 		}
 
 		// set time of lastUpdated to "now" -NK
-		lastUpdated = dateFormat.format(cal.getTime());
-		
+		cal =  Calendar.getInstance();
+		lastUpdated = dateFormat.format(cal.getTime());		
 
         //store tempUnit so we don't have to call prefs.getTempUnit() every time
 		// current location panel
