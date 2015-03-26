@@ -335,7 +335,7 @@ public class MainFrame {
 		labelSkyConditionInfo = new JLabel("");
 		labelSkyConditionInfo.setForeground(Color.WHITE);
 		labelSkyConditionInfo.setFont(font.deriveFont(17f));
-		labelSkyConditionInfo.setBounds(75, 155, 150, 30);
+		labelSkyConditionInfo.setBounds(75, 155, 200, 30);
 		frame.getContentPane().add(labelSkyConditionInfo);
 
 		// sky condition Icon info
@@ -464,7 +464,7 @@ public class MainFrame {
 		scrollPane = new JScrollPane();
 		scrollPane
 				.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-		scrollPane.setBounds(595, 56, 195, 422);
+		scrollPane.setBounds(595, 56, 205, 255);
 		scrollPane.setOpaque(false);
 		scrollPane.setBorder(null);
 		scrollPane.getViewport().setOpaque(false);
@@ -508,7 +508,7 @@ public class MainFrame {
 		buttonFavourite.setOpaque(false);
 		buttonFavourite.setContentAreaFilled(false);
 		buttonFavourite.setBorderPainted(false);
-		buttonFavourite.setBounds(759, 16, 41, 37);
+		buttonFavourite.setBounds(762, 16, 41, 37);
 		frame.getContentPane().add(buttonFavourite);
 
 		// search bar
@@ -549,97 +549,97 @@ public class MainFrame {
 		label12AM = new JLabel("12:00am");
 		label12AM.setForeground(Color.LIGHT_GRAY);
 		label12AM.setFont(font.deriveFont(15f));
-		label12AM.setBounds(50, 360, 58, 15);
+		label12AM.setBounds(70, 360, 58, 15);
 		frame.getContentPane().add(label12AM);
 		// Icon
 		label12AMSkyConditionIcon = new JLabel();
-		label12AMSkyConditionIcon.setBounds(50, 380, 55, 49);
+		label12AMSkyConditionIcon.setBounds(70, 380, 55, 49);
 		frame.getContentPane().add(label12AMSkyConditionIcon);
 		
 		// Skycondition
 		label12AMSkyConditionInfo = new JLabel("");
 		label12AMSkyConditionInfo.setForeground(Color.LIGHT_GRAY);
 		label12AMSkyConditionInfo.setFont(font.deriveFont(11f));
-		label12AMSkyConditionInfo.setBounds(50, 435, 58, 15);
+		label12AMSkyConditionInfo.setBounds(70, 435, 90, 15);
 		frame.getContentPane().add(label12AMSkyConditionInfo);
 		
 		// Temp
 		label12AMTempInfo = new JLabel("");
 		label12AMTempInfo.setForeground(Color.LIGHT_GRAY);
 		label12AMTempInfo.setFont(font.deriveFont(15f));
-		label12AMTempInfo.setBounds(50, 455, 58, 15);
+		label12AMTempInfo.setBounds(80, 455, 58, 15);
 		frame.getContentPane().add(label12AMTempInfo);
 
 		// 3AM
 		//DAY
-		label3AM = new JLabel("  3:00am");
+		label3AM = new JLabel(" 3:00am");
 		label3AM.setForeground(Color.LIGHT_GRAY);
 		label3AM.setFont(font.deriveFont(15f));
-		label3AM.setBounds(115, 360, 58, 15);
+		label3AM.setBounds(155, 360, 58, 15);
 		frame.getContentPane().add(label3AM);
 		// Icon
 		label3AMSkyConditionIcon = new JLabel();
-		label3AMSkyConditionIcon.setBounds(115, 380, 55, 49);
+		label3AMSkyConditionIcon.setBounds(155, 380, 55, 49);
 		frame.getContentPane().add(label3AMSkyConditionIcon);
 		// Skycondition
 		label3AMSkyConditionInfo = new JLabel("");
 		label3AMSkyConditionInfo.setForeground(Color.LIGHT_GRAY);
 		label3AMSkyConditionInfo.setFont(font.deriveFont(11f));
-		label3AMSkyConditionInfo.setBounds(115, 435, 58, 15);
+		label3AMSkyConditionInfo.setBounds(155, 435, 90, 15);
 		frame.getContentPane().add(label3AMSkyConditionInfo);
 		// Temp
 		label3AMTempInfo = new JLabel("");
 		label3AMTempInfo.setForeground(Color.LIGHT_GRAY);
 		label3AMTempInfo.setFont(font.deriveFont(15f));
-		label3AMTempInfo.setBounds(115, 455, 58, 15);
+		label3AMTempInfo.setBounds(165, 455, 58, 15);
 		frame.getContentPane().add(label3AMTempInfo);
 		
 		//6AM
 		//DAY
-		label6AM = new JLabel("  6:00am");
+		label6AM = new JLabel(" 6:00am");
 		label6AM.setForeground(Color.LIGHT_GRAY);
 		label6AM.setFont(font.deriveFont(15f));
-		label6AM.setBounds(180, 360, 58, 15);
+		label6AM.setBounds(240, 360, 58, 15);
 		frame.getContentPane().add(label6AM);
 		// Icon
 		label6AMSkyConditionIcon = new JLabel();
-		label6AMSkyConditionIcon.setBounds(180, 380, 55, 49);
+		label6AMSkyConditionIcon.setBounds(240, 380, 55, 49);
 		frame.getContentPane().add(label6AMSkyConditionIcon);
 		// Skycondition
 		label6AMSkyConditionInfo = new JLabel("");
 		label6AMSkyConditionInfo.setForeground(Color.LIGHT_GRAY);
 		label6AMSkyConditionInfo.setFont(font.deriveFont(11f));
-		label6AMSkyConditionInfo.setBounds(180, 435, 58, 15);
+		label6AMSkyConditionInfo.setBounds(240, 435, 90, 15);
 		frame.getContentPane().add(label6AMSkyConditionInfo);
 		// Temp
 		label6AMTempInfo = new JLabel("");
 		label6AMTempInfo.setForeground(Color.LIGHT_GRAY);
 		label6AMTempInfo.setFont(font.deriveFont(15f));
-		label6AMTempInfo.setBounds(180, 455, 58, 15);
+		label6AMTempInfo.setBounds(250, 455, 58, 15);
 		frame.getContentPane().add(label6AMTempInfo);
 		
 		//9AM
 		//DAY
-		label9AM = new JLabel("  9:00am");
+		label9AM = new JLabel(" 9:00am");
 		label9AM.setForeground(Color.LIGHT_GRAY);
 		label9AM.setFont(font.deriveFont(15f));
-		label9AM.setBounds(245, 360, 58, 15);
+		label9AM.setBounds(325, 360, 58, 15);
 		frame.getContentPane().add(label9AM);
 		// Icon
 		label9AMSkyConditionIcon = new JLabel();
-		label9AMSkyConditionIcon.setBounds(245, 380, 55, 49);
+		label9AMSkyConditionIcon.setBounds(325, 380, 55, 49);
 		frame.getContentPane().add(label9AMSkyConditionIcon);
 		// Skycondition
 		label9AMSkyConditionInfo = new JLabel("");
 		label9AMSkyConditionInfo.setForeground(Color.LIGHT_GRAY);
 		label9AMSkyConditionInfo.setFont(font.deriveFont(11f));
-		label9AMSkyConditionInfo.setBounds(245, 435, 58, 15);
+		label9AMSkyConditionInfo.setBounds(325, 435, 90, 15);
 		frame.getContentPane().add(label9AMSkyConditionInfo);
 		// Temp
 		label9AMTempInfo = new JLabel("");
 		label9AMTempInfo.setForeground(Color.LIGHT_GRAY);
 		label9AMTempInfo.setFont(font.deriveFont(15f));
-		label9AMTempInfo.setBounds(245, 455, 58, 15);
+		label9AMTempInfo.setBounds(335, 455, 58, 15);
 		frame.getContentPane().add(label9AMTempInfo);
 
 		//12PM
@@ -647,95 +647,95 @@ public class MainFrame {
 		label12PM = new JLabel("12:00pm");
 		label12PM.setForeground(Color.LIGHT_GRAY);
 		label12PM.setFont(font.deriveFont(15f));
-		label12PM.setBounds(310, 360, 58, 15);
+		label12PM.setBounds(410, 360, 58, 15);
 		frame.getContentPane().add(label12PM);
 		// Icon
 		label12PMSkyConditionIcon = new JLabel();
-		label12PMSkyConditionIcon.setBounds(310, 380, 55, 49);
+		label12PMSkyConditionIcon.setBounds(410, 380, 55, 49);
 		frame.getContentPane().add(label12PMSkyConditionIcon);
 		// Skycondition
 		label12PMSkyConditionInfo = new JLabel("");
 		label12PMSkyConditionInfo.setForeground(Color.LIGHT_GRAY);
 		label12PMSkyConditionInfo.setFont(font.deriveFont(11f));
-		label12PMSkyConditionInfo.setBounds(310, 435, 58, 15);
+		label12PMSkyConditionInfo.setBounds(410, 435, 90, 15);
 		frame.getContentPane().add(label12PMSkyConditionInfo);
 		// Temp
 		label12PMTempInfo = new JLabel("");
 		label12PMTempInfo.setForeground(Color.LIGHT_GRAY);
 		label12PMTempInfo.setFont(font.deriveFont(15f));
-		label12PMTempInfo.setBounds(310, 455, 58, 15);
+		label12PMTempInfo.setBounds(420, 455, 58, 15);
 		frame.getContentPane().add(label12PMTempInfo);
 
 		//3AM
 		//DAY
-		label3PM = new JLabel("  3:00pm");
+		label3PM = new JLabel(" 3:00pm");
 		label3PM.setForeground(Color.LIGHT_GRAY);
 		label3PM.setFont(font.deriveFont(15f));
-		label3PM.setBounds(375, 360, 58, 15);
+		label3PM.setBounds(495, 360, 58, 15);
 		frame.getContentPane().add(label3PM);
 		// Icon
 		label3PMSkyConditionIcon = new JLabel();
-		label3PMSkyConditionIcon.setBounds(375, 380, 55, 49);
+		label3PMSkyConditionIcon.setBounds(495, 380, 55, 49);
 		frame.getContentPane().add(label3PMSkyConditionIcon);
 		// Skycondition
 		label3PMSkyConditionInfo = new JLabel("");
 		label3PMSkyConditionInfo.setForeground(Color.LIGHT_GRAY);
 		label3PMSkyConditionInfo.setFont(font.deriveFont(11f));
-		label3PMSkyConditionInfo.setBounds(375, 435, 58, 15);
+		label3PMSkyConditionInfo.setBounds(495, 435, 90, 15);
 		frame.getContentPane().add(label3PMSkyConditionInfo);
 		// Temp
 		label3PMTempInfo = new JLabel("");
 		label3PMTempInfo.setForeground(Color.LIGHT_GRAY);
 		label3PMTempInfo.setFont(font.deriveFont(15f));
-		label3PMTempInfo.setBounds(375, 455, 58, 15);
+		label3PMTempInfo.setBounds(505, 455, 58, 15);
 		frame.getContentPane().add(label3PMTempInfo);
 		
 		//6AM
 		//DAY
-		label6PM = new JLabel("  6:00pm");
+		label6PM = new JLabel(" 6:00pm");
 		label6PM.setForeground(Color.LIGHT_GRAY);
 		label6PM.setFont(font.deriveFont(15f));
-		label6PM.setBounds(440, 360, 58, 15);
+		label6PM.setBounds(580, 360, 58, 15);
 		frame.getContentPane().add(label6PM);
 		// Icon
 		label6PMSkyConditionIcon = new JLabel();
-		label6PMSkyConditionIcon.setBounds(440, 380, 55, 49);
+		label6PMSkyConditionIcon.setBounds(580, 380, 55, 49);
 		frame.getContentPane().add(label6PMSkyConditionIcon);
 		// Skycondition
 		label6PMSkyConditionInfo = new JLabel("");
 		label6PMSkyConditionInfo.setForeground(Color.LIGHT_GRAY);
 		label6PMSkyConditionInfo.setFont(font.deriveFont(11f));
-		label6PMSkyConditionInfo.setBounds(440, 435, 58, 15);
+		label6PMSkyConditionInfo.setBounds(580, 435, 90, 15);
 		frame.getContentPane().add(label6PMSkyConditionInfo);
 		// Temp
 		label6PMTempInfo = new JLabel("");
 		label6PMTempInfo.setForeground(Color.LIGHT_GRAY);
 		label6PMTempInfo.setFont(font.deriveFont(15f));
-		label6PMTempInfo.setBounds(440, 455, 58, 15);
+		label6PMTempInfo.setBounds(590, 455, 58, 15);
 		frame.getContentPane().add(label6PMTempInfo);
 		
 		//9AM
 		//DAY
-		label9PM = new JLabel("  9:00pm");
+		label9PM = new JLabel(" 9:00pm");
 		label9PM.setForeground(Color.LIGHT_GRAY);
 		label9PM.setFont(font.deriveFont(15f));
-		label9PM.setBounds(505, 360, 58, 15);
+		label9PM.setBounds(665, 360, 58, 15);
 		frame.getContentPane().add(label9PM);
 		// Icon
 		label9PMSkyConditionIcon = new JLabel();
-		label9PMSkyConditionIcon.setBounds(505, 380, 55, 49);
+		label9PMSkyConditionIcon.setBounds(665, 380, 55, 49);
 		frame.getContentPane().add(label9PMSkyConditionIcon);
 		// Skycondition
 		label9PMSkyConditionInfo = new JLabel("");
 		label9PMSkyConditionInfo.setForeground(Color.LIGHT_GRAY);
 		label9PMSkyConditionInfo.setFont(font.deriveFont(11f));
-		label9PMSkyConditionInfo.setBounds(505, 435, 58, 15);
+		label9PMSkyConditionInfo.setBounds(665, 435, 90, 15);
 		frame.getContentPane().add(label9PMSkyConditionInfo);
 		// Temp
 		label9PMTempInfo = new JLabel("");
 		label9PMTempInfo.setForeground(Color.LIGHT_GRAY);
 		label9PMTempInfo.setFont(font.deriveFont(15f));
-		label9PMTempInfo.setBounds(505, 455, 58, 15);
+		label9PMTempInfo.setBounds(675, 455, 58, 15);
 		frame.getContentPane().add(label9PMTempInfo);
 
 		// / END INITIALIZATION OF SHORT-TERM FORECAST PANEL ///
