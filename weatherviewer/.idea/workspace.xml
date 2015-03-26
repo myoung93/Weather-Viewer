@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="No more NullPointerExceptions when user selects temperature unit before updating">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather.prefs" afterPath="$PROJECT_DIR$/weather.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
+    <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="Temperatures now display the correct number of characters (no decimal place)">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="weatherviewer.iws" />
@@ -36,30 +34,45 @@
             <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="3587">
               <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2676#2677#0" expanded="false" />
-                <element signature="e#2707#2708#0" expanded="false" />
-                <element signature="e#2904#2905#0" expanded="false" />
-                <element signature="e#2936#2937#0" expanded="false" />
-                <element signature="e#3085#3086#0" expanded="false" />
-                <element signature="e#3120#3121#0" expanded="false" />
-                <element signature="e#3235#3236#0" expanded="false" />
-                <element signature="e#3266#3267#0" expanded="false" />
-                <element signature="e#3313#3314#0" expanded="false" />
-                <element signature="e#3345#3346#0" expanded="false" />
                 <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="16183" max-vertical-offset="35207">
-              <caret line="972" column="71" selection-start-line="972" selection-start-column="71" selection-end-line="972" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.436457" vertical-offset="0" max-vertical-offset="25007">
+              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4873#5154#0" expanded="true" />
+                <element signature="e#5153#5154#0" expanded="true" />
+                <element signature="e#5219#5220#0" expanded="true" />
+                <element signature="e#5238#5239#0" expanded="true" />
+                <element signature="e#6105#6282#0" expanded="true" />
+                <element signature="e#6281#6282#0" expanded="true" />
+                <element signature="e#12358#12491#0" expanded="true" />
+                <element signature="e#12490#12491#0" expanded="true" />
+                <element signature="e#13001#13123#0" expanded="true" />
+                <element signature="e#13122#13123#0" expanded="true" />
+                <element signature="e#13449#13581#0" expanded="true" />
+                <element signature="e#13580#13581#0" expanded="true" />
+                <element signature="e#13990#14282#0" expanded="true" />
+                <element signature="e#14281#14282#0" expanded="true" />
+                <element signature="e#14614#14900#0" expanded="true" />
+                <element signature="e#14899#14900#0" expanded="true" />
+                <element signature="e#16636#16853#0" expanded="true" />
+                <element signature="e#16852#16853#0" expanded="true" />
+                <element signature="e#39445#39446#0" expanded="true" />
+                <element signature="e#39474#39475#0" expanded="true" />
+                <element signature="e#41222#41223#0" expanded="true" />
+                <element signature="e#41262#41263#0" expanded="true" />
+                <element signature="e#41355#41356#0" expanded="true" />
+                <element signature="e#41378#41379#0" expanded="true" />
+                <element signature="e#41471#41472#0" expanded="true" />
+                <element signature="e#41503#41504#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,7 +81,7 @@
       <file leaf-file-name="Conversion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
               <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -77,28 +90,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurrentWeather.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CurrentWeather.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4843342" vertical-offset="2553" max-vertical-offset="4590">
-              <caret line="179" column="46" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2468" max-vertical-offset="4607">
+              <caret line="176" column="33" selection-start-line="176" selection-start-column="33" selection-end-line="176" selection-end-column="33" />
               <folding>
-                <element signature="e#3833#3834#0" expanded="true" />
-                <element signature="e#3872#3873#0" expanded="true" />
-                <element signature="e#3989#3990#0" expanded="true" />
-                <element signature="e#4027#4028#0" expanded="true" />
-                <element signature="e#4150#4151#0" expanded="true" />
-                <element signature="e#4188#4189#0" expanded="true" />
-                <element signature="e#4324#4325#0" expanded="true" />
-                <element signature="e#4345#4346#0" expanded="true" />
-                <element signature="e#4478#4479#0" expanded="true" />
-                <element signature="e#4498#4499#0" expanded="true" />
-                <element signature="e#4643#4644#0" expanded="true" />
-                <element signature="e#4680#4681#0" expanded="true" />
-                <element signature="e#7643#7644#0" expanded="true" />
-                <element signature="e#7664#7665#0" expanded="true" />
-                <element signature="e#7806#7807#0" expanded="true" />
-                <element signature="e#7823#7824#0" expanded="true" />
+                <element signature="e#3892#3893#0" expanded="true" />
+                <element signature="e#3931#3932#0" expanded="true" />
+                <element signature="e#4048#4049#0" expanded="true" />
+                <element signature="e#4086#4087#0" expanded="true" />
+                <element signature="e#4209#4210#0" expanded="true" />
+                <element signature="e#4247#4248#0" expanded="true" />
+                <element signature="e#4383#4384#0" expanded="true" />
+                <element signature="e#4404#4405#0" expanded="true" />
+                <element signature="e#4537#4538#0" expanded="true" />
+                <element signature="e#4557#4558#0" expanded="true" />
+                <element signature="e#4702#4703#0" expanded="true" />
+                <element signature="e#4739#4740#0" expanded="true" />
+                <element signature="e#7702#7703#0" expanded="true" />
+                <element signature="e#7723#7724#0" expanded="true" />
+                <element signature="e#7865#7866#0" expanded="true" />
+                <element signature="e#7882#7883#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,14 +120,9 @@
       <file leaf-file-name="WeatherException.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1003">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="e#1446#1447#0" expanded="false" />
-                <element signature="e#1481#1482#0" expanded="false" />
-                <element signature="e#1633#1634#0" expanded="false" />
-                <element signature="e#1666#1667#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1071">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,8 +142,8 @@
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
       </list>
     </option>
   </component>
@@ -178,6 +186,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -292,8 +302,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,7 +344,41 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="false" />
             <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.log</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/.tasks.xml.zip</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/tasks.xml.zip</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.indexes/e4/b9/22/e5/fa/history.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.markers</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.markers.snap</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.syncinfo.snap</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3843881376.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/2.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/3.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments.gen</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments.gen</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/version.ini</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/caches/identified-project-coordinates.json</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments.gen</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/jre/jre/1.0.0-SNAPSHOT/resolver-status.properties</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/org/eclipse/recommenders/index/0.0.0-SNAPSHOT/resolver-status.properties</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java</PATH>
             <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java</PATH>
             <PATH vcs="Git" revision="">$PROJECT_DIR$/weather.prefs</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
@@ -345,6 +387,178 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="false" />
             <option name="myId" value="CREATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/12/60346a4fa3d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/12/f01ee4b62dd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/14/3005f96232d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/16/405312952ed300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1b/60ba0a9b30d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1b/80ce76602fd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1b/c059227a30d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1c/c03a5ee025d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1d/20f626de2ad300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1e/80e23e3b32d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1e/c023d09132d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2/502d28fb31d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2/8003244932d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/21/a0cc0531fdd2001414d3a4eafed7c978</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/28/206da62e2fd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/28/b0f501c92fd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/29/208d618b2ed300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2d/f017e8ad2fd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/31/603efd6931d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/33/c037209e30d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/37/f0c0be8b31d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/38/d02fdef1a3d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3f/10f3ef002ad300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4/7078a6412fd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/40/80f8d62832d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/41/b07b95262cd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/42/708b58e52ad300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/45/e0c99f5da4d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/47/b05ddb9530d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4a/f01d592a2dd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4b/0085fb4ffdd2001414d3a4eafed7c978</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4b/e0492a9e30d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4c/d0db631f2bd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/50/800f036f30d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/50/c0f092422ed300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/54/a003409130d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/58/e01044a02ad300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/59/305d727d32d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5e/4037facba4d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5e/80f94d062dd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5f/702f6dc730d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/62/105a184d30d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/66/f040644fa3d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/68/40e0d9bc2ad300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/69/30d464ee2ad300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6e/20ca8cea2ad300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7/70a2c38fa4d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/77/407880e1a4d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7c/e0d9b19fa4d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7d/308155842ed300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7d/a03b200e2dd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7d/b09087ee25d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/80/a05ad2f82ad300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/86/10b8075d32d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/87/a01631c232d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8a/205127d82ad300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8a/304ed7a72ad300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8a/d090317831d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8b/805d854fa3d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8c/60ba30712fd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8f/20779124a4d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/90/b05f4c9130d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9c/60e0de1da5d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9e/70c2ba7c31d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9f/00fd5b6a2dd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a/90e34d142fd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a1/b0d724e22ad300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a8/e0a8feba30d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b1/c00a4949fdd2001414d3a4eafed7c978</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b4/70836cce2bd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b6/20faccc02fd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b8/904bd19530d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/bd/70d26cd430d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/be/001aa9f825d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/bf/f02e9d40a4d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c0/60d87ee931d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c2/d0e572cffdd2001414d3a4eafed7c978</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c3/c0ab8c022dd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c5/30a5c2d32fd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c7/80e905a932d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ca/20d4a3f625d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/cb/e0b5c60430d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/cc/80404a8231d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ce/e06bf291fdd2001414d3a4eafed7c978</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d1/10363b5d30d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d3/004a09ff2fd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d6/60a3359130d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d7/a02869d331d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/de/508c663032d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/de/700047c3a3d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e/40f0dd9b2dd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e0/809a315432d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e0/a00439fa2cd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e1/2057ea4c2ed300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e1/806842c82ad300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e3/c0e4a97d2ed300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e7/60d6e0da2bd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e8/50a1a3952fd300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ed/40812f6f31d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ee/10c4d039a4d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f3/8090e36ca4d200141168e4892233d3fc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f5/90130e4130d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f9/20bdb3f92ed300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fc/302f47ed2ad300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fd/205a009b30d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fd/9053980326d300141adf9c1e504278a2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.indexes/e4/b9/db/1a/history.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/30.tree</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/32.tree</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/33.tree</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/30.snap</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/33.snap</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/weatherviewer/2015/3/13/refactorings.history</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/weatherviewer/2015/3/13/refactorings.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.ui.refactoring/dialog_settings.xml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_10.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_10_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_11.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_11_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_12.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_14.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_y_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_z.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_z_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_11</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_12</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_z</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1e.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1e_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1f.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1f_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1g.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1g_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1h.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1b</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1d</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1e</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_10.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_v_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_w.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_w_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_x.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_x_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_y.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_y_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_z.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_z_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_w</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_y</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_z</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_8.fdt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_8.fdx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_8.fnm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_8.frq</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_8.nrm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_8.prx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_8.tii</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_8.tis</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_9.fdt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_9.fdx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_9.fnm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_9.frq</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_9.nrm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_9.prx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_9.tii</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_9.tis</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments_9</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments_a</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/JsonParaer.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/ShortTermForecast.java</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
             <option name="myUpdateName" value="Deleted" />
@@ -352,6 +566,262 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="true" />
             <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/10/10cb445d53d000141b19c4fdce340445</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/11/30cfdc9a54d000141b19c4fdce340445</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3a/c0c0ef2454d000141b19c4fdce340445</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/55/005b458654d000141b19c4fdce340445</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6/e0e7120753d000141b19c4fdce340445</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6c/80ad744d54d000141b19c4fdce340445</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8c/405bd52553d000141b19c4fdce340445</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/97/705cf915b1be001412a0cf25da714636</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9b/b0d580a353d000141b19c4fdce340445</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/bd/00b3600954d000141b19c4fdce340445</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/cf/90a4ea8e54d000141b19c4fdce340445</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/cf/b0530a6053d000141b19c4fdce340445</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d7/4085f1ab54d000141b19c4fdce340445</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f6/e0fa12fd53d000141b19c4fdce340445</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.indexes/history.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/org.eclipse.jdt.core/state.dat</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/1.tree</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/20.tree</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/21.tree</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/23.tree</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/24.tree</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/27.tree</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/29.tree</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/6.tree</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/9.tree</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/1.snap</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/24.snap</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/4.snap</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1259291233.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1513993030.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2259717368.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2307328643.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2426646370.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2598035366.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3542660237.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3900037835.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/392775124.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3938652823.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/460152253.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/57392037.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/664741535.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/989528713.index</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/4.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/5.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/6.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_0.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_0_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_2.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_2_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_3.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_3_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_4.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_4_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_5.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_5_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_6.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_a.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_a_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_b.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_b_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_c.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_c_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_d.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_d_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_e.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_e_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_f.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_f_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_g.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_k.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_k_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_l.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_l_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_m.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_m_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_n.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_n_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_o.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_o_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_p.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_p_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_q.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_q_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_r.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_4</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_5</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_8</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_e</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_f</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_h</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_n</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_q</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_r</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_x</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_0.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_0_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_10.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_10_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_11.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_12.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_14.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_14_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_15.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_15_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_16.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_16_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_17.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_17_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_18.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_18_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_19.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_2.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_3.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_3_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_4.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_4_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_5.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_5_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_6.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_6_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_7.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_8.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_a.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_a_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_b.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_b_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_c.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_c_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_d.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_k.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_k_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_l.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_l_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_m.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_m_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_n.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_u.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_u_3.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_v.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_v_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_w.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_w_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_x.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_y.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_y_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_z.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_z_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_11</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_17</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_a</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_b</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_e</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_k</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_l</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_n</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_t</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_z</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_0.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_0_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_1.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_1_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_2.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_2_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_3.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_a.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_a_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_b.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_b_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_c.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_c_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_d.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_k.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_k_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_l.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_l_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_m.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_m_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_n.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_n_1.del</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_o.cfs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_5</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_b</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_c</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_e</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_k</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_n</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_o</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_u</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.fdt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.fdx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.fnm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.frq</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.nrm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.prx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.tii</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_0.tis</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_1.fdt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_1.fdx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_1.fnm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_1.frq</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_1.nrm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_1.prx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_1.tii</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_1.tis</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_2.fdt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_2.fdx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_2.fnm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_2.frq</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_2.nrm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_2.prx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_2.tii</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_2.tis</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_3.fdt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_3.fdx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_3.fnm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_3.frq</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_3.nrm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_3.prx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_3.tii</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_3.tis</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_4.fdt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_4.fdx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_4.fnm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_4.frq</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_4.nrm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_4.prx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_4.tii</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_4.tis</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.fdt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.fdx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.fnm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.frq</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.nrm</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.prx</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.tii</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_6.tis</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments_1</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments_2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments_3</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments_4</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments_5</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments_7</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/cloud_heavy_icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/cloud_icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/rain_heavy_icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/rain_icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/snow_heavy_icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/snow_icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/sun_icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/sun_partial_icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/icons/weather_snowy_icon.png</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
             <option name="myUpdateName" value="Restored" />
@@ -684,7 +1154,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427155032562</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Temperatures now display the correct number of characters (no decimal place)">
+      <created>1427227398068</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1427227398068</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -708,7 +1184,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15890688" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14347357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919094" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -718,6 +1193,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -741,20 +1217,21 @@
     <MESSAGE value="Considerably shortened setSkyConditionImages, but left the core of the method the same." />
     <MESSAGE value="Temperature fields now update upon unit change. Updated .gitignore" />
     <MESSAGE value="No more NullPointerExceptions when user selects temperature unit before updating" />
-    <option name="LAST_COMMIT_MESSAGE" value="No more NullPointerExceptions when user selects temperature unit before updating" />
+    <MESSAGE value="Temperatures now display the correct number of characters (no decimal place)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Temperatures now display the correct number of characters (no decimal place)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java</url>
-          <line>158</line>
+          <line>159</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java</url>
-          <line>71</line>
+          <line>72</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -768,22 +1245,90 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="35207">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4873#5154#0" expanded="true" />
+            <element signature="e#5153#5154#0" expanded="true" />
+            <element signature="e#5219#5220#0" expanded="true" />
+            <element signature="e#5238#5239#0" expanded="true" />
+            <element signature="e#6105#6282#0" expanded="true" />
+            <element signature="e#6281#6282#0" expanded="true" />
+            <element signature="e#12358#12491#0" expanded="true" />
+            <element signature="e#12490#12491#0" expanded="true" />
+            <element signature="e#13001#13123#0" expanded="true" />
+            <element signature="e#13122#13123#0" expanded="true" />
+            <element signature="e#13449#13581#0" expanded="true" />
+            <element signature="e#13580#13581#0" expanded="true" />
+            <element signature="e#13990#14282#0" expanded="true" />
+            <element signature="e#14281#14282#0" expanded="true" />
+            <element signature="e#14614#14900#0" expanded="true" />
+            <element signature="e#14899#14900#0" expanded="true" />
+            <element signature="e#16636#16853#0" expanded="true" />
+            <element signature="e#16852#16853#0" expanded="true" />
+            <element signature="e#39445#39446#0" expanded="true" />
+            <element signature="e#39474#39475#0" expanded="true" />
+            <element signature="e#41222#41223#0" expanded="true" />
+            <element signature="e#41262#41263#0" expanded="true" />
+            <element signature="e#41355#41356#0" expanded="true" />
+            <element signature="e#41378#41379#0" expanded="true" />
+            <element signature="e#41471#41472#0" expanded="true" />
+            <element signature="e#41503#41504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2451" max-vertical-offset="4590">
+          <caret line="175" column="33" selection-start-line="175" selection-start-column="33" selection-end-line="175" selection-end-column="33" />
+          <folding>
+            <element signature="e#3892#3893#0" expanded="true" />
+            <element signature="e#3931#3932#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4247#4248#0" expanded="true" />
+            <element signature="e#4383#4384#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
+            <element signature="e#4702#4703#0" expanded="true" />
+            <element signature="e#4739#4740#0" expanded="true" />
+            <element signature="e#7702#7703#0" expanded="true" />
+            <element signature="e#7723#7724#0" expanded="true" />
+            <element signature="e#7865#7866#0" expanded="true" />
+            <element signature="e#7882#7883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1003">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="3587">
           <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2707#2708#0" expanded="false" />
-            <element signature="e#2904#2905#0" expanded="false" />
-            <element signature="e#2936#2937#0" expanded="false" />
-            <element signature="e#3085#3086#0" expanded="false" />
-            <element signature="e#3120#3121#0" expanded="false" />
-            <element signature="e#3235#3236#0" expanded="false" />
-            <element signature="e#3266#3267#0" expanded="false" />
-            <element signature="e#3313#3314#0" expanded="false" />
-            <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
           </folding>
         </state>
@@ -795,6 +1340,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4873#5154#0" expanded="true" />
+            <element signature="e#5153#5154#0" expanded="true" />
+            <element signature="e#5219#5220#0" expanded="true" />
+            <element signature="e#5238#5239#0" expanded="true" />
+            <element signature="e#6105#6282#0" expanded="true" />
+            <element signature="e#6281#6282#0" expanded="true" />
+            <element signature="e#12358#12491#0" expanded="true" />
+            <element signature="e#12490#12491#0" expanded="true" />
+            <element signature="e#13001#13123#0" expanded="true" />
+            <element signature="e#13122#13123#0" expanded="true" />
+            <element signature="e#13449#13581#0" expanded="true" />
+            <element signature="e#13580#13581#0" expanded="true" />
+            <element signature="e#13990#14282#0" expanded="true" />
+            <element signature="e#14281#14282#0" expanded="true" />
+            <element signature="e#14614#14900#0" expanded="true" />
+            <element signature="e#14899#14900#0" expanded="true" />
+            <element signature="e#16636#16853#0" expanded="true" />
+            <element signature="e#16852#16853#0" expanded="true" />
+            <element signature="e#39445#39446#0" expanded="true" />
+            <element signature="e#39474#39475#0" expanded="true" />
+            <element signature="e#41222#41223#0" expanded="true" />
+            <element signature="e#41262#41263#0" expanded="true" />
+            <element signature="e#41355#41356#0" expanded="true" />
+            <element signature="e#41378#41379#0" expanded="true" />
+            <element signature="e#41471#41472#0" expanded="true" />
+            <element signature="e#41503#41504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -814,22 +1385,22 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2202" max-vertical-offset="4216">
           <caret line="153" column="27" selection-start-line="153" selection-start-column="27" selection-end-line="153" selection-end-column="27" />
           <folding>
-            <element signature="e#3833#3834#0" expanded="true" />
-            <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#3989#3990#0" expanded="true" />
-            <element signature="e#4027#4028#0" expanded="true" />
-            <element signature="e#4150#4151#0" expanded="true" />
-            <element signature="e#4188#4189#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4345#4346#0" expanded="true" />
-            <element signature="e#4478#4479#0" expanded="true" />
-            <element signature="e#4498#4499#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4680#4681#0" expanded="true" />
-            <element signature="e#7643#7644#0" expanded="true" />
-            <element signature="e#7664#7665#0" expanded="true" />
-            <element signature="e#7806#7807#0" expanded="true" />
-            <element signature="e#7823#7824#0" expanded="true" />
+            <element signature="e#3892#3893#0" expanded="true" />
+            <element signature="e#3931#3932#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4247#4248#0" expanded="true" />
+            <element signature="e#4383#4384#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
+            <element signature="e#4702#4703#0" expanded="true" />
+            <element signature="e#4739#4740#0" expanded="true" />
+            <element signature="e#7702#7703#0" expanded="true" />
+            <element signature="e#7723#7724#0" expanded="true" />
+            <element signature="e#7865#7866#0" expanded="true" />
+            <element signature="e#7882#7883#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -838,12 +1409,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1003">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#1446#1447#0" expanded="false" />
-            <element signature="e#1481#1482#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -852,17 +1418,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="3587">
           <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2707#2708#0" expanded="false" />
-            <element signature="e#2904#2905#0" expanded="false" />
-            <element signature="e#2936#2937#0" expanded="false" />
-            <element signature="e#3085#3086#0" expanded="false" />
-            <element signature="e#3120#3121#0" expanded="false" />
-            <element signature="e#3235#3236#0" expanded="false" />
-            <element signature="e#3266#3267#0" expanded="false" />
-            <element signature="e#3313#3314#0" expanded="false" />
-            <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
           </folding>
         </state>
@@ -874,6 +1429,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4873#5154#0" expanded="true" />
+            <element signature="e#5153#5154#0" expanded="true" />
+            <element signature="e#5219#5220#0" expanded="true" />
+            <element signature="e#5238#5239#0" expanded="true" />
+            <element signature="e#6105#6282#0" expanded="true" />
+            <element signature="e#6281#6282#0" expanded="true" />
+            <element signature="e#12358#12491#0" expanded="true" />
+            <element signature="e#12490#12491#0" expanded="true" />
+            <element signature="e#13001#13123#0" expanded="true" />
+            <element signature="e#13122#13123#0" expanded="true" />
+            <element signature="e#13449#13581#0" expanded="true" />
+            <element signature="e#13580#13581#0" expanded="true" />
+            <element signature="e#13990#14282#0" expanded="true" />
+            <element signature="e#14281#14282#0" expanded="true" />
+            <element signature="e#14614#14900#0" expanded="true" />
+            <element signature="e#14899#14900#0" expanded="true" />
+            <element signature="e#16636#16853#0" expanded="true" />
+            <element signature="e#16852#16853#0" expanded="true" />
+            <element signature="e#39445#39446#0" expanded="true" />
+            <element signature="e#39474#39475#0" expanded="true" />
+            <element signature="e#41222#41223#0" expanded="true" />
+            <element signature="e#41262#41263#0" expanded="true" />
+            <element signature="e#41355#41356#0" expanded="true" />
+            <element signature="e#41378#41379#0" expanded="true" />
+            <element signature="e#41471#41472#0" expanded="true" />
+            <element signature="e#41503#41504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -893,22 +1474,22 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2202" max-vertical-offset="4216">
           <caret line="153" column="27" selection-start-line="153" selection-start-column="27" selection-end-line="153" selection-end-column="27" />
           <folding>
-            <element signature="e#3833#3834#0" expanded="true" />
-            <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#3989#3990#0" expanded="true" />
-            <element signature="e#4027#4028#0" expanded="true" />
-            <element signature="e#4150#4151#0" expanded="true" />
-            <element signature="e#4188#4189#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4345#4346#0" expanded="true" />
-            <element signature="e#4478#4479#0" expanded="true" />
-            <element signature="e#4498#4499#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4680#4681#0" expanded="true" />
-            <element signature="e#7643#7644#0" expanded="true" />
-            <element signature="e#7664#7665#0" expanded="true" />
-            <element signature="e#7806#7807#0" expanded="true" />
-            <element signature="e#7823#7824#0" expanded="true" />
+            <element signature="e#3892#3893#0" expanded="true" />
+            <element signature="e#3931#3932#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4247#4248#0" expanded="true" />
+            <element signature="e#4383#4384#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
+            <element signature="e#4702#4703#0" expanded="true" />
+            <element signature="e#4739#4740#0" expanded="true" />
+            <element signature="e#7702#7703#0" expanded="true" />
+            <element signature="e#7723#7724#0" expanded="true" />
+            <element signature="e#7865#7866#0" expanded="true" />
+            <element signature="e#7882#7883#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -917,12 +1498,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1003">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#1446#1447#0" expanded="false" />
-            <element signature="e#1481#1482#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -931,17 +1507,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="3009">
           <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2707#2708#0" expanded="false" />
-            <element signature="e#2904#2905#0" expanded="false" />
-            <element signature="e#2936#2937#0" expanded="false" />
-            <element signature="e#3085#3086#0" expanded="false" />
-            <element signature="e#3120#3121#0" expanded="false" />
-            <element signature="e#3235#3236#0" expanded="false" />
-            <element signature="e#3266#3267#0" expanded="false" />
-            <element signature="e#3313#3314#0" expanded="false" />
-            <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
           </folding>
         </state>
@@ -953,6 +1518,32 @@
           <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4873#5154#0" expanded="true" />
+            <element signature="e#5153#5154#0" expanded="true" />
+            <element signature="e#5219#5220#0" expanded="true" />
+            <element signature="e#5238#5239#0" expanded="true" />
+            <element signature="e#6105#6282#0" expanded="true" />
+            <element signature="e#6281#6282#0" expanded="true" />
+            <element signature="e#12358#12491#0" expanded="true" />
+            <element signature="e#12490#12491#0" expanded="true" />
+            <element signature="e#13001#13123#0" expanded="true" />
+            <element signature="e#13122#13123#0" expanded="true" />
+            <element signature="e#13449#13581#0" expanded="true" />
+            <element signature="e#13580#13581#0" expanded="true" />
+            <element signature="e#13990#14282#0" expanded="true" />
+            <element signature="e#14281#14282#0" expanded="true" />
+            <element signature="e#14614#14900#0" expanded="true" />
+            <element signature="e#14899#14900#0" expanded="true" />
+            <element signature="e#16636#16853#0" expanded="true" />
+            <element signature="e#16852#16853#0" expanded="true" />
+            <element signature="e#39445#39446#0" expanded="true" />
+            <element signature="e#39474#39475#0" expanded="true" />
+            <element signature="e#41222#41223#0" expanded="true" />
+            <element signature="e#41262#41263#0" expanded="true" />
+            <element signature="e#41355#41356#0" expanded="true" />
+            <element signature="e#41378#41379#0" expanded="true" />
+            <element signature="e#41471#41472#0" expanded="true" />
+            <element signature="e#41503#41504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -972,22 +1563,22 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3663" max-vertical-offset="4284">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding>
-            <element signature="e#3833#3834#0" expanded="true" />
-            <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#3989#3990#0" expanded="true" />
-            <element signature="e#4027#4028#0" expanded="true" />
-            <element signature="e#4150#4151#0" expanded="true" />
-            <element signature="e#4188#4189#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4345#4346#0" expanded="true" />
-            <element signature="e#4478#4479#0" expanded="true" />
-            <element signature="e#4498#4499#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4680#4681#0" expanded="true" />
-            <element signature="e#7643#7644#0" expanded="true" />
-            <element signature="e#7664#7665#0" expanded="true" />
-            <element signature="e#7806#7807#0" expanded="true" />
-            <element signature="e#7823#7824#0" expanded="true" />
+            <element signature="e#3892#3893#0" expanded="true" />
+            <element signature="e#3931#3932#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4247#4248#0" expanded="true" />
+            <element signature="e#4383#4384#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
+            <element signature="e#4702#4703#0" expanded="true" />
+            <element signature="e#4739#4740#0" expanded="true" />
+            <element signature="e#7702#7703#0" expanded="true" />
+            <element signature="e#7723#7724#0" expanded="true" />
+            <element signature="e#7865#7866#0" expanded="true" />
+            <element signature="e#7882#7883#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -996,12 +1587,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1003">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#1446#1447#0" expanded="false" />
-            <element signature="e#1481#1482#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,17 +1596,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="3009">
           <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2707#2708#0" expanded="false" />
-            <element signature="e#2904#2905#0" expanded="false" />
-            <element signature="e#2936#2937#0" expanded="false" />
-            <element signature="e#3085#3086#0" expanded="false" />
-            <element signature="e#3120#3121#0" expanded="false" />
-            <element signature="e#3235#3236#0" expanded="false" />
-            <element signature="e#3266#3267#0" expanded="false" />
-            <element signature="e#3313#3314#0" expanded="false" />
-            <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
           </folding>
         </state>
@@ -1032,6 +1607,32 @@
           <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4873#5154#0" expanded="true" />
+            <element signature="e#5153#5154#0" expanded="true" />
+            <element signature="e#5219#5220#0" expanded="true" />
+            <element signature="e#5238#5239#0" expanded="true" />
+            <element signature="e#6105#6282#0" expanded="true" />
+            <element signature="e#6281#6282#0" expanded="true" />
+            <element signature="e#12358#12491#0" expanded="true" />
+            <element signature="e#12490#12491#0" expanded="true" />
+            <element signature="e#13001#13123#0" expanded="true" />
+            <element signature="e#13122#13123#0" expanded="true" />
+            <element signature="e#13449#13581#0" expanded="true" />
+            <element signature="e#13580#13581#0" expanded="true" />
+            <element signature="e#13990#14282#0" expanded="true" />
+            <element signature="e#14281#14282#0" expanded="true" />
+            <element signature="e#14614#14900#0" expanded="true" />
+            <element signature="e#14899#14900#0" expanded="true" />
+            <element signature="e#16636#16853#0" expanded="true" />
+            <element signature="e#16852#16853#0" expanded="true" />
+            <element signature="e#39445#39446#0" expanded="true" />
+            <element signature="e#39474#39475#0" expanded="true" />
+            <element signature="e#41222#41223#0" expanded="true" />
+            <element signature="e#41262#41263#0" expanded="true" />
+            <element signature="e#41355#41356#0" expanded="true" />
+            <element signature="e#41378#41379#0" expanded="true" />
+            <element signature="e#41471#41472#0" expanded="true" />
+            <element signature="e#41503#41504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1051,22 +1652,22 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3663" max-vertical-offset="4284">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding>
-            <element signature="e#3833#3834#0" expanded="true" />
-            <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#3989#3990#0" expanded="true" />
-            <element signature="e#4027#4028#0" expanded="true" />
-            <element signature="e#4150#4151#0" expanded="true" />
-            <element signature="e#4188#4189#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4345#4346#0" expanded="true" />
-            <element signature="e#4478#4479#0" expanded="true" />
-            <element signature="e#4498#4499#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4680#4681#0" expanded="true" />
-            <element signature="e#7643#7644#0" expanded="true" />
-            <element signature="e#7664#7665#0" expanded="true" />
-            <element signature="e#7806#7807#0" expanded="true" />
-            <element signature="e#7823#7824#0" expanded="true" />
+            <element signature="e#3892#3893#0" expanded="true" />
+            <element signature="e#3931#3932#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4247#4248#0" expanded="true" />
+            <element signature="e#4383#4384#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
+            <element signature="e#4702#4703#0" expanded="true" />
+            <element signature="e#4739#4740#0" expanded="true" />
+            <element signature="e#7702#7703#0" expanded="true" />
+            <element signature="e#7723#7724#0" expanded="true" />
+            <element signature="e#7865#7866#0" expanded="true" />
+            <element signature="e#7882#7883#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1075,12 +1676,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1003">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#1446#1447#0" expanded="false" />
-            <element signature="e#1481#1482#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,17 +1685,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="3281">
           <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2707#2708#0" expanded="false" />
-            <element signature="e#2904#2905#0" expanded="false" />
-            <element signature="e#2936#2937#0" expanded="false" />
-            <element signature="e#3085#3086#0" expanded="false" />
-            <element signature="e#3120#3121#0" expanded="false" />
-            <element signature="e#3235#3236#0" expanded="false" />
-            <element signature="e#3266#3267#0" expanded="false" />
-            <element signature="e#3313#3314#0" expanded="false" />
-            <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
           </folding>
         </state>
@@ -1111,6 +1696,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4873#5154#0" expanded="true" />
+            <element signature="e#5153#5154#0" expanded="true" />
+            <element signature="e#5219#5220#0" expanded="true" />
+            <element signature="e#5238#5239#0" expanded="true" />
+            <element signature="e#6105#6282#0" expanded="true" />
+            <element signature="e#6281#6282#0" expanded="true" />
+            <element signature="e#12358#12491#0" expanded="true" />
+            <element signature="e#12490#12491#0" expanded="true" />
+            <element signature="e#13001#13123#0" expanded="true" />
+            <element signature="e#13122#13123#0" expanded="true" />
+            <element signature="e#13449#13581#0" expanded="true" />
+            <element signature="e#13580#13581#0" expanded="true" />
+            <element signature="e#13990#14282#0" expanded="true" />
+            <element signature="e#14281#14282#0" expanded="true" />
+            <element signature="e#14614#14900#0" expanded="true" />
+            <element signature="e#14899#14900#0" expanded="true" />
+            <element signature="e#16636#16853#0" expanded="true" />
+            <element signature="e#16852#16853#0" expanded="true" />
+            <element signature="e#39445#39446#0" expanded="true" />
+            <element signature="e#39474#39475#0" expanded="true" />
+            <element signature="e#41222#41223#0" expanded="true" />
+            <element signature="e#41262#41263#0" expanded="true" />
+            <element signature="e#41355#41356#0" expanded="true" />
+            <element signature="e#41378#41379#0" expanded="true" />
+            <element signature="e#41471#41472#0" expanded="true" />
+            <element signature="e#41503#41504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1120,22 +1731,22 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="4318">
           <caret line="42" column="78" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
           <folding>
-            <element signature="e#3833#3834#0" expanded="true" />
-            <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#3989#3990#0" expanded="true" />
-            <element signature="e#4027#4028#0" expanded="true" />
-            <element signature="e#4150#4151#0" expanded="true" />
-            <element signature="e#4188#4189#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4345#4346#0" expanded="true" />
-            <element signature="e#4478#4479#0" expanded="true" />
-            <element signature="e#4498#4499#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4680#4681#0" expanded="true" />
-            <element signature="e#7643#7644#0" expanded="true" />
-            <element signature="e#7664#7665#0" expanded="true" />
-            <element signature="e#7806#7807#0" expanded="true" />
-            <element signature="e#7823#7824#0" expanded="true" />
+            <element signature="e#3892#3893#0" expanded="true" />
+            <element signature="e#3931#3932#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4247#4248#0" expanded="true" />
+            <element signature="e#4383#4384#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
+            <element signature="e#4702#4703#0" expanded="true" />
+            <element signature="e#4739#4740#0" expanded="true" />
+            <element signature="e#7702#7703#0" expanded="true" />
+            <element signature="e#7723#7724#0" expanded="true" />
+            <element signature="e#7865#7866#0" expanded="true" />
+            <element signature="e#7882#7883#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1144,12 +1755,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1003">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#1446#1447#0" expanded="false" />
-            <element signature="e#1481#1482#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1158,17 +1764,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1404">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2707#2708#0" expanded="false" />
-            <element signature="e#2904#2905#0" expanded="false" />
-            <element signature="e#2936#2937#0" expanded="false" />
-            <element signature="e#3085#3086#0" expanded="false" />
-            <element signature="e#3120#3121#0" expanded="false" />
-            <element signature="e#3235#3236#0" expanded="false" />
-            <element signature="e#3266#3267#0" expanded="false" />
-            <element signature="e#3313#3314#0" expanded="false" />
-            <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
           </folding>
         </state>
@@ -1180,6 +1775,32 @@
           <caret line="454" column="38" selection-start-line="454" selection-start-column="38" selection-end-line="454" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4873#5154#0" expanded="true" />
+            <element signature="e#5153#5154#0" expanded="true" />
+            <element signature="e#5219#5220#0" expanded="true" />
+            <element signature="e#5238#5239#0" expanded="true" />
+            <element signature="e#6105#6282#0" expanded="true" />
+            <element signature="e#6281#6282#0" expanded="true" />
+            <element signature="e#12358#12491#0" expanded="true" />
+            <element signature="e#12490#12491#0" expanded="true" />
+            <element signature="e#13001#13123#0" expanded="true" />
+            <element signature="e#13122#13123#0" expanded="true" />
+            <element signature="e#13449#13581#0" expanded="true" />
+            <element signature="e#13580#13581#0" expanded="true" />
+            <element signature="e#13990#14282#0" expanded="true" />
+            <element signature="e#14281#14282#0" expanded="true" />
+            <element signature="e#14614#14900#0" expanded="true" />
+            <element signature="e#14899#14900#0" expanded="true" />
+            <element signature="e#16636#16853#0" expanded="true" />
+            <element signature="e#16852#16853#0" expanded="true" />
+            <element signature="e#39445#39446#0" expanded="true" />
+            <element signature="e#39474#39475#0" expanded="true" />
+            <element signature="e#41222#41223#0" expanded="true" />
+            <element signature="e#41262#41263#0" expanded="true" />
+            <element signature="e#41355#41356#0" expanded="true" />
+            <element signature="e#41378#41379#0" expanded="true" />
+            <element signature="e#41471#41472#0" expanded="true" />
+            <element signature="e#41503#41504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1189,22 +1810,22 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="648">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#3833#3834#0" expanded="true" />
-            <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#3989#3990#0" expanded="true" />
-            <element signature="e#4027#4028#0" expanded="true" />
-            <element signature="e#4150#4151#0" expanded="true" />
-            <element signature="e#4188#4189#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4345#4346#0" expanded="true" />
-            <element signature="e#4478#4479#0" expanded="true" />
-            <element signature="e#4498#4499#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4680#4681#0" expanded="true" />
-            <element signature="e#7643#7644#0" expanded="true" />
-            <element signature="e#7664#7665#0" expanded="true" />
-            <element signature="e#7806#7807#0" expanded="true" />
-            <element signature="e#7823#7824#0" expanded="true" />
+            <element signature="e#3892#3893#0" expanded="true" />
+            <element signature="e#3931#3932#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4247#4248#0" expanded="true" />
+            <element signature="e#4383#4384#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
+            <element signature="e#4702#4703#0" expanded="true" />
+            <element signature="e#4739#4740#0" expanded="true" />
+            <element signature="e#7702#7703#0" expanded="true" />
+            <element signature="e#7723#7724#0" expanded="true" />
+            <element signature="e#7865#7866#0" expanded="true" />
+            <element signature="e#7882#7883#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1213,12 +1834,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="648">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#1446#1447#0" expanded="false" />
-            <element signature="e#1481#1482#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1227,17 +1843,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="663">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2707#2708#0" expanded="false" />
-            <element signature="e#2904#2905#0" expanded="false" />
-            <element signature="e#2936#2937#0" expanded="false" />
-            <element signature="e#3085#3086#0" expanded="false" />
-            <element signature="e#3120#3121#0" expanded="false" />
-            <element signature="e#3235#3236#0" expanded="false" />
-            <element signature="e#3266#3267#0" expanded="false" />
-            <element signature="e#3313#3314#0" expanded="false" />
-            <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
           </folding>
         </state>
@@ -1249,6 +1854,32 @@
           <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4873#5154#0" expanded="true" />
+            <element signature="e#5153#5154#0" expanded="true" />
+            <element signature="e#5219#5220#0" expanded="true" />
+            <element signature="e#5238#5239#0" expanded="true" />
+            <element signature="e#6105#6282#0" expanded="true" />
+            <element signature="e#6281#6282#0" expanded="true" />
+            <element signature="e#12358#12491#0" expanded="true" />
+            <element signature="e#12490#12491#0" expanded="true" />
+            <element signature="e#13001#13123#0" expanded="true" />
+            <element signature="e#13122#13123#0" expanded="true" />
+            <element signature="e#13449#13581#0" expanded="true" />
+            <element signature="e#13580#13581#0" expanded="true" />
+            <element signature="e#13990#14282#0" expanded="true" />
+            <element signature="e#14281#14282#0" expanded="true" />
+            <element signature="e#14614#14900#0" expanded="true" />
+            <element signature="e#14899#14900#0" expanded="true" />
+            <element signature="e#16636#16853#0" expanded="true" />
+            <element signature="e#16852#16853#0" expanded="true" />
+            <element signature="e#39445#39446#0" expanded="true" />
+            <element signature="e#39474#39475#0" expanded="true" />
+            <element signature="e#41222#41223#0" expanded="true" />
+            <element signature="e#41262#41263#0" expanded="true" />
+            <element signature="e#41355#41356#0" expanded="true" />
+            <element signature="e#41378#41379#0" expanded="true" />
+            <element signature="e#41471#41472#0" expanded="true" />
+            <element signature="e#41503#41504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1258,22 +1889,22 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3833#3834#0" expanded="true" />
-            <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#3989#3990#0" expanded="true" />
-            <element signature="e#4027#4028#0" expanded="true" />
-            <element signature="e#4150#4151#0" expanded="true" />
-            <element signature="e#4188#4189#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4345#4346#0" expanded="true" />
-            <element signature="e#4478#4479#0" expanded="true" />
-            <element signature="e#4498#4499#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4680#4681#0" expanded="true" />
-            <element signature="e#7643#7644#0" expanded="true" />
-            <element signature="e#7664#7665#0" expanded="true" />
-            <element signature="e#7806#7807#0" expanded="true" />
-            <element signature="e#7823#7824#0" expanded="true" />
+            <element signature="e#3892#3893#0" expanded="true" />
+            <element signature="e#3931#3932#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4247#4248#0" expanded="true" />
+            <element signature="e#4383#4384#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
+            <element signature="e#4702#4703#0" expanded="true" />
+            <element signature="e#4739#4740#0" expanded="true" />
+            <element signature="e#7702#7703#0" expanded="true" />
+            <element signature="e#7723#7724#0" expanded="true" />
+            <element signature="e#7865#7866#0" expanded="true" />
+            <element signature="e#7882#7883#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1282,12 +1913,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="612">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#1446#1447#0" expanded="false" />
-            <element signature="e#1481#1482#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1296,17 +1922,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="663">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2707#2708#0" expanded="false" />
-            <element signature="e#2904#2905#0" expanded="false" />
-            <element signature="e#2936#2937#0" expanded="false" />
-            <element signature="e#3085#3086#0" expanded="false" />
-            <element signature="e#3120#3121#0" expanded="false" />
-            <element signature="e#3235#3236#0" expanded="false" />
-            <element signature="e#3266#3267#0" expanded="false" />
-            <element signature="e#3313#3314#0" expanded="false" />
-            <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
           </folding>
         </state>
@@ -1318,6 +1933,32 @@
           <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4873#5154#0" expanded="true" />
+            <element signature="e#5153#5154#0" expanded="true" />
+            <element signature="e#5219#5220#0" expanded="true" />
+            <element signature="e#5238#5239#0" expanded="true" />
+            <element signature="e#6105#6282#0" expanded="true" />
+            <element signature="e#6281#6282#0" expanded="true" />
+            <element signature="e#12358#12491#0" expanded="true" />
+            <element signature="e#12490#12491#0" expanded="true" />
+            <element signature="e#13001#13123#0" expanded="true" />
+            <element signature="e#13122#13123#0" expanded="true" />
+            <element signature="e#13449#13581#0" expanded="true" />
+            <element signature="e#13580#13581#0" expanded="true" />
+            <element signature="e#13990#14282#0" expanded="true" />
+            <element signature="e#14281#14282#0" expanded="true" />
+            <element signature="e#14614#14900#0" expanded="true" />
+            <element signature="e#14899#14900#0" expanded="true" />
+            <element signature="e#16636#16853#0" expanded="true" />
+            <element signature="e#16852#16853#0" expanded="true" />
+            <element signature="e#39445#39446#0" expanded="true" />
+            <element signature="e#39474#39475#0" expanded="true" />
+            <element signature="e#41222#41223#0" expanded="true" />
+            <element signature="e#41262#41263#0" expanded="true" />
+            <element signature="e#41355#41356#0" expanded="true" />
+            <element signature="e#41378#41379#0" expanded="true" />
+            <element signature="e#41471#41472#0" expanded="true" />
+            <element signature="e#41503#41504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1327,22 +1968,22 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3833#3834#0" expanded="true" />
-            <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#3989#3990#0" expanded="true" />
-            <element signature="e#4027#4028#0" expanded="true" />
-            <element signature="e#4150#4151#0" expanded="true" />
-            <element signature="e#4188#4189#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4345#4346#0" expanded="true" />
-            <element signature="e#4478#4479#0" expanded="true" />
-            <element signature="e#4498#4499#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4680#4681#0" expanded="true" />
-            <element signature="e#7643#7644#0" expanded="true" />
-            <element signature="e#7664#7665#0" expanded="true" />
-            <element signature="e#7806#7807#0" expanded="true" />
-            <element signature="e#7823#7824#0" expanded="true" />
+            <element signature="e#3892#3893#0" expanded="true" />
+            <element signature="e#3931#3932#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4247#4248#0" expanded="true" />
+            <element signature="e#4383#4384#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
+            <element signature="e#4702#4703#0" expanded="true" />
+            <element signature="e#4739#4740#0" expanded="true" />
+            <element signature="e#7702#7703#0" expanded="true" />
+            <element signature="e#7723#7724#0" expanded="true" />
+            <element signature="e#7865#7866#0" expanded="true" />
+            <element signature="e#7882#7883#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1351,12 +1992,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="612">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#1446#1447#0" expanded="false" />
-            <element signature="e#1481#1482#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1365,17 +2001,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="663">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2707#2708#0" expanded="false" />
-            <element signature="e#2904#2905#0" expanded="false" />
-            <element signature="e#2936#2937#0" expanded="false" />
-            <element signature="e#3085#3086#0" expanded="false" />
-            <element signature="e#3120#3121#0" expanded="false" />
-            <element signature="e#3235#3236#0" expanded="false" />
-            <element signature="e#3266#3267#0" expanded="false" />
-            <element signature="e#3313#3314#0" expanded="false" />
-            <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
           </folding>
         </state>
@@ -1387,6 +2012,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4873#5154#0" expanded="true" />
+            <element signature="e#5153#5154#0" expanded="true" />
+            <element signature="e#5219#5220#0" expanded="true" />
+            <element signature="e#5238#5239#0" expanded="true" />
+            <element signature="e#6105#6282#0" expanded="true" />
+            <element signature="e#6281#6282#0" expanded="true" />
+            <element signature="e#12358#12491#0" expanded="true" />
+            <element signature="e#12490#12491#0" expanded="true" />
+            <element signature="e#13001#13123#0" expanded="true" />
+            <element signature="e#13122#13123#0" expanded="true" />
+            <element signature="e#13449#13581#0" expanded="true" />
+            <element signature="e#13580#13581#0" expanded="true" />
+            <element signature="e#13990#14282#0" expanded="true" />
+            <element signature="e#14281#14282#0" expanded="true" />
+            <element signature="e#14614#14900#0" expanded="true" />
+            <element signature="e#14899#14900#0" expanded="true" />
+            <element signature="e#16636#16853#0" expanded="true" />
+            <element signature="e#16852#16853#0" expanded="true" />
+            <element signature="e#39445#39446#0" expanded="true" />
+            <element signature="e#39474#39475#0" expanded="true" />
+            <element signature="e#41222#41223#0" expanded="true" />
+            <element signature="e#41262#41263#0" expanded="true" />
+            <element signature="e#41355#41356#0" expanded="true" />
+            <element signature="e#41378#41379#0" expanded="true" />
+            <element signature="e#41471#41472#0" expanded="true" />
+            <element signature="e#41503#41504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1395,12 +2046,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="612">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#1446#1447#0" expanded="false" />
-            <element signature="e#1481#1482#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1414,14 +2060,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1098">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#1446#1447#0" expanded="false" />
-            <element signature="e#1481#1482#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1071">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1430,17 +2071,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="3604">
           <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2707#2708#0" expanded="false" />
-            <element signature="e#2904#2905#0" expanded="false" />
-            <element signature="e#2936#2937#0" expanded="false" />
-            <element signature="e#3085#3086#0" expanded="false" />
-            <element signature="e#3120#3121#0" expanded="false" />
-            <element signature="e#3235#3236#0" expanded="false" />
-            <element signature="e#3266#3267#0" expanded="false" />
-            <element signature="e#3313#3314#0" expanded="false" />
-            <element signature="e#3345#3346#0" expanded="false" />
             <marker date="1427146598697" expanded="true" signature="4571:4695" placeholder="/**...*/" />
           </folding>
         </state>
@@ -1453,16 +2083,6 @@
           <folding>
             <element signature="e#77012#77013#0" expanded="true" />
             <element signature="e#77056#77057#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="16183" max-vertical-offset="35207">
-          <caret line="972" column="71" selection-start-line="972" selection-start-column="71" selection-end-line="972" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1481,31 +2101,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3491461" vertical-offset="23276" max-vertical-offset="31705">
           <caret line="1454" column="18" selection-start-line="1454" selection-start-column="18" selection-end-line="1454" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4843342" vertical-offset="2553" max-vertical-offset="4590">
-          <caret line="179" column="46" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2468" max-vertical-offset="4607">
+          <caret line="176" column="33" selection-start-line="176" selection-start-column="33" selection-end-line="176" selection-end-column="33" />
           <folding>
-            <element signature="e#3833#3834#0" expanded="true" />
-            <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#3989#3990#0" expanded="true" />
-            <element signature="e#4027#4028#0" expanded="true" />
-            <element signature="e#4150#4151#0" expanded="true" />
-            <element signature="e#4188#4189#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4345#4346#0" expanded="true" />
-            <element signature="e#4478#4479#0" expanded="true" />
-            <element signature="e#4498#4499#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4680#4681#0" expanded="true" />
-            <element signature="e#7643#7644#0" expanded="true" />
-            <element signature="e#7664#7665#0" expanded="true" />
-            <element signature="e#7806#7807#0" expanded="true" />
-            <element signature="e#7823#7824#0" expanded="true" />
+            <element signature="e#3892#3893#0" expanded="true" />
+            <element signature="e#3931#3932#0" expanded="true" />
+            <element signature="e#4048#4049#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4247#4248#0" expanded="true" />
+            <element signature="e#4383#4384#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
+            <element signature="e#4702#4703#0" expanded="true" />
+            <element signature="e#4739#4740#0" expanded="true" />
+            <element signature="e#7702#7703#0" expanded="true" />
+            <element signature="e#7723#7724#0" expanded="true" />
+            <element signature="e#7865#7866#0" expanded="true" />
+            <element signature="e#7882#7883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.436457" vertical-offset="0" max-vertical-offset="25007">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4873#5154#0" expanded="true" />
+            <element signature="e#5153#5154#0" expanded="true" />
+            <element signature="e#5219#5220#0" expanded="true" />
+            <element signature="e#5238#5239#0" expanded="true" />
+            <element signature="e#6105#6282#0" expanded="true" />
+            <element signature="e#6281#6282#0" expanded="true" />
+            <element signature="e#12358#12491#0" expanded="true" />
+            <element signature="e#12490#12491#0" expanded="true" />
+            <element signature="e#13001#13123#0" expanded="true" />
+            <element signature="e#13122#13123#0" expanded="true" />
+            <element signature="e#13449#13581#0" expanded="true" />
+            <element signature="e#13580#13581#0" expanded="true" />
+            <element signature="e#13990#14282#0" expanded="true" />
+            <element signature="e#14281#14282#0" expanded="true" />
+            <element signature="e#14614#14900#0" expanded="true" />
+            <element signature="e#14899#14900#0" expanded="true" />
+            <element signature="e#16636#16853#0" expanded="true" />
+            <element signature="e#16852#16853#0" expanded="true" />
+            <element signature="e#39445#39446#0" expanded="true" />
+            <element signature="e#39474#39475#0" expanded="true" />
+            <element signature="e#41222#41223#0" expanded="true" />
+            <element signature="e#41262#41263#0" expanded="true" />
+            <element signature="e#41355#41356#0" expanded="true" />
+            <element signature="e#41378#41379#0" expanded="true" />
+            <element signature="e#41471#41472#0" expanded="true" />
+            <element signature="e#41503#41504#0" expanded="true" />
           </folding>
         </state>
       </provider>
