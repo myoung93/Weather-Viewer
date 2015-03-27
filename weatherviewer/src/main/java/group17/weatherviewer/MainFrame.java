@@ -218,8 +218,9 @@ public class MainFrame {
 		// / BEGIN INITIALIZING LOCAL WEATHER VIEW PANEL ///
 
 		// city label
-		final String labelLocationInit = "Please select a city";
-		labelLocation = new JLabel(labelLocationInit);
+		final String labelLocationInit = "Please select or enter in a city.";
+		labelLocation = new JLabel("");
+		labelLocation.setText(labelLocationInit);
 		labelLocation.setForeground(Color.WHITE);
 		labelLocation.setFont(font.deriveFont(17f));
 		labelLocation.setBounds(50, 20, 300, 37);
@@ -366,9 +367,8 @@ public class MainFrame {
 		buttonRefresh.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				String loc;
-				loc = labelLocation.getText();
-				if(loc.equalsIgnoreCase(labelLocationInit))
+				String loc = labelLocation.getText();
+				if(!(loc.equalsIgnoreCase(labelLocationInit)))
 					refresh(labelLocation.getText());
 				else
 					labelLocation.setText(labelLocationInit);
@@ -988,85 +988,87 @@ public class MainFrame {
 			// constructor should take String city parameter in the future.
 			System.out.println("Retrieving weather data");
 			currentWeather = new CurrentWeather(location);
-		} catch (UnsupportedEncodingException e) {
-			System.out
-					.println("Something went wrong retrieving current weather");
-			e.printStackTrace();
-		}
-
-		// update time shown
-		cal =  Calendar.getInstance();
-		lastUpdated = dateFormat.format(cal.getTime());		
-
-        // store tempUnit so we don't have to call prefs.getTempUnit() every time
-		// current location panel
-		labelLocation.setText(currentWeather.getCity() + ", "
-				+ currentWeather.getCountry());
-		labelSkyConditionInfo.setText(currentWeather.getSkyCondition());
-
-		labelWindInfo.setText(currentWeather.getWindSpeed() + " km/h "
-				+ currentWeather.getWindDirection());
-		labelHumidityInfo.setText(currentWeather.getHumidity() + "%");
-		labelAirPressureInfo.setText(currentWeather.getPressure() + "kPa");
-		//need to substring these so we don't have a million decimal places
-
-		labelSunriseInfo.setText(currentWeather.getSunriseTime());
-		labelSunsetInfo.setText(currentWeather.getSunsetTime());
 		
-		labelUpdatedInfo.setText(lastUpdated); //-NK
-		
-		//NEW HARD CODED LABELS HERE *BEEP BOOP*
-		labelPrecipitationInfo.setText("HardCoded");
-		
-		setSkyConditionImages(currentWeather.getWeatherID());
-		labelSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconLarge));
-		backgroundLabel.setIcon(new ImageIcon(skyConditionBackground));
-		// short/longterm icons will be the same has current weather, can be easily switched later
-		//shortterm
-        setTemperatureFields();
+			
+			// update time shown
+			cal =  Calendar.getInstance();
+			lastUpdated = dateFormat.format(cal.getTime());		
 
-        //these really need to be done using a loop. the exact same thing is done to every single label.
-		label12AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-        label12AMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-        label12AMPrecipitation.setText("Hard Coded");
-        label3AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-        label3AMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-        label3AMPrecipitation.setText("Hard Coded");
-        label6AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		label6AMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-		label6AMPrecipitation.setText("Hard Coded");
-		label9AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		label9AMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-		label9AMPrecipitation.setText("Hard Coded");
-		label12PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		label12PMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-		label12PMPrecipitation.setText("Hard Coded");
-		label3PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		label3PMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-		label3PMPrecipitation.setText("Hard Coded");
-		label6PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		label6PMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-		label6PMPrecipitation.setText("Hard Coded");
-		label9PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		label9PMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-		label9PMPrecipitation.setText("Hard Coded");
+			// store tempUnit so we don't have to call prefs.getTempUnit() every time
+			// current location panel
+			labelLocation.setText(currentWeather.getCity() + ", "
+					+ currentWeather.getCountry());
+			labelSkyConditionInfo.setText(currentWeather.getSkyCondition());
 
-		//longterm
-		labelDay1SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		labelDay1SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-		labelDay2SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		labelDay2SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-		labelDay3SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		labelDay3SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-		labelDay4SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		labelDay4SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-		labelDay5SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		labelDay5SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-		labelDay6SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		labelDay6SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-		labelDay7SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
-		labelDay7SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
-	}
+			labelWindInfo.setText(currentWeather.getWindSpeed() + " km/h "
+					+ currentWeather.getWindDirection());
+			labelHumidityInfo.setText(currentWeather.getHumidity() + "%");
+			labelAirPressureInfo.setText(currentWeather.getPressure() + "kPa");
+			//need to substring these so we don't have a million decimal places
+			
+			labelSunriseInfo.setText(currentWeather.getSunriseTime());
+			labelSunsetInfo.setText(currentWeather.getSunsetTime());
+			
+			labelUpdatedInfo.setText(lastUpdated); //-NK
+			
+			//NEW HARD CODED LABELS HERE *BEEP BOOP*
+			labelPrecipitationInfo.setText("HardCoded");
+			
+			setSkyConditionImages(currentWeather.getWeatherID());
+			labelSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconLarge));
+			backgroundLabel.setIcon(new ImageIcon(skyConditionBackground));
+			// short/longterm icons will be the same has current weather, can be easily switched later
+			//shortterm
+			setTemperatureFields();
+			
+			//these really need to be done using a loop. the exact same thing is done to every single label.
+			label12AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			label12AMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			label12AMPrecipitation.setText("Hard Coded");
+			label3AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			label3AMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			label3AMPrecipitation.setText("Hard Coded");
+			label6AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			label6AMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			label6AMPrecipitation.setText("Hard Coded");
+			label9AMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			label9AMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			label9AMPrecipitation.setText("Hard Coded");
+			label12PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			label12PMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			label12PMPrecipitation.setText("Hard Coded");
+			label3PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			label3PMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			label3PMPrecipitation.setText("Hard Coded");
+			label6PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			label6PMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			label6PMPrecipitation.setText("Hard Coded");
+			label9PMSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			label9PMSkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			label9PMPrecipitation.setText("Hard Coded");
+			
+			//longterm
+			labelDay1SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			labelDay1SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			labelDay2SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			labelDay2SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			labelDay3SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			labelDay3SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			labelDay4SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			labelDay4SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			labelDay5SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			labelDay5SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			labelDay6SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			labelDay6SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			labelDay7SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			labelDay7SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			
+		} 
+		catch (IOException e) {
+			System.out.println("Something went wrong retrieving current weather");
+		}	
+		
+	}	
 
     //moved these to a method because in the future we will have to re-initialize them when c/f is changed.
     private void setTemperatureFields() {
@@ -1108,53 +1110,60 @@ public class MainFrame {
 		public void actionPerformed(ActionEvent e) {
 			String name = barSearch.getText();
 			
-			//User didn't enter a valid location...
 			try{
-			test = new CurrentWeather(name);	
+				
+				test = new CurrentWeather(name);
+				
+				//User didn't enter a valid location...
+				if (!(test.getCity().contains(name))){
+					labelLocation.setText("The location you have entered is invalid. Please try again. :p ");
+					return;
+				}
+					
+				
+				// User didn't type in a unique name...
+				if (name.equals("") || alreadyInList(name)) {
+					Toolkit.getDefaultToolkit().beep();
+					barSearch.requestFocusInWindow();
+					barSearch.selectAll();
+					return;
+				}
+
+				int index = listLocations.getSelectedIndex(); // get selected index
+				if (index == -1) { // no selection, so insert at beginning
+					index = 0;
+				} 
+				else { // add after the selected item
+					index++;
+				}
+				
+				listModel.insertElementAt(barSearch.getText(), index);
+
+				// If we just wanted to add to the end, we'd do this:
+				// listModel.addElement(employeeName.getText());
+				// Add element to user preferences as well - NK
+				try {
+					prefs.addLocation(index, barSearch.getText());	//adds to "index" position of the MyLocations list
+				}
+				catch(WeatherException exception) {
+					System.out.println(exception.getMessage());
+				}
+				//prefs.printLocations(); // This is just to test addLocation on user preferences
+
+				// Reset the text field.
+				barSearch.requestFocusInWindow();
+				barSearch.setText("");
+
+				// Select the new item and make it visible.
+				//listLocations.setSelectedIndex(index);
+				listLocations.ensureIndexIsVisible(index);
 				
 			}
 			catch (IOException err){
 				System.out.println("An invalid location was entered.");
 				return;
 			}
-
-			// User didn't type in a unique name...
-			if (name.equals("") || alreadyInList(name)) {
-				Toolkit.getDefaultToolkit().beep();
-				barSearch.requestFocusInWindow();
-				barSearch.selectAll();
-				return;
-			}
-
-			int index = listLocations.getSelectedIndex(); // get selected index
-			if (index == -1) { // no selection, so insert at beginning
-				index = 0;
-			} else { // add after the selected item
-				index++;
-			}
-
-			listModel.insertElementAt(barSearch.getText(), index);
-
-			// If we just wanted to add to the end, we'd do this:
-			// listModel.addElement(employeeName.getText());
-			// Add element to user preferences as well - NK
-			try {
-				prefs.addLocation(index, barSearch.getText());	//adds to "index" position of the MyLocations list
-			}
-			catch(WeatherException exception) {
-				System.out.println(exception.getMessage());
-			}
-			//prefs.printLocations(); // This is just to test addLocation on user preferences
-
-			// Reset the text field.
-			barSearch.requestFocusInWindow();
-			barSearch.setText("");
-
-			// Select the new item and make it visible.
-			//listLocations.setSelectedIndex(index);
-			listLocations.ensureIndexIsVisible(index);
 		}
-
 		// This method tests for string equality. You could certainly
 		// get more sophisticated about the algorithm. For example,
 		// you might want to ignore white space and capitalization.
