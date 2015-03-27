@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather.prefs" afterPath="$PROJECT_DIR$/weather.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="weatherviewer.iws" />
@@ -19,9 +20,6 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="weatherviewer" />
@@ -31,31 +29,49 @@
       <file leaf-file-name="UserPreferences.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3798">
-              <caret line="157" column="13" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6570" max-vertical-offset="25884">
-              <caret line="379" column="28" selection-start-line="379" selection-start-column="28" selection-end-line="379" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/JsonParser.java">
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="774">
-              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-              <folding />
+            <state vertical-scroll-proportion="0.40133333">
+              <caret line="1116" column="68" selection-start-line="1116" selection-start-column="68" selection-end-line="1116" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5085#5293#0" expanded="true" />
+                <element signature="e#5292#5293#0" expanded="true" />
+                <element signature="e#5358#5359#0" expanded="true" />
+                <element signature="e#5377#5378#0" expanded="true" />
+                <element signature="e#6244#6421#0" expanded="true" />
+                <element signature="e#6420#6421#0" expanded="true" />
+                <element signature="e#11932#12215#0" expanded="true" />
+                <element signature="e#12214#12215#0" expanded="true" />
+                <element signature="e#12725#12847#0" expanded="true" />
+                <element signature="e#12846#12847#0" expanded="true" />
+                <element signature="e#13173#13305#0" expanded="true" />
+                <element signature="e#13304#13305#0" expanded="true" />
+                <element signature="e#13714#14006#0" expanded="true" />
+                <element signature="e#14005#14006#0" expanded="true" />
+                <element signature="e#14338#14624#0" expanded="true" />
+                <element signature="e#14623#14624#0" expanded="true" />
+                <element signature="e#16360#16577#0" expanded="true" />
+                <element signature="e#16576#16577#0" expanded="true" />
+                <element signature="e#42036#42037#0" expanded="true" />
+                <element signature="e#42065#42066#0" expanded="true" />
+                <element signature="e#43991#43992#0" expanded="true" />
+                <element signature="e#44031#44032#0" expanded="true" />
+                <element signature="e#44124#44125#0" expanded="true" />
+                <element signature="e#44147#44148#0" expanded="true" />
+                <element signature="e#44240#44241#0" expanded="true" />
+                <element signature="e#44272#44273#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,8 +79,8 @@
       <file leaf-file-name="Conversion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
-              <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,31 +88,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurrentWeather.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CurrentWeather.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32885906" vertical-offset="1121" max-vertical-offset="3798">
-              <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="172" column="5" selection-start-line="172" selection-start-column="5" selection-end-line="172" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShortTermForecast.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/ShortTermForecast.java">
+      <file leaf-file-name="WeatherException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1476">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LongTermForecast.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1458">
-              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -107,6 +113,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -115,13 +126,10 @@
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/SimpleWeather.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/JsonParaer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/JsonParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
       </list>
     </option>
   </component>
@@ -140,11 +148,14 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="-5" />
-    <option name="width" value="1368" />
-    <option name="height" value="774" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1870" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -170,6 +181,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -284,8 +297,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,6 +323,332 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Users\TIM\Programs\weatherviewer\weatherviewer\src\main\resources" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.log</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/.taskListIndex/segments.gen</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/.tasks.xml.zip</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/tasks.xml.zip</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.indexes/e4/b9/22/e5/fa/history.index</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.markers</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3843881376.index</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments.gen</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments.gen</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/version.ini</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/caches/identified-project-coordinates.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments.gen</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/jre/jre/1.0.0-SNAPSHOT/resolver-status.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/org/eclipse/recommenders/index/0.0.0-SNAPSHOT/resolver-status.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/ShortTermForecast.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/clouds.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/default.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/fog.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/hurricane.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/partial_clouds.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/rain.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/sand.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/snow.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/sun.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/thunder.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/tornado.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/volcano.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/wind.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/weather.prefs</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/.taskListIndex/segments_3</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/16/10a8f890f9d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1a/f0463402fbd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1e/d006d531ead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/20/20861e2ef8d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/20/c080f513e7d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/22/a05ea17afdd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/26/700019c7ead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/28/70fd2fdff5d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2a/b0fccb8efcd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2a/c0cd5ed7ead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/31/309a1db8fad3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/31/5094322bf9d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/32/409a18e9e6d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/33/301b45dde6d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/34/50a7bd78f9d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/36/f04ef08ce8d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/38/707f8c3ef9d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/38/d030cbffe7d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3a/90d1295cead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3b/c09f3eb9e8d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3f/104b6ea8fbd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/40/d0e6b144f7d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/43/d08d075aead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/46/807d2266e7d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/47/60d84496f5d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/47/b08d2035fdd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4f/20db90a1f9d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5/606c7a60fdd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/52/70140971fbd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/55/90ad2980f9d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/57/c0ba18f2f6d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/58/20ed6b66e8d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/58/c0f2b734fbd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5d/0097d722f5d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6/e09aeec592d4001418fccc429e99329b</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/60/0069c4abfdd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/60/80d7247ee6d3001415f1c93723dc34c2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/61/50b169d5e6d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/61/b0935368fad3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/65/103a8d97f9d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/67/70ac99bcfad3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6a/70b056b7e9d300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6b/601c1a06ead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6e/8077de31fcd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7/60fe343dfcd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/71/d017223dead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/72/300f3db4fbd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/73/e03e1eccf5d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/74/f0f61000e9d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/77/5084a856ead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/77/70a9e2d8fcd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/79/10f3c1bdead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/79/20d97043e8d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7a/80cc34aaf6d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7a/a0507e91ead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/80/40c73843ead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/83/3068e1ce92d4001418fccc429e99329b</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/88/001bc3d2e9d300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8d/00fd719efbd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8d/50ba0e41f5d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/95/40c49a52ead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9a/60c5dc34e6d3001415f1c93723dc34c2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9d/70403ff2f4d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a3/3007bc8fead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a3/805f93cafdd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a3/c00b40a1e8d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a4/e047e750ead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a9/3070eb11f8d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a9/60968564e7d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b3/50370be9e7d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b4/a0b34ae3e6d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b4/b044cf4ee7d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b8/40545f0af7d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ba/b0a4151cfbd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c/e0320da9ead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c1/0016b6c8e7d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c3/b00f92fff8d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c7/d0a70ee9e9d300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/cd/f0d75223e9d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d2/80819444fcd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d4/50115a57fbd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d7/3006f6a3f7d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d7/d02ead0be8d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d8/705acab9e7d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/dc/50a35448e7d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e/c040f2e4f4d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e3/00659f4cead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e5/90d102b3e7d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e5/e01200befdd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e6/605c18eaf9d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e6/60d652e2f7d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e8/b0feccd692d4001418fccc429e99329b</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/eb/403f8cbdf9d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ed/60f10c27f7d3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ef/0009a07fead300141b78cf0c6d5a519f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f9/60b5151fe7d300141da8a7663852da69</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fc/4008aab1fbd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fd/604f83cafcd3001418a7bcf5dab26e39</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/org.eclipse.jdt.core/state.dat</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/35.tree</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/37.tree</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/39.tree</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/40.tree</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_14_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_15.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_15_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_16.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_16_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_17.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_17_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_18.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_18_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_19.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_19_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1a.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1a_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1b.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1b_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1c.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_14</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_17</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_19</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_1a</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1e_2.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1h_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1i.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1i_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1j.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1k.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1o.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1o_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1o_2.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1p.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1p_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1q.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1q_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1r.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1s.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1k</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1m</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1o</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_10_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_11.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_11_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_12.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_14.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_14_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_15.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_15_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_16.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_16_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_17.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_17_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_18.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_18_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_19.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_11</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_14</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_16</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_17</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.fdt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.fdx</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.fnm</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.frq</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.nrm</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.prx</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.tii</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.tis</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments_b</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../Meeting_Minutes/Meeting_10.odt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../Meeting_Minutes/Meeting_10.pdf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/JsonParser.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/JsonParaer.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Application.MainFrame">
     <configuration default="false" name="MainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -342,33 +679,10 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -412,6 +726,30 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -428,23 +766,25 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -452,19 +792,12 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -581,11 +914,11 @@
       <option name="project" value="LOCAL" />
       <updated>1427334879208</updated>
     </task>
-    <task id="LOCAL-00011" summary="Updates from the meeting - need to match ShortTerm and LongTerm fields">
-      <created>1427388695536</created>
+    <task id="LOCAL-00011" summary="Removed a bunch of old code">
+      <created>1427335381974</created>
       <option name="number" value="00011" />
       <option name="project" value="LOCAL" />
-      <updated>1427388695536</updated>
+      <updated>1427335381974</updated>
     </task>
     <option name="localTasksCounter" value="12" />
     <servers />
@@ -594,33 +927,33 @@
     <option name="totallyTimeSpent" value="245000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-5" width="1368" height="774" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1870" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.7189349" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15828402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18319838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15890688" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14275256" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2489019" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14347357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919094" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39979756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -635,9 +968,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
     <MESSAGE value="Added temporary workaround for fonts issue -&gt; still uses old fonts until problem is fixed" />
     <MESSAGE value="Added time conversion method" />
     <MESSAGE value="Made C/F work the way they should, except for updating without pressing the button. Combined shortTermView() and longTermView() into one. Temperature is all but finished." />
@@ -646,17 +976,22 @@
     <MESSAGE value="No more NullPointerExceptions when user selects temperature unit before updating" />
     <MESSAGE value="Temperatures now display the correct number of characters (no decimal place)" />
     <MESSAGE value="Removed a bunch of old code" />
-    <MESSAGE value="Updates from the meeting - need to match ShortTerm and LongTerm fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates from the meeting - need to match ShortTerm and LongTerm fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed a bunch of old code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java</url>
-          <line>164</line>
+          <line>184</line>
           <properties />
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="4" />
@@ -668,428 +1003,45 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5085#5293#0" expanded="true" />
+            <element signature="e#5292#5293#0" expanded="true" />
+            <element signature="e#5358#5359#0" expanded="true" />
+            <element signature="e#5377#5378#0" expanded="true" />
+            <element signature="e#6244#6421#0" expanded="true" />
+            <element signature="e#6420#6421#0" expanded="true" />
+            <element signature="e#11932#12215#0" expanded="true" />
+            <element signature="e#12214#12215#0" expanded="true" />
+            <element signature="e#12725#12847#0" expanded="true" />
+            <element signature="e#12846#12847#0" expanded="true" />
+            <element signature="e#13173#13305#0" expanded="true" />
+            <element signature="e#13304#13305#0" expanded="true" />
+            <element signature="e#13714#14006#0" expanded="true" />
+            <element signature="e#14005#14006#0" expanded="true" />
+            <element signature="e#14338#14624#0" expanded="true" />
+            <element signature="e#14623#14624#0" expanded="true" />
+            <element signature="e#16360#16577#0" expanded="true" />
+            <element signature="e#16576#16577#0" expanded="true" />
+            <element signature="e#42036#42037#0" expanded="true" />
+            <element signature="e#42065#42066#0" expanded="true" />
+            <element signature="e#43991#43992#0" expanded="true" />
+            <element signature="e#44031#44032#0" expanded="true" />
+            <element signature="e#44124#44125#0" expanded="true" />
+            <element signature="e#44147#44148#0" expanded="true" />
+            <element signature="e#44240#44241#0" expanded="true" />
+            <element signature="e#44272#44273#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="153" column="27" selection-start-line="153" selection-start-column="27" selection-end-line="153" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="153" column="27" selection-start-line="153" selection-start-column="27" selection-end-line="153" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="42" column="78" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="454" column="38" selection-start-line="454" selection-start-column="38" selection-end-line="454" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53125" vertical-offset="0" max-vertical-offset="0">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar!/net/sf/json/JSONObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3491461" vertical-offset="0" max-vertical-offset="0">
-          <caret line="1454" column="18" selection-start-line="1454" selection-start-column="18" selection-end-line="1454" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9140625" vertical-offset="0" max-vertical-offset="1098">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/awt/AWTEventMulticaster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47368422" vertical-offset="4509" max-vertical-offset="17892">
-          <caret line="293" column="50" selection-start-line="293" selection-start-column="50" selection-end-line="293" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6570" max-vertical-offset="25884">
-          <caret line="379" column="28" selection-start-line="379" selection-start-column="28" selection-end-line="379" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3798">
-          <caret line="157" column="13" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/ShortTermForecast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1476">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1458">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/JsonParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="774">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1099,9 +1051,705 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32885906" vertical-offset="1121" max-vertical-offset="3798">
-          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="175" column="33" selection-start-line="175" selection-start-column="33" selection-end-line="175" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+          <folding>
+            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5085#5293#0" expanded="true" />
+            <element signature="e#5292#5293#0" expanded="true" />
+            <element signature="e#5358#5359#0" expanded="true" />
+            <element signature="e#5377#5378#0" expanded="true" />
+            <element signature="e#6244#6421#0" expanded="true" />
+            <element signature="e#6420#6421#0" expanded="true" />
+            <element signature="e#11932#12215#0" expanded="true" />
+            <element signature="e#12214#12215#0" expanded="true" />
+            <element signature="e#12725#12847#0" expanded="true" />
+            <element signature="e#12846#12847#0" expanded="true" />
+            <element signature="e#13173#13305#0" expanded="true" />
+            <element signature="e#13304#13305#0" expanded="true" />
+            <element signature="e#13714#14006#0" expanded="true" />
+            <element signature="e#14005#14006#0" expanded="true" />
+            <element signature="e#14338#14624#0" expanded="true" />
+            <element signature="e#14623#14624#0" expanded="true" />
+            <element signature="e#16360#16577#0" expanded="true" />
+            <element signature="e#16576#16577#0" expanded="true" />
+            <element signature="e#42036#42037#0" expanded="true" />
+            <element signature="e#42065#42066#0" expanded="true" />
+            <element signature="e#43991#43992#0" expanded="true" />
+            <element signature="e#44031#44032#0" expanded="true" />
+            <element signature="e#44124#44125#0" expanded="true" />
+            <element signature="e#44147#44148#0" expanded="true" />
+            <element signature="e#44240#44241#0" expanded="true" />
+            <element signature="e#44272#44273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="153" column="27" selection-start-line="153" selection-start-column="27" selection-end-line="153" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+          <folding>
+            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5085#5293#0" expanded="true" />
+            <element signature="e#5292#5293#0" expanded="true" />
+            <element signature="e#5358#5359#0" expanded="true" />
+            <element signature="e#5377#5378#0" expanded="true" />
+            <element signature="e#6244#6421#0" expanded="true" />
+            <element signature="e#6420#6421#0" expanded="true" />
+            <element signature="e#11932#12215#0" expanded="true" />
+            <element signature="e#12214#12215#0" expanded="true" />
+            <element signature="e#12725#12847#0" expanded="true" />
+            <element signature="e#12846#12847#0" expanded="true" />
+            <element signature="e#13173#13305#0" expanded="true" />
+            <element signature="e#13304#13305#0" expanded="true" />
+            <element signature="e#13714#14006#0" expanded="true" />
+            <element signature="e#14005#14006#0" expanded="true" />
+            <element signature="e#14338#14624#0" expanded="true" />
+            <element signature="e#14623#14624#0" expanded="true" />
+            <element signature="e#16360#16577#0" expanded="true" />
+            <element signature="e#16576#16577#0" expanded="true" />
+            <element signature="e#42036#42037#0" expanded="true" />
+            <element signature="e#42065#42066#0" expanded="true" />
+            <element signature="e#43991#43992#0" expanded="true" />
+            <element signature="e#44031#44032#0" expanded="true" />
+            <element signature="e#44124#44125#0" expanded="true" />
+            <element signature="e#44147#44148#0" expanded="true" />
+            <element signature="e#44240#44241#0" expanded="true" />
+            <element signature="e#44272#44273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="153" column="27" selection-start-line="153" selection-start-column="27" selection-end-line="153" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding>
+            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5085#5293#0" expanded="true" />
+            <element signature="e#5292#5293#0" expanded="true" />
+            <element signature="e#5358#5359#0" expanded="true" />
+            <element signature="e#5377#5378#0" expanded="true" />
+            <element signature="e#6244#6421#0" expanded="true" />
+            <element signature="e#6420#6421#0" expanded="true" />
+            <element signature="e#11932#12215#0" expanded="true" />
+            <element signature="e#12214#12215#0" expanded="true" />
+            <element signature="e#12725#12847#0" expanded="true" />
+            <element signature="e#12846#12847#0" expanded="true" />
+            <element signature="e#13173#13305#0" expanded="true" />
+            <element signature="e#13304#13305#0" expanded="true" />
+            <element signature="e#13714#14006#0" expanded="true" />
+            <element signature="e#14005#14006#0" expanded="true" />
+            <element signature="e#14338#14624#0" expanded="true" />
+            <element signature="e#14623#14624#0" expanded="true" />
+            <element signature="e#16360#16577#0" expanded="true" />
+            <element signature="e#16576#16577#0" expanded="true" />
+            <element signature="e#42036#42037#0" expanded="true" />
+            <element signature="e#42065#42066#0" expanded="true" />
+            <element signature="e#43991#43992#0" expanded="true" />
+            <element signature="e#44031#44032#0" expanded="true" />
+            <element signature="e#44124#44125#0" expanded="true" />
+            <element signature="e#44147#44148#0" expanded="true" />
+            <element signature="e#44240#44241#0" expanded="true" />
+            <element signature="e#44272#44273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding>
+            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5085#5293#0" expanded="true" />
+            <element signature="e#5292#5293#0" expanded="true" />
+            <element signature="e#5358#5359#0" expanded="true" />
+            <element signature="e#5377#5378#0" expanded="true" />
+            <element signature="e#6244#6421#0" expanded="true" />
+            <element signature="e#6420#6421#0" expanded="true" />
+            <element signature="e#11932#12215#0" expanded="true" />
+            <element signature="e#12214#12215#0" expanded="true" />
+            <element signature="e#12725#12847#0" expanded="true" />
+            <element signature="e#12846#12847#0" expanded="true" />
+            <element signature="e#13173#13305#0" expanded="true" />
+            <element signature="e#13304#13305#0" expanded="true" />
+            <element signature="e#13714#14006#0" expanded="true" />
+            <element signature="e#14005#14006#0" expanded="true" />
+            <element signature="e#14338#14624#0" expanded="true" />
+            <element signature="e#14623#14624#0" expanded="true" />
+            <element signature="e#16360#16577#0" expanded="true" />
+            <element signature="e#16576#16577#0" expanded="true" />
+            <element signature="e#42036#42037#0" expanded="true" />
+            <element signature="e#42065#42066#0" expanded="true" />
+            <element signature="e#43991#43992#0" expanded="true" />
+            <element signature="e#44031#44032#0" expanded="true" />
+            <element signature="e#44124#44125#0" expanded="true" />
+            <element signature="e#44147#44148#0" expanded="true" />
+            <element signature="e#44240#44241#0" expanded="true" />
+            <element signature="e#44272#44273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <folding>
+            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5085#5293#0" expanded="true" />
+            <element signature="e#5292#5293#0" expanded="true" />
+            <element signature="e#5358#5359#0" expanded="true" />
+            <element signature="e#5377#5378#0" expanded="true" />
+            <element signature="e#6244#6421#0" expanded="true" />
+            <element signature="e#6420#6421#0" expanded="true" />
+            <element signature="e#11932#12215#0" expanded="true" />
+            <element signature="e#12214#12215#0" expanded="true" />
+            <element signature="e#12725#12847#0" expanded="true" />
+            <element signature="e#12846#12847#0" expanded="true" />
+            <element signature="e#13173#13305#0" expanded="true" />
+            <element signature="e#13304#13305#0" expanded="true" />
+            <element signature="e#13714#14006#0" expanded="true" />
+            <element signature="e#14005#14006#0" expanded="true" />
+            <element signature="e#14338#14624#0" expanded="true" />
+            <element signature="e#14623#14624#0" expanded="true" />
+            <element signature="e#16360#16577#0" expanded="true" />
+            <element signature="e#16576#16577#0" expanded="true" />
+            <element signature="e#42036#42037#0" expanded="true" />
+            <element signature="e#42065#42066#0" expanded="true" />
+            <element signature="e#43991#43992#0" expanded="true" />
+            <element signature="e#44031#44032#0" expanded="true" />
+            <element signature="e#44124#44125#0" expanded="true" />
+            <element signature="e#44147#44148#0" expanded="true" />
+            <element signature="e#44240#44241#0" expanded="true" />
+            <element signature="e#44272#44273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="78" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="454" column="38" selection-start-line="454" selection-start-column="38" selection-end-line="454" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5085#5293#0" expanded="true" />
+            <element signature="e#5292#5293#0" expanded="true" />
+            <element signature="e#5358#5359#0" expanded="true" />
+            <element signature="e#5377#5378#0" expanded="true" />
+            <element signature="e#6244#6421#0" expanded="true" />
+            <element signature="e#6420#6421#0" expanded="true" />
+            <element signature="e#11932#12215#0" expanded="true" />
+            <element signature="e#12214#12215#0" expanded="true" />
+            <element signature="e#12725#12847#0" expanded="true" />
+            <element signature="e#12846#12847#0" expanded="true" />
+            <element signature="e#13173#13305#0" expanded="true" />
+            <element signature="e#13304#13305#0" expanded="true" />
+            <element signature="e#13714#14006#0" expanded="true" />
+            <element signature="e#14005#14006#0" expanded="true" />
+            <element signature="e#14338#14624#0" expanded="true" />
+            <element signature="e#14623#14624#0" expanded="true" />
+            <element signature="e#16360#16577#0" expanded="true" />
+            <element signature="e#16576#16577#0" expanded="true" />
+            <element signature="e#42036#42037#0" expanded="true" />
+            <element signature="e#42065#42066#0" expanded="true" />
+            <element signature="e#43991#43992#0" expanded="true" />
+            <element signature="e#44031#44032#0" expanded="true" />
+            <element signature="e#44124#44125#0" expanded="true" />
+            <element signature="e#44147#44148#0" expanded="true" />
+            <element signature="e#44240#44241#0" expanded="true" />
+            <element signature="e#44272#44273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5085#5293#0" expanded="true" />
+            <element signature="e#5292#5293#0" expanded="true" />
+            <element signature="e#5358#5359#0" expanded="true" />
+            <element signature="e#5377#5378#0" expanded="true" />
+            <element signature="e#6244#6421#0" expanded="true" />
+            <element signature="e#6420#6421#0" expanded="true" />
+            <element signature="e#11932#12215#0" expanded="true" />
+            <element signature="e#12214#12215#0" expanded="true" />
+            <element signature="e#12725#12847#0" expanded="true" />
+            <element signature="e#12846#12847#0" expanded="true" />
+            <element signature="e#13173#13305#0" expanded="true" />
+            <element signature="e#13304#13305#0" expanded="true" />
+            <element signature="e#13714#14006#0" expanded="true" />
+            <element signature="e#14005#14006#0" expanded="true" />
+            <element signature="e#14338#14624#0" expanded="true" />
+            <element signature="e#14623#14624#0" expanded="true" />
+            <element signature="e#16360#16577#0" expanded="true" />
+            <element signature="e#16576#16577#0" expanded="true" />
+            <element signature="e#42036#42037#0" expanded="true" />
+            <element signature="e#42065#42066#0" expanded="true" />
+            <element signature="e#43991#43992#0" expanded="true" />
+            <element signature="e#44031#44032#0" expanded="true" />
+            <element signature="e#44124#44125#0" expanded="true" />
+            <element signature="e#44147#44148#0" expanded="true" />
+            <element signature="e#44240#44241#0" expanded="true" />
+            <element signature="e#44272#44273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5085#5293#0" expanded="true" />
+            <element signature="e#5292#5293#0" expanded="true" />
+            <element signature="e#5358#5359#0" expanded="true" />
+            <element signature="e#5377#5378#0" expanded="true" />
+            <element signature="e#6244#6421#0" expanded="true" />
+            <element signature="e#6420#6421#0" expanded="true" />
+            <element signature="e#11932#12215#0" expanded="true" />
+            <element signature="e#12214#12215#0" expanded="true" />
+            <element signature="e#12725#12847#0" expanded="true" />
+            <element signature="e#12846#12847#0" expanded="true" />
+            <element signature="e#13173#13305#0" expanded="true" />
+            <element signature="e#13304#13305#0" expanded="true" />
+            <element signature="e#13714#14006#0" expanded="true" />
+            <element signature="e#14005#14006#0" expanded="true" />
+            <element signature="e#14338#14624#0" expanded="true" />
+            <element signature="e#14623#14624#0" expanded="true" />
+            <element signature="e#16360#16577#0" expanded="true" />
+            <element signature="e#16576#16577#0" expanded="true" />
+            <element signature="e#42036#42037#0" expanded="true" />
+            <element signature="e#42065#42066#0" expanded="true" />
+            <element signature="e#43991#43992#0" expanded="true" />
+            <element signature="e#44031#44032#0" expanded="true" />
+            <element signature="e#44124#44125#0" expanded="true" />
+            <element signature="e#44147#44148#0" expanded="true" />
+            <element signature="e#44240#44241#0" expanded="true" />
+            <element signature="e#44272#44273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5085#5293#0" expanded="true" />
+            <element signature="e#5292#5293#0" expanded="true" />
+            <element signature="e#5358#5359#0" expanded="true" />
+            <element signature="e#5377#5378#0" expanded="true" />
+            <element signature="e#6244#6421#0" expanded="true" />
+            <element signature="e#6420#6421#0" expanded="true" />
+            <element signature="e#11932#12215#0" expanded="true" />
+            <element signature="e#12214#12215#0" expanded="true" />
+            <element signature="e#12725#12847#0" expanded="true" />
+            <element signature="e#12846#12847#0" expanded="true" />
+            <element signature="e#13173#13305#0" expanded="true" />
+            <element signature="e#13304#13305#0" expanded="true" />
+            <element signature="e#13714#14006#0" expanded="true" />
+            <element signature="e#14005#14006#0" expanded="true" />
+            <element signature="e#14338#14624#0" expanded="true" />
+            <element signature="e#14623#14624#0" expanded="true" />
+            <element signature="e#16360#16577#0" expanded="true" />
+            <element signature="e#16576#16577#0" expanded="true" />
+            <element signature="e#42036#42037#0" expanded="true" />
+            <element signature="e#42065#42066#0" expanded="true" />
+            <element signature="e#43991#43992#0" expanded="true" />
+            <element signature="e#44031#44032#0" expanded="true" />
+            <element signature="e#44124#44125#0" expanded="true" />
+            <element signature="e#44147#44148#0" expanded="true" />
+            <element signature="e#44240#44241#0" expanded="true" />
+            <element signature="e#44272#44273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53125">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/awt/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.7008986">
+          <caret line="2251" column="16" selection-start-line="2251" selection-start-column="16" selection-end-line="2251" selection-end-column="16" />
+          <folding>
+            <element signature="e#77012#77013#0" expanded="false" />
+            <element signature="e#77056#77057#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar!/net/sf/json/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3491461">
+          <caret line="1454" column="18" selection-start-line="1454" selection-start-column="18" selection-end-line="1454" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="172" column="5" selection-start-line="172" selection-start-column="5" selection-end-line="172" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding>
+            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40133333">
+          <caret line="1116" column="68" selection-start-line="1116" selection-start-column="68" selection-end-line="1116" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5085#5293#0" expanded="true" />
+            <element signature="e#5292#5293#0" expanded="true" />
+            <element signature="e#5358#5359#0" expanded="true" />
+            <element signature="e#5377#5378#0" expanded="true" />
+            <element signature="e#6244#6421#0" expanded="true" />
+            <element signature="e#6420#6421#0" expanded="true" />
+            <element signature="e#11932#12215#0" expanded="true" />
+            <element signature="e#12214#12215#0" expanded="true" />
+            <element signature="e#12725#12847#0" expanded="true" />
+            <element signature="e#12846#12847#0" expanded="true" />
+            <element signature="e#13173#13305#0" expanded="true" />
+            <element signature="e#13304#13305#0" expanded="true" />
+            <element signature="e#13714#14006#0" expanded="true" />
+            <element signature="e#14005#14006#0" expanded="true" />
+            <element signature="e#14338#14624#0" expanded="true" />
+            <element signature="e#14623#14624#0" expanded="true" />
+            <element signature="e#16360#16577#0" expanded="true" />
+            <element signature="e#16576#16577#0" expanded="true" />
+            <element signature="e#42036#42037#0" expanded="true" />
+            <element signature="e#42065#42066#0" expanded="true" />
+            <element signature="e#43991#43992#0" expanded="true" />
+            <element signature="e#44031#44032#0" expanded="true" />
+            <element signature="e#44124#44125#0" expanded="true" />
+            <element signature="e#44147#44148#0" expanded="true" />
+            <element signature="e#44240#44241#0" expanded="true" />
+            <element signature="e#44272#44273#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

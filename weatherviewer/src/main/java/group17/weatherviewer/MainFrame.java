@@ -2,23 +2,21 @@ package group17.weatherviewer;
 
 import javax.swing.*;
 import javax.swing.border.Border;
-import javax.swing.BorderFactory;
-import javax.swing.event.*;
-
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-
-import java.util.Calendar;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class MainFrame {
 
-	// this is incredibly messy, we'll have to clean this up later
-	// a lot of these can be local fields too, but memory isn't really a big
-	// deal
+	// this is incredibly messy
+	// a lot of these can be local fields too
 	private static Font font;
 
 	private JFrame frame;
@@ -1116,7 +1114,7 @@ public class MainFrame {
 				
 				//User didn't enter a valid location...
 				if (!(test.getCity().contains(name))){
-					labelLocation.setText("The location you have entered is invalid. Please try again. :p ");
+					labelLocation.setText("Invalid location entered.");
 					return;
 				}
 					

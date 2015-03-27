@@ -23,6 +23,7 @@ public class UserPreferences implements java.io.Serializable {
     public UserPreferences() {
         //intialize empty locations (in the future we will have to prompt user so this will change)
         locations = new ArrayList<>();
+        tempUnit = 'c';
         //add london as default
     }
 
