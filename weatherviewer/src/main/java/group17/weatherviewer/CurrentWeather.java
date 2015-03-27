@@ -45,50 +45,51 @@ public class CurrentWeather {
 			while ((line = BReader.readLine()) != null)
 				SBR.append(line + " ");
 			BReader.close();
+		
+			String weatherData = SBR.toString();
+
+			// parse JSON data, JSON_Data:weatherData
+
+			JSONObject jsonData = JSONObject.fromObject(weatherData);
+			// Save all weather information��
+			
+			// get information from sys object
+			JSONObject objSys = jsonData.getJSONObject("sys");// country
+			country = objSys.getString("country");
+			//grab sunrise/sunset and convert to real time
+			sunrise = Conversion.unixToTime(objSys.getString("sunrise"));
+			sunset = Conversion.unixToTime(objSys.getString("sunset"));
+			
+			// get information from string
+			city = jsonData.getString("name");// city
+			
+			// get information from main object
+			JSONObject objMain = jsonData.getJSONObject("main");
+			//we subtract 273 from each temperature value because there is no need to store the kelvin value
+			temp = objMain.getDouble("temp") - 273;// temperature
+			minTemp = objMain.getDouble("temp_min") - 273;// min temperature
+			maxTemp = objMain.getDouble("temp_max") - 273;// max temperature
+			//divide by 10 to convert from hPa to kPa
+			pressure = objMain.getDouble("pressure")/10; // pressure
+			humidity = objMain.getDouble("humidity");// humidity
+			
+			// get information from wind object
+			JSONObject objWind = jsonData.getJSONObject("wind");
+			windSpeed = objWind.getDouble("speed");// wind speed
+			windDir = objWind.getDouble("deg");// wind direction
+			
+			// get information from weather object
+			JSONArray arrayWeather = jsonData.getJSONArray("weather");
+			JSONObject objWea = arrayWeather.getJSONObject(0);
+			sky = objWea.getString("description");
+			
+			//get weatherID info
+			weatherID = objWea.getInt("id");
 		}
 		catch (IOException e) {
             System.out.println("There was an error retrieving the weather information");
         }
-
-		String weatherData = SBR.toString();
-
-		// parse JSON data, JSON_Data:weatherData
-
-		JSONObject jsonData = JSONObject.fromObject(weatherData);
-        // Save all weather information��
-
-		// get information from sys object
-		JSONObject objSys = jsonData.getJSONObject("sys");// country
-		country = objSys.getString("country");
-		//grab sunrise/sunset and convert to real time
-		sunrise = Conversion.unixToTime(objSys.getString("sunrise"));
-		sunset = Conversion.unixToTime(objSys.getString("sunset"));
-
-		// get information from string
-		city = jsonData.getString("name");// city
-
-		// get information from main object
-		JSONObject objMain = jsonData.getJSONObject("main");
-        //we subtract 273 from each temperature value because there is no need to store the kelvin value
-		temp = objMain.getDouble("temp") - 273;// temperature
-        minTemp = objMain.getDouble("temp_min") - 273;// min temperature
-        maxTemp = objMain.getDouble("temp_max") - 273;// max temperature
-		//divide by 10 to convert from hPa to kPa
-		pressure = objMain.getDouble("pressure")/10; // pressure
-		humidity = objMain.getDouble("humidity");// humidity
-
-		// get information from wind object
-		JSONObject objWind = jsonData.getJSONObject("wind");
-		windSpeed = objWind.getDouble("speed");// wind speed
-		windDir = objWind.getDouble("deg");// wind direction
-
-		// get information from weather object
-		JSONArray arrayWeather = jsonData.getJSONArray("weather");
-		JSONObject objWea = arrayWeather.getJSONObject(0);
-		sky = objWea.getString("description");
-
-		//get weatherID info
-		weatherID = objWea.getInt("id");
+		
 	}
 
 	// Getters -> Modified to return Strings instead of Doubles -TE

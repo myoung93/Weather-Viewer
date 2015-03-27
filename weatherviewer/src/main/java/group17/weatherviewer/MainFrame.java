@@ -1115,8 +1115,8 @@ public class MainFrame {
 				test = new CurrentWeather(name);
 				
 				//User didn't enter a valid location...
-				if (!(test.getCity().contains(name))){
-					labelLocation.setText("The location you have entered is invalid. Please try again. :p ");
+				if (test == null || !(name.contains(test.getCity()))){
+					barSearch.setText("Please enter a valid location.");
 					return;
 				}
 					
