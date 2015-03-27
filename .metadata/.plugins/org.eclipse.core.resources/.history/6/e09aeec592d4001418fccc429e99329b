@@ -191,10 +191,10 @@ public class MainFrame {
 		backgroundImage = new ImageIcon(getClass().getResource(
 				"/backgrounds/default.jpg"));
 		backgroundLabel = new JLabel(backgroundImage);
-		backgroundLabel.setSize(800, 570);
+		backgroundLabel.setSize(800, 580);
 		frame = new JFrame("Group 17 Weather Viewer");
 		frame.setLocationRelativeTo(null);
-		frame.setSize(800, 570);
+		frame.setSize(800, 580);
 		frame.setContentPane(backgroundLabel);
 		frame.setResizable(false);
 
