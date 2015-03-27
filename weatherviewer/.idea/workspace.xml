@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather.prefs" afterPath="$PROJECT_DIR$/weather.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="weatherviewer.iws" />
@@ -38,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40133333">
-              <caret line="1116" column="68" selection-start-line="1116" selection-start-column="68" selection-end-line="1116" selection-end-column="68" />
+            <state vertical-scroll-proportion="-9.206897">
+              <caret line="1119" column="20" selection-start-line="1119" selection-start-column="20" selection-end-line="1119" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5085#5293#0" expanded="true" />
@@ -65,12 +65,12 @@
                 <element signature="e#16576#16577#0" expanded="true" />
                 <element signature="e#42036#42037#0" expanded="true" />
                 <element signature="e#42065#42066#0" expanded="true" />
-                <element signature="e#43991#43992#0" expanded="true" />
-                <element signature="e#44031#44032#0" expanded="true" />
-                <element signature="e#44124#44125#0" expanded="true" />
-                <element signature="e#44147#44148#0" expanded="true" />
-                <element signature="e#44240#44241#0" expanded="true" />
-                <element signature="e#44272#44273#0" expanded="true" />
+                <element signature="e#43996#43997#0" expanded="true" />
+                <element signature="e#44036#44037#0" expanded="true" />
+                <element signature="e#44129#44130#0" expanded="true" />
+                <element signature="e#44152#44153#0" expanded="true" />
+                <element signature="e#44245#44246#0" expanded="true" />
+                <element signature="e#44277#44278#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurrentWeather.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CurrentWeather.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="172" column="5" selection-start-line="172" selection-start-column="5" selection-end-line="172" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.37612325">
+              <caret line="125" column="54" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -127,9 +127,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
       </list>
     </option>
   </component>
@@ -338,47 +338,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.log</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/.taskListIndex/segments.gen</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/.tasks.xml.zip</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/tasks.xml.zip</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.indexes/e4/b9/22/e5/fa/history.index</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.markers</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3843881376.index</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments.gen</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments.gen</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/version.ini</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/caches/identified-project-coordinates.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments.gen</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/jre/jre/1.0.0-SNAPSHOT/resolver-status.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/repository/http___download_eclipse_org_recommenders_models_luna_/org/eclipse/recommenders/index/0.0.0-SNAPSHOT/resolver-status.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/ShortTermForecast.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/clouds.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/default.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/fog.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/hurricane.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/partial_clouds.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/rain.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/sand.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/snow.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/sun.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/thunder.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/tornado.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/volcano.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/backgrounds/wind.jpg</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/weather.prefs</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
@@ -387,180 +348,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/.taskListIndex/segments_3</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/16/10a8f890f9d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1a/f0463402fbd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1e/d006d531ead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/20/20861e2ef8d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/20/c080f513e7d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/22/a05ea17afdd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/26/700019c7ead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/28/70fd2fdff5d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2a/b0fccb8efcd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2a/c0cd5ed7ead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/31/309a1db8fad3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/31/5094322bf9d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/32/409a18e9e6d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/33/301b45dde6d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/34/50a7bd78f9d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/36/f04ef08ce8d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/38/707f8c3ef9d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/38/d030cbffe7d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3a/90d1295cead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3b/c09f3eb9e8d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3f/104b6ea8fbd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/40/d0e6b144f7d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/43/d08d075aead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/46/807d2266e7d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/47/60d84496f5d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/47/b08d2035fdd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4f/20db90a1f9d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5/606c7a60fdd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/52/70140971fbd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/55/90ad2980f9d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/57/c0ba18f2f6d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/58/20ed6b66e8d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/58/c0f2b734fbd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5d/0097d722f5d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6/e09aeec592d4001418fccc429e99329b</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/60/0069c4abfdd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/60/80d7247ee6d3001415f1c93723dc34c2</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/61/50b169d5e6d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/61/b0935368fad3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/65/103a8d97f9d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/67/70ac99bcfad3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6a/70b056b7e9d300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6b/601c1a06ead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6e/8077de31fcd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7/60fe343dfcd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/71/d017223dead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/72/300f3db4fbd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/73/e03e1eccf5d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/74/f0f61000e9d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/77/5084a856ead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/77/70a9e2d8fcd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/79/10f3c1bdead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/79/20d97043e8d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7a/80cc34aaf6d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7a/a0507e91ead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/80/40c73843ead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/83/3068e1ce92d4001418fccc429e99329b</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/88/001bc3d2e9d300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8d/00fd719efbd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8d/50ba0e41f5d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/95/40c49a52ead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9a/60c5dc34e6d3001415f1c93723dc34c2</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9d/70403ff2f4d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a3/3007bc8fead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a3/805f93cafdd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a3/c00b40a1e8d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a4/e047e750ead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a9/3070eb11f8d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a9/60968564e7d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b3/50370be9e7d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b4/a0b34ae3e6d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b4/b044cf4ee7d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b8/40545f0af7d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ba/b0a4151cfbd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c/e0320da9ead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c1/0016b6c8e7d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c3/b00f92fff8d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c7/d0a70ee9e9d300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/cd/f0d75223e9d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d2/80819444fcd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d4/50115a57fbd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d7/3006f6a3f7d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d7/d02ead0be8d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d8/705acab9e7d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/dc/50a35448e7d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e/c040f2e4f4d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e3/00659f4cead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e5/90d102b3e7d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e5/e01200befdd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e6/605c18eaf9d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e6/60d652e2f7d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e8/b0feccd692d4001418fccc429e99329b</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/eb/403f8cbdf9d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ed/60f10c27f7d3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ef/0009a07fead300141b78cf0c6d5a519f</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f9/60b5151fe7d300141da8a7663852da69</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fc/4008aab1fbd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fd/604f83cafcd3001418a7bcf5dab26e39</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/org.eclipse.jdt.core/state.dat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/35.tree</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/37.tree</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/39.tree</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/40.tree</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_14_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_15.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_15_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_16.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_16_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_17.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_17_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_18.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_18_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_19.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_19_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1a.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1a_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1b.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1b_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1c.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_14</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_17</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_19</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_1a</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1e_2.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1h_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1i.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1i_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1j.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1k.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1o.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1o_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1o_2.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1p.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1p_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1q.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1q_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1r.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1s.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1k</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1m</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1o</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_10_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_11.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_11_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_12.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_14.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_14_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_15.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_15_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_16.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_16_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_17.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_17_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_18.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_18_1.del</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_19.cfs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_11</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_14</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_16</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_17</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.fdt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.fdx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.fnm</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.frq</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.nrm</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.prx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.tii</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/_a.tis</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_luna_/segments_b</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../Meeting_Minutes/Meeting_10.odt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../Meeting_Minutes/Meeting_10.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/JsonParser.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -568,7 +355,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/JsonParaer.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -920,7 +706,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427335381974</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Set default temp unit to Celsius to fix a bug where a character missing box would appear. Location testing does not work properly (is almost always invalid).">
+      <created>1427478430085</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1427478430085</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -976,20 +768,22 @@
     <MESSAGE value="No more NullPointerExceptions when user selects temperature unit before updating" />
     <MESSAGE value="Temperatures now display the correct number of characters (no decimal place)" />
     <MESSAGE value="Removed a bunch of old code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed a bunch of old code" />
+    <MESSAGE value="Set default temp unit to Celsius to fix a bug where a character missing box would appear" />
+    <MESSAGE value="Set default temp unit to Celsius to fix a bug where a character missing box would appear. Location testing does not work properly (is almost always invalid)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Set default temp unit to Celsius to fix a bug where a character missing box would appear. Location testing does not work properly (is almost always invalid)." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java</url>
-          <line>184</line>
+          <line>189</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java</url>
-          <line>71</line>
+          <line>72</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -1029,12 +823,12 @@
             <element signature="e#16576#16577#0" expanded="true" />
             <element signature="e#42036#42037#0" expanded="true" />
             <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43991#43992#0" expanded="true" />
-            <element signature="e#44031#44032#0" expanded="true" />
-            <element signature="e#44124#44125#0" expanded="true" />
-            <element signature="e#44147#44148#0" expanded="true" />
-            <element signature="e#44240#44241#0" expanded="true" />
-            <element signature="e#44272#44273#0" expanded="true" />
+            <element signature="e#43996#43997#0" expanded="true" />
+            <element signature="e#44036#44037#0" expanded="true" />
+            <element signature="e#44129#44130#0" expanded="true" />
+            <element signature="e#44152#44153#0" expanded="true" />
+            <element signature="e#44245#44246#0" expanded="true" />
+            <element signature="e#44277#44278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1101,12 +895,12 @@
             <element signature="e#16576#16577#0" expanded="true" />
             <element signature="e#42036#42037#0" expanded="true" />
             <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43991#43992#0" expanded="true" />
-            <element signature="e#44031#44032#0" expanded="true" />
-            <element signature="e#44124#44125#0" expanded="true" />
-            <element signature="e#44147#44148#0" expanded="true" />
-            <element signature="e#44240#44241#0" expanded="true" />
-            <element signature="e#44272#44273#0" expanded="true" />
+            <element signature="e#43996#43997#0" expanded="true" />
+            <element signature="e#44036#44037#0" expanded="true" />
+            <element signature="e#44129#44130#0" expanded="true" />
+            <element signature="e#44152#44153#0" expanded="true" />
+            <element signature="e#44245#44246#0" expanded="true" />
+            <element signature="e#44277#44278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1173,12 +967,12 @@
             <element signature="e#16576#16577#0" expanded="true" />
             <element signature="e#42036#42037#0" expanded="true" />
             <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43991#43992#0" expanded="true" />
-            <element signature="e#44031#44032#0" expanded="true" />
-            <element signature="e#44124#44125#0" expanded="true" />
-            <element signature="e#44147#44148#0" expanded="true" />
-            <element signature="e#44240#44241#0" expanded="true" />
-            <element signature="e#44272#44273#0" expanded="true" />
+            <element signature="e#43996#43997#0" expanded="true" />
+            <element signature="e#44036#44037#0" expanded="true" />
+            <element signature="e#44129#44130#0" expanded="true" />
+            <element signature="e#44152#44153#0" expanded="true" />
+            <element signature="e#44245#44246#0" expanded="true" />
+            <element signature="e#44277#44278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1245,12 +1039,12 @@
             <element signature="e#16576#16577#0" expanded="true" />
             <element signature="e#42036#42037#0" expanded="true" />
             <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43991#43992#0" expanded="true" />
-            <element signature="e#44031#44032#0" expanded="true" />
-            <element signature="e#44124#44125#0" expanded="true" />
-            <element signature="e#44147#44148#0" expanded="true" />
-            <element signature="e#44240#44241#0" expanded="true" />
-            <element signature="e#44272#44273#0" expanded="true" />
+            <element signature="e#43996#43997#0" expanded="true" />
+            <element signature="e#44036#44037#0" expanded="true" />
+            <element signature="e#44129#44130#0" expanded="true" />
+            <element signature="e#44152#44153#0" expanded="true" />
+            <element signature="e#44245#44246#0" expanded="true" />
+            <element signature="e#44277#44278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1317,12 +1111,12 @@
             <element signature="e#16576#16577#0" expanded="true" />
             <element signature="e#42036#42037#0" expanded="true" />
             <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43991#43992#0" expanded="true" />
-            <element signature="e#44031#44032#0" expanded="true" />
-            <element signature="e#44124#44125#0" expanded="true" />
-            <element signature="e#44147#44148#0" expanded="true" />
-            <element signature="e#44240#44241#0" expanded="true" />
-            <element signature="e#44272#44273#0" expanded="true" />
+            <element signature="e#43996#43997#0" expanded="true" />
+            <element signature="e#44036#44037#0" expanded="true" />
+            <element signature="e#44129#44130#0" expanded="true" />
+            <element signature="e#44152#44153#0" expanded="true" />
+            <element signature="e#44245#44246#0" expanded="true" />
+            <element signature="e#44277#44278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1389,12 +1183,12 @@
             <element signature="e#16576#16577#0" expanded="true" />
             <element signature="e#42036#42037#0" expanded="true" />
             <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43991#43992#0" expanded="true" />
-            <element signature="e#44031#44032#0" expanded="true" />
-            <element signature="e#44124#44125#0" expanded="true" />
-            <element signature="e#44147#44148#0" expanded="true" />
-            <element signature="e#44240#44241#0" expanded="true" />
-            <element signature="e#44272#44273#0" expanded="true" />
+            <element signature="e#43996#43997#0" expanded="true" />
+            <element signature="e#44036#44037#0" expanded="true" />
+            <element signature="e#44129#44130#0" expanded="true" />
+            <element signature="e#44152#44153#0" expanded="true" />
+            <element signature="e#44245#44246#0" expanded="true" />
+            <element signature="e#44277#44278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1451,12 +1245,12 @@
             <element signature="e#16576#16577#0" expanded="true" />
             <element signature="e#42036#42037#0" expanded="true" />
             <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43991#43992#0" expanded="true" />
-            <element signature="e#44031#44032#0" expanded="true" />
-            <element signature="e#44124#44125#0" expanded="true" />
-            <element signature="e#44147#44148#0" expanded="true" />
-            <element signature="e#44240#44241#0" expanded="true" />
-            <element signature="e#44272#44273#0" expanded="true" />
+            <element signature="e#43996#43997#0" expanded="true" />
+            <element signature="e#44036#44037#0" expanded="true" />
+            <element signature="e#44129#44130#0" expanded="true" />
+            <element signature="e#44152#44153#0" expanded="true" />
+            <element signature="e#44245#44246#0" expanded="true" />
+            <element signature="e#44277#44278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1513,12 +1307,12 @@
             <element signature="e#16576#16577#0" expanded="true" />
             <element signature="e#42036#42037#0" expanded="true" />
             <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43991#43992#0" expanded="true" />
-            <element signature="e#44031#44032#0" expanded="true" />
-            <element signature="e#44124#44125#0" expanded="true" />
-            <element signature="e#44147#44148#0" expanded="true" />
-            <element signature="e#44240#44241#0" expanded="true" />
-            <element signature="e#44272#44273#0" expanded="true" />
+            <element signature="e#43996#43997#0" expanded="true" />
+            <element signature="e#44036#44037#0" expanded="true" />
+            <element signature="e#44129#44130#0" expanded="true" />
+            <element signature="e#44152#44153#0" expanded="true" />
+            <element signature="e#44245#44246#0" expanded="true" />
+            <element signature="e#44277#44278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1575,12 +1369,12 @@
             <element signature="e#16576#16577#0" expanded="true" />
             <element signature="e#42036#42037#0" expanded="true" />
             <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43991#43992#0" expanded="true" />
-            <element signature="e#44031#44032#0" expanded="true" />
-            <element signature="e#44124#44125#0" expanded="true" />
-            <element signature="e#44147#44148#0" expanded="true" />
-            <element signature="e#44240#44241#0" expanded="true" />
-            <element signature="e#44272#44273#0" expanded="true" />
+            <element signature="e#43996#43997#0" expanded="true" />
+            <element signature="e#44036#44037#0" expanded="true" />
+            <element signature="e#44129#44130#0" expanded="true" />
+            <element signature="e#44152#44153#0" expanded="true" />
+            <element signature="e#44245#44246#0" expanded="true" />
+            <element signature="e#44277#44278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1637,12 +1431,12 @@
             <element signature="e#16576#16577#0" expanded="true" />
             <element signature="e#42036#42037#0" expanded="true" />
             <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43991#43992#0" expanded="true" />
-            <element signature="e#44031#44032#0" expanded="true" />
-            <element signature="e#44124#44125#0" expanded="true" />
-            <element signature="e#44147#44148#0" expanded="true" />
-            <element signature="e#44240#44241#0" expanded="true" />
-            <element signature="e#44272#44273#0" expanded="true" />
+            <element signature="e#43996#43997#0" expanded="true" />
+            <element signature="e#44036#44037#0" expanded="true" />
+            <element signature="e#44129#44130#0" expanded="true" />
+            <element signature="e#44152#44153#0" expanded="true" />
+            <element signature="e#44245#44246#0" expanded="true" />
+            <element signature="e#44277#44278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1689,14 +1483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="172" column="5" selection-start-line="172" selection-start-column="5" selection-end-line="172" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1719,8 +1505,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40133333">
-          <caret line="1116" column="68" selection-start-line="1116" selection-start-column="68" selection-end-line="1116" selection-end-column="68" />
+        <state vertical-scroll-proportion="-9.206897">
+          <caret line="1119" column="20" selection-start-line="1119" selection-start-column="20" selection-end-line="1119" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5085#5293#0" expanded="true" />
@@ -1743,13 +1529,21 @@
             <element signature="e#16576#16577#0" expanded="true" />
             <element signature="e#42036#42037#0" expanded="true" />
             <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43991#43992#0" expanded="true" />
-            <element signature="e#44031#44032#0" expanded="true" />
-            <element signature="e#44124#44125#0" expanded="true" />
-            <element signature="e#44147#44148#0" expanded="true" />
-            <element signature="e#44240#44241#0" expanded="true" />
-            <element signature="e#44272#44273#0" expanded="true" />
+            <element signature="e#43996#43997#0" expanded="true" />
+            <element signature="e#44036#44037#0" expanded="true" />
+            <element signature="e#44129#44130#0" expanded="true" />
+            <element signature="e#44152#44153#0" expanded="true" />
+            <element signature="e#44245#44246#0" expanded="true" />
+            <element signature="e#44277#44278#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37612325">
+          <caret line="125" column="54" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -121,7 +121,11 @@ public class CurrentWeather {
 		else
 			substringLength = 4;
 
-		return String.valueOf(pressure).substring(0, substringLength);
+		String pressureString = String.valueOf(pressure);
+		if(pressureString.length() < 4)
+			substringLength = pressureString.length();
+
+		return pressureString.substring(0, substringLength);
 	}
 
     /**
