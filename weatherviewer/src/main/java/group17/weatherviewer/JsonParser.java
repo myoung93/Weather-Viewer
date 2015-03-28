@@ -8,22 +8,25 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
+import net.sf.json.JSONObject;
+
 public class JsonParser {
 
-	String owmUrl;
+	String OwmUrl;
 
-	// Current Weather url
+	// get link from other weather classes and return data as string
 	public JsonParser(String url) throws UnsupportedEncodingException {
-		this.owmUrl = url;
+		this.OwmUrl = url;
 	}
 
 	public String getData() {
+
 		StringBuffer SBR;
 
 		SBR = new StringBuffer();
 
 		try {
-			URL url = new URL(owmUrl);
+			URL url = new URL(OwmUrl);
 			URLConnection connection = url.openConnection();
 			BufferedReader BReader = new BufferedReader(new InputStreamReader(
 					connection.getInputStream()));
@@ -38,6 +41,13 @@ public class JsonParser {
 		}
 
 		String WeatherData = SBR.toString();
-		return WeatherData;
+		// check json data is null or not
+		JSONObject JsonData = JSONObject.fromObject(WeatherData);
+		if (JsonData.getInt("cod") == 404) {
+			throw new RuntimeException(
+					"City can not found. Please input your city properly");
+		} else {
+			return WeatherData;
+		}
 	}
 }

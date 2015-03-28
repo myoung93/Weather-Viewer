@@ -152,6 +152,9 @@ public class MainFrame {
 	private UserPreferences prefs;
 
     private CurrentWeather currentWeather;
+    private ShortTermForecast shortTermWeather;
+    private LongTermForecast longTermWeather;
+    
 	/**
 	 * Launch the application.
 	 */
@@ -986,7 +989,8 @@ public class MainFrame {
 			// constructor should take String city parameter in the future.
 			System.out.println("Retrieving weather data");
 			currentWeather = new CurrentWeather(location);
-		
+			//shortTermWeather = new ShortTermForecast(location);
+			//longTermWeather = new LongTermForecast(location);
 			
 			// update time shown
 			cal =  Calendar.getInstance();
@@ -1090,7 +1094,15 @@ public class MainFrame {
             labelDay6TempInfo.setText(currentWeather.getTemp(tempUnit));
             labelDay7TempInfo.setText(currentWeather.getTemp(tempUnit));
         }
-}
+    }
+    
+    //update short-term forecast information
+    private void updateShortTerm(){
+    	for (int i = 0; i < 8; i++){
+    		
+    		
+    	}
+    }
 
 	// This listener is shared by the barSearch TextField and the AddLocation
 	// Button.

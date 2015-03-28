@@ -12,69 +12,105 @@ public class ShortTermForecast {
 	String Url;
 	String Key = "&APPID=65da394090951035f3a346d9a356ddd9";// api key
 
-	String city, sky, country, time;
-	String temp, pressure, humidity, tempMax, tempMin;
-	double windSpeed;
-	String windDir, date;
+	String City, Sky, Country, Time;
+	String Temp, Pressure, Humidity, TempMax, TempMin, WindSpeed;
+	double Rain, Snow, TotalRain = 0, TotalSnow = 0;
+	String WindDir, Date, snow;
 
-	Queue<String> dateList = new LinkedList<String>();
-	Queue<String> tempList = new LinkedList<String>();
-	Queue<String> pressureList = new LinkedList<String>();
-	Queue<String> humidityList = new LinkedList<String>();
-	Queue<String> tempMaxList = new LinkedList<String>();
-	Queue<String> tempMinList = new LinkedList<String>();
-	Queue<String> windSpeedList = new LinkedList<String>();
-	Queue<String> windDirList = new LinkedList<String>();
+	// arraylists of all information
+	Queue<String> DateList = new LinkedList<String>();
+	Queue<String> TempList = new LinkedList<String>();
+	Queue<String> PressureList = new LinkedList<String>();
+	Queue<String> HumidityList = new LinkedList<String>();
+	Queue<String> TempMaxList = new LinkedList<String>();
+	Queue<String> TempMinList = new LinkedList<String>();
+	Queue<String> WindSpeedList = new LinkedList<String>();
+	Queue<String> WindDirList = new LinkedList<String>();
+	Queue<String> RainList = new LinkedList<String>();
+	Queue<String> SnowList = new LinkedList<String>();
 
 	public ShortTermForecast(String cityName)
 			throws UnsupportedEncodingException {
 
-		Url = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName
-				+ "&type=accurate&mode=json" + Key;
+		this.Url = "http://api.openweathermap.org/data/2.5/forecast?q="
+				+ cityName + "&type=accurate&mode=json" + Key;
 
-		JsonParser data = new JsonParser(Url);
-		String dataStr = data.getData();
-		JSONObject jsonData = JSONObject.fromObject(dataStr);// Save all weather
-																// information
-		JSONArray arrayList = jsonData.getJSONArray("list");
+		// send link to json parser and get weather data back as string
+		JsonParser Data = new JsonParser(Url);
+		String DataStr = Data.getData();
 
-		JSONObject objSys = jsonData.getJSONObject("city");
-		country = objSys.getString("country");// country
-		city = objSys.getString("name");// city
+		// Save all weather information
+		JSONObject JsonData = JSONObject.fromObject(DataStr);
+		JSONArray Arraylist = JsonData.getJSONArray("list");
+
+		JSONObject ObjSys = JsonData.getJSONObject("city");
+		Country = ObjSys.getString("country");// country
+		City = ObjSys.getString("name");// city
+
+		// Check the city we got from server is our request or not
+		String CityMatch = City + "," + Country;
+		if (CityMatch.equalsIgnoreCase(cityName) == false)
+			throw new RuntimeException("City not found");
 
 		// Short term shows every 3 hours forecast, 3X8=24 hours forecast
 		for (int i = 0; i < 8; i++) {
 
-			JSONObject objList = arrayList.getJSONObject(i);
+			// every 3 hours forecast
+			JSONObject ObjList = Arraylist.getJSONObject(i);
 
-			//
-			JSONObject objMain = objList.getJSONObject("main");
-			temp = objMain.getString("temp");// temperature
-			tempMin = objMain.getString("temp_min");// min temperature
-			tempMax = objMain.getString("temp_max");// max temperature
-			pressure = objMain.getString("pressure"); // pressure
-			humidity = objMain.getString("humidity");// humidity
+			JSONObject ObjMain = ObjList.getJSONObject("main");
+			Temp = ObjMain.getString("temp");// temperature
+			TempMin = ObjMain.getString("temp_min");// min temperature
+			TempMax = ObjMain.getString("temp_max");// max temperature
+			Pressure = ObjMain.getString("pressure"); // pressure
+			Humidity = ObjMain.getString("humidity");// humidity
 
-			JSONObject objWind = objList.getJSONObject("wind");
-			windSpeed = objWind.getDouble("speed");// wind speed
-			windDir = objWind.getString("deg");// wind degree
-			String windSpeedString = Double.toString(windSpeed);
+			JSONObject ObjWind = ObjList.getJSONObject("wind");
+			WindSpeed = ObjWind.getString("speed");// wind speed
+			WindDir = ObjWind.getString("deg");// wind degree
 
-			JSONArray arraySky = objList.getJSONArray("weather");
-			JSONObject objSky = arraySky.getJSONObject(0);
-			sky = objSky.getString("description");// sky description
+			// rain
+			if (ObjList.containsKey("rain")) {
 
-			date = objList.getString("dt_txt");// date
+				JSONObject ObjRain = ObjList.getJSONObject("rain");
+				Rain = ObjRain.getDouble("3h");
 
-			dateList.add(date);
-			tempList.add(temp);
-			pressureList.add(pressure);
-			humidityList.add(humidity);
-			tempMaxList.add(tempMax);
-			tempMinList.add(tempMin);
-			windSpeedList.add(windSpeedString);
-			windDirList.add(windDir);
+			} else {
+				Rain = 0;
+			}
 
+			String rain = Double.toString(Rain);
+			TotalRain = +Rain;// total rain
+
+			// snow
+			if (ObjList.containsKey("snow")) {
+				JSONObject ObjSnow = ObjList.getJSONObject("snow");
+				snow = ObjSnow.getString("3h");
+
+			} else {
+				snow = "0";
+
+			}
+
+			Snow = Double.valueOf(snow);
+			TotalSnow = +Snow;// total snow
+
+			JSONArray ArraySky = ObjList.getJSONArray("weather");
+			JSONObject ObjSky = ArraySky.getJSONObject(0);
+			Sky = ObjSky.getString("description");// sky description
+
+			Date = ObjList.getString("dt_txt");// date
+
+			DateList.add(Date);
+			TempList.add(Temp);
+			PressureList.add(Pressure);
+			HumidityList.add(Humidity);
+			TempMaxList.add(TempMax);
+			TempMinList.add(TempMin);
+			WindSpeedList.add(WindSpeed);
+			WindDirList.add(WindDir);
+			RainList.add(rain);
+			SnowList.add(snow);
 		}
 
 	}
