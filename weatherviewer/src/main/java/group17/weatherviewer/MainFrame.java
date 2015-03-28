@@ -1117,8 +1117,7 @@ public class MainFrame {
 					barSearch.setText("Please enter a valid location.");
 
 				}
-					
-				
+								
 				// User didn't type in a unique name...
 				if (name.equals("") || alreadyInList(name)) {
 					Toolkit.getDefaultToolkit().beep();
