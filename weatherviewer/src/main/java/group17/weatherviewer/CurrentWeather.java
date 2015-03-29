@@ -154,7 +154,6 @@ public class CurrentWeather {
      * @return the current wind direction in degrees
      */
 	public String getWindDirection() {
-		System.out.println(windDir);
 		if(windDir > 337.5 && windDir <= 360)
 			return "N";
 		else if(windDir >= 0 && windDir <= 22.5)
