@@ -15,6 +15,7 @@ public class LongTermForecast {
 	String City, Sky, Country, Time;
 	String Temp, Pressure, Humidity, TempMax, TempMin, Rain, Snow;
 	String WindSpeed, WindDir;
+	private double temp, high, low, rain, snow;
 
 	// arraylist of all weather information
 	private ArrayList<LongTermWeather> longTermForecast = new ArrayList<LongTermWeather>();
@@ -51,19 +52,19 @@ public class LongTermForecast {
 
 			// Rain
 			if (ObjDay.containsKey("rain")) {
-				Rain = ObjDay.getString("rain");
+				rain = ObjDay.getDouble("rain");
 			}
 
 			else {
-				Rain = "0";
+				rain = 0;
 			}
 			// snow
 			if (ObjDay.containsKey("snow")) {
-				Snow = ObjDay.getString("snow");
+				snow = ObjDay.getDouble("snow");
 			}
 
 			else {
-				Snow = "0";
+				snow = 0;
 			}
 
 			Pressure = ObjDay.getString("pressure"); // pressure
@@ -75,11 +76,11 @@ public class LongTermForecast {
 			Sky = ObjSky.getString("description");// sky description
 
 			JSONObject Objtemp = ObjDay.getJSONObject("temp");
-			Temp = Objtemp.getString("day");// temperature
-			TempMin = Objtemp.getString("min");// min temperature
-			TempMax = Objtemp.getString("max");// max temperature
+			temp = Objtemp.getDouble("day");// temperature
+			high = Objtemp.getDouble("min");// min temperature
+			low = Objtemp.getDouble("max");// max temperature
 			
-			longTermForecast.add(new LongTermWeather(Time, Sky, Temp, TempMax, TempMin, Rain, Snow));
+			longTermForecast.add(new LongTermWeather(Time, Sky, temp, high, low, rain, snow));
 		}
 
 	}
@@ -101,9 +102,10 @@ public class LongTermForecast {
 	
 	//helper class
 	public class LongTermWeather{
-		private String date, skycon, temp, high, low, rain, snow;
+		private String date, skycon; 
+		private double temp, high, low, rain, snow;
 		
-		public LongTermWeather(String date, String skycon, String temp, String high, String low, String rain, String snow){
+		public LongTermWeather(String date, String skycon, double temp, double high, double low, double rain, double snow){
 			this.date = date;
 			this.skycon = skycon;
 			this.temp = temp;
@@ -123,27 +125,58 @@ public class LongTermForecast {
 			return this.skycon;
 		}
 		
-		public String getTemp(){
-			return this.temp;
+		/**
+	     * Getter method for Celsius temperature
+	     * @return the current temp in degrees C (will be only temp method in later versions)
+	     */
+		public String getTemp(char tempUnit) {
+			if(tempUnit == 'f')
+	            return cleanTemp(temp * 9 / 5 + 32, tempUnit);
+	        else
+	            return cleanTemp(temp, tempUnit);
 		}
-			
-		public String getHigh(){
-			return this.high;
-		}
+
+	    public String getHigh(char tempUnit) {
+	        if(tempUnit == 'f')
+	            return cleanTemp(this.high * 9 / 5 + 32, tempUnit);
+	        else
+	            return cleanTemp(this.high, tempUnit);
+	    }
+
+	    public String getLow(char tempUnit) {
+	        if(tempUnit == 'f')
+	            return cleanTemp(this.low * 9 / 5 + 32, tempUnit);
+	        else
+	            return cleanTemp(this.low, tempUnit);
+	    }
+
+	    //puts the temperature into a readable form
+	    private String cleanTemp(double t, char unit) {
+	        int substringLength = 1;
+	        //correct for negative zero
+	        if(t < 0 && t >= -1)
+	            t = 0;
+	        //correct number of characters to take
+	        if (t < 0 || t > 10) {
+	            substringLength++;
+	            if(t < -10)
+	                substringLength++;
+	        }
+	        return String.valueOf(t).substring(0,substringLength) + '°' + Character.toUpperCase(unit);
+	    }
 		
-		public String getLow(){
-			return this.low;
-		}
-		
-		public String getRain(){
-			if (this.rain.length() > 1)
-				return this.rain.substring(0, 4);
+	    public String getRain(){
+			if (String.valueOf(this.rain).length() > 4)
+				return String.valueOf(this.rain).substring(0, 4);
 			else
-				return this.rain;
+				return String.valueOf(this.rain);
 		}
-			
+		
 		public String getSnow(){
-			return this.snow;
+			if (String.valueOf(this.snow).length() > 4)
+				return String.valueOf(this.snow).substring(0, 4);
+			else
+				return String.valueOf(this.snow);
 		}
 	}
 }	

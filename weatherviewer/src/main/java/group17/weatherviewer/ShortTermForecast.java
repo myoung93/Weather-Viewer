@@ -1,8 +1,6 @@
 package group17.weatherviewer;
 
 import java.io.UnsupportedEncodingException;
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.*;
 
 import net.sf.json.JSONArray;
@@ -15,6 +13,7 @@ public class ShortTermForecast {
 
 	String City, Sky, Country, Time;
 	String Temp, Pressure, Humidity, TempMax, TempMin, WindSpeed, Rain, Snow, WindDir, Date;
+	double temp, rain, snow;
 	double totalRain = 0, totalSnow = 0;
 
 	// arraylist of all weather information
@@ -46,7 +45,7 @@ public class ShortTermForecast {
 			JSONObject ObjList = Arraylist.getJSONObject(i);
 
 			JSONObject ObjMain = ObjList.getJSONObject("main");
-			Temp = ObjMain.getString("temp");// temperature
+			temp = ObjMain.getDouble("temp")-273;// temperature
 			TempMin = ObjMain.getString("temp_min");// min temperature
 			TempMax = ObjMain.getString("temp_max");// max temperature
 			Pressure = ObjMain.getString("pressure"); // pressure
@@ -60,25 +59,25 @@ public class ShortTermForecast {
 			if (ObjList.containsKey("rain")) {
 
 				JSONObject ObjRain = ObjList.getJSONObject("rain");
-				Rain = ObjRain.getString("3h");
+				rain = ObjRain.getDouble("3h");
 
 			} else {
-				Rain = "0";
+				rain = 0;
 			}
 
-			totalRain += Double.valueOf(Rain);// total rain
+			totalRain += rain;// total rain
 
 			// snow
 			if (ObjList.containsKey("snow")) {
 				JSONObject ObjSnow = ObjList.getJSONObject("snow");
-				Snow = ObjSnow.getString("3h");
+				snow = ObjSnow.getDouble("3h");
 
 			} else {
-				Snow = "0";
+				snow = 0;
 				
 			}
 
-			totalSnow += Double.valueOf(Snow);// total snow
+			totalSnow += snow;// total snow
 
 			JSONArray ArraySky = ObjList.getJSONArray("weather");
 			JSONObject ObjSky = ArraySky.getJSONObject(0);
@@ -86,7 +85,7 @@ public class ShortTermForecast {
 
 			Date = ObjList.getString("dt_txt");// date
 			
-			shortTermForecast.add(new ShortTermWeather(Date, Sky, Temp, Snow, Rain));
+			shortTermForecast.add(new ShortTermWeather(Date, Sky, temp, snow, rain));
 		}
 		
 	}
@@ -113,9 +112,10 @@ public class ShortTermForecast {
 	
 	//helper class
 	public class ShortTermWeather{
-		private String time, skycon, temp, rain, snow;
+		private String time, skycon; 
+		private double temp, rain, snow;
 		
-		public ShortTermWeather(String time, String skycon, String temp, String rain, String snow){
+		public ShortTermWeather(String time, String skycon, double temp, double rain, double snow){
 			this.time = time;
 			this.skycon = skycon;
 			this.temp = temp;
@@ -133,19 +133,44 @@ public class ShortTermForecast {
 			return this.skycon;
 		}
 		
-		public String getTemp(){
-			return this.temp;
+		/**
+	     * Getter method for Celsius temperature
+	     * @return the current temp in degrees C (will be only temp method in later versions)
+	     */
+		public String getTemp(char tempUnit) {
+			if(tempUnit == 'f')
+	            return cleanTemp(temp * 9 / 5 + 32, tempUnit);
+	        else
+	            return cleanTemp(temp, tempUnit);
 		}
+
+	    //puts the temperature into a readable form
+	    private String cleanTemp(double t, char unit) {
+	        int substringLength = 1;
+	        //correct for negative zero
+	        if(t < 0 && t >= -1)
+	            t = 0;
+	        //correct number of characters to take
+	        if (t < 0 || t > 10) {
+	            substringLength++;
+	            if(t < -10)
+	                substringLength++;
+	        }
+	        return String.valueOf(t).substring(0,substringLength) + '°' + Character.toUpperCase(unit);
+	    }
 		
 		public String getRain(){
-			if (this.rain.length() > 1)
-				return this.rain.substring(0, 4);
+			if (String.valueOf(this.rain).length() > 4)
+				return String.valueOf(this.rain).substring(0, 4);
 			else
-				return this.rain;
+				return String.valueOf(this.rain);
 		}
 		
 		public String getSnow(){
-			return this.snow;
+			if (String.valueOf(this.snow).length() > 4)
+				return String.valueOf(this.snow).substring(0, 4);
+			else
+				return String.valueOf(this.snow);
 		}
 	}
 }

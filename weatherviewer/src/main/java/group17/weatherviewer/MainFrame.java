@@ -1220,11 +1220,23 @@ public class MainFrame {
 
 	//moved these to a method because in the future we will have to re-initialize them when c/f is changed.
     private void setTemperatureFields() {
-        if(currentWeather != null) {
-            char tempUnit = prefs.getTempUnit();
+    	char tempUnit = prefs.getTempUnit();
+    	if(currentWeather != null) {
+            
             labelTempInfo.setText(currentWeather.getTemp(tempUnit));
             labelCurrentMMTempInfo.setText(currentWeather.getMinTemp(tempUnit) + "  |  " + currentWeather.getMaxTemp(tempUnit));
-          
+            
+            
+        }
+      //do same for short/long-term forecasts
+    	for (int i = 0; i < 8; i++){
+    		ShortTermWeather stw = shortTermForecast.getShortTermForecast().get(i);
+        	shortTermTemp.get(i).setText(stw.getTemp(tempUnit));
+        }
+    	for (int i = 0; i < 7; i++){
+    		LongTermWeather ltw = longTermForecast.getLongTermForecast().get(i);
+        	longTermTemp.get(i).setText(ltw.getTemp(tempUnit));
+        	longTermHighLow.get(i).setText(ltw.getLow(tempUnit) + " | " + ltw.getHigh(tempUnit));
         }
     }
     
@@ -1234,7 +1246,7 @@ public class MainFrame {
     		ShortTermWeather stw = shortTermForecast.getShortTermForecast().get(i);
     		
     		shortTermTime.get(i).setText(stw.getTime().substring(11,13) + " h");
-    		shortTermTemp.get(i).setText(stw.getTemp());
+    		//shortTermTemp.get(i).setText(stw.getTemp());
     		shortTermIcon.get(i).setIcon(new ImageIcon(skyConditionIconSmall));
 			shortTermSkyCon.get(i).setText("<html>"+ stw.getSkyCon() +"</html>");
 			shortTermPrecip.get(i).setText(stw.getRain()+"mm");
@@ -1248,11 +1260,11 @@ public class MainFrame {
     		LongTermWeather ltw = longTermForecast.getLongTermForecast().get(i);
     		
     		//longTermDate.get(i).setText(ltw.getDate().substring(11,13) + " h");
-    		longTermTemp.get(i).setText(ltw.getTemp());
-    		longTermHighLow.get(i).setText(ltw.getLow() + " | " + ltw.getHigh());
+    		//longTermTemp.get(i).setText(ltw.getTemp());
+    		//longTermHighLow.get(i).setText(ltw.getLow() + " | " + ltw.getHigh());
     		longTermIcon.get(i).setIcon(new ImageIcon(skyConditionIconSmall));
 			longTermSkyCon.get(i).setText("<html>"+ ltw.getSkyCon() +"</html>");
-			longTermPrecip.get(i).setText(ltw.getRain()+"mm");
+			longTermPrecip.get(i).setText(ltw.getRain()+" mm");
     	}
     }
     
