@@ -170,17 +170,17 @@ public class LongTermForecast {
 	    }
 		
 	    public String getRain(){
-			if (String.valueOf(this.rain).length() > 4)
-				return String.valueOf(this.rain).substring(0, 4);
+			if (0 < this.rain && this.rain < 1)
+				return "< 1";	
 			else
-				return String.valueOf(this.rain);
+				return String.valueOf(Math.round(this.rain));
 		}
 		
 		public String getSnow(){
-			if (String.valueOf(this.snow).length() > 4)
-				return String.valueOf(this.snow).substring(0, 4);
+			if (0 < this.snow && this.snow < 1)
+				return "< 1";	
 			else
-				return String.valueOf(this.snow);
+				return String.valueOf(Math.round(this.snow));
 		}
 		
 		public int getWeatherID(){

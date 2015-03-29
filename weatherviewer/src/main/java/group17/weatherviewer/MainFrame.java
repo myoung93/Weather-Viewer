@@ -1195,7 +1195,7 @@ public class MainFrame {
 			labelUpdatedInfo.setText(lastUpdated); //-NK
 			
 			//display total daily precipitation
-			labelPrecipitationInfo.setText(shortTermForecast.getTotalRain() + " mm");
+			labelPrecipitationInfo.setText(shortTermForecast.getTotalPrecipitation() + " mm");
 			
 			//display weather icon and background image
 			setSkyConditionImages(currentWeather.getWeatherID());
@@ -1249,8 +1249,13 @@ public class MainFrame {
     		setSkyConditionImages(stw.getWeatherID());
     		shortTermIcon.get(i).setIcon(new ImageIcon(skyConditionIconSmall));
 			shortTermSkyCon.get(i).setText("<html>"+ stw.getSkyCon() +"</html>");
-			shortTermPrecip.get(i).setText(stw.getRain()+" mm");
-
+			if (!(stw.getRain().contentEquals("0")))
+				shortTermPrecip.get(i).setText(stw.getRain()+" mm");
+			else if (!(stw.getSnow().contentEquals("0")))
+				shortTermPrecip.get(i).setText(stw.getSnow()+ " mm");
+			else 
+				shortTermPrecip.get(i).setText("0 mm");
+				
     	}
     }
     
@@ -1263,7 +1268,12 @@ public class MainFrame {
     		setSkyConditionImages(ltw.getWeatherID());
     		longTermIcon.get(i).setIcon(new ImageIcon(skyConditionIconSmall));
 			longTermSkyCon.get(i).setText("<html>"+ ltw.getSkyCon() +"</html>");
-			longTermPrecip.get(i).setText(ltw.getRain()+" mm");
+			if (!(ltw.getRain().contentEquals("0")))
+				longTermPrecip.get(i).setText(ltw.getRain()+" mm");
+			else if (!(ltw.getSnow().contentEquals("0")))
+				longTermPrecip.get(i).setText(ltw.getSnow()+ " mm");
+			else 
+				longTermPrecip.get(i).setText("0 mm");
     	}
     }
     

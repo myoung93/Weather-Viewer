@@ -66,7 +66,7 @@ public class ShortTermForecast {
 				rain = 0;
 			}
 
-			totalRain = totalRain + rain;// total rain
+			totalRain += rain;// total rain
 
 			// snow
 			if (ObjList.containsKey("snow")) {
@@ -92,18 +92,15 @@ public class ShortTermForecast {
 	
 	//getter methods
 	
-	//returns the total rain
-	public String getTotalRain(){
-		if (String.valueOf(totalRain).length() > 4)
-			return String.valueOf(totalRain).substring(0, 4);
+	//returns the total precipitation
+	public String getTotalPrecipitation(){
+		double totalPrecip = totalRain + totalSnow;
+		if (0 < totalPrecip && totalPrecip < 1)
+			return "< 1";
 		else
-			return String.valueOf(totalRain); 
+			return String.valueOf(Math.round(totalPrecip));
 	}
-	
-	//returns the total snow
-	public String getTotalSnow(){
-		return String.valueOf(totalSnow); 
-	}
+
 	
 	//returns weather information
 	public ArrayList<ShortTermWeather> getShortTermForecast(){
@@ -160,19 +157,19 @@ public class ShortTermForecast {
 	        }
 	        return String.valueOf(t).substring(0,substringLength) + '°' + Character.toUpperCase(unit);
 	    }
-		
-		public String getRain(){
-			if (String.valueOf(this.rain).length() > 4)
-				return String.valueOf(this.rain).substring(0, 4);
+
+	    public String getRain(){
+			if (0 < this.rain && this.rain < 1)
+				return "< 1";	
 			else
-				return String.valueOf(this.rain);
+				return String.valueOf(Math.round(this.rain));
 		}
 		
 		public String getSnow(){
-			if (String.valueOf(this.snow).length() > 4)
-				return String.valueOf(this.snow).substring(0, 4);
+			if (0 < this.snow && this.snow < 1)
+				return "< 1";	
 			else
-				return String.valueOf(this.snow);
+				return String.valueOf(Math.round(this.snow));
 		}
 		
 		public int getWeatherID(){

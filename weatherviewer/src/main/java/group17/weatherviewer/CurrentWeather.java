@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.lang.*;
 
 //A data type class to hold all necessary information for the Current Weather view.
 public class CurrentWeather {
@@ -108,7 +109,7 @@ public class CurrentWeather {
      * @return the current wind speed
      */
 	public String getWindSpeed() {
-		return String.valueOf(windSpeed);
+		return String.valueOf(Math.round(windSpeed*3.6));
 	}
     /**
      * Getter method for pressure
