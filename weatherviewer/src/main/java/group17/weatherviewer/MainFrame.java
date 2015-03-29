@@ -659,7 +659,7 @@ public class MainFrame {
 	
 		// Skycondition
 		label6AMSkyConditionInfo = new JLabel("");
-		shortTermSkyCon.add(label12AMSkyConditionInfo);
+		shortTermSkyCon.add(label6AMSkyConditionInfo);
 		label6AMSkyConditionInfo.setForeground(Color.LIGHT_GRAY);
 		label6AMSkyConditionInfo.setFont(font.deriveFont(11f));
 		label6AMSkyConditionInfo.setBounds(240, 460, 75, 50);
@@ -1184,7 +1184,7 @@ public class MainFrame {
 
     		System.out.println(stf.size());
     		System.out.println(shortTermTime.size());
-    		System.out.println(stf.get(i).getTime());
+    		System.out.println(stf.get(i).getTime().substring(11,13) + " h");
     		System.out.println(stf.get(i).getTemp());
     		System.out.println(stf.get(i).getSkyCon());
     		System.out.println(stf.get(i).getRain());
@@ -1192,7 +1192,7 @@ public class MainFrame {
 
     		
     		
-    		shortTermTime.get(i).setText(stf.get(i).getTime());
+    		shortTermTime.get(i).setText(stf.get(i).getTime().substring(11,13) + " h");
     		shortTermTemp.get(i).setText(stf.get(i).getTemp());
     		shortTermIcon.get(i).setIcon(new ImageIcon(skyConditionIconSmall));
 			shortTermSkyCon.get(i).setText("<html>"+ stf.get(i).getSkyCon() +"</html>");
