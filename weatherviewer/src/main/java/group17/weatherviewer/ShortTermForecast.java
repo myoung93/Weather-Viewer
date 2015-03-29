@@ -3,18 +3,19 @@ package group17.weatherviewer;
 import java.io.UnsupportedEncodingException;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.*;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 public class ShortTermForecast {
-
+	
 	String Url;
 	String Key = "&APPID=65da394090951035f3a346d9a356ddd9";// api key
 
 	String City, Sky, Country, Time;
 	String Temp, Pressure, Humidity, TempMax, TempMin, WindSpeed;
-	double Rain, Snow, TotalRain = 0, TotalSnow = 0;
+	double Rain, Snow, totalRain = 0, TotalSnow = 0;
 	String WindDir, Date, snow;
 
 	// arraylists of all information
@@ -28,6 +29,8 @@ public class ShortTermForecast {
 	Queue<String> WindDirList = new LinkedList<String>();
 	Queue<String> RainList = new LinkedList<String>();
 	Queue<String> SnowList = new LinkedList<String>();
+	
+	private ArrayList<ShortTermWeather> shortTermForecast = new ArrayList<ShortTermWeather>();
 
 	public ShortTermForecast(String cityName)
 			throws UnsupportedEncodingException {
@@ -48,9 +51,9 @@ public class ShortTermForecast {
 		City = ObjSys.getString("name");// city
 
 		// Check the city we got from server is our request or not
-		String CityMatch = City + "," + Country;
-		if (CityMatch.equalsIgnoreCase(cityName) == false)
-			throw new RuntimeException("City not found");
+		//String CityMatch = City + "," + Country;
+		//if (CityMatch.equalsIgnoreCase(cityName) == false)
+			//throw new RuntimeException("City not found");
 
 		// Short term shows every 3 hours forecast, 3X8=24 hours forecast
 		for (int i = 0; i < 8; i++) {
@@ -80,7 +83,7 @@ public class ShortTermForecast {
 			}
 
 			String rain = Double.toString(Rain);
-			TotalRain = +Rain;// total rain
+			totalRain = +Rain;// total rain
 
 			// snow
 			if (ObjList.containsKey("snow")) {
@@ -89,7 +92,7 @@ public class ShortTermForecast {
 
 			} else {
 				snow = "0";
-
+				
 			}
 
 			Snow = Double.valueOf(snow);
@@ -100,7 +103,9 @@ public class ShortTermForecast {
 			Sky = ObjSky.getString("description");// sky description
 
 			Date = ObjList.getString("dt_txt");// date
-
+			
+			shortTermForecast.add(new ShortTermWeather(Date, Sky, Temp, Snow, Rain));
+			
 			DateList.add(Date);
 			TempList.add(Temp);
 			PressureList.add(Pressure);
@@ -112,6 +117,57 @@ public class ShortTermForecast {
 			RainList.add(rain);
 			SnowList.add(snow);
 		}
-
+		
+	}
+	
+	//getter methods
+	
+	//returns the total precipitation
+	public String getTotalRain(){
+		return String.valueOf(totalRain); 
+	}
+	
+	//returns weather information
+	public ArrayList<ShortTermWeather> getShortTermForecast(){
+		return this.shortTermForecast;
+	}
+	
+	//helper class
+	public class ShortTermWeather{
+		private String time, skycon, temp;
+		private double rain, snow;
+		
+		public ShortTermWeather(String time, String skycon, String temp, double rain, double snow){
+			this.time = time;
+			this.skycon = skycon;
+			this.temp = temp;
+			this.rain = rain;
+			this.snow = snow;
+		}
+		
+		//getter methods
+		
+		public String getTime(){
+			return this.time;
+		}
+		
+		public String getSkyCon(){
+			return this.skycon;
+		}
+		
+		public String getTemp(){
+			return this.temp;
+		}
+		
+		public String getRain(){
+			return String.valueOf(this.rain);
+		}
+		
+		public String getSnow(){
+			return String.valueOf(this.snow);
+		}
 	}
 }
+	
+
+
