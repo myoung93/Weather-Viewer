@@ -1326,7 +1326,7 @@ public class MainFrame {
 				barSearch.setText("");
 
 				// Select the new item and make it visible.
-				//listLocations.setSelectedIndex(index);
+				listLocations.setSelectedIndex(index);
 				listLocations.ensureIndexIsVisible(index);
 				
 			}

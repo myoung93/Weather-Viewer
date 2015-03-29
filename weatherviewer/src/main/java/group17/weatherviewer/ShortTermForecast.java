@@ -15,6 +15,7 @@ public class ShortTermForecast {
 	String Temp, Pressure, Humidity, TempMax, TempMin, WindSpeed, Rain, Snow, WindDir, Date;
 	double temp, rain, snow;
 	double totalRain = 0, totalSnow = 0;
+	int weatherID;
 
 	// arraylist of all weather information
 	private ArrayList<ShortTermWeather> shortTermForecast = new ArrayList<ShortTermWeather>();
