@@ -1236,16 +1236,17 @@ public class MainFrame {
     	for (int i = 0; i < 7; i++){
     		LongTermWeather ltw = longTermForecast.getLongTermForecast().get(i);
         	longTermTemp.get(i).setText(ltw.getTemp(tempUnit));
-        	longTermHighLow.get(i).setText(ltw.getLow(tempUnit) + " | " + ltw.getHigh(tempUnit));
+        	longTermHighLow.get(i).setText(ltw.getLow(tempUnit) + "  |  " + ltw.getHigh(tempUnit));
         }
     }
     
-    //update short-term forecast information
+    //update short-term forecast information (except temperatures)
     private void updateShortTerm(){
     	for (int i = 0; i < 8; i++){
     		ShortTermWeather stw = shortTermForecast.getShortTermForecast().get(i);
     		
     		shortTermTime.get(i).setText(stw.getTime().substring(11,13) + " h");
+    		setSkyConditionImages(stw.getWeatherID());
     		shortTermIcon.get(i).setIcon(new ImageIcon(skyConditionIconSmall));
 			shortTermSkyCon.get(i).setText("<html>"+ stw.getSkyCon() +"</html>");
 			shortTermPrecip.get(i).setText(stw.getRain()+" mm");
@@ -1253,12 +1254,13 @@ public class MainFrame {
     	}
     }
     
-  //update short-term forecast information
+  //update short-term forecast information (except temperatures)
     private void updateLongTerm(){
     	for (int i = 0; i < 7; i++){
     		LongTermWeather ltw = longTermForecast.getLongTermForecast().get(i);
     		
     		//longTermDate.get(i).setText(ltw.getDate().substring(11,13) + " h");
+    		setSkyConditionImages(ltw.getWeatherID());
     		longTermIcon.get(i).setIcon(new ImageIcon(skyConditionIconSmall));
 			longTermSkyCon.get(i).setText("<html>"+ ltw.getSkyCon() +"</html>");
 			longTermPrecip.get(i).setText(ltw.getRain()+" mm");

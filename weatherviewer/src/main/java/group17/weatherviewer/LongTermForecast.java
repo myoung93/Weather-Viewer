@@ -16,6 +16,7 @@ public class LongTermForecast {
 	String Temp, Pressure, Humidity, TempMax, TempMin, Rain, Snow;
 	String WindSpeed, WindDir;
 	private double temp, high, low, rain, snow;
+	private int weatherID;
 
 	// arraylist of all weather information
 	private ArrayList<LongTermWeather> longTermForecast = new ArrayList<LongTermWeather>();
@@ -74,13 +75,14 @@ public class LongTermForecast {
 			JSONObject ObjSky = ArrayWeather.getJSONObject(0);
 
 			Sky = ObjSky.getString("description");// sky description
-
+			weatherID = ObjSky.getInt("id"); //weatherID
+			
 			JSONObject Objtemp = ObjDay.getJSONObject("temp");
 			temp = Objtemp.getDouble("day");// temperature
 			high = Objtemp.getDouble("min");// min temperature
 			low = Objtemp.getDouble("max");// max temperature
 			
-			longTermForecast.add(new LongTermWeather(Time, Sky, temp, high, low, rain, snow));
+			longTermForecast.add(new LongTermWeather(Time, Sky, temp, high, low, rain, snow, weatherID));
 		}
 
 	}
@@ -104,8 +106,9 @@ public class LongTermForecast {
 	public class LongTermWeather{
 		private String date, skycon; 
 		private double temp, high, low, rain, snow;
+		private int weatherID;
 		
-		public LongTermWeather(String date, String skycon, double temp, double high, double low, double rain, double snow){
+		public LongTermWeather(String date, String skycon, double temp, double high, double low, double rain, double snow, int weatherID){
 			this.date = date;
 			this.skycon = skycon;
 			this.temp = temp;
@@ -113,6 +116,7 @@ public class LongTermForecast {
 			this.low= low;
 			this.rain = rain;
 			this.snow = snow;
+			this.weatherID = weatherID;
 		}
 			
 		//getter methods
@@ -177,6 +181,10 @@ public class LongTermForecast {
 				return String.valueOf(this.snow).substring(0, 4);
 			else
 				return String.valueOf(this.snow);
+		}
+		
+		public int getWeatherID(){
+			return this.weatherID;
 		}
 	}
 }	

@@ -83,10 +83,10 @@ public class ShortTermForecast {
 			JSONArray ArraySky = ObjList.getJSONArray("weather");
 			JSONObject ObjSky = ArraySky.getJSONObject(0);
 			Sky = ObjSky.getString("description");// sky description
-
+			weatherID = ObjSky.getInt("id"); //weatherID
 			Date = ObjList.getString("dt_txt");// date
 			
-			shortTermForecast.add(new ShortTermWeather(Date, Sky, temp, rain, snow));
+			shortTermForecast.add(new ShortTermWeather(Date, Sky, temp, rain, snow, weatherID));
 		}
 	}
 	
@@ -114,13 +114,15 @@ public class ShortTermForecast {
 	public class ShortTermWeather{
 		private String time, skycon; 
 		private double temp, rain, snow;
+		private int weatherID;
 		
-		public ShortTermWeather(String time, String skycon, double temp, double rain, double snow){
+		public ShortTermWeather(String time, String skycon, double temp, double rain, double snow, int weatherID){
 			this.time = time;
 			this.skycon = skycon;
 			this.temp = temp;
 			this.rain = rain;
 			this.snow = snow;
+			this.weatherID = weatherID;
 		}
 		
 		//getter methods
@@ -171,6 +173,10 @@ public class ShortTermForecast {
 				return String.valueOf(this.snow).substring(0, 4);
 			else
 				return String.valueOf(this.snow);
+		}
+		
+		public int getWeatherID(){
+			return this.weatherID;	
 		}
 	}
 }
