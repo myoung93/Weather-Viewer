@@ -65,7 +65,7 @@ public class ShortTermForecast {
 				rain = 0;
 			}
 
-			totalRain += rain;// total rain
+			totalRain = totalRain + rain;// total rain
 
 			// snow
 			if (ObjList.containsKey("snow")) {
@@ -85,9 +85,8 @@ public class ShortTermForecast {
 
 			Date = ObjList.getString("dt_txt");// date
 			
-			shortTermForecast.add(new ShortTermWeather(Date, Sky, temp, snow, rain));
+			shortTermForecast.add(new ShortTermWeather(Date, Sky, temp, rain, snow));
 		}
-		
 	}
 	
 	//getter methods
