@@ -1,6 +1,7 @@
 package group17.weatherviewer;
 
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -27,6 +28,9 @@ public class LongTermForecast {
 	Queue<String> RainList = new LinkedList<String>();
 	Queue<String> SnowList = new LinkedList<String>();
 
+	private ArrayList<LongTermWeather> longTermForecast = new ArrayList<LongTermWeather>();
+
+	
 	public LongTermForecast(String cityName, int Term)
 			throws UnsupportedEncodingException {
 		Url = "http://api.openweathermap.org/data/2.5/forecast/daily?q="
@@ -47,10 +51,6 @@ public class LongTermForecast {
 		Country = ObjSys.getString("country");// country
 		City = ObjSys.getString("name");// city
 
-		// Check the city we got from server is our request or not
-		String CityMatch = City + "," + Country;
-		if (CityMatch.equalsIgnoreCase(cityName) == false)
-			throw new RuntimeException("City not found");
 
 		// // Short term shows daily forecast, for at least 5 days forecast
 		for (int i = 0; i < Term; i++) {
@@ -100,6 +100,8 @@ public class LongTermForecast {
 			WindDirList.add(WindDir);
 			RainList.add(Rain);
 			SnowList.add(Snow);
+			
+			longTermForecast.add(new LongTermWeather(Time, Sky, Temp, TempMax, TempMin, Rain, Snow));
 		}
 
 	}
@@ -111,5 +113,56 @@ public class LongTermForecast {
 				.format(new java.util.Date(Time));
 		return Date;
 	}
-
-}
+	
+	//getter methods
+	
+	//returns weather information
+	public ArrayList<LongTermWeather> getLongTermForecast(){
+		return this.longTermForecast;
+	}
+	
+	//helper class
+	public class LongTermWeather{
+		private String date, skycon, temp, high, low, rain, snow;
+		
+		public LongTermWeather(String date, String skycon, String temp, String high, String low, String rain, String snow){
+			this.date = date;
+			this.skycon = skycon;
+			this.temp = temp;
+			this.high = high;
+			this.low= low;
+			this.rain = rain;
+			this.snow = snow;
+		}
+			
+		//getter methods
+		
+		public String getDate(){
+			return this.date;
+		}
+		
+		public String getSkyCon(){
+			return this.skycon;
+		}
+		
+		public String getTemp(){
+			return this.temp;
+		}
+			
+		public String getHigh(){
+			return this.high;
+		}
+		
+		public String getLow(){
+			return this.low;
+		}
+		
+		public String getRain(){
+			return this.rain;
+		}
+			
+		public String getSnow(){
+			return this.snow;
+		}
+	}
+}	

@@ -50,10 +50,6 @@ public class ShortTermForecast {
 		Country = ObjSys.getString("country");// country
 		City = ObjSys.getString("name");// city
 
-		// Check the city we got from server is our request or not
-		//String CityMatch = City + "," + Country;
-		//if (CityMatch.equalsIgnoreCase(cityName) == false)
-			//throw new RuntimeException("City not found");
 
 		// Short term shows every 3 hours forecast, 3X8=24 hours forecast
 		for (int i = 0; i < 8; i++) {
