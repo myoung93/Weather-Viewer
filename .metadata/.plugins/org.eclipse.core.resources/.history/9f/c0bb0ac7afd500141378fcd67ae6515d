@@ -104,46 +104,46 @@ public class MainFrame {
 	private JLabel label9PMPrecipitation;
 	private JLabel labelDay1Info;
 	private JLabel labelDay1TempInfo;
-	private JLabel labelDay1MMTempInfo;
 	private JLabel labelDay1SkyConditionIcon;
 	private JLabel labelDay1SkyConditionInfo;
-	private JLabel labelDay1PrecipitationInfo;
+	private JLabel labelDay1MaxTemp;
+	private JLabel labelDay1MinTemp;
 	private JLabel labelDay2Info;
 	private JLabel labelDay2TempInfo;
-	private JLabel labelDay2MMTempInfo;
 	private JLabel labelDay2SkyConditionInfo;
 	private JLabel labelDay2SkyConditionIcon;
-	private JLabel labelDay2PrecipitationInfo;
+	private JLabel labelDay2MaxTemp;
+	private JLabel labelDay2MinTemp;
 	private JLabel labelDay3Info;
 	private JLabel labelDay3TempInfo;
-	private JLabel labelDay3MMTempInfo;
 	private JLabel labelDay3SkyConditionInfo;
 	private JLabel labelDay3SkyConditionIcon;
-	private JLabel labelDay3PrecipitationInfo;
+	private JLabel labelDay3MaxTemp;
+	private JLabel labelDay3MinTemp;
 	private JLabel labelDay4Info;
 	private JLabel labelDay4TempInfo;
-	private JLabel labelDay4MMTempInfo;
 	private JLabel labelDay4SkyConditionInfo;
 	private JLabel labelDay4SkyConditionIcon;
-	private JLabel labelDay4PrecipitationInfo;
+	private JLabel labelDay4MaxTemp;
+	private JLabel labelDay4MinTemp;
 	private JLabel labelDay5Info;
 	private JLabel labelDay5TempInfo;
-	private JLabel labelDay5MMTempInfo;
 	private JLabel labelDay5SkyConditionInfo;
 	private JLabel labelDay5SkyConditionIcon;
-	private JLabel labelDay5PrecipitationInfo;
+	private JLabel labelDay5MaxTemp;
+	private JLabel labelDay5MinTemp;
 	private JLabel labelDay6Info;
 	private JLabel labelDay6TempInfo;
-	private JLabel labelDay6MMTempInfo;
 	private JLabel labelDay6SkyConditionInfo;
 	private JLabel labelDay6SkyConditionIcon;
-	private JLabel labelDay6PrecipitationInfo;
+	private JLabel labelDay6MaxTemp;
+	private JLabel labelDay6MinTemp;
 	private JLabel labelDay7Info;
 	private JLabel labelDay7TempInfo;
-	private JLabel labelDay7MMTempInfo;
 	private JLabel labelDay7SkyConditionInfo;
 	private JLabel labelDay7SkyConditionIcon;
-	private JLabel labelDay7PrecipitationInfo;
+	private JLabel labelDay7MaxTemp;
+	private JLabel labelDay7MinTemp;
 
 	private DateFormat dateFormat;
 	private Calendar cal;
@@ -880,250 +880,166 @@ public class MainFrame {
 
 		// / BEGIN INITIALIZATION OF LONG-TERM FORECAST PANEL /// 
 		
-		// Day1
-				labelDay1Info = new JLabel("Mon.");
-				labelDay1Info.setForeground(Color.LIGHT_GRAY);
-				labelDay1Info.setFont(font.deriveFont(15f));
-				labelDay1Info.setBounds(125, 360, 58, 15);
-				frame.getContentPane().add(labelDay1Info);
-				// Icon
-				labelDay1SkyConditionIcon = new JLabel();
-				labelDay1SkyConditionIcon.setBounds(115, 380, 55, 49);
-				frame.getContentPane().add(labelDay1SkyConditionIcon);
-				// Skycondition
-				labelDay1SkyConditionInfo = new JLabel("");
-				labelDay1SkyConditionInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay1SkyConditionInfo.setFont(font.deriveFont(11f));
-				labelDay1SkyConditionInfo.setBounds(105, 495, 75, 15);
-				frame.getContentPane().add(labelDay1SkyConditionInfo);
-				// Temp
-				labelDay1TempInfo = new JLabel("");
-				labelDay1TempInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay1TempInfo.setFont(font.deriveFont(15f));
-				labelDay1TempInfo.setBounds(125, 435, 58, 15);
-				frame.getContentPane().add(labelDay1TempInfo);
-				// Max/Min Temp
-				labelDay1MMTempInfo = new JLabel("");
-				labelDay1MMTempInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay1MMTempInfo.setFont(font.deriveFont(11f));
-				labelDay1MMTempInfo.setBounds(105, 455, 65, 15);
-				frame.getContentPane().add(labelDay1MMTempInfo);
-				// Precipitation Temp
-				labelDay1PrecipitationInfo = new JLabel("");
-				labelDay1PrecipitationInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay1PrecipitationInfo.setFont(font.deriveFont(15f));
-				labelDay1PrecipitationInfo.setBounds(105, 475, 65, 15);
-				frame.getContentPane().add(labelDay1PrecipitationInfo);
+		//Day1
+		labelDay1Info = new JLabel("Mon.");
+		labelDay1Info.setForeground(Color.LIGHT_GRAY);
+		labelDay1Info.setFont(font.deriveFont(15f));
+		labelDay1Info.setBounds(100, 360, 58, 15);
+		frame.getContentPane().add(labelDay1Info);
+		// Icon
+		labelDay1SkyConditionIcon = new JLabel();
+		labelDay1SkyConditionIcon.setBounds(85, 380, 55, 49);
+		frame.getContentPane().add(labelDay1SkyConditionIcon);
+		// Skycondition
+		labelDay1SkyConditionInfo = new JLabel("");
+		labelDay1SkyConditionInfo.setForeground(Color.LIGHT_GRAY);
+		labelDay1SkyConditionInfo.setFont(font.deriveFont(11f));
+		labelDay1SkyConditionInfo.setBounds(85, 435, 58, 15);
+		frame.getContentPane().add(labelDay1SkyConditionInfo);
+		// Temp
+		labelDay1TempInfo = new JLabel("");
+		labelDay1TempInfo.setForeground(Color.LIGHT_GRAY);
+		labelDay1TempInfo.setFont(font.deriveFont(15f));
+		labelDay1TempInfo.setBounds(85, 455, 58, 15);
+		frame.getContentPane().add(labelDay1TempInfo);
 
-				// Day2
-				labelDay2Info = new JLabel("Tues.");
-				labelDay2Info.setForeground(Color.LIGHT_GRAY);
-				labelDay2Info.setFont(font.deriveFont(15f));
-				labelDay2Info.setBounds(205, 360, 58, 15);
-				frame.getContentPane().add(labelDay2Info);
-				// Icon
-				labelDay2SkyConditionIcon = new JLabel();
-				labelDay2SkyConditionIcon.setBounds(195, 380, 55, 49);
-				frame.getContentPane().add(labelDay2SkyConditionIcon);
-				// Skycondition
-				labelDay2SkyConditionInfo = new JLabel("");
-				labelDay2SkyConditionInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay2SkyConditionInfo.setFont(font.deriveFont(11f));
-				labelDay2SkyConditionInfo.setBounds(190, 495, 75, 15);
-				frame.getContentPane().add(labelDay2SkyConditionInfo);
-				// Temp
-				labelDay2TempInfo = new JLabel("");
-				labelDay2TempInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay2TempInfo.setFont(font.deriveFont(15f));
-				labelDay2TempInfo.setBounds(205, 435, 58, 15);
-				frame.getContentPane().add(labelDay2TempInfo);
-				// Max/Min Temp
-				labelDay2MMTempInfo = new JLabel("");
-				labelDay2MMTempInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay2MMTempInfo.setFont(font.deriveFont(11f));
-				labelDay2MMTempInfo.setBounds(190, 455, 65, 15);
-				frame.getContentPane().add(labelDay2MMTempInfo);
-				// Precipitation Temp
-				labelDay2PrecipitationInfo = new JLabel("");
-				labelDay2PrecipitationInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay2PrecipitationInfo.setFont(font.deriveFont(15f));
-				labelDay2PrecipitationInfo.setBounds(190, 475, 65, 15);
-				frame.getContentPane().add(labelDay2PrecipitationInfo);
+		//Day2
+		labelDay2Info = new JLabel("Tues.");
+		labelDay2Info.setForeground(Color.LIGHT_GRAY);
+		labelDay2Info.setFont(font.deriveFont(15f));
+		labelDay2Info.setBounds(165, 360, 58, 15);
+		frame.getContentPane().add(labelDay2Info);
+		// Icon
+		labelDay2SkyConditionIcon = new JLabel();
+		labelDay2SkyConditionIcon.setBounds(150, 380, 55, 49);
+		frame.getContentPane().add(labelDay2SkyConditionIcon);
+		// Skycondition
+		labelDay2SkyConditionInfo = new JLabel("");
+		labelDay2SkyConditionInfo.setForeground(Color.LIGHT_GRAY);
+		labelDay2SkyConditionInfo.setFont(font.deriveFont(11f));
+		labelDay2SkyConditionInfo.setBounds(150, 435, 58, 15);
+		frame.getContentPane().add(labelDay2SkyConditionInfo);
+		// Temp
+		labelDay2TempInfo = new JLabel("");
+		labelDay2TempInfo.setForeground(Color.LIGHT_GRAY);
+		labelDay2TempInfo.setFont(font.deriveFont(15f));
+		labelDay2TempInfo.setBounds(150, 455, 58, 15);
+		frame.getContentPane().add(labelDay2TempInfo);
 
-				// Day3
-				labelDay3Info = new JLabel("Wed.");
-				labelDay3Info.setForeground(Color.LIGHT_GRAY);
-				labelDay3Info.setFont(font.deriveFont(15f));
-				labelDay3Info.setBounds(295, 360, 58, 15);
-				frame.getContentPane().add(labelDay3Info);
-				// Icon
-				labelDay3SkyConditionIcon = new JLabel();
-				labelDay3SkyConditionIcon.setBounds(285, 380, 55, 49);
-				frame.getContentPane().add(labelDay3SkyConditionIcon);
-				// Skycondition
-				labelDay3SkyConditionInfo = new JLabel("");
-				labelDay3SkyConditionInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay3SkyConditionInfo.setFont(font.deriveFont(11f));
-				labelDay3SkyConditionInfo.setBounds(280, 495, 75, 15);
-				frame.getContentPane().add(labelDay3SkyConditionInfo);
-				// Temp
-				labelDay3TempInfo = new JLabel("");
-				labelDay3TempInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay3TempInfo.setFont(font.deriveFont(15f));
-				labelDay3TempInfo.setBounds(295, 435, 58, 15);
-				frame.getContentPane().add(labelDay3TempInfo);
-				// Max/Min Temp
-				labelDay3MMTempInfo = new JLabel("");
-				labelDay3MMTempInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay3MMTempInfo.setFont(font.deriveFont(11f));
-				labelDay3MMTempInfo.setBounds(280, 455, 65, 15);
-				frame.getContentPane().add(labelDay3MMTempInfo);
-				// Precipitation Temp
-				labelDay3PrecipitationInfo = new JLabel("");
-				labelDay3PrecipitationInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay3PrecipitationInfo.setFont(font.deriveFont(15f));
-				labelDay3PrecipitationInfo.setBounds(280, 475, 65, 15);
-				frame.getContentPane().add(labelDay3PrecipitationInfo);
+		//Day3
+		labelDay3Info = new JLabel("Wed.");
+		labelDay3Info.setForeground(Color.LIGHT_GRAY);
+		labelDay3Info.setFont(font.deriveFont(15f));
+		labelDay3Info.setBounds(230, 360, 58, 15);
+		frame.getContentPane().add(labelDay3Info);
+		// Icon
+		labelDay3SkyConditionIcon = new JLabel();
+		labelDay3SkyConditionIcon.setBounds(220, 380, 55, 49);
+		frame.getContentPane().add(labelDay3SkyConditionIcon);
+		// Skycondition
+		labelDay3SkyConditionInfo = new JLabel("");
+		labelDay3SkyConditionInfo.setForeground(Color.LIGHT_GRAY);
+		labelDay3SkyConditionInfo.setFont(font.deriveFont(11f));
+		labelDay3SkyConditionInfo.setBounds(220, 435, 58, 15);
+		frame.getContentPane().add(labelDay3SkyConditionInfo);
+		// Temp
+		labelDay3TempInfo = new JLabel("");
+		labelDay3TempInfo.setForeground(Color.LIGHT_GRAY);
+		labelDay3TempInfo.setFont(font.deriveFont(15f));
+		labelDay3TempInfo.setBounds(220, 455, 58, 15);
+		frame.getContentPane().add(labelDay3TempInfo);
 
-				// Day4
-				labelDay4Info = new JLabel("Thurs.");
-				labelDay4Info.setForeground(Color.LIGHT_GRAY);
-				labelDay4Info.setFont(font.deriveFont(15f));
-				labelDay4Info.setBounds(385, 360, 58, 15);
-				frame.getContentPane().add(labelDay4Info);
-				// Icon
-				labelDay4SkyConditionIcon = new JLabel();
-				labelDay4SkyConditionIcon.setBounds(375, 380, 55, 49);
-				frame.getContentPane().add(labelDay4SkyConditionIcon);
-				// Skycondition
-				labelDay4SkyConditionInfo = new JLabel("");
-				labelDay4SkyConditionInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay4SkyConditionInfo.setFont(font.deriveFont(11f));
-				labelDay4SkyConditionInfo.setBounds(370, 495, 75, 15);
-				frame.getContentPane().add(labelDay4SkyConditionInfo);
-				// Temp
-				labelDay4TempInfo = new JLabel("");
-				labelDay4TempInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay4TempInfo.setFont(font.deriveFont(15f));
-				labelDay4TempInfo.setBounds(385, 435, 58, 15);
-				frame.getContentPane().add(labelDay4TempInfo);
-				// Max/Min Temp
-				labelDay4MMTempInfo = new JLabel("");
-				labelDay4MMTempInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay4MMTempInfo.setFont(font.deriveFont(11f));
-				labelDay4MMTempInfo.setBounds(370, 455, 65, 15);
-				frame.getContentPane().add(labelDay4MMTempInfo);
-				// Precipitation Temp
-				labelDay4PrecipitationInfo = new JLabel("");
-				labelDay4PrecipitationInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay4PrecipitationInfo.setFont(font.deriveFont(15f));
-				labelDay4PrecipitationInfo.setBounds(370, 475, 65, 15);
-				frame.getContentPane().add(labelDay4PrecipitationInfo);
+		//Day4
+		labelDay4Info = new JLabel("Thurs.");
+		labelDay4Info.setForeground(Color.LIGHT_GRAY);
+		labelDay4Info.setFont(font.deriveFont(15f));
+		labelDay4Info.setBounds(290, 360, 58, 15);
+		frame.getContentPane().add(labelDay4Info);
+		// Icon
+		labelDay4SkyConditionIcon = new JLabel();
+		labelDay4SkyConditionIcon.setBounds(285, 380, 55, 49);
+		frame.getContentPane().add(labelDay4SkyConditionIcon);
+		// Skycondition
+		labelDay4SkyConditionInfo = new JLabel("");
+		labelDay4SkyConditionInfo.setForeground(Color.LIGHT_GRAY);
+		labelDay4SkyConditionInfo.setFont(font.deriveFont(11f));
+		labelDay4SkyConditionInfo.setBounds(285, 435, 58, 15);
+		frame.getContentPane().add(labelDay4SkyConditionInfo);
+		// Temp
+		labelDay4TempInfo = new JLabel("");
+		labelDay4TempInfo.setForeground(Color.LIGHT_GRAY);
+		labelDay4TempInfo.setFont(font.deriveFont(15f));
+		labelDay4TempInfo.setBounds(285, 455, 58, 15);
+		frame.getContentPane().add(labelDay4TempInfo);
+		
+		//Day5
+		labelDay5Info = new JLabel("Fri.");
+		labelDay5Info.setForeground(Color.LIGHT_GRAY);
+		labelDay5Info.setFont(font.deriveFont(15f));
+		labelDay5Info.setBounds(365, 360, 58, 15);
+		frame.getContentPane().add(labelDay5Info);
+		// Icon
+		labelDay5SkyConditionIcon = new JLabel();
+		labelDay5SkyConditionIcon.setBounds(350, 380, 55, 49);
+		frame.getContentPane().add(labelDay5SkyConditionIcon);
+		// Skycondition
+		labelDay5SkyConditionInfo = new JLabel("");
+		labelDay5SkyConditionInfo.setForeground(Color.LIGHT_GRAY);
+		labelDay5SkyConditionInfo.setFont(font.deriveFont(11f));
+		labelDay5SkyConditionInfo.setBounds(350, 435, 58, 15);
+		frame.getContentPane().add(labelDay5SkyConditionInfo);
+		// Temp
+		labelDay5TempInfo = new JLabel("");
+		labelDay5TempInfo.setForeground(Color.LIGHT_GRAY);
+		labelDay5TempInfo.setFont(font.deriveFont(15f));
+		labelDay5TempInfo.setBounds(350, 455, 58, 15);
+		frame.getContentPane().add(labelDay5TempInfo);
 
-				// Day5
-				labelDay5Info = new JLabel("Fri.");
-				labelDay5Info.setForeground(Color.LIGHT_GRAY);
-				labelDay5Info.setFont(font.deriveFont(15f));
-				labelDay5Info.setBounds(475, 360, 58, 15);
-				frame.getContentPane().add(labelDay5Info);
-				// Icon
-				labelDay5SkyConditionIcon = new JLabel();
-				labelDay5SkyConditionIcon.setBounds(465, 380, 55, 49);
-				frame.getContentPane().add(labelDay5SkyConditionIcon);
-				// Skycondition
-				labelDay5SkyConditionInfo = new JLabel("");
-				labelDay5SkyConditionInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay5SkyConditionInfo.setFont(font.deriveFont(11f));
-				labelDay5SkyConditionInfo.setBounds(460, 495, 75, 15);
-				frame.getContentPane().add(labelDay5SkyConditionInfo);
-				// Temp
-				labelDay5TempInfo = new JLabel("");
-				labelDay5TempInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay5TempInfo.setFont(font.deriveFont(15f));
-				labelDay5TempInfo.setBounds(475, 435, 58, 15);
-				frame.getContentPane().add(labelDay5TempInfo);
-				// Max/Min Temp
-				labelDay5MMTempInfo = new JLabel("");
-				labelDay5MMTempInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay5MMTempInfo.setFont(font.deriveFont(11f));
-				labelDay5MMTempInfo.setBounds(460, 455, 65, 15);
-				frame.getContentPane().add(labelDay5MMTempInfo);
-				// Precipitation Temp
-				labelDay5PrecipitationInfo = new JLabel("");
-				labelDay5PrecipitationInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay5PrecipitationInfo.setFont(font.deriveFont(15f));
-				labelDay5PrecipitationInfo.setBounds(460, 475, 65, 15);
-				frame.getContentPane().add(labelDay5PrecipitationInfo);
+		//Day6
+		labelDay6Info = new JLabel("Sat.");
+		labelDay6Info.setForeground(Color.LIGHT_GRAY);
+		labelDay6Info.setFont(font.deriveFont(15f));
+		labelDay6Info.setBounds(425, 360, 58, 15);
+		frame.getContentPane().add(labelDay6Info);
+		// Icon
+		labelDay6SkyConditionIcon = new JLabel();
+		labelDay6SkyConditionIcon.setBounds(410, 380, 55, 49);
+		frame.getContentPane().add(labelDay6SkyConditionIcon);
+		// Skycondition
+		labelDay6SkyConditionInfo = new JLabel("");
+		labelDay6SkyConditionInfo.setForeground(Color.LIGHT_GRAY);
+		labelDay6SkyConditionInfo.setFont(font.deriveFont(11f));
+		labelDay6SkyConditionInfo.setBounds(410, 435, 58, 15);
+		frame.getContentPane().add(labelDay6SkyConditionInfo);
+		// Temp
+		labelDay6TempInfo = new JLabel("");
+		labelDay6TempInfo.setForeground(Color.LIGHT_GRAY);
+		labelDay6TempInfo.setFont(font.deriveFont(15f));
+		labelDay6TempInfo.setBounds(410, 455, 58, 15);
+		frame.getContentPane().add(labelDay6TempInfo);
 
-				// Day6
-				labelDay6Info = new JLabel("Sat.");
-				labelDay6Info.setForeground(Color.LIGHT_GRAY);
-				labelDay6Info.setFont(font.deriveFont(15f));
-				labelDay6Info.setBounds(565, 360, 58, 15);
-				frame.getContentPane().add(labelDay6Info);
-				// Icon
-				labelDay6SkyConditionIcon = new JLabel();
-				labelDay6SkyConditionIcon.setBounds(555, 380, 55, 49);
-				frame.getContentPane().add(labelDay6SkyConditionIcon);
-				// Skycondition
-				labelDay6SkyConditionInfo = new JLabel("");
-				labelDay6SkyConditionInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay6SkyConditionInfo.setFont(font.deriveFont(11f));
-				labelDay6SkyConditionInfo.setBounds(550, 495, 75, 15);
-				frame.getContentPane().add(labelDay6SkyConditionInfo);
-				// Temp
-				labelDay6TempInfo = new JLabel("");
-				labelDay6TempInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay6TempInfo.setFont(font.deriveFont(15f));
-				labelDay6TempInfo.setBounds(565, 435, 58, 15);
-				frame.getContentPane().add(labelDay6TempInfo);
-				// Max/Min Temp
-				labelDay6MMTempInfo = new JLabel("");
-				labelDay6MMTempInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay6MMTempInfo.setFont(font.deriveFont(11f));
-				labelDay6MMTempInfo.setBounds(550, 455, 65, 15);
-				frame.getContentPane().add(labelDay6MMTempInfo);
-				// Precipitation Temp
-				labelDay6PrecipitationInfo = new JLabel("");
-				labelDay6PrecipitationInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay6PrecipitationInfo.setFont(font.deriveFont(15f));
-				labelDay6PrecipitationInfo.setBounds(550, 475, 65, 15);
-				frame.getContentPane().add(labelDay6PrecipitationInfo);
-
-				// Day7
-				labelDay7Info = new JLabel("Sun.");
-				labelDay7Info.setForeground(Color.LIGHT_GRAY);
-				labelDay7Info.setFont(font.deriveFont(15f));
-				labelDay7Info.setBounds(655, 360, 58, 15);
-				frame.getContentPane().add(labelDay7Info);
-				// Icon
-				labelDay7SkyConditionIcon = new JLabel();
-				labelDay7SkyConditionIcon.setBounds(645, 380, 55, 49);
-				frame.getContentPane().add(labelDay7SkyConditionIcon);
-				// Skycondition
-				labelDay7SkyConditionInfo = new JLabel("");
-				labelDay7SkyConditionInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay7SkyConditionInfo.setFont(font.deriveFont(11f));
-				labelDay7SkyConditionInfo.setBounds(640, 495, 75, 15);
-				frame.getContentPane().add(labelDay7SkyConditionInfo);
-				// Temp
-				labelDay7TempInfo = new JLabel("");
-				labelDay7TempInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay7TempInfo.setFont(font.deriveFont(15f));
-				labelDay7TempInfo.setBounds(655, 435, 58, 15);
-				frame.getContentPane().add(labelDay7TempInfo);
-				// Max/Min Temp
-				labelDay7MMTempInfo = new JLabel("");
-				labelDay7MMTempInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay7MMTempInfo.setFont(font.deriveFont(11f));
-				labelDay7MMTempInfo.setBounds(640, 455, 65, 15);
-				frame.getContentPane().add(labelDay7MMTempInfo);
-				// Precipitation Temp
-				labelDay7PrecipitationInfo = new JLabel("");
-				labelDay7PrecipitationInfo.setForeground(Color.LIGHT_GRAY);
-				labelDay7PrecipitationInfo.setFont(font.deriveFont(15f));
-				labelDay7PrecipitationInfo.setBounds(640, 475, 65, 15);
-				frame.getContentPane().add(labelDay7PrecipitationInfo);
+		//Day7
+		labelDay7Info = new JLabel("Sun.");
+		labelDay7Info.setForeground(Color.LIGHT_GRAY);
+		labelDay7Info.setFont(font.deriveFont(15f));
+		labelDay7Info.setBounds(490, 360, 58, 15);
+		frame.getContentPane().add(labelDay7Info);
+		// Icon
+		labelDay7SkyConditionIcon = new JLabel();
+		labelDay7SkyConditionIcon.setBounds(475, 380, 55, 49);
+		frame.getContentPane().add(labelDay7SkyConditionIcon);
+		// Skycondition
+		labelDay7SkyConditionInfo = new JLabel("");
+		labelDay7SkyConditionInfo.setForeground(Color.LIGHT_GRAY);
+		labelDay7SkyConditionInfo.setFont(font.deriveFont(11f));
+		labelDay7SkyConditionInfo.setBounds(475, 435, 58, 15);
+		frame.getContentPane().add(labelDay7SkyConditionInfo);
+		// Temp
+		labelDay7TempInfo = new JLabel("");
+		labelDay7TempInfo.setForeground(Color.LIGHT_GRAY);
+		labelDay7TempInfo.setFont(font.deriveFont(15f));
+		labelDay7TempInfo.setBounds(475, 455, 58, 15);
+		frame.getContentPane().add(labelDay7TempInfo);
 
 		// / END INITIALIZATION OF LONG-TERM CONDITIONS ///
 
@@ -1215,41 +1131,20 @@ public class MainFrame {
 			label9PMPrecipitation.setText("Hard Coded");
 			*/
 			//longterm
-			labelDay1SkyConditionIcon.setIcon(new ImageIcon(
-					skyConditionIconSmall));
-			labelDay1SkyConditionInfo.setText("<html>"
-					+ currentWeather.getSkyCondition() + "</html>");
-			labelDay1PrecipitationInfo.setText("Hard Coded");
-			labelDay2SkyConditionIcon.setIcon(new ImageIcon(
-					skyConditionIconSmall));
-			labelDay2SkyConditionInfo.setText("<html>"
-					+ currentWeather.getSkyCondition() + "</html>");
-			labelDay2PrecipitationInfo.setText("Hard Coded");
-			labelDay3SkyConditionIcon.setIcon(new ImageIcon(
-					skyConditionIconSmall));
-			labelDay3SkyConditionInfo.setText("<html>"
-					+ currentWeather.getSkyCondition() + "</html>");
-			labelDay3PrecipitationInfo.setText("Hard Coded");
-			labelDay4SkyConditionIcon.setIcon(new ImageIcon(
-					skyConditionIconSmall));
-			labelDay4SkyConditionInfo.setText("<html>"
-					+ currentWeather.getSkyCondition() + "</html>");
-			labelDay4PrecipitationInfo.setText("Hard Coded");
-			labelDay5SkyConditionIcon.setIcon(new ImageIcon(
-					skyConditionIconSmall));
-			labelDay5SkyConditionInfo.setText("<html>"
-					+ currentWeather.getSkyCondition() + "</html>");
-			labelDay5PrecipitationInfo.setText("Hard Coded");
-			labelDay6SkyConditionIcon.setIcon(new ImageIcon(
-					skyConditionIconSmall));
-			labelDay6SkyConditionInfo.setText("<html>"
-					+ currentWeather.getSkyCondition() + "</html>");
-			labelDay6PrecipitationInfo.setText("Hard Coded");
-			labelDay7SkyConditionIcon.setIcon(new ImageIcon(
-					skyConditionIconSmall));
-			labelDay7SkyConditionInfo.setText("<html>"
-					+ currentWeather.getSkyCondition() + "</html>");
-			labelDay7PrecipitationInfo.setText("Hard Coded");
+			labelDay1SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			labelDay1SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			labelDay2SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			labelDay2SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			labelDay3SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			labelDay3SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			labelDay4SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			labelDay4SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			labelDay5SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			labelDay5SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			labelDay6SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			labelDay6SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
+			labelDay7SkyConditionIcon.setIcon(new ImageIcon(skyConditionIconSmall));
+			labelDay7SkyConditionInfo.setText("<html>"+currentWeather.getSkyCondition()+"</html>");
 			
 		} 
 		catch (IOException e) {
@@ -1279,20 +1174,6 @@ public class MainFrame {
             labelDay5TempInfo.setText(currentWeather.getTemp(tempUnit));
             labelDay6TempInfo.setText(currentWeather.getTemp(tempUnit));
             labelDay7TempInfo.setText(currentWeather.getTemp(tempUnit));
-            labelDay1MMTempInfo.setText(currentWeather.getMinTemp(tempUnit)
-					+ "  |  " + currentWeather.getMaxTemp(tempUnit));
-			labelDay2MMTempInfo.setText(currentWeather.getMinTemp(tempUnit)
-					+ "  |  " + currentWeather.getMaxTemp(tempUnit));
-			labelDay3MMTempInfo.setText(currentWeather.getMinTemp(tempUnit)
-					+ "  |  " + currentWeather.getMaxTemp(tempUnit));
-			labelDay4MMTempInfo.setText(currentWeather.getMinTemp(tempUnit)
-					+ "  |  " + currentWeather.getMaxTemp(tempUnit));
-			labelDay5MMTempInfo.setText(currentWeather.getMinTemp(tempUnit)
-					+ "  |  " + currentWeather.getMaxTemp(tempUnit));
-			labelDay6MMTempInfo.setText(currentWeather.getMinTemp(tempUnit)
-					+ "  |  " + currentWeather.getMaxTemp(tempUnit));
-			labelDay7MMTempInfo.setText(currentWeather.getMinTemp(tempUnit)
-					+ "  |  " + currentWeather.getMaxTemp(tempUnit));
         }
     }
     
@@ -1443,87 +1324,73 @@ public class MainFrame {
             buttonShortTerm.setForeground(Color.GRAY);
         }
         labelDay1Info.setVisible(!b);
-		labelDay1SkyConditionIcon.setVisible(!b);
-		labelDay1TempInfo.setVisible(!b);
-		labelDay1SkyConditionInfo.setVisible(!b);
-		labelDay1MMTempInfo.setVisible(!b);
-		labelDay1PrecipitationInfo.setVisible(!b);
-		labelDay2Info.setVisible(!b);
-		labelDay2SkyConditionIcon.setVisible(!b);
-		labelDay2TempInfo.setVisible(!b);
-		labelDay2SkyConditionInfo.setVisible(!b);
-		labelDay2MMTempInfo.setVisible(!b);
-		labelDay2PrecipitationInfo.setVisible(!b);
-		labelDay3Info.setVisible(!b);
-		labelDay3SkyConditionIcon.setVisible(!b);
-		labelDay3TempInfo.setVisible(!b);
-		labelDay3SkyConditionInfo.setVisible(!b);
-		labelDay3MMTempInfo.setVisible(!b);
-		labelDay3PrecipitationInfo.setVisible(!b);
-		labelDay4Info.setVisible(!b);
-		labelDay4SkyConditionIcon.setVisible(!b);
-		labelDay4TempInfo.setVisible(!b);
-		labelDay4SkyConditionInfo.setVisible(!b);
-		labelDay4MMTempInfo.setVisible(!b);
-		labelDay4PrecipitationInfo.setVisible(!b);
-		labelDay5Info.setVisible(!b);
-		labelDay5SkyConditionIcon.setVisible(!b);
-		labelDay5TempInfo.setVisible(!b);
-		labelDay5SkyConditionInfo.setVisible(!b);
-		labelDay5MMTempInfo.setVisible(!b);
-		labelDay5PrecipitationInfo.setVisible(!b);
-		labelDay6Info.setVisible(!b);
-		labelDay6SkyConditionIcon.setVisible(!b);
-		labelDay6TempInfo.setVisible(!b);
-		labelDay6SkyConditionInfo.setVisible(!b);
-		labelDay6MMTempInfo.setVisible(!b);
-		labelDay6PrecipitationInfo.setVisible(!b);
-		labelDay7Info.setVisible(!b);
-		labelDay7SkyConditionIcon.setVisible(!b);
-		labelDay7TempInfo.setVisible(!b);
-		labelDay7SkyConditionInfo.setVisible(!b);
-		labelDay7MMTempInfo.setVisible(!b);
-		labelDay7PrecipitationInfo.setVisible(!b);
-		label12AM.setVisible(b);
-		label12AMSkyConditionIcon.setVisible(b);
-		label12AMTempInfo.setVisible(b);
-		label12AMSkyConditionInfo.setVisible(b);
-		label12AMPrecipitation.setVisible(b);
-		label3AM.setVisible(b);
-		label3AMSkyConditionIcon.setVisible(b);
-		label3AMTempInfo.setVisible(b);
-		label3AMSkyConditionInfo.setVisible(b);
-		label3AMPrecipitation.setVisible(b);
-		label6AM.setVisible(b);
-		label6AMSkyConditionIcon.setVisible(b);
-		label6AMTempInfo.setVisible(b);
-		label6AMSkyConditionInfo.setVisible(b);
-		label6AMPrecipitation.setVisible(b);
-		label9AM.setVisible(b);
-		label9AMSkyConditionIcon.setVisible(b);
-		label9AMTempInfo.setVisible(b);
-		label9AMSkyConditionInfo.setVisible(b);
-		label9AMPrecipitation.setVisible(b);
-		label12PM.setVisible(b);
-		label12PMSkyConditionIcon.setVisible(b);
-		label12PMTempInfo.setVisible(b);
-		label12PMSkyConditionInfo.setVisible(b);
-		label12PMPrecipitation.setVisible(b);
-		label3PM.setVisible(b);
-		label3PMSkyConditionIcon.setVisible(b);
-		label3PMTempInfo.setVisible(b);
-		label3PMSkyConditionInfo.setVisible(b);
-		label3PMPrecipitation.setVisible(b);
-		label6PM.setVisible(b);
-		label6PMSkyConditionIcon.setVisible(b);
-		label6PMTempInfo.setVisible(b);
-		label6PMSkyConditionInfo.setVisible(b);
-		label6PMPrecipitation.setVisible(b);
-		label9PM.setVisible(b);
-		label9PMSkyConditionIcon.setVisible(b);
-		label9PMTempInfo.setVisible(b);
-		label9PMSkyConditionInfo.setVisible(b);
-		label9PMPrecipitation.setVisible(b);
+        labelDay1SkyConditionIcon.setVisible(!b);
+        labelDay1TempInfo.setVisible(!b);
+        labelDay1SkyConditionInfo.setVisible(!b);
+        labelDay2Info.setVisible(!b);
+        labelDay2SkyConditionIcon.setVisible(!b);
+        labelDay2TempInfo.setVisible(!b);
+        labelDay2SkyConditionInfo.setVisible(!b);
+        labelDay3Info.setVisible(!b);
+        labelDay3SkyConditionIcon.setVisible(!b);
+        labelDay3TempInfo.setVisible(!b);
+        labelDay3SkyConditionInfo.setVisible(!b);
+        labelDay4Info.setVisible(!b);
+        labelDay4SkyConditionIcon.setVisible(!b);
+        labelDay4TempInfo.setVisible(!b);
+        labelDay4SkyConditionInfo.setVisible(!b);
+        labelDay5Info.setVisible(!b);
+        labelDay5SkyConditionIcon.setVisible(!b);
+        labelDay5TempInfo.setVisible(!b);
+        labelDay5SkyConditionInfo.setVisible(!b);
+        labelDay6Info.setVisible(!b);
+        labelDay6SkyConditionIcon.setVisible(!b);
+        labelDay6TempInfo.setVisible(!b);
+        labelDay6SkyConditionInfo.setVisible(!b);
+        labelDay7Info.setVisible(!b);
+        labelDay7SkyConditionIcon.setVisible(!b);
+        labelDay7TempInfo.setVisible(!b);
+        labelDay7SkyConditionInfo.setVisible(!b);
+        label12AM.setVisible(b);
+        label12AMSkyConditionIcon.setVisible(b);
+        label12AMTempInfo.setVisible(b);
+        label12AMSkyConditionInfo.setVisible(b);
+        label12AMPrecipitation.setVisible(b);
+        label3AM.setVisible(b);
+        label3AMSkyConditionIcon.setVisible(b);
+        label3AMTempInfo.setVisible(b);
+        label3AMSkyConditionInfo.setVisible(b);
+        label3AMPrecipitation.setVisible(b);
+        label6AM.setVisible(b);
+        label6AMSkyConditionIcon.setVisible(b);
+        label6AMTempInfo.setVisible(b);
+        label6AMSkyConditionInfo.setVisible(b);
+        label6AMPrecipitation.setVisible(b);
+        label9AM.setVisible(b);
+        label9AMSkyConditionIcon.setVisible(b);
+        label9AMTempInfo.setVisible(b);
+        label9AMSkyConditionInfo.setVisible(b);
+        label9AMPrecipitation.setVisible(b);
+        label12PM.setVisible(b);
+        label12PMSkyConditionIcon.setVisible(b);
+        label12PMTempInfo.setVisible(b);
+        label12PMSkyConditionInfo.setVisible(b);
+        label12PMPrecipitation.setVisible(b);
+        label3PM.setVisible(b);
+        label3PMSkyConditionIcon.setVisible(b);
+        label3PMTempInfo.setVisible(b);
+        label3PMSkyConditionInfo.setVisible(b);
+        label3PMPrecipitation.setVisible(b);
+        label6PM.setVisible(b);
+        label6PMSkyConditionIcon.setVisible(b);
+        label6PMTempInfo.setVisible(b);
+        label6PMSkyConditionInfo.setVisible(b);
+        label6PMPrecipitation.setVisible(b);
+        label9PM.setVisible(b);
+        label9PMSkyConditionIcon.setVisible(b);
+        label9PMTempInfo.setVisible(b);
+        label9PMSkyConditionInfo.setVisible(b);
+        label9PMPrecipitation.setVisible(b);
     }
 
 	public void setSkyConditionImages(int ID) {
