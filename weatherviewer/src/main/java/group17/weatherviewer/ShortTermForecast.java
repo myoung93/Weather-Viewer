@@ -95,7 +95,10 @@ public class ShortTermForecast {
 	
 	//returns the total rain
 	public String getTotalRain(){
-		return String.valueOf(totalRain); 
+		if (String.valueOf(totalRain).length() > 4)
+			return String.valueOf(totalRain).substring(0, 4);
+		else
+			return String.valueOf(totalRain); 
 	}
 	
 	//returns the total snow

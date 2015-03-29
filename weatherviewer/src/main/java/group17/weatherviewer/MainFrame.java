@@ -827,7 +827,7 @@ public class MainFrame {
 		frame.getContentPane().add(label9PM);
 		// Icon
 		label9PMSkyConditionIcon = new JLabel();
-		shortTermIcon.add(label3PMSkyConditionIcon);
+		shortTermIcon.add(label9PMSkyConditionIcon);
 		label9PMSkyConditionIcon.setBounds(665, 380, 55, 49);
 		frame.getContentPane().add(label9PMSkyConditionIcon);
 		// Skycondition
@@ -1185,8 +1185,8 @@ public class MainFrame {
 
 			labelWindInfo.setText(currentWeather.getWindSpeed() + " km/h "
 					+ currentWeather.getWindDirection());
-			labelHumidityInfo.setText(currentWeather.getHumidity() + "%");
-			labelAirPressureInfo.setText(currentWeather.getPressure() + "kPa");
+			labelHumidityInfo.setText(currentWeather.getHumidity() + " %");
+			labelAirPressureInfo.setText(currentWeather.getPressure() + " kPa");
 			//need to substring these so we don't have a million decimal places
 			
 			labelSunriseInfo.setText(currentWeather.getSunriseTime());
@@ -1197,13 +1197,16 @@ public class MainFrame {
 			//display total daily precipitation
 			labelPrecipitationInfo.setText(shortTermForecast.getTotalRain() + " mm");
 			
+			//display weather icon and background image
 			setSkyConditionImages(currentWeather.getWeatherID());
 			labelSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconLarge));
 			backgroundLabel.setIcon(new ImageIcon(skyConditionBackground));
-			// short/longterm icons will be the same has current weather, can be easily switched later
-			//shortterm
+		
+			
+			//display temperature
 			setTemperatureFields();
 			
+            //display weather info for short/long-term forecasts
 			updateShortTerm();
 			
 			updateLongTerm();
@@ -1215,42 +1218,13 @@ public class MainFrame {
 		
 	}	
 
-    //moved these to a method because in the future we will have to re-initialize them when c/f is changed.
+	//moved these to a method because in the future we will have to re-initialize them when c/f is changed.
     private void setTemperatureFields() {
         if(currentWeather != null) {
             char tempUnit = prefs.getTempUnit();
             labelTempInfo.setText(currentWeather.getTemp(tempUnit));
             labelCurrentMMTempInfo.setText(currentWeather.getMinTemp(tempUnit) + "  |  " + currentWeather.getMaxTemp(tempUnit));
-            /*
-            label12AMTempInfo.setText(currentWeather.getTemp(tempUnit));
-            label3AMTempInfo.setText(currentWeather.getTemp(tempUnit));
-            label6AMTempInfo.setText(currentWeather.getTemp(tempUnit));
-            label9AMTempInfo.setText(currentWeather.getTemp(tempUnit));
-            label12PMTempInfo.setText(currentWeather.getTemp(tempUnit));
-            label3PMTempInfo.setText(currentWeather.getTemp(tempUnit));
-            label6PMTempInfo.setText(currentWeather.getTemp(tempUnit));
-            label9PMTempInfo.setText(currentWeather.getTemp(tempUnit));
-            labelDay1TempInfo.setText(currentWeather.getTemp(tempUnit));
-            labelDay2TempInfo.setText(currentWeather.getTemp(tempUnit));
-            labelDay3TempInfo.setText(currentWeather.getTemp(tempUnit));
-            labelDay4TempInfo.setText(currentWeather.getTemp(tempUnit));
-            labelDay5TempInfo.setText(currentWeather.getTemp(tempUnit));
-            labelDay6TempInfo.setText(currentWeather.getTemp(tempUnit));
-            labelDay7TempInfo.setText(currentWeather.getTemp(tempUnit));
-            labelDay1MMTempInfo.setText(currentWeather.getMinTemp(tempUnit)
-					+ "  |  " + currentWeather.getMaxTemp(tempUnit));
-			labelDay2MMTempInfo.setText(currentWeather.getMinTemp(tempUnit)
-					+ "  |  " + currentWeather.getMaxTemp(tempUnit));
-			labelDay3MMTempInfo.setText(currentWeather.getMinTemp(tempUnit)
-					+ "  |  " + currentWeather.getMaxTemp(tempUnit));
-			labelDay4MMTempInfo.setText(currentWeather.getMinTemp(tempUnit)
-					+ "  |  " + currentWeather.getMaxTemp(tempUnit));
-			labelDay5MMTempInfo.setText(currentWeather.getMinTemp(tempUnit)
-					+ "  |  " + currentWeather.getMaxTemp(tempUnit));
-			labelDay6MMTempInfo.setText(currentWeather.getMinTemp(tempUnit)
-					+ "  |  " + currentWeather.getMaxTemp(tempUnit));
-			labelDay7MMTempInfo.setText(currentWeather.getMinTemp(tempUnit)
-					+ "  |  " + currentWeather.getMaxTemp(tempUnit));*/
+          
         }
     }
     
