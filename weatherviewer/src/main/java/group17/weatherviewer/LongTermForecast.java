@@ -16,18 +16,7 @@ public class LongTermForecast {
 	String Temp, Pressure, Humidity, TempMax, TempMin, Rain, Snow;
 	String WindSpeed, WindDir;
 
-	// arraylists of all information
-	Queue<String> DateList = new LinkedList<String>();
-	Queue<String> TempList = new LinkedList<String>();
-	Queue<String> PressureList = new LinkedList<String>();
-	Queue<String> HumidityList = new LinkedList<String>();
-	Queue<String> TempMaxList = new LinkedList<String>();
-	Queue<String> TempMinList = new LinkedList<String>();
-	Queue<String> WindSpeedList = new LinkedList<String>();
-	Queue<String> WindDirList = new LinkedList<String>();
-	Queue<String> RainList = new LinkedList<String>();
-	Queue<String> SnowList = new LinkedList<String>();
-
+	// arraylist of all weather information
 	private ArrayList<LongTermWeather> longTermForecast = new ArrayList<LongTermWeather>();
 
 	
@@ -89,17 +78,6 @@ public class LongTermForecast {
 			Temp = Objtemp.getString("day");// temperature
 			TempMin = Objtemp.getString("min");// min temperature
 			TempMax = Objtemp.getString("max");// max temperature
-
-			DateList.add(Unix2Date(Time));
-			TempList.add(Temp);
-			PressureList.add(Pressure);
-			HumidityList.add(Humidity);
-			TempMaxList.add(TempMax);
-			TempMinList.add(TempMin);
-			WindSpeedList.add(WindSpeed);
-			WindDirList.add(WindDir);
-			RainList.add(Rain);
-			SnowList.add(Snow);
 			
 			longTermForecast.add(new LongTermWeather(Time, Sky, Temp, TempMax, TempMin, Rain, Snow));
 		}
@@ -158,7 +136,10 @@ public class LongTermForecast {
 		}
 		
 		public String getRain(){
-			return this.rain;
+			if (this.rain.length() > 1)
+				return this.rain.substring(0, 4);
+			else
+				return this.rain;
 		}
 			
 		public String getSnow(){

@@ -234,19 +234,5 @@ public class CurrentWeather {
 	public int getWeatherID(){
 		return weatherID;
 	}
-    /**
-     * Purely for testing purposes, will be taken out in later versions.
-     * @param args command line arguments
-     */
-	/*public static void main(String[] args) {
-		try {
-			CurrentWeather test = new CurrentWeather("Shanghai,CN"); // using shanghai CN to test
-			System.out.println( test.getCountry()+ "\n" + test.getCity() + "\n" + test.getTemp('c') + "\n"
-					+ test.getPressure() + "\n" + test.getHumidity() + "\n" + test.getTempMin() + "\n" + test.getTempMax()
-					+ "\n" + test.getWindSpeed() + "\n" + test.getWindDirection() + "\n" + test.getSkyCondition() + "\n"
-					+ test.getSunriseTime() + "\n" + test.getSunsetTime());
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}*/
+    
 }

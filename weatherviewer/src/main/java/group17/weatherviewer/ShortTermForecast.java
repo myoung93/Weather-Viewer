@@ -14,22 +14,10 @@ public class ShortTermForecast {
 	String Key = "&APPID=65da394090951035f3a346d9a356ddd9";// api key
 
 	String City, Sky, Country, Time;
-	String Temp, Pressure, Humidity, TempMax, TempMin, WindSpeed;
-	double Rain, Snow, totalRain = 0, TotalSnow = 0;
-	String WindDir, Date, snow;
+	String Temp, Pressure, Humidity, TempMax, TempMin, WindSpeed, Rain, Snow, WindDir, Date;
+	double totalRain = 0, totalSnow = 0;
 
-	// arraylists of all information
-	Queue<String> DateList = new LinkedList<String>();
-	Queue<String> TempList = new LinkedList<String>();
-	Queue<String> PressureList = new LinkedList<String>();
-	Queue<String> HumidityList = new LinkedList<String>();
-	Queue<String> TempMaxList = new LinkedList<String>();
-	Queue<String> TempMinList = new LinkedList<String>();
-	Queue<String> WindSpeedList = new LinkedList<String>();
-	Queue<String> WindDirList = new LinkedList<String>();
-	Queue<String> RainList = new LinkedList<String>();
-	Queue<String> SnowList = new LinkedList<String>();
-	
+	// arraylist of all weather information
 	private ArrayList<ShortTermWeather> shortTermForecast = new ArrayList<ShortTermWeather>();
 
 	public ShortTermForecast(String cityName)
@@ -72,27 +60,25 @@ public class ShortTermForecast {
 			if (ObjList.containsKey("rain")) {
 
 				JSONObject ObjRain = ObjList.getJSONObject("rain");
-				Rain = ObjRain.getDouble("3h");
+				Rain = ObjRain.getString("3h");
 
 			} else {
-				Rain = 0;
+				Rain = "0";
 			}
 
-			String rain = Double.toString(Rain);
-			totalRain = +Rain;// total rain
+			totalRain += Double.valueOf(Rain);// total rain
 
 			// snow
 			if (ObjList.containsKey("snow")) {
 				JSONObject ObjSnow = ObjList.getJSONObject("snow");
-				snow = ObjSnow.getString("3h");
+				Snow = ObjSnow.getString("3h");
 
 			} else {
-				snow = "0";
+				Snow = "0";
 				
 			}
 
-			Snow = Double.valueOf(snow);
-			TotalSnow = +Snow;// total snow
+			totalSnow += Double.valueOf(Snow);// total snow
 
 			JSONArray ArraySky = ObjList.getJSONArray("weather");
 			JSONObject ObjSky = ArraySky.getJSONObject(0);
@@ -101,26 +87,20 @@ public class ShortTermForecast {
 			Date = ObjList.getString("dt_txt");// date
 			
 			shortTermForecast.add(new ShortTermWeather(Date, Sky, Temp, Snow, Rain));
-			
-			DateList.add(Date);
-			TempList.add(Temp);
-			PressureList.add(Pressure);
-			HumidityList.add(Humidity);
-			TempMaxList.add(TempMax);
-			TempMinList.add(TempMin);
-			WindSpeedList.add(WindSpeed);
-			WindDirList.add(WindDir);
-			RainList.add(rain);
-			SnowList.add(snow);
 		}
 		
 	}
 	
 	//getter methods
 	
-	//returns the total precipitation
+	//returns the total rain
 	public String getTotalRain(){
 		return String.valueOf(totalRain); 
+	}
+	
+	//returns the total snow
+	public String getTotalSnow(){
+		return String.valueOf(totalSnow); 
 	}
 	
 	//returns weather information
@@ -130,10 +110,9 @@ public class ShortTermForecast {
 	
 	//helper class
 	public class ShortTermWeather{
-		private String time, skycon, temp;
-		private double rain, snow;
+		private String time, skycon, temp, rain, snow;
 		
-		public ShortTermWeather(String time, String skycon, String temp, double rain, double snow){
+		public ShortTermWeather(String time, String skycon, String temp, String rain, String snow){
 			this.time = time;
 			this.skycon = skycon;
 			this.temp = temp;
@@ -156,11 +135,14 @@ public class ShortTermForecast {
 		}
 		
 		public String getRain(){
-			return String.valueOf(this.rain);
+			if (this.rain.length() > 1)
+				return this.rain.substring(0, 4);
+			else
+				return this.rain;
 		}
 		
 		public String getSnow(){
-			return String.valueOf(this.snow);
+			return this.snow;
 		}
 	}
 }

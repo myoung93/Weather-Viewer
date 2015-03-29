@@ -1263,6 +1263,7 @@ public class MainFrame {
     		shortTermTemp.get(i).setText(stw.getTemp());
     		shortTermIcon.get(i).setIcon(new ImageIcon(skyConditionIconSmall));
 			shortTermSkyCon.get(i).setText("<html>"+ stw.getSkyCon() +"</html>");
+			shortTermPrecip.get(i).setText(stw.getRain()+"mm");
 
     	}
     }
@@ -1277,7 +1278,7 @@ public class MainFrame {
     		longTermHighLow.get(i).setText(ltw.getLow() + " | " + ltw.getHigh());
     		longTermIcon.get(i).setIcon(new ImageIcon(skyConditionIconSmall));
 			longTermSkyCon.get(i).setText("<html>"+ ltw.getSkyCon() +"</html>");
-
+			longTermPrecip.get(i).setText(ltw.getRain()+"mm");
     	}
     }
     
