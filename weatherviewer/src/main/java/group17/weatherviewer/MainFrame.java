@@ -1340,12 +1340,9 @@ public class MainFrame {
 				// If we just wanted to add to the end, we'd do this:
 				// listModel.addElement(employeeName.getText());
 				// Add element to user preferences as well - NK
-				try {
-					//add the element to the position at index index
-					prefs.addLocation(index, barSearch.getText());
-				} catch (WeatherException exception) {
-					System.out.println(exception.getMessage());
-				}
+				//add the element to the position at index index
+				prefs.addLocation(index, barSearch.getText());
+
 				// prefs.printLocations(); // This is just to test addLocation
 				// on user preferences
 
