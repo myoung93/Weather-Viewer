@@ -69,12 +69,15 @@ public class UserPreferences implements java.io.Serializable {
      * Adds a location to the list of favorite locations in a certain position
      * @param index provides where in the list the element should be added
      * @param s name of the location
+     * @return false if the adding failed, true otherwise
      */
-     public void addLocation(int index, String s) throws WeatherException {
-        if(!locations.contains(s))
+     public boolean addLocation(int index, String s) {
+        if(!locations.contains(s)) {
             locations.add(index, s);
+            return true;
+        }
         else
-            throw new WeatherException("Location already exists");
+            return false;
     }
 
     /**

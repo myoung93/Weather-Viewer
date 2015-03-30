@@ -16,6 +16,7 @@ public class CurrentWeather {
     //Data fields required for Current Weather view
 	private String city, skyCon, sunrise, sunset, country;
 	private double temp, pressure, humidity, maxTemp, minTemp, windSpeed, windDir;
+	//weather ID the API gives for this day
 	private int weatherID;
 
     /**
@@ -191,6 +192,10 @@ public class CurrentWeather {
             return cleanTemp(temp, tempUnit);
 	}
 
+	/**
+	 * returns the max temp for today in the unit specified
+	 * @param tempUnit c or f, which temp unit the user wants
+	 */
     public String getMaxTemp(char tempUnit) {
         if(tempUnit == 'f')
             return cleanTemp(maxTemp * 9 / 5 + 32, tempUnit);
@@ -198,6 +203,10 @@ public class CurrentWeather {
             return cleanTemp(maxTemp, tempUnit);
     }
 
+	/**
+	 * returns the min temp for today in the unit specified
+	 * @param tempUnit c or f, which temp unit the user wants
+	 */
     public String getMinTemp(char tempUnit) {
         if(tempUnit == 'f')
             return cleanTemp(minTemp * 9 / 5 + 32, tempUnit);
@@ -205,18 +214,28 @@ public class CurrentWeather {
             return cleanTemp(minTemp, tempUnit);
     }
 
-    //puts the temperature into a readable form
+	/**
+	 * Helper method for getTemp, getMaxTemp, getMinTemp since they all return the temperature in the same form
+	 * puts it into a nice form with no decimal places
+	 * @param t the temperature to convert to a nice string in double form
+	 * @param unit c or f, the unit the user requests
+	 * @return a string of the correct length representing the temperature plus the degrees symbol and the unit
+	 */
     private String cleanTemp(double t, char unit) {
+		//round t appropriately
+		t = Math.round(t);
+		//how many characters to return from the original temp string
         int substringLength = 1;
-        //correct for negative zero
-        if(t < 0 && t >= -1)
-            t = 0;
         //correct number of characters to take
         if (t < 0 || t > 10) {
+			//2digit numbers or negative means an extra character
             substringLength++;
             if(t < -10)
+				//both conditions means 2 extra characters
                 substringLength++;
         }
+		//convert t to a string and substring it the appropriate amount, then add the degrees symbol and the
+		//temperature unit specified for the full string to be displayed
         return String.valueOf(t).substring(0,substringLength) + '°' + Character.toUpperCase(unit);
     }
     /**
@@ -235,8 +254,11 @@ public class CurrentWeather {
 		return skyCon.substring(0, 1).toUpperCase() + skyCon.substring(1);
 	}
 
+	/**
+	 * getter for weather ID
+	 * @return the weather ID the API gave
+	 */
 	public int getWeatherID(){
 		return weatherID;
 	}
-    
 }

@@ -13,8 +13,7 @@ import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 public class LongTermForecast {
-	private String Url;
-	private String Key = "&APPID=65da394090951035f3a346d9a356ddd9";// api key
+
 	private String date, skyCon;
 	private double temp, high, low, rain, snow;
 	private int weatherID;
@@ -22,9 +21,17 @@ public class LongTermForecast {
 	// arraylist of all weather information
 	private ArrayList<LongTermWeather> longTermForecast = new ArrayList<>();
 
+	/**
+	 * Retrieves long term weather data and constructs a LongTermForecast object from the JSON returned
+	 * @param cityName the city to retrieve weather data for
+	 * @param Term number of days to retrieve data for
+	 * @throws UnsupportedEncodingException if the api call is not valid
+	 */
 	public LongTermForecast(String cityName, int Term)
 			throws UnsupportedEncodingException {
-		Url = "http://api.openweathermap.org/data/2.5/forecast/daily?q="
+		final String Key = "&APPID=65da394090951035f3a346d9a356ddd9"; // api key
+
+		String Url = "http://api.openweathermap.org/data/2.5/forecast/daily?q="
 				+ cityName + "&mode=json&units=metric&cnt=" + Term + Key;
 
 		// send link to json parser and get weather data back as string
@@ -80,19 +87,21 @@ public class LongTermForecast {
 	}
 
 	//getter methods
-	
-	//returns weather information
+
+	/**
+	 * @return a reference to the arraylist of long term weathers, ie returns all the retrieved data in java object form
+	 */
 	public ArrayList<LongTermWeather> getLongTermForecast(){
 		return this.longTermForecast;
 	}
-	
-	//helper class
+
+	/**
+	 * Data type that contains longterm weather data
+	 */
 	public class LongTermWeather{
 		private String date, skycon; 
 		private double temp, high, low, rain, snow;
 		private int weatherID;
-		
-		
 		
 		public LongTermWeather(String date, String skycon, double temp, double high, double low, double rain, double snow, int weatherID){
 			this.date = Conversion.unixToDate((date));
@@ -109,10 +118,6 @@ public class LongTermForecast {
 		
 		public String getDate(){
 			return this.date;
-		}
-		
-		public String getSkyCon(){
-			return this.skycon;
 		}
 		
 		/**
