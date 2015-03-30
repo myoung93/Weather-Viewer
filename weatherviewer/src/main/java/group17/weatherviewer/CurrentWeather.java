@@ -10,18 +10,20 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.lang.*;
 
-//A data type class to hold all necessary information for the Current Weather view.
+/*
+ * data type class to hold all necessary information for the Current Weather view.
+ */
 public class CurrentWeather {
 
-    //Data fields required for Current Weather view
+    // data fields required for Current Weather view
 	private String city, skyCon, sunrise, sunset, country;
 	private double temp, pressure, humidity, maxTemp, minTemp, windSpeed, windDir;
-	//weather ID the API gives for this day
+	// weather ID the API gives for this day
 	private int weatherID;
 
     /**
-     * Constructor for CurrentWeather
-     * Takes a city name as parameter, retrieves and parses the JSON for that city and stores the data
+     * constructor for CurrentWeather
+     * takes a city name as parameter, retrieves and parses the JSON for that city and stores the data
      * @param cityName is the name of the city for which we're storing and parsing information
      * @throws UnsupportedEncodingException if the JSON retrieval fails
      */
@@ -53,12 +55,12 @@ public class CurrentWeather {
 			// parse JSON data, JSON_Data:weatherData
 
 			JSONObject jsonData = JSONObject.fromObject(weatherData);
-			// Save all weather information��
+			// save all weather information��
 			
 			// get information from sys object
 			JSONObject objSys = jsonData.getJSONObject("sys");// country
 			country = objSys.getString("country");
-			//grab sunrise/sunset and convert to real time
+			// grab sunrise/sunset and convert to real time
 			sunrise = Conversion.unixToTime(objSys.getString("sunrise"));
 			sunset = Conversion.unixToTime(objSys.getString("sunset"));
 			
@@ -67,11 +69,11 @@ public class CurrentWeather {
 			
 			// get information from main object
 			JSONObject objMain = jsonData.getJSONObject("main");
-			//we subtract 273 from each temperature value because there is no need to store the kelvin value
+			// we subtract 273 from each temperature value because there is no need to store the kelvin value
 			temp = objMain.getDouble("temp") - 273;// temperature
 			minTemp = objMain.getDouble("temp_min") - 273;// min temperature
 			maxTemp = objMain.getDouble("temp_max") - 273;// max temperature
-			//divide by 10 to convert from hPa to kPa
+			// divide by 10 to convert from hPa to kPa
 			pressure = objMain.getDouble("pressure")/10; // pressure
 			humidity = objMain.getDouble("humidity");// humidity
 			
@@ -87,7 +89,7 @@ public class CurrentWeather {
 			skyCon = objWea.getString("description");
 			
 
-			//get weatherID info
+			// get weatherID info
 			weatherID = objWea.getInt("id");
 		}
 		catch (IOException e) {
