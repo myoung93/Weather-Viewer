@@ -1305,7 +1305,7 @@ public class MainFrame {
 				test = new CurrentWeather(name);
 
 				// User didn't enter a valid location...
-				if (test == null || !(name.contentEquals(test.getCity()))) {
+				if (test == null || !(name.contains(test.getCity()))) {
 					barSearch.setText("Please enter a valid location.");
 					return;
 				}
@@ -1353,7 +1353,8 @@ public class MainFrame {
 				listLocations.ensureIndexIsVisible(index);
 
 			} catch (Exception err) {
-				System.out.println("An invalid location was entered. Please try again.");
+				System.out.println("An invalid location was entered.");
+				barSearch.setText("Please enter a valid location.");
 				return;
 			}
 		}
