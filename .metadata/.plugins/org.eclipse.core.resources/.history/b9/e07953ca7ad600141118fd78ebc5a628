@@ -574,7 +574,7 @@ public class MainFrame {
 
 		// 12AM
 		// DAY
-		label12AM = new JLabel("");
+		label12AM = new JLabel("12:00am");
 		shortTermTime.add(label12AM);
 		label12AM.setForeground(Color.LIGHT_GRAY);
 		label12AM.setFont(font.deriveFont(15f));
@@ -609,7 +609,7 @@ public class MainFrame {
 
 		// 3AM
 		// DAY
-		label3AM = new JLabel("");
+		label3AM = new JLabel(" 3:00am");
 		shortTermTime.add(label3AM);
 		label3AM.setForeground(Color.LIGHT_GRAY);
 		label3AM.setFont(font.deriveFont(15f));
@@ -644,7 +644,7 @@ public class MainFrame {
 
 		// 6AM
 		// DAY
-		label6AM = new JLabel("");
+		label6AM = new JLabel(" 6:00am");
 		shortTermTime.add(label6AM);
 		label6AM.setForeground(Color.LIGHT_GRAY);
 		label6AM.setFont(font.deriveFont(15f));
@@ -679,7 +679,7 @@ public class MainFrame {
 
 		// 9AM
 		// DAY
-		label9AM = new JLabel("");
+		label9AM = new JLabel(" 9:00am");
 		shortTermTime.add(label9AM);
 		label9AM.setForeground(Color.LIGHT_GRAY);
 		label9AM.setFont(font.deriveFont(15f));
@@ -714,7 +714,7 @@ public class MainFrame {
 
 		// 12PM
 		// DAY
-		label12PM = new JLabel("");
+		label12PM = new JLabel("12:00pm");
 		shortTermTime.add(label12PM);
 		label12PM.setForeground(Color.LIGHT_GRAY);
 		label12PM.setFont(font.deriveFont(15f));
@@ -749,7 +749,7 @@ public class MainFrame {
 
 		// 3PM
 		// DAY
-		label3PM = new JLabel("");
+		label3PM = new JLabel(" 3:00pm");
 		shortTermTime.add(label3PM);
 		label3PM.setForeground(Color.LIGHT_GRAY);
 		label3PM.setFont(font.deriveFont(15f));
@@ -784,7 +784,7 @@ public class MainFrame {
 
 		// 6PM
 		// Time
-		label6PM = new JLabel("");
+		label6PM = new JLabel(" 6:00pm");
 		shortTermTime.add(label6PM);
 		label6PM.setForeground(Color.LIGHT_GRAY);
 		label6PM.setFont(font.deriveFont(15f));
@@ -819,7 +819,7 @@ public class MainFrame {
 
 		// 9PM
 		// DAY
-		label9PM = new JLabel("");
+		label9PM = new JLabel(" 9:00pm");
 		shortTermTime.add(label9PM);
 		label9PM.setForeground(Color.LIGHT_GRAY);
 		label9PM.setFont(font.deriveFont(15f));
