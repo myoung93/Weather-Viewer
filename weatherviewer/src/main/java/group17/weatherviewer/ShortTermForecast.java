@@ -8,11 +8,10 @@ import net.sf.json.JSONObject;
 
 public class ShortTermForecast {
 	
-	String Url;
-	String Key = "&APPID=65da394090951035f3a346d9a356ddd9";// api key
+	private String Url;
+	private String Key = "&APPID=65da394090951035f3a346d9a356ddd9";// api key
 
-	String City, Sky, Country, Time;
-	String Temp, Pressure, Humidity, TempMax, TempMin, WindSpeed, Rain, Snow, WindDir, Date;
+	String time, skyCon;
 	double temp, rain, snow;
 	double totalRain = 0, totalSnow = 0;
 	int weatherID;
@@ -34,11 +33,6 @@ public class ShortTermForecast {
 		JSONObject JsonData = JSONObject.fromObject(DataStr);
 		JSONArray Arraylist = JsonData.getJSONArray("list");
 
-		JSONObject ObjSys = JsonData.getJSONObject("city");
-		Country = ObjSys.getString("country");// country
-		City = ObjSys.getString("name");// city
-
-
 		// Short term shows every 3 hours forecast, 3X8=24 hours forecast
 		for (int i = 0; i < 8; i++) {
 
@@ -47,14 +41,6 @@ public class ShortTermForecast {
 
 			JSONObject ObjMain = ObjList.getJSONObject("main");
 			temp = ObjMain.getDouble("temp")-273;// temperature
-			TempMin = ObjMain.getString("temp_min");// min temperature
-			TempMax = ObjMain.getString("temp_max");// max temperature
-			Pressure = ObjMain.getString("pressure"); // pressure
-			Humidity = ObjMain.getString("humidity");// humidity
-
-			JSONObject ObjWind = ObjList.getJSONObject("wind");
-			WindSpeed = ObjWind.getString("speed");// wind speed
-			WindDir = ObjWind.getString("deg");// wind degree
 
 			// rain
 			if (ObjList.containsKey("rain")) {
@@ -82,11 +68,11 @@ public class ShortTermForecast {
 
 			JSONArray ArraySky = ObjList.getJSONArray("weather");
 			JSONObject ObjSky = ArraySky.getJSONObject(0);
-			Sky = ObjSky.getString("description");// sky description
+			skyCon = ObjSky.getString("description");// sky description
 			weatherID = ObjSky.getInt("id"); //weatherID
-			Date = ObjList.getString("dt_txt");// date
+			time = ObjList.getString("dt_txt");// date
 			
-			shortTermForecast.add(new ShortTermWeather(Date, Sky, temp, rain, snow, weatherID));
+			shortTermForecast.add(new ShortTermWeather(time, skyCon, temp, rain, snow, weatherID));
 		}
 	}
 	
