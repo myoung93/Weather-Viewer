@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="weatherviewer.iws" />
@@ -32,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
               <folding>
                 <element signature="e#1421#1422#0" expanded="true" />
                 <element signature="e#1465#1466#0" expanded="true" />
@@ -47,22 +46,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="204" column="29" selection-start-line="204" selection-start-column="29" selection-end-line="204" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.57637995">
+              <caret line="1353" column="63" selection-start-line="1353" selection-start-column="63" selection-end-line="1353" selection-end-column="63" />
               <folding>
+                <element signature="e#17494#17808#0" expanded="true" />
+                <element signature="e#17807#17808#0" expanded="true" />
                 <element signature="method#handleEmptyTextField#0;class#AddLocation#0;class#MainFrame#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Conversion.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Conversion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45827985">
+            <state vertical-scroll-proportion="0.0">
               <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -74,8 +75,8 @@
       <file leaf-file-name="LongTermForecast.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.448276">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="89" column="6" selection-start-line="89" selection-start-column="6" selection-end-line="89" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -85,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+              <caret line="261" column="1" selection-start-line="261" selection-start-column="1" selection-end-line="261" selection-end-column="1" />
               <folding>
                 <element signature="e#3922#3923#0" expanded="true" />
                 <element signature="e#3977#3978#0" expanded="true" />
@@ -95,12 +96,12 @@
                 <element signature="e#4708#4709#0" expanded="true" />
                 <element signature="e#4841#4842#0" expanded="true" />
                 <element signature="e#4861#4862#0" expanded="true" />
-                <element signature="e#7124#7125#0" expanded="true" />
-                <element signature="e#7145#7146#0" expanded="true" />
-                <element signature="e#7287#7288#0" expanded="true" />
-                <element signature="e#7304#7305#0" expanded="true" />
-                <element signature="e#7333#7334#0" expanded="true" />
-                <element signature="e#7356#7357#0" expanded="true" />
+                <element signature="e#8069#8070#0" expanded="true" />
+                <element signature="e#8090#8091#0" expanded="true" />
+                <element signature="e#8232#8233#0" expanded="true" />
+                <element signature="e#8249#8250#0" expanded="true" />
+                <element signature="e#8354#8355#0" expanded="true" />
+                <element signature="e#8377#8378#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,12 +145,12 @@
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/SimpleWeather.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/ShortTermForecast.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
       </list>
     </option>
   </component>
@@ -901,7 +902,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427681832393</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Moved unixToDate to Conversion, added more documentation, removed unused methods from UserPreferences">
+      <created>1427682717463</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1427682717463</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -963,7 +970,8 @@
     <MESSAGE value="Removed Conversion method since it is not used." />
     <MESSAGE value="Added a lot of documentation, did some cleaning." />
     <MESSAGE value="Changed scope of some fields to private (from package)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed scope of some fields to private (from package)" />
+    <MESSAGE value="Moved unixToDate to Conversion, added more documentation, removed unused methods from UserPreferences" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved unixToDate to Conversion, added more documentation, removed unused methods from UserPreferences" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1003,12 +1011,12 @@
             <element signature="e#4708#4709#0" expanded="true" />
             <element signature="e#4841#4842#0" expanded="true" />
             <element signature="e#4861#4862#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7145#7146#0" expanded="true" />
-            <element signature="e#7287#7288#0" expanded="true" />
-            <element signature="e#7304#7305#0" expanded="true" />
-            <element signature="e#7333#7334#0" expanded="true" />
-            <element signature="e#7356#7357#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8090#8091#0" expanded="true" />
+            <element signature="e#8232#8233#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8354#8355#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1043,6 +1051,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#17494#17808#0" expanded="true" />
+            <element signature="e#17807#17808#0" expanded="true" />
             <element signature="method#handleEmptyTextField#0;class#AddLocation#0;class#MainFrame#0" expanded="false" />
           </folding>
         </state>
@@ -1071,12 +1081,12 @@
             <element signature="e#4708#4709#0" expanded="true" />
             <element signature="e#4841#4842#0" expanded="true" />
             <element signature="e#4861#4862#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7145#7146#0" expanded="true" />
-            <element signature="e#7287#7288#0" expanded="true" />
-            <element signature="e#7304#7305#0" expanded="true" />
-            <element signature="e#7333#7334#0" expanded="true" />
-            <element signature="e#7356#7357#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8090#8091#0" expanded="true" />
+            <element signature="e#8232#8233#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8354#8355#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1111,6 +1121,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#17494#17808#0" expanded="true" />
+            <element signature="e#17807#17808#0" expanded="true" />
             <element signature="method#handleEmptyTextField#0;class#AddLocation#0;class#MainFrame#0" expanded="false" />
           </folding>
         </state>
@@ -1139,12 +1151,12 @@
             <element signature="e#4708#4709#0" expanded="true" />
             <element signature="e#4841#4842#0" expanded="true" />
             <element signature="e#4861#4862#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7145#7146#0" expanded="true" />
-            <element signature="e#7287#7288#0" expanded="true" />
-            <element signature="e#7304#7305#0" expanded="true" />
-            <element signature="e#7333#7334#0" expanded="true" />
-            <element signature="e#7356#7357#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8090#8091#0" expanded="true" />
+            <element signature="e#8232#8233#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8354#8355#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1179,6 +1191,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
           <folding>
+            <element signature="e#17494#17808#0" expanded="true" />
+            <element signature="e#17807#17808#0" expanded="true" />
             <element signature="method#handleEmptyTextField#0;class#AddLocation#0;class#MainFrame#0" expanded="false" />
           </folding>
         </state>
@@ -1207,12 +1221,12 @@
             <element signature="e#4708#4709#0" expanded="true" />
             <element signature="e#4841#4842#0" expanded="true" />
             <element signature="e#4861#4862#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7145#7146#0" expanded="true" />
-            <element signature="e#7287#7288#0" expanded="true" />
-            <element signature="e#7304#7305#0" expanded="true" />
-            <element signature="e#7333#7334#0" expanded="true" />
-            <element signature="e#7356#7357#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8090#8091#0" expanded="true" />
+            <element signature="e#8232#8233#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8354#8355#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1247,6 +1261,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
           <folding>
+            <element signature="e#17494#17808#0" expanded="true" />
+            <element signature="e#17807#17808#0" expanded="true" />
             <element signature="method#handleEmptyTextField#0;class#AddLocation#0;class#MainFrame#0" expanded="false" />
           </folding>
         </state>
@@ -1275,12 +1291,12 @@
             <element signature="e#4708#4709#0" expanded="true" />
             <element signature="e#4841#4842#0" expanded="true" />
             <element signature="e#4861#4862#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7145#7146#0" expanded="true" />
-            <element signature="e#7287#7288#0" expanded="true" />
-            <element signature="e#7304#7305#0" expanded="true" />
-            <element signature="e#7333#7334#0" expanded="true" />
-            <element signature="e#7356#7357#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8090#8091#0" expanded="true" />
+            <element signature="e#8232#8233#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8354#8355#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1315,6 +1331,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#17494#17808#0" expanded="true" />
+            <element signature="e#17807#17808#0" expanded="true" />
             <element signature="method#handleEmptyTextField#0;class#AddLocation#0;class#MainFrame#0" expanded="false" />
           </folding>
         </state>
@@ -1333,12 +1351,12 @@
             <element signature="e#4708#4709#0" expanded="true" />
             <element signature="e#4841#4842#0" expanded="true" />
             <element signature="e#4861#4862#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7145#7146#0" expanded="true" />
-            <element signature="e#7287#7288#0" expanded="true" />
-            <element signature="e#7304#7305#0" expanded="true" />
-            <element signature="e#7333#7334#0" expanded="true" />
-            <element signature="e#7356#7357#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8090#8091#0" expanded="true" />
+            <element signature="e#8232#8233#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8354#8355#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1373,6 +1391,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="454" column="38" selection-start-line="454" selection-start-column="38" selection-end-line="454" selection-end-column="38" />
           <folding>
+            <element signature="e#17494#17808#0" expanded="true" />
+            <element signature="e#17807#17808#0" expanded="true" />
             <element signature="method#handleEmptyTextField#0;class#AddLocation#0;class#MainFrame#0" expanded="false" />
           </folding>
         </state>
@@ -1391,12 +1411,12 @@
             <element signature="e#4708#4709#0" expanded="true" />
             <element signature="e#4841#4842#0" expanded="true" />
             <element signature="e#4861#4862#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7145#7146#0" expanded="true" />
-            <element signature="e#7287#7288#0" expanded="true" />
-            <element signature="e#7304#7305#0" expanded="true" />
-            <element signature="e#7333#7334#0" expanded="true" />
-            <element signature="e#7356#7357#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8090#8091#0" expanded="true" />
+            <element signature="e#8232#8233#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8354#8355#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1431,6 +1451,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
           <folding>
+            <element signature="e#17494#17808#0" expanded="true" />
+            <element signature="e#17807#17808#0" expanded="true" />
             <element signature="method#handleEmptyTextField#0;class#AddLocation#0;class#MainFrame#0" expanded="false" />
           </folding>
         </state>
@@ -1449,12 +1471,12 @@
             <element signature="e#4708#4709#0" expanded="true" />
             <element signature="e#4841#4842#0" expanded="true" />
             <element signature="e#4861#4862#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7145#7146#0" expanded="true" />
-            <element signature="e#7287#7288#0" expanded="true" />
-            <element signature="e#7304#7305#0" expanded="true" />
-            <element signature="e#7333#7334#0" expanded="true" />
-            <element signature="e#7356#7357#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8090#8091#0" expanded="true" />
+            <element signature="e#8232#8233#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8354#8355#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1489,6 +1511,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
           <folding>
+            <element signature="e#17494#17808#0" expanded="true" />
+            <element signature="e#17807#17808#0" expanded="true" />
             <element signature="method#handleEmptyTextField#0;class#AddLocation#0;class#MainFrame#0" expanded="false" />
           </folding>
         </state>
@@ -1507,12 +1531,12 @@
             <element signature="e#4708#4709#0" expanded="true" />
             <element signature="e#4841#4842#0" expanded="true" />
             <element signature="e#4861#4862#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7145#7146#0" expanded="true" />
-            <element signature="e#7287#7288#0" expanded="true" />
-            <element signature="e#7304#7305#0" expanded="true" />
-            <element signature="e#7333#7334#0" expanded="true" />
-            <element signature="e#7356#7357#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8090#8091#0" expanded="true" />
+            <element signature="e#8232#8233#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8354#8355#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1547,6 +1571,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#17494#17808#0" expanded="true" />
+            <element signature="e#17807#17808#0" expanded="true" />
             <element signature="method#handleEmptyTextField#0;class#AddLocation#0;class#MainFrame#0" expanded="false" />
           </folding>
         </state>
@@ -1586,10 +1612,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/ShortTermForecast.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="120" column="11" selection-start-line="120" selection-start-column="11" selection-end-line="120" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="6" selection-start-line="89" selection-start-column="6" selection-end-line="89" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1597,7 +1641,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+          <caret line="261" column="1" selection-start-line="261" selection-start-column="1" selection-end-line="261" selection-end-column="1" />
           <folding>
             <element signature="e#3922#3923#0" expanded="true" />
             <element signature="e#3977#3978#0" expanded="true" />
@@ -1607,20 +1651,28 @@
             <element signature="e#4708#4709#0" expanded="true" />
             <element signature="e#4841#4842#0" expanded="true" />
             <element signature="e#4861#4862#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7145#7146#0" expanded="true" />
-            <element signature="e#7287#7288#0" expanded="true" />
-            <element signature="e#7304#7305#0" expanded="true" />
-            <element signature="e#7333#7334#0" expanded="true" />
-            <element signature="e#7356#7357#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8090#8091#0" expanded="true" />
+            <element signature="e#8232#8233#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8354#8355#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
           <folding>
             <element signature="e#1421#1422#0" expanded="true" />
             <element signature="e#1465#1466#0" expanded="true" />
@@ -1636,36 +1688,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="204" column="29" selection-start-line="204" selection-start-column="29" selection-end-line="204" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.57637995">
+          <caret line="1353" column="63" selection-start-line="1353" selection-start-column="63" selection-end-line="1353" selection-end-column="63" />
           <folding>
+            <element signature="e#17494#17808#0" expanded="true" />
+            <element signature="e#17807#17808#0" expanded="true" />
             <element signature="method#handleEmptyTextField#0;class#AddLocation#0;class#MainFrame#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/ShortTermForecast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="120" column="11" selection-start-line="120" selection-start-column="11" selection-end-line="120" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.448276">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45827985">
-          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

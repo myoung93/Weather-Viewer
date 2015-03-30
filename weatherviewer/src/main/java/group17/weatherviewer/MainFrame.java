@@ -1183,7 +1183,8 @@ public class MainFrame {
 			//get all weather data
 			currentWeather = new CurrentWeather(location);
 			shortTermForecast = new ShortTermForecast(location);
-			longTermForecast = new LongTermForecast(location, 7);
+			final int LENGTH_OF_LONGTERM = 7;
+			longTermForecast = new LongTermForecast(location, LENGTH_OF_LONGTERM);
 
 			// get the current time and set the lastUpdated label accordingly
 			cal = Calendar.getInstance();

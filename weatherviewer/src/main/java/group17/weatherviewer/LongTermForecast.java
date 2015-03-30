@@ -21,6 +21,12 @@ public class LongTermForecast {
 	// arraylist of all weather information
 	private ArrayList<LongTermWeather> longTermForecast = new ArrayList<>();
 
+	/**
+	 * Retrieves long term weather data and constructs a LongTermForecast object from the JSON returned
+	 * @param cityName the city to retrieve weather data for
+	 * @param Term number of days to retrieve data for
+	 * @throws UnsupportedEncodingException if the api call is not valid
+	 */
 	public LongTermForecast(String cityName, int Term)
 			throws UnsupportedEncodingException {
 		Url = "http://api.openweathermap.org/data/2.5/forecast/daily?q="
@@ -79,8 +85,10 @@ public class LongTermForecast {
 	}
 
 	//getter methods
-	
-	//returns weather information
+
+	/**
+	 * @return a reference to the arraylist of long term weathers, ie returns all the retrieved data in java object form
+	 */
 	public ArrayList<LongTermWeather> getLongTermForecast(){
 		return this.longTermForecast;
 	}
@@ -90,8 +98,6 @@ public class LongTermForecast {
 		private String date, skycon; 
 		private double temp, high, low, rain, snow;
 		private int weatherID;
-		
-		
 		
 		public LongTermWeather(String date, String skycon, double temp, double high, double low, double rain, double snow, int weatherID){
 			this.date = Conversion.unixToDate((date));
