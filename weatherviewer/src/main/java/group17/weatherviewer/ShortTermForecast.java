@@ -158,6 +158,10 @@ public class ShortTermForecast {
 				return String.valueOf(Math.round(this.snow));
 		}
 		
+		public String getSkyCondition() {
+			return skyCon.substring(0, 1).toUpperCase() + skyCon.substring(1);
+		}
+		
 		public int getWeatherID(){
 			return this.weatherID;	
 		}

@@ -205,9 +205,8 @@ public class MainFrame {
 		//initialize the font
 		createFont();
 
-		// / BEGIN INITIALIZING FRAME ///
-		// better to use the classpath method, works on all systems (old method
-		// didn't work for me)
+		/// BEGIN INITIALIZING FRAME ///
+		
 		backgroundImage = new ImageIcon(getClass().getResource(
 				"/backgrounds/default.jpg"));
 		backgroundLabel = new JLabel(backgroundImage);
@@ -230,12 +229,10 @@ public class MainFrame {
 				frame.dispose();
 			}
 		});
-		// not required now that we have window listener
-		// frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-		// / END INITIALIZING FRAME ///
+		/// END INITIALIZING FRAME ///
 
-		// / BEGIN INITIALIZING LOCAL WEATHER VIEW PANEL ///
+		/// BEGIN INITIALIZING LOCAL WEATHER VIEW PANEL ///
 
 		// city label
 		final String labelLocationInit = "Please select or enter in a city.";
@@ -358,14 +355,14 @@ public class MainFrame {
 		labelPrecipitationInfo.setBounds(450, 250, 200, 15);
 		frame.getContentPane().add(labelPrecipitationInfo);
 
-		// sky condition info;
+		// sky condition info
 		labelSkyConditionInfo = new JLabel("");
 		labelSkyConditionInfo.setForeground(Color.WHITE);
 		labelSkyConditionInfo.setFont(font.deriveFont(17f));
 		labelSkyConditionInfo.setBounds(75, 155, 200, 30);
 		frame.getContentPane().add(labelSkyConditionInfo);
 
-		// sky condition Icon info
+		// sky condition icon info
 		labelSkyConditionIcon = new JLabel();
 		labelSkyConditionIcon.setBounds(310, 15, 204, 181);
 		frame.getContentPane().add(labelSkyConditionIcon);
@@ -376,11 +373,10 @@ public class MainFrame {
 		labelUpdatedInfo.setFont(font.deriveFont(15f));
 		labelUpdatedInfo.setBounds(260, 285, 98, 15);
 		frame.getContentPane().add(labelUpdatedInfo);
-
 		// date format shown in updated label
 		dateFormat = new SimpleDateFormat("MMM dd HH:mm");
 
-		// Refresh button
+		// refresh button
 		buttonRefresh = new JButton("");
 		buttonRefresh.addActionListener(new ActionListener() {
 			@Override
@@ -400,7 +396,7 @@ public class MainFrame {
 		buttonRefresh.setBorderPainted(false);
 		frame.getContentPane().add(buttonRefresh);
 
-		// Short Term Button
+		// short term button
 		buttonShortTerm = new JButton("Short Term");
 		buttonShortTerm.setForeground(Color.WHITE);
 		buttonShortTerm.setFont(font.deriveFont(14f));
@@ -416,7 +412,7 @@ public class MainFrame {
 		buttonShortTerm.setBounds(19, 328, 120, 29);
 		frame.getContentPane().add(buttonShortTerm);
 
-		// Long Term Button
+		// long term button
 		buttonLongTerm = new JButton("Long Term");
 		buttonLongTerm.addActionListener(new ActionListener() {
 			@Override
@@ -482,11 +478,11 @@ public class MainFrame {
 		frame.getContentPane().add(buttonToCelsius);
 		frame.getContentPane().add(buttonToFahrenheit);
 
-		// / END INITIALIZATION OF LOCAL WEATHER VIEW PANEL ///
+		/// END INITIALIZATION OF LOCAL WEATHER VIEW PANEL ///
 
-		// / BEGIN INITIALIZATION OF LOCATIONS PANEL ///
+		/// BEGIN INITIALIZATION OF LOCATIONS PANEL ///
 
-		// Scroll Pane
+		// scroll pane
 		scrollPane = new JScrollPane();
 		scrollPane
 				.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -500,9 +496,9 @@ public class MainFrame {
 		scrollPane.setVisible(true);
 		frame.getContentPane().add(scrollPane);
 
-		// Locations list
+		// locations list
 		listModel = new DefaultListModel();
-
+		
 		// Add saved locations to current list
 		for (String loc : prefs.getLocations()) { // loads the MyLocations arraylist into listModel
 			listModel.addElement(loc);
@@ -526,13 +522,11 @@ public class MainFrame {
 		});
 		scrollPane.setViewportView(listLocations);
 
-		// Favorite Button
+		// favorite button
 		buttonFavourite = new JButton();
 		AddLocation addlocation = new AddLocation(buttonFavourite);
 		buttonFavourite.addActionListener(addlocation);
 		buttonFavourite.setEnabled(false);
-		// buttonFavourite.setIcon(new ImageIcon(
-		// "src/main/resources/icons/star_icon.png"));
 		buttonFavourite.setIcon(new ImageIcon(getClass().getResource(
 				"/icons/star_icon.png")));
 		buttonFavourite.setOpaque(false);
@@ -569,12 +563,11 @@ public class MainFrame {
 					barSearch.setText("Search (City, Country)");
 			}
 		});
-
 		frame.getContentPane().add(barSearch);
 
-		// / END INITIALIZATION OF LOCATIONS PANEL ///
+		/// END INITIALIZATION OF LOCATIONS PANEL ///
 
-		// BEGIN INITIALIZATION OF SHORT-TERM FORECAST PANEL ///
+		/// BEGIN INITIALIZATION OF SHORT-TERM FORECAST PANEL ///
 
 		// 12AM
 		// DAY
@@ -1263,7 +1256,7 @@ public class MainFrame {
     		shortTermTime.get(i).setText(stw.getTime().substring(11, 13) + " h");
 			setSkyConditionImages(stw.getWeatherID());
     		shortTermIcon.get(i).setIcon(new ImageIcon(skyConditionIconSmall));
-			shortTermSkyCon.get(i).setText("<html>"+ stw.getSkyCon() +"</html>");
+			shortTermSkyCon.get(i).setText("<html>"+ stw.getSkyCondition() +"</html>");
 			if (!(stw.getRain().contentEquals("0")))
 				shortTermPrecip.get(i).setText(stw.getRain()+" mm");
 			else if (!(stw.getSnow().contentEquals("0")))
@@ -1284,7 +1277,7 @@ public class MainFrame {
     		longTermDate.get(i).setText(ltw.getDate());
     		setSkyConditionImages(ltw.getWeatherID());
     		longTermIcon.get(i).setIcon(new ImageIcon(skyConditionIconSmall));
-			longTermSkyCon.get(i).setText("<html>"+ ltw.getSkyCon() +"</html>");
+			longTermSkyCon.get(i).setText("<html>"+ ltw.getSkyCondition() +"</html>");
 			if (!(ltw.getRain().contentEquals("0")))
 				longTermPrecip.get(i).setText(ltw.getRain()+" mm");
 			else if (!(ltw.getSnow().contentEquals("0")))
