@@ -79,14 +79,6 @@ public class LongTermForecast {
 
 	}
 
-	// convert date from unix type to date
-	public String Unix2Date(String date) {
-		Long Time = Long.parseLong(date) * 1000;
-		String Date = new java.text.SimpleDateFormat("EEE")
-				.format(new java.util.Date(Time));
-		return Date;
-	}
-	
 	//getter methods
 	
 	//returns weather information
@@ -103,7 +95,7 @@ public class LongTermForecast {
 		
 		
 		public LongTermWeather(String date, String skycon, double temp, double high, double low, double rain, double snow, int weatherID){
-			this.date = Unix2Date(date);
+			this.date = Conversion.unixToDate((date));
 			this.skycon = skycon;
 			this.temp = temp;
 			this.high = high;

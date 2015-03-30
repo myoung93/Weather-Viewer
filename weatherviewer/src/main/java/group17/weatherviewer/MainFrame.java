@@ -200,7 +200,9 @@ public class MainFrame {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		//grab the preferences from weather.prefs and store a reference to the preferences object
 		prefs = UserPreferences.getPrefs();
+		//initialize the font
 		createFont();
 
 		/// BEGIN INITIALIZING FRAME ///
@@ -1158,7 +1160,7 @@ public class MainFrame {
 		try {
 			font = Font.createFont(Font.TRUETYPE_FONT, fontInputStream);
 		} catch (Exception e) {
-			// failsafe, temp workaround -TE
+			//fail safe, should not ever happen
 			font = new Font("Helvetica", Font.PLAIN, 20);
 			System.out.println("Font loading failed");
 		}
@@ -1170,18 +1172,16 @@ public class MainFrame {
 	 */
 	public void refresh(String location) {
 		try {
-			// constructor should take String city parameter in the future.
 			System.out.println("Retrieving weather data");
+			//get all weather data
 			currentWeather = new CurrentWeather(location);
 			shortTermForecast = new ShortTermForecast(location);
 			longTermForecast = new LongTermForecast(location, 7);
 
-			// update time shown
+			// get the current time and set the lastUpdated label accordingly
 			cal = Calendar.getInstance();
 			lastUpdated = dateFormat.format(cal.getTime());
 
-			// store tempUnit so we don't have to call prefs.getTempUnit() every
-			// time
 			// current location panel
 			labelLocation.setText(currentWeather.getCity() + ", "
 					+ currentWeather.getCountry());
@@ -1191,7 +1191,6 @@ public class MainFrame {
 					+ currentWeather.getWindDirection());
 			labelHumidityInfo.setText(currentWeather.getHumidity() + " %");
 			labelAirPressureInfo.setText(currentWeather.getPressure() + " kPa");
-			// need to substring these so we don't have a million decimal places
 
 			labelSunriseInfo.setText(currentWeather.getSunriseTime());
 			labelSunsetInfo.setText(currentWeather.getSunsetTime());
@@ -1292,8 +1291,10 @@ public class MainFrame {
 	 * Class representing the actionlistener for adding locations to the list
 	 */
 	private class AddLocation implements ActionListener, DocumentListener {
+		//whether or not the button is active
 		private boolean alreadyEnabled = false;
 		private JButton button;
+		//this is used to test the validity of the location in the API
 		private CurrentWeather test;
 
 		public AddLocation(JButton button) {
@@ -1361,26 +1362,28 @@ public class MainFrame {
 			}
 		}
 
-		// This method tests for string equality. You could certainly
-		// get more sophisticated about the algorithm. For example,
-		// you might want to ignore white space and capitalization.
+		/**
+		 * checks to see if the city being added is alreayd in the list
+		 * @param name the name of the city being added
+		 * @return whether or not city is in the list
+		 */
 		protected boolean alreadyInList(String name) {
 			return listModel.contains(name);
 		}
 
-		// Required by DocumentListener.
+		//overrides documentListener method
 		@Override
 		public void insertUpdate(DocumentEvent e) {
 			enableButton();
 		}
 
-		// Required by DocumentListener.
+		//overrides documentListener method
 		@Override
 		public void removeUpdate(DocumentEvent e) {
 			handleEmptyTextField(e);
 		}
 
-		// Required by DocumentListener.
+		//overrides documentListener method
 		@Override
 		public void changedUpdate(DocumentEvent e) {
 			if (!handleEmptyTextField(e)) {
@@ -1416,6 +1419,8 @@ public class MainFrame {
 			buttonLongTerm.setForeground(Color.WHITE);
 			buttonShortTerm.setForeground(Color.GRAY);
 		}
+		//sadly these were not created in an array/list of any kind so this must be done manually.
+
 		labelDay1Info.setVisible(!b);
 		labelDay1SkyConditionIcon.setVisible(!b);
 		labelDay1TempInfo.setVisible(!b);

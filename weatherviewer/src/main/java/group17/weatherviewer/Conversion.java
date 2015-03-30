@@ -17,10 +17,15 @@ public class Conversion {
         return df.format(new Date(1000*Long.parseLong(unixTime)));
     }
 
-	public static String unixToDate(String date) {
-		Long time = Long.parseLong(date) * 1000;
-		String Date = new java.text.SimpleDateFormat("yyyy/MM/dd")
-				.format(new java.util.Date(time));
+	/**
+	 * takes a String representing a unix time value and returns the corresponding date
+	 * @param date the unix time value to be converted to date
+	 * @returns the date represented by the passed unix time
+	 */
+	public static String unixToDate(String unixTime) {
+		Long Time = Long.parseLong(unixTime) * 1000;
+		String Date = new java.text.SimpleDateFormat("EEE")
+				.format(new java.util.Date(Time));
 		return Date;
 	}
 }

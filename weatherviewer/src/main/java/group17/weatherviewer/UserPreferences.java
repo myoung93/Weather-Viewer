@@ -5,9 +5,7 @@ import java.util.ArrayList;
 
 public class UserPreferences implements java.io.Serializable {
 
-    /**
-     * Filename for serialized object
-     */
+    //filename for serialized object - not stored
     private static final transient String FILENAME = "weather.prefs";
     //allows versioning without changing weather.prefs
     private static final long serialVersionUID =  5423608160937997909L;
@@ -37,10 +35,6 @@ public class UserPreferences implements java.io.Serializable {
         }
     }
 
-    /**
-     * Sets speed unit to meters per second (m), kilometers per hour (k), miles per hour (i), knots (n), or feet per second (f)
-     * @param unit char to indicate speed unit, either m for m/s, k for km/h, i for mi/h, n for kn, or f for ft/s
-     */
     /**
      * Sets default location to the last selected location
      * @param location string representing the new default location
@@ -72,20 +66,6 @@ public class UserPreferences implements java.io.Serializable {
     }
 
     /**
-     * Adds a location to the end of the list of favorite locations
-     * @param s name of the location
-     * Maybe we don't need this one, since we don't add to the end - NK
-     */
-    public void addLocation(String s) throws WeatherException {
-        if(!locations.contains(s)){
-            locations.add(s);
-            defaultLocation = s;
-        }
-        else
-            throw new WeatherException("Location already exists");
-    }
-
-    /**
      * Adds a location to the list of favorite locations in a certain position
      * @param index provides where in the list the element should be added
      * @param s name of the location
@@ -95,31 +75,6 @@ public class UserPreferences implements java.io.Serializable {
             locations.add(index, s);
         else
             throw new WeatherException("Location already exists");
-    }
-
-    /**
-     * Removes a location from the list of favorite locations, if the location is in the list
-     * @param s name of the location
-     */
-    public void removeLocation(String s) throws WeatherException {
-        if(locations.contains(s))
-            locations.remove(s);
-        else
-            throw new WeatherException("Location does not exist");
-    }
-
-    /**
-     * Gives a favorite location identified by index
-     * @param index index of the array (from 0 to size - 1)
-     * @return the value of the array in given position if index is not out of bounds
-     */
-    public String getLocation(int index) throws WeatherException {
-        try {
-            return locations.get(index);
-        }
-        catch(ArrayIndexOutOfBoundsException ae) {
-            throw new WeatherException("Out-of-bounds error in getLocation(int)", ae);
-        }
     }
 
     /**
