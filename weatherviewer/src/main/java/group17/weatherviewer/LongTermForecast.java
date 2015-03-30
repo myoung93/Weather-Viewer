@@ -12,11 +12,9 @@ import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 public class LongTermForecast {
-	String Url;
-	String Key = "&APPID=65da394090951035f3a346d9a356ddd9";// api key
-	String City, Sky, Country, Time;
-	String Temp, Pressure, Humidity, TempMax, TempMin, Rain, Snow;
-	String WindSpeed, WindDir;
+	private String Url;
+	private String Key = "&APPID=65da394090951035f3a346d9a356ddd9";// api key
+	private String date, skyCon;
 	private double temp, high, low, rain, snow;
 	private int weatherID;
 
@@ -42,17 +40,11 @@ public class LongTermForecast {
 
 		// get information from city object
 		JSONObject ObjSys = JsonData.getJSONObject("city");
-		Country = ObjSys.getString("country");// country
-		City = ObjSys.getString("name");// city
-
 
 		// // Short term shows daily forecast, for at least 5 days forecast
 		for (int i = 0; i < Term; i++) {
 
 			JSONObject ObjDay = Arraylist.getJSONObject(i);
-
-			WindSpeed = ObjDay.getString("speed");// wind speed
-			WindDir = ObjDay.getString("deg");// wind direction
 
 			// Rain
 			if (ObjDay.containsKey("rain")) {
@@ -71,13 +63,11 @@ public class LongTermForecast {
 				snow = 0;
 			}
 
-			Pressure = ObjDay.getString("pressure"); // pressure
-			Humidity = ObjDay.getString("humidity");// humidity
-			Time = ObjDay.getString("dt");
+			date = ObjDay.getString("dt");
 			JSONArray ArrayWeather = ObjDay.getJSONArray("weather");
 			JSONObject ObjSky = ArrayWeather.getJSONObject(0);
 
-			Sky = ObjSky.getString("description");// sky description
+			skyCon = ObjSky.getString("description");// sky description
 			weatherID = ObjSky.getInt("id"); //weatherID
 			
 			JSONObject Objtemp = ObjDay.getJSONObject("temp");
@@ -85,7 +75,7 @@ public class LongTermForecast {
 			low = Objtemp.getDouble("min");// min temperature
 			high = Objtemp.getDouble("max");// max temperature
 			
-			longTermForecast.add(new LongTermWeather(Time, Sky, temp, high, low, rain, snow, weatherID));
+			longTermForecast.add(new LongTermWeather(date, skyCon, temp, high, low, rain, snow, weatherID));
 		}
 
 	}
