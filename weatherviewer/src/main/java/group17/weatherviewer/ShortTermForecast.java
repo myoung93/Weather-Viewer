@@ -8,9 +8,6 @@ import net.sf.json.JSONObject;
 
 public class ShortTermForecast {
 	
-	private String Url;
-	private String Key = "&APPID=65da394090951035f3a346d9a356ddd9";// api key
-
 	private String time, skyCon;
 	private double temp, rain, snow;
 	private double totalRain = 0, totalSnow = 0;
@@ -22,8 +19,10 @@ public class ShortTermForecast {
 	public ShortTermForecast(String cityName)
 			throws UnsupportedEncodingException {
 
-		this.Url = "http://api.openweathermap.org/data/2.5/forecast?q="
-				+ cityName + "&type=accurate&mode=json" + Key;
+		final String key = "&APPID=65da394090951035f3a346d9a356ddd9";// api key
+
+		String Url = "http://api.openweathermap.org/data/2.5/forecast?q="
+				+ cityName + "&type=accurate&mode=json" + key;
 
 		// send link to json parser and get weather data back as string
 		JsonParser Data = new JsonParser(Url);
@@ -35,7 +34,6 @@ public class ShortTermForecast {
 
 		// Short term shows every 3 hours forecast, 3X8=24 hours forecast
 		for (int i = 0; i < 8; i++) {
-
 			// every 3 hours forecast
 			JSONObject ObjList = Arraylist.getJSONObject(i);
 
