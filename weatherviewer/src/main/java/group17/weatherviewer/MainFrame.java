@@ -1178,7 +1178,6 @@ public class MainFrame {
 	 */
 	public void refresh(String location) {
 		try {
-			System.out.println("Retrieving weather data");
 			//get all weather data
 			currentWeather = new CurrentWeather(location);
 			shortTermForecast = new ShortTermForecast(location);
