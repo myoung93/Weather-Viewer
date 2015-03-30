@@ -1305,9 +1305,9 @@ public class MainFrame {
 				test = new CurrentWeather(name);
 
 				// User didn't enter a valid location...
-				if (test == null || !(name.contains(test.getCity()))) {
+				if (test == null || !(name.contentEquals(test.getCity()))) {
 					barSearch.setText("Please enter a valid location.");
-
+					return;
 				}
 
 				// User didn't type in a unique name...
