@@ -82,8 +82,8 @@ public class LongTermForecast {
 			
 			JSONObject Objtemp = ObjDay.getJSONObject("temp");
 			temp = Objtemp.getDouble("day");// temperature
-			high = Objtemp.getDouble("min");// min temperature
-			low = Objtemp.getDouble("max");// max temperature
+			low = Objtemp.getDouble("min");// min temperature
+			high = Objtemp.getDouble("max");// max temperature
 			
 			longTermForecast.add(new LongTermWeather(Time, Sky, temp, high, low, rain, snow, weatherID));
 		}

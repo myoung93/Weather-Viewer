@@ -1247,7 +1247,7 @@ public class MainFrame {
     	for (int i = 0; i < 7; i++){
     		LongTermWeather ltw = longTermForecast.getLongTermForecast().get(i);
         	longTermTemp.get(i).setText(ltw.getTemp(tempUnit));
-        	longTermHighLow.get(i).setText(ltw.getHigh(tempUnit) + "  |  " + ltw.getLow(tempUnit));
+        	longTermHighLow.get(i).setText(ltw.getLow(tempUnit) + "  |  " + ltw.getHigh(tempUnit));
         }
     }
     
