@@ -25,7 +25,7 @@ public class UserPreferences implements java.io.Serializable {
         //intialize empty locations (in the future we will have to prompt user so this will change)
         locations = new ArrayList<>();
         tempUnit = 'c';
-        //add london as default
+        defaultLocation = "";
         
     }
 
@@ -81,6 +81,14 @@ public class UserPreferences implements java.io.Serializable {
         }
     }
     
+    /**
+     * Sets default location
+     * @param location String
+     */
+    public void setDefaultLocation(String location){
+    	this.defaultLocation = location;
+    	
+    }
 
     /**
      * Gets temperature unit
@@ -113,11 +121,19 @@ public class UserPreferences implements java.io.Serializable {
     public char getTimeUnit() {
         return timeUnit;
     }
-
+    
+    /**
+     * Gets location list
+     * @return ArrayList<String> of locations
+     */
     public ArrayList<String> getLocations() {
         return locations;
     }
     
+    /**
+     * Gets defaultLocation
+     * @return String defaultLocation
+     */
     public String getDefaultLocation(){
     	return defaultLocation;
     }

@@ -515,8 +515,11 @@ public class MainFrame {
 		lsm.addListSelectionListener(new ListSelectionListener() {
 			@Override
 			public void valueChanged(ListSelectionEvent e) {
-				if (listLocations.getValueIsAdjusting() == false)
-					refresh(listLocations.getSelectedValue().toString());
+				if (listLocations.getValueIsAdjusting() == false){
+					String selectedLocation = listLocations.getSelectedValue().toString();
+					refresh(selectedLocation);
+					prefs.setDefaultLocation(selectedLocation);
+				}
 			}
 
 		});
@@ -1150,7 +1153,7 @@ public class MainFrame {
 		
 		//try refreshing from default location
 		String defaultLocation = prefs.getDefaultLocation();
-		if (defaultLocation != null)
+		if (!(defaultLocation.contentEquals("")))
 			refresh(defaultLocation);
 	}
 
