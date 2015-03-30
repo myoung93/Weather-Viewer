@@ -1298,6 +1298,10 @@ public class MainFrame {
 		//this is used to test the validity of the location in the API
 		private CurrentWeather test;
 
+		/**
+		 * constructor for AddLocation
+		 * @param button JButton where the actionlistener is called from
+		 */
 		public AddLocation(JButton button) {
 			this.button = button;
 		}
@@ -1361,7 +1365,7 @@ public class MainFrame {
 		}
 
 		/**
-		 * checks to see if the city being added is alreayd in the list
+		 * checks to see if the city being added is already in the list
 		 * @param name the name of the city being added
 		 * @return whether or not city is in the list
 		 */
@@ -1369,19 +1373,28 @@ public class MainFrame {
 			return listModel.contains(name);
 		}
 
-		//overrides documentListener method
+		/**
+		 * overrides documentListener method
+		 * @param e document event
+		 */
 		@Override
 		public void insertUpdate(DocumentEvent e) {
 			enableButton();
 		}
 
-		//overrides documentListener method
+		/**
+		 * overrides documentListener method
+		 * @param e document event
+		 */
 		@Override
 		public void removeUpdate(DocumentEvent e) {
 			handleEmptyTextField(e);
 		}
 
-		//overrides documentListener method
+		/**
+		 * overrides documentListener method
+		 * @param e document event
+		 */
 		@Override
 		public void changedUpdate(DocumentEvent e) {
 			if (!handleEmptyTextField(e)) {
@@ -1389,12 +1402,18 @@ public class MainFrame {
 			}
 		}
 
+		/**
+		 * enables addLocation button
+		 */
 		private void enableButton() {
 			if (!alreadyEnabled) {
 				button.setEnabled(true);
 			}
 		}
 
+		/**
+		 * handles empty text field
+		 */
 		private boolean handleEmptyTextField(DocumentEvent e) {
 			if (e.getDocument().getLength() <= 0) {
 				button.setEnabled(false);
