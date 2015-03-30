@@ -9,12 +9,10 @@ public class UserPreferences implements java.io.Serializable {
      * Filename for serialized object
      */
     private static final transient String FILENAME = "weather.prefs";
+    //allows versioning without changing weather.prefs
     private static final long serialVersionUID =  5423608160937997909L;
-    //these will be preference fields, many more in final version
-    private char    tempUnit,
-                    speedUnit,
-                    pressureUnit,
-                    timeUnit;
+    //preference fields to be serialized
+    private char tempUnit;
     private ArrayList<String> locations;
     private String defaultLocation;
 
@@ -26,19 +24,16 @@ public class UserPreferences implements java.io.Serializable {
         locations = new ArrayList<>();
         tempUnit = 'c';
         defaultLocation = "";
-        
     }
 
     /**
      * Sets temperature type to celsius (c) or fahrenheit (f)
+     * we can trust that the appropriate units are given because the user has no input for this
      * @param unit char to indicate temperature type, can be either celsius (c) or fahrenheit (f)
      */
     public void setTempUnit(char unit) {
         if(unit == 'c' || unit == 'f') { //maybe a try/catch?
             tempUnit = unit;
-        }
-        else {
-            ;//?
         }
     }
 
@@ -46,50 +41,13 @@ public class UserPreferences implements java.io.Serializable {
      * Sets speed unit to meters per second (m), kilometers per hour (k), miles per hour (i), knots (n), or feet per second (f)
      * @param unit char to indicate speed unit, either m for m/s, k for km/h, i for mi/h, n for kn, or f for ft/s
      */
-    public void setSpeedUnit(char unit) {
-        if(unit == 'm' || unit == 'k' || unit == 'i' || unit == 'n' || unit == 'f') {//i know i is not so intuitive, sugggestions?
-            speedUnit = unit;
-        }
-        else {
-            ;//?
-        }
-    }
-
-    /**
-     * Sets pressure unit to pascal (p), newton per square meter (n), or bar (b) ???
-     * @param unit char to indicate pressure unit, can be either pascal (p), newton per square meter (n), or bar (b)
-     */
-    public void setPressureUnit(char unit) {
-        if(unit == 'p' || unit == 'n' || unit == 'b') { //maybe a try/catch?
-            pressureUnit = unit;
-        }
-        else {
-            ;//?
-        }
-    }
-
-    /**
-     * Sets time type to 12-hour (1) or 24-hour (2)
-     * @param unit char to indicate time type, can be either 12-hour (1) or 24-hour (2)
-     */
-    public void setTimeUnit(char unit) {
-        if(unit == '1' || unit == '2') { //maybe a try/catch?
-            timeUnit = unit;
-        }
-        else {
-            ;//?
-        }
-    }
-    
     /**
      * Sets default location to the last selected location
      * @param location string representing the new default location
      */
     public void setDefaultLocation(String location){
     	this.defaultLocation = location;
-    	
     }
-
     /**
      * Gets temperature unit
      * @return c for celsius, f for fahrenheit
@@ -97,31 +55,6 @@ public class UserPreferences implements java.io.Serializable {
     public char getTempUnit() {
         return tempUnit;
     }
-
-    /**
-     * Gets speed unit
-     * @return m for meters per second, k for kilometers per hour, i for miles per hour, n for knots, f for feet per second
-     */
-    public char getSpeedUnit() {
-        return speedUnit;
-    }
-
-    /**
-     * Gets pressure unit
-     * @return p for pascal, n for newton per square meter, b for bar
-     */
-    public char getPressureUnit() {
-        return pressureUnit;
-    }
-
-    /**
-     * Gets time unit
-     * @return 1 for 12-hour, 2 for 24-hour
-     */
-    public char getTimeUnit() {
-        return timeUnit;
-    }
-    
     /**
      * Gets location list
      * @return an ArrayList<String> of locations
@@ -227,16 +160,6 @@ public class UserPreferences implements java.io.Serializable {
             //this block will never be executed
             System.out.println("Something went seriously wrong loading preferences");
             return new UserPreferences();
-        }
-    }
-
-    // Temporary method to print the locations list
-    public void printLocations() {
-
-        System.out.println("MyLocations: ");
-        
-        for(String loc : locations) {
-            System.out.println(loc);
         }
     }
 }

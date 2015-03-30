@@ -11,10 +11,10 @@ public class ShortTermForecast {
 	private String Url;
 	private String Key = "&APPID=65da394090951035f3a346d9a356ddd9";// api key
 
-	String time, skyCon;
-	double temp, rain, snow;
-	double totalRain = 0, totalSnow = 0;
-	int weatherID;
+	private String time, skyCon;
+	private double temp, rain, snow;
+	private double totalRain = 0, totalSnow = 0;
+	private int weatherID;
 
 	// arraylist of all weather information
 	private ArrayList<ShortTermWeather> shortTermForecast = new ArrayList<ShortTermWeather>();

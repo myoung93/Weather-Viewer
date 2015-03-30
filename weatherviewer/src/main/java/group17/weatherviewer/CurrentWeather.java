@@ -82,15 +82,16 @@ public class CurrentWeather {
 			// get information from weather object
 			JSONArray arrayWeather = jsonData.getJSONArray("weather");
 			JSONObject objWea = arrayWeather.getJSONObject(0);
+
 			skyCon = objWea.getString("description");
 			
+
 			//get weatherID info
 			weatherID = objWea.getInt("id");
 		}
 		catch (IOException e) {
             System.out.println("There was an error retrieving the weather information");
         }
-		
 	}
 
 	// Getters -> Modified to return Strings instead of Doubles -TE
@@ -155,6 +156,8 @@ public class CurrentWeather {
      * @return the current wind direction in degrees
      */
 	public String getWindDirection() {
+		//this is done using cases, we essentially divide the circle (360 degrees) into sections, and assign each section
+		//a corresponding direction representation
 		if(windDir > 337.5 && windDir <= 360)
 			return "N";
 		else if(windDir >= 0 && windDir <= 22.5)
