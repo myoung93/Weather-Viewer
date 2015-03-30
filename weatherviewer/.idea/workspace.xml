@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather.prefs" afterPath="$PROJECT_DIR$/weather.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,9 +30,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding>
-                <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+                <marker date="1427680634872" expanded="true" signature="5119:5243" placeholder="/**...*/" />
               </folding>
             </state>
           </provider>
@@ -41,46 +41,18 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.206897">
-              <caret line="1119" column="20" selection-start-line="1119" selection-start-column="20" selection-end-line="1119" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5085#5293#0" expanded="true" />
-                <element signature="e#5292#5293#0" expanded="true" />
-                <element signature="e#5358#5359#0" expanded="true" />
-                <element signature="e#5377#5378#0" expanded="true" />
-                <element signature="e#6244#6421#0" expanded="true" />
-                <element signature="e#6420#6421#0" expanded="true" />
-                <element signature="e#11932#12215#0" expanded="true" />
-                <element signature="e#12214#12215#0" expanded="true" />
-                <element signature="e#12725#12847#0" expanded="true" />
-                <element signature="e#12846#12847#0" expanded="true" />
-                <element signature="e#13173#13305#0" expanded="true" />
-                <element signature="e#13304#13305#0" expanded="true" />
-                <element signature="e#13714#14006#0" expanded="true" />
-                <element signature="e#14005#14006#0" expanded="true" />
-                <element signature="e#14338#14624#0" expanded="true" />
-                <element signature="e#14623#14624#0" expanded="true" />
-                <element signature="e#16360#16577#0" expanded="true" />
-                <element signature="e#16576#16577#0" expanded="true" />
-                <element signature="e#42036#42037#0" expanded="true" />
-                <element signature="e#42065#42066#0" expanded="true" />
-                <element signature="e#43996#43997#0" expanded="true" />
-                <element signature="e#44036#44037#0" expanded="true" />
-                <element signature="e#44129#44130#0" expanded="true" />
-                <element signature="e#44152#44153#0" expanded="true" />
-                <element signature="e#44245#44246#0" expanded="true" />
-                <element signature="e#44277#44278#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1318" column="17" selection-start-line="1318" selection-start-column="17" selection-end-line="1318" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Conversion.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Conversion.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.123958334">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,12 +60,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurrentWeather.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CurrentWeather.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37612325">
-              <caret line="125" column="54" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="152" column="7" selection-start-line="152" selection-start-column="7" selection-end-line="152" selection-end-column="7" />
+              <folding>
+                <element signature="e#3928#3929#0" expanded="true" />
+                <element signature="e#3983#3984#0" expanded="true" />
+                <element signature="e#4515#4516#0" expanded="true" />
+                <element signature="e#4558#4559#0" expanded="true" />
+                <element signature="e#4694#4695#0" expanded="true" />
+                <element signature="e#4715#4716#0" expanded="true" />
+                <element signature="e#4848#4849#0" expanded="true" />
+                <element signature="e#4868#4869#0" expanded="true" />
+                <element signature="e#6970#6971#0" expanded="true" />
+                <element signature="e#6991#6992#0" expanded="true" />
+                <element signature="e#7133#7134#0" expanded="true" />
+                <element signature="e#7150#7151#0" expanded="true" />
+                <element signature="e#7179#7180#0" expanded="true" />
+                <element signature="e#7202#7203#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,10 +113,10 @@
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/SimpleWeather.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java" />
       </list>
     </option>
   </component>
@@ -180,8 +167,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -297,6 +282,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,9 +325,36 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.log</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/.taskListIndex/segments.gen</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/.tasks.xml.zip</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/tasks.xml.zip</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.indexes/e4/b9/22/e5/fa/history.index</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.markers</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.markers.snap</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/weatherviewer/.syncinfo.snap</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3843881376.index</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments.gen</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments.gen</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/version.ini</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/JsonParser.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/weather.prefs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/ShortTermForecast.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -348,6 +362,123 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.mylyn/.taskListIndex/segments_4</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/14/e0ac6e9679d600141753caeb95bde3a7</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/16/3050680569d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/18/205a741369d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1f/50b050c469d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/29/d0427ec96ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2a/201d8c236ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2e/d00fa7ce6ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/37/40fac3c669d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/39/e00ed1d66ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3a/609d2c0fb0d500141378fcd67ae6515d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3a/e0ba350d6ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3e/60a81ed96ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3e/806eaaa379d600141753caeb95bde3a7</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4/8020476f69d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4/f080172d6ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4/f0a7b0086ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5/c0925ae1afd500141378fcd67ae6515d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/56/00c920d579d600141753caeb95bde3a7</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/57/d051c29e6ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/58/c05136956ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/59/7003722a6ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5c/d06ba69b6ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/73/60977a206ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7a/c092708d6ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/80/10e42b7869d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/80/80fe526769d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/88/60c90ad16ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/89/30d8484c69d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9/10bf0e286ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/90/b04a69de69d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/91/90cb69b36ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/92/50b9f4986ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/95/6010e80d69d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/98/0040a04379d600141753caeb95bde3a7</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9a/20eb307f69d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9a/f0f04d136ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9f/50126d866ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9f/c0bb0ac7afd500141378fcd67ae6515d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a/90029b3779d600141753caeb95bde3a7</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a7/404802ff68d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ac/7036d4f0afd500141378fcd67ae6515d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b0/a0e9597369d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b2/8037fbdf78d600141753caeb95bde3a7</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b4/50a912cc6ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b5/40102da16ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b8/c0e74ea178d600141753caeb95bde3a7</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b9/e07953ca7ad600141118fd78ebc5a628</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/be/60a5e4ad78d600141753caeb95bde3a7</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c0/403c41d46ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c2/909b41c169d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c9/9054486b69d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ca/6047fd4369d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/cb/70ed03b969d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d/3082feae6ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d/707e390269d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d5/f0b3b7c869d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d8/5043fb22b0d500141378fcd67ae6515d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d8/c0628a8a6ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d9/a0b8467b69d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/de/50c23f1379d600141753caeb95bde3a7</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/df/50434dc56ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e5/80037441b0d500141378fcd67ae6515d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ec/90d0320a69d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ed/90f79b8779d600141753caeb95bde3a7</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ee/e0bb8a2b69d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ef/5065a9926ad600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fe/20b3e9bc69d600141bdfa89f328b66ce</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fe/e0a7e7bd79d600141753caeb95bde3a7</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/41.tree</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/42.tree</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/43.tree</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/40.snap</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/41.snap</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/42.snap</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1e.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1e_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1f.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1f_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1g.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1g_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1h.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1h_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/_1i.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_1b</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_1c</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_1e</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/segments_1f</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1r_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1s_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1t.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1t_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1u.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1v.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1y.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1y_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1z.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_1z_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_20.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1q</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1r</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1u</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_1v</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_19_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_1a.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_1a_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_1b.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_1e.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_1e_1.del</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/_1f.cfs</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_18</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_19</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_1b</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/b5f7a698852e3e0387329a361cc51b69/segments_1c</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../Meeting_Minutes/Meeting_9.odt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../Meeting_Minutes/Meeting_9.pdf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../Useful_Information/stage2_feedback_t172.pdf</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -355,6 +486,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/weather.prefs</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -712,7 +844,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427478430085</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixed a stringIndexOutOfBounds bug in getPressure">
+      <created>1427481003486</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1427481003486</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -724,13 +862,11 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18319838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15890688" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14347357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -738,14 +874,16 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39979756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18319838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39979756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -770,7 +908,8 @@
     <MESSAGE value="Removed a bunch of old code" />
     <MESSAGE value="Set default temp unit to Celsius to fix a bug where a character missing box would appear" />
     <MESSAGE value="Set default temp unit to Celsius to fix a bug where a character missing box would appear. Location testing does not work properly (is almost always invalid)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Set default temp unit to Celsius to fix a bug where a character missing box would appear. Location testing does not work properly (is almost always invalid)." />
+    <MESSAGE value="Fixed a stringIndexOutOfBounds bug in getPressure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a stringIndexOutOfBounds bug in getPressure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -783,7 +922,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java</url>
-          <line>72</line>
+          <line>73</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -801,35 +940,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5085#5293#0" expanded="true" />
-            <element signature="e#5292#5293#0" expanded="true" />
-            <element signature="e#5358#5359#0" expanded="true" />
-            <element signature="e#5377#5378#0" expanded="true" />
-            <element signature="e#6244#6421#0" expanded="true" />
-            <element signature="e#6420#6421#0" expanded="true" />
-            <element signature="e#11932#12215#0" expanded="true" />
-            <element signature="e#12214#12215#0" expanded="true" />
-            <element signature="e#12725#12847#0" expanded="true" />
-            <element signature="e#12846#12847#0" expanded="true" />
-            <element signature="e#13173#13305#0" expanded="true" />
-            <element signature="e#13304#13305#0" expanded="true" />
-            <element signature="e#13714#14006#0" expanded="true" />
-            <element signature="e#14005#14006#0" expanded="true" />
-            <element signature="e#14338#14624#0" expanded="true" />
-            <element signature="e#14623#14624#0" expanded="true" />
-            <element signature="e#16360#16577#0" expanded="true" />
-            <element signature="e#16576#16577#0" expanded="true" />
-            <element signature="e#42036#42037#0" expanded="true" />
-            <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43996#43997#0" expanded="true" />
-            <element signature="e#44036#44037#0" expanded="true" />
-            <element signature="e#44129#44130#0" expanded="true" />
-            <element signature="e#44152#44153#0" expanded="true" />
-            <element signature="e#44245#44246#0" expanded="true" />
-            <element signature="e#44277#44278#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -847,7 +958,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="175" column="33" selection-start-line="175" selection-start-column="33" selection-end-line="175" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#3928#3929#0" expanded="true" />
+            <element signature="e#3983#3984#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4558#4559#0" expanded="true" />
+            <element signature="e#4694#4695#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4868#4869#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+            <element signature="e#6991#6992#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7150#7151#0" expanded="true" />
+            <element signature="e#7179#7180#0" expanded="true" />
+            <element signature="e#7202#7203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -864,7 +990,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
           <folding>
-            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+            <marker date="1427680634872" expanded="true" signature="5119:5243" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -873,35 +999,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5085#5293#0" expanded="true" />
-            <element signature="e#5292#5293#0" expanded="true" />
-            <element signature="e#5358#5359#0" expanded="true" />
-            <element signature="e#5377#5378#0" expanded="true" />
-            <element signature="e#6244#6421#0" expanded="true" />
-            <element signature="e#6420#6421#0" expanded="true" />
-            <element signature="e#11932#12215#0" expanded="true" />
-            <element signature="e#12214#12215#0" expanded="true" />
-            <element signature="e#12725#12847#0" expanded="true" />
-            <element signature="e#12846#12847#0" expanded="true" />
-            <element signature="e#13173#13305#0" expanded="true" />
-            <element signature="e#13304#13305#0" expanded="true" />
-            <element signature="e#13714#14006#0" expanded="true" />
-            <element signature="e#14005#14006#0" expanded="true" />
-            <element signature="e#14338#14624#0" expanded="true" />
-            <element signature="e#14623#14624#0" expanded="true" />
-            <element signature="e#16360#16577#0" expanded="true" />
-            <element signature="e#16576#16577#0" expanded="true" />
-            <element signature="e#42036#42037#0" expanded="true" />
-            <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43996#43997#0" expanded="true" />
-            <element signature="e#44036#44037#0" expanded="true" />
-            <element signature="e#44129#44130#0" expanded="true" />
-            <element signature="e#44152#44153#0" expanded="true" />
-            <element signature="e#44245#44246#0" expanded="true" />
-            <element signature="e#44277#44278#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -919,7 +1017,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="153" column="27" selection-start-line="153" selection-start-column="27" selection-end-line="153" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="e#3928#3929#0" expanded="true" />
+            <element signature="e#3983#3984#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4558#4559#0" expanded="true" />
+            <element signature="e#4694#4695#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4868#4869#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+            <element signature="e#6991#6992#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7150#7151#0" expanded="true" />
+            <element signature="e#7179#7180#0" expanded="true" />
+            <element signature="e#7202#7203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -936,7 +1049,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
           <folding>
-            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+            <marker date="1427680634872" expanded="true" signature="5119:5243" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -945,35 +1058,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5085#5293#0" expanded="true" />
-            <element signature="e#5292#5293#0" expanded="true" />
-            <element signature="e#5358#5359#0" expanded="true" />
-            <element signature="e#5377#5378#0" expanded="true" />
-            <element signature="e#6244#6421#0" expanded="true" />
-            <element signature="e#6420#6421#0" expanded="true" />
-            <element signature="e#11932#12215#0" expanded="true" />
-            <element signature="e#12214#12215#0" expanded="true" />
-            <element signature="e#12725#12847#0" expanded="true" />
-            <element signature="e#12846#12847#0" expanded="true" />
-            <element signature="e#13173#13305#0" expanded="true" />
-            <element signature="e#13304#13305#0" expanded="true" />
-            <element signature="e#13714#14006#0" expanded="true" />
-            <element signature="e#14005#14006#0" expanded="true" />
-            <element signature="e#14338#14624#0" expanded="true" />
-            <element signature="e#14623#14624#0" expanded="true" />
-            <element signature="e#16360#16577#0" expanded="true" />
-            <element signature="e#16576#16577#0" expanded="true" />
-            <element signature="e#42036#42037#0" expanded="true" />
-            <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43996#43997#0" expanded="true" />
-            <element signature="e#44036#44037#0" expanded="true" />
-            <element signature="e#44129#44130#0" expanded="true" />
-            <element signature="e#44152#44153#0" expanded="true" />
-            <element signature="e#44245#44246#0" expanded="true" />
-            <element signature="e#44277#44278#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +1076,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="153" column="27" selection-start-line="153" selection-start-column="27" selection-end-line="153" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="e#3928#3929#0" expanded="true" />
+            <element signature="e#3983#3984#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4558#4559#0" expanded="true" />
+            <element signature="e#4694#4695#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4868#4869#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+            <element signature="e#6991#6992#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7150#7151#0" expanded="true" />
+            <element signature="e#7179#7180#0" expanded="true" />
+            <element signature="e#7202#7203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,7 +1108,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
-            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+            <marker date="1427680634872" expanded="true" signature="5119:5243" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -1017,35 +1117,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5085#5293#0" expanded="true" />
-            <element signature="e#5292#5293#0" expanded="true" />
-            <element signature="e#5358#5359#0" expanded="true" />
-            <element signature="e#5377#5378#0" expanded="true" />
-            <element signature="e#6244#6421#0" expanded="true" />
-            <element signature="e#6420#6421#0" expanded="true" />
-            <element signature="e#11932#12215#0" expanded="true" />
-            <element signature="e#12214#12215#0" expanded="true" />
-            <element signature="e#12725#12847#0" expanded="true" />
-            <element signature="e#12846#12847#0" expanded="true" />
-            <element signature="e#13173#13305#0" expanded="true" />
-            <element signature="e#13304#13305#0" expanded="true" />
-            <element signature="e#13714#14006#0" expanded="true" />
-            <element signature="e#14005#14006#0" expanded="true" />
-            <element signature="e#14338#14624#0" expanded="true" />
-            <element signature="e#14623#14624#0" expanded="true" />
-            <element signature="e#16360#16577#0" expanded="true" />
-            <element signature="e#16576#16577#0" expanded="true" />
-            <element signature="e#42036#42037#0" expanded="true" />
-            <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43996#43997#0" expanded="true" />
-            <element signature="e#44036#44037#0" expanded="true" />
-            <element signature="e#44129#44130#0" expanded="true" />
-            <element signature="e#44152#44153#0" expanded="true" />
-            <element signature="e#44245#44246#0" expanded="true" />
-            <element signature="e#44277#44278#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,7 +1135,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="e#3928#3929#0" expanded="true" />
+            <element signature="e#3983#3984#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4558#4559#0" expanded="true" />
+            <element signature="e#4694#4695#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4868#4869#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+            <element signature="e#6991#6992#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7150#7151#0" expanded="true" />
+            <element signature="e#7179#7180#0" expanded="true" />
+            <element signature="e#7202#7203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1080,7 +1167,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
-            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+            <marker date="1427680634872" expanded="true" signature="5119:5243" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -1089,35 +1176,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="569" column="48" selection-start-line="569" selection-start-column="48" selection-end-line="569" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5085#5293#0" expanded="true" />
-            <element signature="e#5292#5293#0" expanded="true" />
-            <element signature="e#5358#5359#0" expanded="true" />
-            <element signature="e#5377#5378#0" expanded="true" />
-            <element signature="e#6244#6421#0" expanded="true" />
-            <element signature="e#6420#6421#0" expanded="true" />
-            <element signature="e#11932#12215#0" expanded="true" />
-            <element signature="e#12214#12215#0" expanded="true" />
-            <element signature="e#12725#12847#0" expanded="true" />
-            <element signature="e#12846#12847#0" expanded="true" />
-            <element signature="e#13173#13305#0" expanded="true" />
-            <element signature="e#13304#13305#0" expanded="true" />
-            <element signature="e#13714#14006#0" expanded="true" />
-            <element signature="e#14005#14006#0" expanded="true" />
-            <element signature="e#14338#14624#0" expanded="true" />
-            <element signature="e#14623#14624#0" expanded="true" />
-            <element signature="e#16360#16577#0" expanded="true" />
-            <element signature="e#16576#16577#0" expanded="true" />
-            <element signature="e#42036#42037#0" expanded="true" />
-            <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43996#43997#0" expanded="true" />
-            <element signature="e#44036#44037#0" expanded="true" />
-            <element signature="e#44129#44130#0" expanded="true" />
-            <element signature="e#44152#44153#0" expanded="true" />
-            <element signature="e#44245#44246#0" expanded="true" />
-            <element signature="e#44277#44278#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,7 +1194,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="e#3928#3929#0" expanded="true" />
+            <element signature="e#3983#3984#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4558#4559#0" expanded="true" />
+            <element signature="e#4694#4695#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4868#4869#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+            <element signature="e#6991#6992#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7150#7151#0" expanded="true" />
+            <element signature="e#7179#7180#0" expanded="true" />
+            <element signature="e#7202#7203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1152,7 +1226,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
           <folding>
-            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+            <marker date="1427680634872" expanded="true" signature="5119:5243" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -1161,35 +1235,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5085#5293#0" expanded="true" />
-            <element signature="e#5292#5293#0" expanded="true" />
-            <element signature="e#5358#5359#0" expanded="true" />
-            <element signature="e#5377#5378#0" expanded="true" />
-            <element signature="e#6244#6421#0" expanded="true" />
-            <element signature="e#6420#6421#0" expanded="true" />
-            <element signature="e#11932#12215#0" expanded="true" />
-            <element signature="e#12214#12215#0" expanded="true" />
-            <element signature="e#12725#12847#0" expanded="true" />
-            <element signature="e#12846#12847#0" expanded="true" />
-            <element signature="e#13173#13305#0" expanded="true" />
-            <element signature="e#13304#13305#0" expanded="true" />
-            <element signature="e#13714#14006#0" expanded="true" />
-            <element signature="e#14005#14006#0" expanded="true" />
-            <element signature="e#14338#14624#0" expanded="true" />
-            <element signature="e#14623#14624#0" expanded="true" />
-            <element signature="e#16360#16577#0" expanded="true" />
-            <element signature="e#16576#16577#0" expanded="true" />
-            <element signature="e#42036#42037#0" expanded="true" />
-            <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43996#43997#0" expanded="true" />
-            <element signature="e#44036#44037#0" expanded="true" />
-            <element signature="e#44129#44130#0" expanded="true" />
-            <element signature="e#44152#44153#0" expanded="true" />
-            <element signature="e#44245#44246#0" expanded="true" />
-            <element signature="e#44277#44278#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1197,7 +1243,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="42" column="78" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
-          <folding />
+          <folding>
+            <element signature="e#3928#3929#0" expanded="true" />
+            <element signature="e#3983#3984#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4558#4559#0" expanded="true" />
+            <element signature="e#4694#4695#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4868#4869#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+            <element signature="e#6991#6992#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7150#7151#0" expanded="true" />
+            <element signature="e#7179#7180#0" expanded="true" />
+            <element signature="e#7202#7203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1214,7 +1275,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+            <marker date="1427680634872" expanded="true" signature="5119:5243" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -1223,35 +1284,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="454" column="38" selection-start-line="454" selection-start-column="38" selection-end-line="454" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5085#5293#0" expanded="true" />
-            <element signature="e#5292#5293#0" expanded="true" />
-            <element signature="e#5358#5359#0" expanded="true" />
-            <element signature="e#5377#5378#0" expanded="true" />
-            <element signature="e#6244#6421#0" expanded="true" />
-            <element signature="e#6420#6421#0" expanded="true" />
-            <element signature="e#11932#12215#0" expanded="true" />
-            <element signature="e#12214#12215#0" expanded="true" />
-            <element signature="e#12725#12847#0" expanded="true" />
-            <element signature="e#12846#12847#0" expanded="true" />
-            <element signature="e#13173#13305#0" expanded="true" />
-            <element signature="e#13304#13305#0" expanded="true" />
-            <element signature="e#13714#14006#0" expanded="true" />
-            <element signature="e#14005#14006#0" expanded="true" />
-            <element signature="e#14338#14624#0" expanded="true" />
-            <element signature="e#14623#14624#0" expanded="true" />
-            <element signature="e#16360#16577#0" expanded="true" />
-            <element signature="e#16576#16577#0" expanded="true" />
-            <element signature="e#42036#42037#0" expanded="true" />
-            <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43996#43997#0" expanded="true" />
-            <element signature="e#44036#44037#0" expanded="true" />
-            <element signature="e#44129#44130#0" expanded="true" />
-            <element signature="e#44152#44153#0" expanded="true" />
-            <element signature="e#44245#44246#0" expanded="true" />
-            <element signature="e#44277#44278#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1259,7 +1292,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#3928#3929#0" expanded="true" />
+            <element signature="e#3983#3984#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4558#4559#0" expanded="true" />
+            <element signature="e#4694#4695#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4868#4869#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+            <element signature="e#6991#6992#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7150#7151#0" expanded="true" />
+            <element signature="e#7179#7180#0" expanded="true" />
+            <element signature="e#7202#7203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1276,7 +1324,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+            <marker date="1427680634872" expanded="true" signature="5119:5243" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -1285,35 +1333,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5085#5293#0" expanded="true" />
-            <element signature="e#5292#5293#0" expanded="true" />
-            <element signature="e#5358#5359#0" expanded="true" />
-            <element signature="e#5377#5378#0" expanded="true" />
-            <element signature="e#6244#6421#0" expanded="true" />
-            <element signature="e#6420#6421#0" expanded="true" />
-            <element signature="e#11932#12215#0" expanded="true" />
-            <element signature="e#12214#12215#0" expanded="true" />
-            <element signature="e#12725#12847#0" expanded="true" />
-            <element signature="e#12846#12847#0" expanded="true" />
-            <element signature="e#13173#13305#0" expanded="true" />
-            <element signature="e#13304#13305#0" expanded="true" />
-            <element signature="e#13714#14006#0" expanded="true" />
-            <element signature="e#14005#14006#0" expanded="true" />
-            <element signature="e#14338#14624#0" expanded="true" />
-            <element signature="e#14623#14624#0" expanded="true" />
-            <element signature="e#16360#16577#0" expanded="true" />
-            <element signature="e#16576#16577#0" expanded="true" />
-            <element signature="e#42036#42037#0" expanded="true" />
-            <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43996#43997#0" expanded="true" />
-            <element signature="e#44036#44037#0" expanded="true" />
-            <element signature="e#44129#44130#0" expanded="true" />
-            <element signature="e#44152#44153#0" expanded="true" />
-            <element signature="e#44245#44246#0" expanded="true" />
-            <element signature="e#44277#44278#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1321,7 +1341,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#3928#3929#0" expanded="true" />
+            <element signature="e#3983#3984#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4558#4559#0" expanded="true" />
+            <element signature="e#4694#4695#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4868#4869#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+            <element signature="e#6991#6992#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7150#7151#0" expanded="true" />
+            <element signature="e#7179#7180#0" expanded="true" />
+            <element signature="e#7202#7203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1338,7 +1373,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+            <marker date="1427680634872" expanded="true" signature="5119:5243" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -1347,35 +1382,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5085#5293#0" expanded="true" />
-            <element signature="e#5292#5293#0" expanded="true" />
-            <element signature="e#5358#5359#0" expanded="true" />
-            <element signature="e#5377#5378#0" expanded="true" />
-            <element signature="e#6244#6421#0" expanded="true" />
-            <element signature="e#6420#6421#0" expanded="true" />
-            <element signature="e#11932#12215#0" expanded="true" />
-            <element signature="e#12214#12215#0" expanded="true" />
-            <element signature="e#12725#12847#0" expanded="true" />
-            <element signature="e#12846#12847#0" expanded="true" />
-            <element signature="e#13173#13305#0" expanded="true" />
-            <element signature="e#13304#13305#0" expanded="true" />
-            <element signature="e#13714#14006#0" expanded="true" />
-            <element signature="e#14005#14006#0" expanded="true" />
-            <element signature="e#14338#14624#0" expanded="true" />
-            <element signature="e#14623#14624#0" expanded="true" />
-            <element signature="e#16360#16577#0" expanded="true" />
-            <element signature="e#16576#16577#0" expanded="true" />
-            <element signature="e#42036#42037#0" expanded="true" />
-            <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43996#43997#0" expanded="true" />
-            <element signature="e#44036#44037#0" expanded="true" />
-            <element signature="e#44129#44130#0" expanded="true" />
-            <element signature="e#44152#44153#0" expanded="true" />
-            <element signature="e#44245#44246#0" expanded="true" />
-            <element signature="e#44277#44278#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1383,7 +1390,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#3928#3929#0" expanded="true" />
+            <element signature="e#3983#3984#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4558#4559#0" expanded="true" />
+            <element signature="e#4694#4695#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4868#4869#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+            <element signature="e#6991#6992#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7150#7151#0" expanded="true" />
+            <element signature="e#7179#7180#0" expanded="true" />
+            <element signature="e#7202#7203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1400,7 +1422,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
+            <marker date="1427680634872" expanded="true" signature="5119:5243" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -1409,35 +1431,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5085#5293#0" expanded="true" />
-            <element signature="e#5292#5293#0" expanded="true" />
-            <element signature="e#5358#5359#0" expanded="true" />
-            <element signature="e#5377#5378#0" expanded="true" />
-            <element signature="e#6244#6421#0" expanded="true" />
-            <element signature="e#6420#6421#0" expanded="true" />
-            <element signature="e#11932#12215#0" expanded="true" />
-            <element signature="e#12214#12215#0" expanded="true" />
-            <element signature="e#12725#12847#0" expanded="true" />
-            <element signature="e#12846#12847#0" expanded="true" />
-            <element signature="e#13173#13305#0" expanded="true" />
-            <element signature="e#13304#13305#0" expanded="true" />
-            <element signature="e#13714#14006#0" expanded="true" />
-            <element signature="e#14005#14006#0" expanded="true" />
-            <element signature="e#14338#14624#0" expanded="true" />
-            <element signature="e#14623#14624#0" expanded="true" />
-            <element signature="e#16360#16577#0" expanded="true" />
-            <element signature="e#16576#16577#0" expanded="true" />
-            <element signature="e#42036#42037#0" expanded="true" />
-            <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43996#43997#0" expanded="true" />
-            <element signature="e#44036#44037#0" expanded="true" />
-            <element signature="e#44129#44130#0" expanded="true" />
-            <element signature="e#44152#44153#0" expanded="true" />
-            <element signature="e#44245#44246#0" expanded="true" />
-            <element signature="e#44277#44278#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1469,10 +1463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="5.7008986">
           <caret line="2251" column="16" selection-start-line="2251" selection-start-column="16" selection-end-line="2251" selection-end-column="16" />
-          <folding>
-            <element signature="e#77012#77013#0" expanded="false" />
-            <element signature="e#77056#77057#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1486,64 +1476,51 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding>
-            <marker date="1427478223003" expanded="true" signature="4595:4719" placeholder="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1427680634872" expanded="true" signature="5119:5243" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.206897">
-          <caret line="1119" column="20" selection-start-line="1119" selection-start-column="20" selection-end-line="1119" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5085#5293#0" expanded="true" />
-            <element signature="e#5292#5293#0" expanded="true" />
-            <element signature="e#5358#5359#0" expanded="true" />
-            <element signature="e#5377#5378#0" expanded="true" />
-            <element signature="e#6244#6421#0" expanded="true" />
-            <element signature="e#6420#6421#0" expanded="true" />
-            <element signature="e#11932#12215#0" expanded="true" />
-            <element signature="e#12214#12215#0" expanded="true" />
-            <element signature="e#12725#12847#0" expanded="true" />
-            <element signature="e#12846#12847#0" expanded="true" />
-            <element signature="e#13173#13305#0" expanded="true" />
-            <element signature="e#13304#13305#0" expanded="true" />
-            <element signature="e#13714#14006#0" expanded="true" />
-            <element signature="e#14005#14006#0" expanded="true" />
-            <element signature="e#14338#14624#0" expanded="true" />
-            <element signature="e#14623#14624#0" expanded="true" />
-            <element signature="e#16360#16577#0" expanded="true" />
-            <element signature="e#16576#16577#0" expanded="true" />
-            <element signature="e#42036#42037#0" expanded="true" />
-            <element signature="e#42065#42066#0" expanded="true" />
-            <element signature="e#43996#43997#0" expanded="true" />
-            <element signature="e#44036#44037#0" expanded="true" />
-            <element signature="e#44129#44130#0" expanded="true" />
-            <element signature="e#44152#44153#0" expanded="true" />
-            <element signature="e#44245#44246#0" expanded="true" />
-            <element signature="e#44277#44278#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1318" column="17" selection-start-line="1318" selection-start-column="17" selection-end-line="1318" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37612325">
-          <caret line="125" column="54" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="152" column="7" selection-start-line="152" selection-start-column="7" selection-end-line="152" selection-end-column="7" />
+          <folding>
+            <element signature="e#3928#3929#0" expanded="true" />
+            <element signature="e#3983#3984#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4558#4559#0" expanded="true" />
+            <element signature="e#4694#4695#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4868#4869#0" expanded="true" />
+            <element signature="e#6970#6971#0" expanded="true" />
+            <element signature="e#6991#6992#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7150#7151#0" expanded="true" />
+            <element signature="e#7179#7180#0" expanded="true" />
+            <element signature="e#7202#7203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.123958334">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

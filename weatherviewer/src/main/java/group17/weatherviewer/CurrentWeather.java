@@ -124,7 +124,7 @@ public class CurrentWeather {
 
 		String pressureString = String.valueOf(pressure);
 		if(pressureString.length() < 4)
-			substringLength = pressureString.length();
+			substringLength = pressureString.length();k
 
 		return pressureString.substring(0, substringLength);
 	}
