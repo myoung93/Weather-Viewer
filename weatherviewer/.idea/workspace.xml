@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="weatherviewer.iws" />
@@ -49,8 +46,8 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57637995">
-              <caret line="1353" column="63" selection-start-line="1353" selection-start-column="63" selection-end-line="1353" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.40179718">
+              <caret line="1345" column="0" selection-start-line="1345" selection-start-column="0" selection-end-line="1345" selection-end-column="0" />
               <folding>
                 <element signature="e#17494#17808#0" expanded="true" />
                 <element signature="e#17807#17808#0" expanded="true" />
@@ -908,7 +905,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427682717463</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="finished documentation for currentWeather, longterm/shorterm still need it">
+      <created>1427683289888</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1427683289888</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -971,7 +974,8 @@
     <MESSAGE value="Added a lot of documentation, did some cleaning." />
     <MESSAGE value="Changed scope of some fields to private (from package)" />
     <MESSAGE value="Moved unixToDate to Conversion, added more documentation, removed unused methods from UserPreferences" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved unixToDate to Conversion, added more documentation, removed unused methods from UserPreferences" />
+    <MESSAGE value="finished documentation for currentWeather, longterm/shorterm still need it" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished documentation for currentWeather, longterm/shorterm still need it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1688,8 +1692,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57637995">
-          <caret line="1353" column="63" selection-start-line="1353" selection-start-column="63" selection-end-line="1353" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.40179718">
+          <caret line="1345" column="0" selection-start-line="1345" selection-start-column="0" selection-end-line="1345" selection-end-column="0" />
           <folding>
             <element signature="e#17494#17808#0" expanded="true" />
             <element signature="e#17807#17808#0" expanded="true" />
