@@ -13,8 +13,7 @@ import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 public class LongTermForecast {
-	private String Url;
-	private String Key = "&APPID=65da394090951035f3a346d9a356ddd9";// api key
+
 	private String date, skyCon;
 	private double temp, high, low, rain, snow;
 	private int weatherID;
@@ -30,7 +29,9 @@ public class LongTermForecast {
 	 */
 	public LongTermForecast(String cityName, int Term)
 			throws UnsupportedEncodingException {
-		Url = "http://api.openweathermap.org/data/2.5/forecast/daily?q="
+		final String Key = "&APPID=65da394090951035f3a346d9a356ddd9"; // api key
+
+		String Url = "http://api.openweathermap.org/data/2.5/forecast/daily?q="
 				+ cityName + "&mode=json&units=metric&cnt=" + Term + Key;
 
 		// send link to json parser and get weather data back as string
@@ -93,8 +94,10 @@ public class LongTermForecast {
 	public ArrayList<LongTermWeather> getLongTermForecast(){
 		return this.longTermForecast;
 	}
-	
-	//helper class
+
+	/**
+	 * Data type that contains longterm weather data
+	 */
 	public class LongTermWeather{
 		private String date, skycon; 
 		private double temp, high, low, rain, snow;
@@ -115,10 +118,6 @@ public class LongTermForecast {
 		
 		public String getDate(){
 			return this.date;
-		}
-		
-		public String getSkyCon(){
-			return this.skycon;
 		}
 		
 		/**

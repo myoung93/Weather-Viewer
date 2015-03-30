@@ -16,6 +16,7 @@ public class CurrentWeather {
     //Data fields required for Current Weather view
 	private String city, skyCon, sunrise, sunset, country;
 	private double temp, pressure, humidity, maxTemp, minTemp, windSpeed, windDir;
+	//weather ID the API gives for this day
 	private int weatherID;
 
     /**
@@ -221,11 +222,10 @@ public class CurrentWeather {
 	 * @return a string of the correct length representing the temperature plus the degrees symbol and the unit
 	 */
     private String cleanTemp(double t, char unit) {
+		//round t appropriately
+		t = Math.round(t);
 		//how many characters to return from the original temp string
         int substringLength = 1;
-        //correct for negative zero
-        if(t < 0 && t >= -1)
-            t = 0;
         //correct number of characters to take
         if (t < 0 || t > 10) {
 			//2digit numbers or negative means an extra character
