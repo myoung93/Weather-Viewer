@@ -82,8 +82,8 @@ public class UserPreferences implements java.io.Serializable {
     }
     
     /**
-     * Sets default location
-     * @param location String
+     * Sets default location to the last selected location
+     * @param location string representing the new default location
      */
     public void setDefaultLocation(String location){
     	this.defaultLocation = location;
@@ -124,7 +124,7 @@ public class UserPreferences implements java.io.Serializable {
     
     /**
      * Gets location list
-     * @return ArrayList<String> of locations
+     * @return an ArrayList<String> of locations
      */
     public ArrayList<String> getLocations() {
         return locations;
@@ -132,7 +132,7 @@ public class UserPreferences implements java.io.Serializable {
     
     /**
      * Gets defaultLocation
-     * @return String defaultLocation
+     * @return the default location
      */
     public String getDefaultLocation(){
     	return defaultLocation;

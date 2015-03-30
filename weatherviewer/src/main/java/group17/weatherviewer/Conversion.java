@@ -5,12 +5,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Conversion {
-    /**
-     * Accepts a unix time string and converts it to a time of day on a 24-hour clock
+	/**
+	 * Accepts a unix time string and converts it to a time of day on a 24-hour clock
      * @param unixTime string representation of unix time
      * @return the time of day corresponding to the unix time
      */
-    public static String unixToTime(String unixTime) {
+	public static String unixToTime(String unixTime) {
         //we only care about hours and minutes
         DateFormat df = new SimpleDateFormat("HH:mm");
         //multiply by 1000 for milliseconds

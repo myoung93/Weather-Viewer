@@ -14,7 +14,7 @@ import java.lang.*;
 public class CurrentWeather {
 
     //Data fields required for Current Weather view
-	private String city, sky, sunrise, sunset, country;
+	private String city, skyCon, sunrise, sunset, country;
 	private double temp, pressure, humidity, maxTemp, minTemp, windSpeed, windDir;
 	private int weatherID;
 
@@ -82,7 +82,7 @@ public class CurrentWeather {
 			// get information from weather object
 			JSONArray arrayWeather = jsonData.getJSONArray("weather");
 			JSONObject objWea = arrayWeather.getJSONObject(0);
-			sky = objWea.getString("description");
+			skyCon = objWea.getString("description");
 			
 			//get weatherID info
 			weatherID = objWea.getInt("id");
@@ -124,7 +124,7 @@ public class CurrentWeather {
 
 		String pressureString = String.valueOf(pressure);
 		if(pressureString.length() < 4)
-			substringLength = pressureString.length();k
+			substringLength = pressureString.length();
 
 		return pressureString.substring(0, substringLength);
 	}
@@ -229,7 +229,7 @@ public class CurrentWeather {
      * @return a string representing sky condition
      */
 	public String getSkyCondition() {
-		return sky;
+		return skyCon.substring(0, 1).toUpperCase() + skyCon.substring(1);
 	}
 
 	public int getWeatherID(){
