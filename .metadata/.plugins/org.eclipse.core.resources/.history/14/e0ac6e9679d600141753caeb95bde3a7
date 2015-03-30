@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.Queue;
-
+import java.util.Calendar;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
@@ -20,6 +20,7 @@ public class LongTermForecast {
 	private double temp, high, low, rain, snow;
 	private int weatherID;
 
+	public static Calendar dayOfWeek = Calendar.getInstance();
 	
 	// arraylist of all weather information
 	private ArrayList<LongTermWeather> longTermForecast = new ArrayList<LongTermWeather>();
@@ -93,7 +94,7 @@ public class LongTermForecast {
 	// convert date from unix type to date
 	public String Unix2Date(String date) {
 		Long Time = Long.parseLong(date) * 1000;
-		String Date = new java.text.SimpleDateFormat("EEE")
+		String Date = new java.text.SimpleDateFormat("yyyy/MM/dd")
 				.format(new java.util.Date(Time));
 		return Date;
 	}
@@ -114,6 +115,12 @@ public class LongTermForecast {
 		
 		
 		public LongTermWeather(String date, String skycon, double temp, double high, double low, double rain, double snow, int weatherID){
+			/*
+			SimpleDateFormat format = new SimpleDateFormat("EEE");
+			
+			this.date = format.format(dayOfWeek.getTime());
+			dayOfWeek.add(Calendar.DATE, 1);
+			*/
 			this.date = Unix2Date(date);
 			this.skycon = skycon;
 			this.temp = temp;

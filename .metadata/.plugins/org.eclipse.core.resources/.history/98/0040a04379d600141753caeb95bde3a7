@@ -574,7 +574,7 @@ public class MainFrame {
 
 		// 12AM
 		// DAY
-		label12AM = new JLabel("");
+		label12AM = new JLabel("12:00am");
 		shortTermTime.add(label12AM);
 		label12AM.setForeground(Color.LIGHT_GRAY);
 		label12AM.setFont(font.deriveFont(15f));
@@ -609,7 +609,7 @@ public class MainFrame {
 
 		// 3AM
 		// DAY
-		label3AM = new JLabel("");
+		label3AM = new JLabel(" 3:00am");
 		shortTermTime.add(label3AM);
 		label3AM.setForeground(Color.LIGHT_GRAY);
 		label3AM.setFont(font.deriveFont(15f));
@@ -644,7 +644,7 @@ public class MainFrame {
 
 		// 6AM
 		// DAY
-		label6AM = new JLabel("");
+		label6AM = new JLabel(" 6:00am");
 		shortTermTime.add(label6AM);
 		label6AM.setForeground(Color.LIGHT_GRAY);
 		label6AM.setFont(font.deriveFont(15f));
@@ -679,7 +679,7 @@ public class MainFrame {
 
 		// 9AM
 		// DAY
-		label9AM = new JLabel("");
+		label9AM = new JLabel(" 9:00am");
 		shortTermTime.add(label9AM);
 		label9AM.setForeground(Color.LIGHT_GRAY);
 		label9AM.setFont(font.deriveFont(15f));
@@ -714,7 +714,7 @@ public class MainFrame {
 
 		// 12PM
 		// DAY
-		label12PM = new JLabel("");
+		label12PM = new JLabel("12:00pm");
 		shortTermTime.add(label12PM);
 		label12PM.setForeground(Color.LIGHT_GRAY);
 		label12PM.setFont(font.deriveFont(15f));
@@ -749,7 +749,7 @@ public class MainFrame {
 
 		// 3PM
 		// DAY
-		label3PM = new JLabel("");
+		label3PM = new JLabel(" 3:00pm");
 		shortTermTime.add(label3PM);
 		label3PM.setForeground(Color.LIGHT_GRAY);
 		label3PM.setFont(font.deriveFont(15f));
@@ -784,7 +784,7 @@ public class MainFrame {
 
 		// 6PM
 		// Time
-		label6PM = new JLabel("");
+		label6PM = new JLabel(" 6:00pm");
 		shortTermTime.add(label6PM);
 		label6PM.setForeground(Color.LIGHT_GRAY);
 		label6PM.setFont(font.deriveFont(15f));
@@ -819,7 +819,7 @@ public class MainFrame {
 
 		// 9PM
 		// DAY
-		label9PM = new JLabel("");
+		label9PM = new JLabel(" 9:00pm");
 		shortTermTime.add(label9PM);
 		label9PM.setForeground(Color.LIGHT_GRAY);
 		label9PM.setFont(font.deriveFont(15f));
@@ -1147,11 +1147,6 @@ public class MainFrame {
 
 		// show short term view by default
 		toggleShortTerm(true);
-		
-		//try refreshing from default location
-		String defaultLocation = prefs.getDefaultLocation();
-		if (defaultLocation != null)
-			refresh(defaultLocation);
 	}
 
 	private void createFont() {
@@ -1247,7 +1242,7 @@ public class MainFrame {
     	for (int i = 0; i < 7; i++){
     		LongTermWeather ltw = longTermForecast.getLongTermForecast().get(i);
         	longTermTemp.get(i).setText(ltw.getTemp(tempUnit));
-        	longTermHighLow.get(i).setText(ltw.getHigh(tempUnit) + "  |  " + ltw.getLow(tempUnit));
+        	longTermHighLow.get(i).setText(ltw.getLow(tempUnit) + "  |  " + ltw.getHigh(tempUnit));
         }
     }
     
@@ -1275,7 +1270,7 @@ public class MainFrame {
     	for (int i = 0; i < 7; i++){
     		LongTermWeather ltw = longTermForecast.getLongTermForecast().get(i);
     		
-    		longTermDate.get(i).setText(ltw.getDate());
+    		//longTermDate.get(i).setText(ltw.getDate().substring(11,13) + " h");
     		setSkyConditionImages(ltw.getWeatherID());
     		longTermIcon.get(i).setIcon(new ImageIcon(skyConditionIconSmall));
 			longTermSkyCon.get(i).setText("<html>"+ ltw.getSkyCon() +"</html>");
@@ -1310,7 +1305,7 @@ public class MainFrame {
 				test = new CurrentWeather(name);
 
 				// User didn't enter a valid location...
-				if (test == null || !(name.contentEquals(test.getCity()+", "+test.getCountry()))) {
+				if (test == null || !(name.contains(test.getCity()))) {
 					barSearch.setText("Please enter a valid location.");
 					return;
 				}
