@@ -857,7 +857,7 @@ public class MainFrame {
 		// / BEGIN INITIALIZATION OF LONG-TERM FORECAST PANEL ///
 
 		// Day1
-		labelDay1Info = new JLabel("");
+		labelDay1Info = new JLabel("Mon.");
 		longTermDate.add(labelDay1Info);
 		labelDay1Info.setForeground(Color.LIGHT_GRAY);
 		labelDay1Info.setFont(font.deriveFont(15f));
@@ -898,7 +898,7 @@ public class MainFrame {
 		frame.getContentPane().add(labelDay1PrecipitationInfo);
 
 		// Day2
-		labelDay2Info = new JLabel("");
+		labelDay2Info = new JLabel("Tues.");
 		longTermDate.add(labelDay2Info);
 		labelDay2Info.setForeground(Color.LIGHT_GRAY);
 		labelDay2Info.setFont(font.deriveFont(15f));
@@ -939,7 +939,7 @@ public class MainFrame {
 		frame.getContentPane().add(labelDay2PrecipitationInfo);
 
 		// Day3
-		labelDay3Info = new JLabel("");
+		labelDay3Info = new JLabel("Wed.");
 		longTermDate.add(labelDay3Info);
 		labelDay3Info.setForeground(Color.LIGHT_GRAY);
 		labelDay3Info.setFont(font.deriveFont(15f));
@@ -980,7 +980,7 @@ public class MainFrame {
 		frame.getContentPane().add(labelDay3PrecipitationInfo);
 
 		// Day4
-		labelDay4Info = new JLabel("");
+		labelDay4Info = new JLabel("Thurs.");
 		longTermDate.add(labelDay4Info);
 		labelDay4Info.setForeground(Color.LIGHT_GRAY);
 		labelDay4Info.setFont(font.deriveFont(15f));
@@ -1021,7 +1021,7 @@ public class MainFrame {
 		frame.getContentPane().add(labelDay4PrecipitationInfo);
 
 		// Day5
-		labelDay5Info = new JLabel("");
+		labelDay5Info = new JLabel("Fri.");
 		longTermDate.add(labelDay5Info);
 		labelDay5Info.setForeground(Color.LIGHT_GRAY);
 		labelDay5Info.setFont(font.deriveFont(15f));
@@ -1062,7 +1062,7 @@ public class MainFrame {
 		frame.getContentPane().add(labelDay5PrecipitationInfo);
 
 		// Day6
-		labelDay6Info = new JLabel("");
+		labelDay6Info = new JLabel("Sat.");
 		longTermDate.add(labelDay6Info);
 		labelDay6Info.setForeground(Color.LIGHT_GRAY);
 		labelDay6Info.setFont(font.deriveFont(15f));
@@ -1103,7 +1103,7 @@ public class MainFrame {
 		frame.getContentPane().add(labelDay6PrecipitationInfo);
 
 		// Day7
-		labelDay7Info = new JLabel("");
+		labelDay7Info = new JLabel("Sun.");
 		longTermDate.add(labelDay7Info);
 		labelDay7Info.setForeground(Color.LIGHT_GRAY);
 		labelDay7Info.setFont(font.deriveFont(15f));
@@ -1242,7 +1242,7 @@ public class MainFrame {
     	for (int i = 0; i < 7; i++){
     		LongTermWeather ltw = longTermForecast.getLongTermForecast().get(i);
         	longTermTemp.get(i).setText(ltw.getTemp(tempUnit));
-        	longTermHighLow.get(i).setText(ltw.getHigh(tempUnit) + "  |  " + ltw.getLow(tempUnit));
+        	longTermHighLow.get(i).setText(ltw.getLow(tempUnit) + "  |  " + ltw.getHigh(tempUnit));
         }
     }
     
@@ -1270,7 +1270,7 @@ public class MainFrame {
     	for (int i = 0; i < 7; i++){
     		LongTermWeather ltw = longTermForecast.getLongTermForecast().get(i);
     		
-    		longTermDate.get(i).setText(ltw.getDate());
+    		//longTermDate.get(i).setText(ltw.getDate().substring(11,13) + " h");
     		setSkyConditionImages(ltw.getWeatherID());
     		longTermIcon.get(i).setIcon(new ImageIcon(skyConditionIconSmall));
 			longTermSkyCon.get(i).setText("<html>"+ ltw.getSkyCon() +"</html>");
