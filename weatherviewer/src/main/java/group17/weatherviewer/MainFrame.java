@@ -1345,12 +1345,9 @@ public class MainFrame {
 
 
 				// add element to user preferences as well
-				try {
 					// add the element to the position at index index
 					prefs.addLocation(index, barSearch.getText());
-				} catch (WeatherException exception) {
-					System.out.println(exception.getMessage());
-				}
+
 
 
 				// reset the text field.
