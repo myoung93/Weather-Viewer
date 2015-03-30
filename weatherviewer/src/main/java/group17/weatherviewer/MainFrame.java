@@ -502,8 +502,7 @@ public class MainFrame {
 		listModel = new DefaultListModel();
 
 		// Add saved locations to current list
-		for (String loc : prefs.getLocations()) { // loads the MyLocations
-													// arraylist into listModel
+		for (String loc : prefs.getLocations()) { // loads the MyLocations arraylist into listModel
 			listModel.addElement(loc);
 		}
 
@@ -515,7 +514,7 @@ public class MainFrame {
 		lsm.addListSelectionListener(new ListSelectionListener() {
 			@Override
 			public void valueChanged(ListSelectionEvent e) {
-				if (listLocations.getValueIsAdjusting() == false){
+				if (!listLocations.getValueIsAdjusting()){
 					String selectedLocation = listLocations.getSelectedValue().toString();
 					refresh(selectedLocation);
 					prefs.setDefaultLocation(selectedLocation);
@@ -1157,6 +1156,9 @@ public class MainFrame {
 			refresh(defaultLocation);
 	}
 
+	/**
+	 * called once by the constructor to initialize font data from file before drawing
+	 */
 	private void createFont() {
 		java.io.InputStream fontInputStream = this.getClass()
 				.getResourceAsStream("/fonts/HelveticaNeue-Medium.otf");
@@ -1169,11 +1171,10 @@ public class MainFrame {
 		}
 	}
 
-	// updates the labels current weather view to the new weather conditions
-	// in the future, this should probably take a String city parameter to
-	// construct the CurrentWeather obj from.
-	// should probably show some kind of "updating" message
-
+	/**
+	 * refreshes the weather data throughout the UI
+ 	 * @param location the city for which we are viewing weather data
+	 */
 	public void refresh(String location) {
 		try {
 			// constructor should take String city parameter in the future.
@@ -1211,7 +1212,6 @@ public class MainFrame {
 
 			labelUpdatedInfo.setText(lastUpdated); // -NK
 
-
 			// display weather icon and background image
 			setSkyConditionImages(currentWeather.getWeatherID());
 			labelSkyConditionIcon.setIcon(new ImageIcon(skyConditionIconLarge));
@@ -1222,25 +1222,23 @@ public class MainFrame {
 
 			// display weather info for short/long-term forecasts
 			updateShortTerm();
-
 			updateLongTerm();
-			
-		} 
+		}
 		catch (IOException e) {
+			//should not be executed.
 			System.out.println("Something went wrong retrieving current weather");
 		}	
-		
-	}	
+	}
 
-	//moved these to a method because in the future we will have to re-initialize them when c/f is changed.
+	/**
+	 * Sets all the temperature fields in the interface. This is called when data is refreshed, but also when C/F
+	 * unit is changed - which is why it is kept seperate from non-temperature fields.
+	 */
     private void setTemperatureFields() {
     	char tempUnit = prefs.getTempUnit();
     	if(currentWeather != null) {
-            
             labelTempInfo.setText(currentWeather.getTemp(tempUnit));
             labelCurrentMMTempInfo.setText(currentWeather.getMinTemp(tempUnit) + "  |  " + currentWeather.getMaxTemp(tempUnit));
-            
-            
         }
       //do same for short/long-term forecasts
     	for (int i = 0; i < 8; i++){
@@ -1253,14 +1251,17 @@ public class MainFrame {
         	longTermHighLow.get(i).setText(ltw.getLow(tempUnit) + "  |  " + ltw.getHigh(tempUnit));
         }
     }
-    
-    //update short-term forecast information (except temperatures)
+
+	/**
+	 * updates the short term weather forecast values when the location is changed / data is refreshed
+	 * (except temperatures since these are handled in setTemperatureFields)
+	 */
     private void updateShortTerm(){
     	for (int i = 0; i < 8; i++){
     		ShortTermWeather stw = shortTermForecast.getShortTermForecast().get(i);
     		
-    		shortTermTime.get(i).setText(stw.getTime().substring(11,13) + " h");
-    		setSkyConditionImages(stw.getWeatherID());
+    		shortTermTime.get(i).setText(stw.getTime().substring(11, 13) + " h");
+			setSkyConditionImages(stw.getWeatherID());
     		shortTermIcon.get(i).setIcon(new ImageIcon(skyConditionIconSmall));
 			shortTermSkyCon.get(i).setText("<html>"+ stw.getSkyCon() +"</html>");
 			if (!(stw.getRain().contentEquals("0")))
@@ -1269,11 +1270,13 @@ public class MainFrame {
 				shortTermPrecip.get(i).setText(stw.getSnow()+ " mm");
 			else 
 				shortTermPrecip.get(i).setText("0 mm");
-				
     	}
     }
-    
-  //update short-term forecast information (except temperatures)
+
+	/**
+	 * updates the long term weather forecast values when the location is changed / data is refreshed
+	 * (except temperatures since these are handled in setTemperatureFields)
+	 */
     private void updateLongTerm(){
     	for (int i = 0; i < 7; i++){
     		LongTermWeather ltw = longTermForecast.getLongTermForecast().get(i);
@@ -1290,10 +1293,11 @@ public class MainFrame {
 				longTermPrecip.get(i).setText("0 mm");
     	}
     }
-    
 
-	// This listener is shared by the barSearch TextField and the AddLocation
-	// Button.
+
+	/**
+	 * Class representing the actionlistener for adding locations to the list
+	 */
 	private class AddLocation implements ActionListener, DocumentListener {
 		private boolean alreadyEnabled = false;
 		private JButton button;
@@ -1303,17 +1307,19 @@ public class MainFrame {
 			this.button = button;
 		}
 
-		// Required by ActionListener.
+		/**
+		 * overrided ActionListener interface method which is executed whenever an event is fired
+		 * @param e the event fired that caused the method call
+		 */
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			String name = barSearch.getText();
 
 			try {
-
 				test = new CurrentWeather(name);
 
 				// User didn't enter a valid location...
-				if (test == null || !(name.contentEquals(test.getCity()+", "+test.getCountry()))) {
+				if (!(name.contentEquals(test.getCity()+", "+test.getCountry()))) {
 					barSearch.setText("Please enter a valid location.");
 					return;
 				}
@@ -1340,12 +1346,8 @@ public class MainFrame {
 				// listModel.addElement(employeeName.getText());
 				// Add element to user preferences as well - NK
 				try {
-					prefs.addLocation(index, barSearch.getText()); // adds to
-																	// "index"
-																	// position
-																	// of the
-																	// MyLocations
-																	// list
+					//add the element to the position at index index
+					prefs.addLocation(index, barSearch.getText());
 				} catch (WeatherException exception) {
 					System.out.println(exception.getMessage());
 				}
@@ -1363,7 +1365,6 @@ public class MainFrame {
 			} catch (Exception err) {
 				System.out.println("An invalid location was entered.");
 				barSearch.setText("Please enter a valid location.");
-				return;
 			}
 		}
 
@@ -1411,11 +1412,8 @@ public class MainFrame {
 	}
 
 	/**
-	 * toggles whether the short/long term display is shown i still don't like
-	 * this, but it's half as bad as before.
-	 * 
-	 * @param b
-	 *            whether to show or hide short term
+	 * toggles whether the short or long term display is shown
+	 * @param b whether to show or hide short term (ie, true shows short term, false shows long term)
 	 */
 	public void toggleShortTerm(boolean b) {
 		if (b) {
@@ -1509,6 +1507,12 @@ public class MainFrame {
 		label9PMPrecipitation.setVisible(b);
 	}
 
+	/**
+	 * takes a parameter ID obtained from the weather API and sets the corresponding sky condition icons to match
+	 * the sky condition described by the ID.
+	 * unfortunately doing this manually using a switch is still the easiest way to do this.
+	 * @param ID the ID number describing the sky condition
+	 */
 	public void setSkyConditionImages(int ID) {
 		String icon, background;
 
