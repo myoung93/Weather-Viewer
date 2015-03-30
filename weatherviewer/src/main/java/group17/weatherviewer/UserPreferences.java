@@ -16,6 +16,7 @@ public class UserPreferences implements java.io.Serializable {
                     pressureUnit,
                     timeUnit;
     private ArrayList<String> locations;
+    private String defaultLocation;
 
     /**
      * Constructor of user preferences, initializes locations list and sets default values
@@ -25,6 +26,7 @@ public class UserPreferences implements java.io.Serializable {
         locations = new ArrayList<>();
         tempUnit = 'c';
         //add london as default
+        
     }
 
     /**
@@ -78,6 +80,7 @@ public class UserPreferences implements java.io.Serializable {
             ;//?
         }
     }
+    
 
     /**
      * Gets temperature unit
@@ -114,6 +117,10 @@ public class UserPreferences implements java.io.Serializable {
     public ArrayList<String> getLocations() {
         return locations;
     }
+    
+    public String getDefaultLocation(){
+    	return defaultLocation;
+    }
 
     /**
      * Adds a location to the end of the list of favorite locations
@@ -121,8 +128,10 @@ public class UserPreferences implements java.io.Serializable {
      * Maybe we don't need this one, since we don't add to the end - NK
      */
     public void addLocation(String s) throws WeatherException {
-        if(!locations.contains(s))
+        if(!locations.contains(s)){
             locations.add(s);
+            defaultLocation = s;
+        }
         else
             throw new WeatherException("Location already exists");
     }

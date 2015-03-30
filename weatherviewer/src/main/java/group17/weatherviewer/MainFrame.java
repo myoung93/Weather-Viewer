@@ -1147,6 +1147,11 @@ public class MainFrame {
 
 		// show short term view by default
 		toggleShortTerm(true);
+		
+		//try refreshing from default location
+		String defaultLocation = prefs.getDefaultLocation();
+		if (defaultLocation != null)
+			refresh(defaultLocation);
 	}
 
 	private void createFont() {
@@ -1305,7 +1310,7 @@ public class MainFrame {
 				test = new CurrentWeather(name);
 
 				// User didn't enter a valid location...
-				if (test == null || !(name.contains(test.getCity()))) {
+				if (test == null || !(name.contentEquals(test.getCity()+", "+test.getCountry()))) {
 					barSearch.setText("Please enter a valid location.");
 					return;
 				}
