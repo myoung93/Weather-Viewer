@@ -18,11 +18,9 @@ public class LongTermForecast {
 	private double temp, high, low, rain, snow;
 	private int weatherID;
 
-	
 	// arraylist of all weather information
-	private ArrayList<LongTermWeather> longTermForecast = new ArrayList<LongTermWeather>();
+	private ArrayList<LongTermWeather> longTermForecast = new ArrayList<>();
 
-	
 	public LongTermForecast(String cityName, int Term)
 			throws UnsupportedEncodingException {
 		Url = "http://api.openweathermap.org/data/2.5/forecast/daily?q="

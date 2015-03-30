@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a61e219-4b68-4789-ad36-5bfca065340d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/ShortTermForecast.java" afterPath="$PROJECT_DIR$/src/main/java/group17/weatherviewer/ShortTermForecast.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="weatherviewer.iws" />
@@ -57,14 +56,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Conversion.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Conversion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24005134">
+            <state vertical-scroll-proportion="0.0">
               <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LongTermForecast.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24005134">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,6 +99,16 @@
                 <element signature="e#7333#7334#0" expanded="true" />
                 <element signature="e#7356#7357#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShortTermForecast.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/ShortTermForecast.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,6 +145,8 @@
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/UserPreferences.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java" />
         <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/ShortTermForecast.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java" />
       </list>
     </option>
   </component>
@@ -865,7 +886,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427680681133</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added a lot of documentation, did some cleaning.">
+      <created>1427681660782</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1427681660782</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -925,7 +952,8 @@
     <MESSAGE value="Set default temp unit to Celsius to fix a bug where a character missing box would appear. Location testing does not work properly (is almost always invalid)." />
     <MESSAGE value="Fixed a stringIndexOutOfBounds bug in getPressure" />
     <MESSAGE value="Removed Conversion method since it is not used." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Conversion method since it is not used." />
+    <MESSAGE value="Added a lot of documentation, did some cleaning." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a lot of documentation, did some cleaning." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -952,26 +980,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#setSkyConditionImages#0;class#MainFrame#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1585,6 +1593,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/CurrentWeather.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1608,21 +1634,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/WeatherException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/ShortTermForecast.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/Conversion.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/group17/weatherviewer/LongTermForecast.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24005134">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
