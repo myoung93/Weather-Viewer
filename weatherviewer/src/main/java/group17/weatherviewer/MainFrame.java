@@ -1352,8 +1352,8 @@ public class MainFrame {
 				listLocations.setSelectedIndex(index);
 				listLocations.ensureIndexIsVisible(index);
 
-			} catch (IOException err) {
-				System.out.println("An invalid location was entered.");
+			} catch (Exception err) {
+				System.out.println("An invalid location was entered. Please try again.");
 				return;
 			}
 		}
