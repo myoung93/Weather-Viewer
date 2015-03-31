@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.1.8" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true">  
-  <class id="1" language="java" name="group17.weatherviewer.Conversion" project="17_weatherviewer" 
-    file="/17_weatherviewer/src/main/java/group17/weatherviewer/Conversion.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="115" width="149" x="422" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="2" language="java" name="group17.weatherviewer.CurrentWeather" project="17_weatherviewer" 
+  <class id="1" language="java" name="group17.weatherviewer.CurrentWeather" project="17_weatherviewer" 
     file="/17_weatherviewer/src/main/java/group17/weatherviewer/CurrentWeather.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="565" width="174" x="1032" y="3083"/>    
@@ -20,16 +11,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="group17.weatherviewer.JsonParser" project="17_weatherviewer" 
-    file="/17_weatherviewer/src/main/java/group17/weatherviewer/JsonParser.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="115" width="116" x="154" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="4" language="java" name="group17.weatherviewer.LongTermForecast.LongTermWeather" project="17_weatherviewer" 
+  <class id="2" language="java" name="group17.weatherviewer.LongTermForecast.LongTermWeather" project="17_weatherviewer" 
     file="/17_weatherviewer/src/main/java/group17/weatherviewer/LongTermForecast.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="385" width="373" x="42" y="3083"/>    
@@ -39,7 +21,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="group17.weatherviewer.LongTermForecast" project="17_weatherviewer" 
+  <class id="3" language="java" name="group17.weatherviewer.LongTermForecast" project="17_weatherviewer" 
     file="/17_weatherviewer/src/main/java/group17/weatherviewer/LongTermForecast.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="241" width="289" x="42" y="2730"/>    
@@ -49,7 +31,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="group17.weatherviewer.ShortTermForecast" project="17_weatherviewer" 
+  <class id="4" language="java" name="group17.weatherviewer.ShortTermForecast" project="17_weatherviewer" 
     file="/17_weatherviewer/src/main/java/group17/weatherviewer/ShortTermForecast.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="259" width="293" x="595" y="2730"/>    
@@ -59,7 +41,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="group17.weatherviewer.ShortTermForecast.ShortTermWeather" 
+  <class id="5" language="java" name="group17.weatherviewer.ShortTermForecast.ShortTermWeather" 
     project="17_weatherviewer" file="/17_weatherviewer/src/main/java/group17/weatherviewer/ShortTermForecast.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="331" width="305" x="595" y="3083"/>    
@@ -69,7 +51,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="group17.weatherviewer.UserPreferences" project="17_weatherviewer" 
+  <class id="6" language="java" name="group17.weatherviewer.UserPreferences" project="17_weatherviewer" 
     file="/17_weatherviewer/src/main/java/group17/weatherviewer/UserPreferences.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="313" width="184" x="371" y="2730"/>    
@@ -79,7 +61,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="group17.weatherviewer.MainFrame" project="17_weatherviewer" 
+  <class id="7" language="java" name="group17.weatherviewer.MainFrame" project="17_weatherviewer" 
     file="/17_weatherviewer/src/main/java/group17/weatherviewer/MainFrame.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="2653" width="205" x="724" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -88,7 +70,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="group17.weatherviewer.MainFrame.AddLocation" project="17_weatherviewer" 
+  <class id="8" language="java" name="group17.weatherviewer.MainFrame.AddLocation" project="17_weatherviewer" 
     file="/17_weatherviewer/src/main/java/group17/weatherviewer/MainFrame.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="241" width="257" x="928" y="2730"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -97,9 +79,27 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
+  <class id="9" language="java" name="group17.weatherviewer.Conversion" project="17_weatherviewer" 
+    file="/17_weatherviewer/src/main/java/group17/weatherviewer/Conversion.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="672" y="3555"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="group17.weatherviewer.JsonParser" project="17_weatherviewer" 
+    file="/17_weatherviewer/src/main/java/group17/weatherviewer/JsonParser.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="427" y="2573"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
   <association id="11">    
     <bendpoint x="1234" y="2733"/>    
-    <end type="SOURCE" refId="9" navigable="false">      
+    <end type="SOURCE" refId="7" navigable="false">      
       <attribute id="12" name="currentWeather">        
         <position height="17" width="83" x="1176" y="3040"/>      
       </attribute>      
@@ -107,93 +107,97 @@
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="14">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="15" name="prefs">        
+  <dependency id="14">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="15">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="16" name="shortTermForecast">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="16" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="17">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="18" name="test">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="19" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="20">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="21" name="shortTermForecast">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="22" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="23">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="24" name="longTermForecast">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="25" minimum="0" maximum="2147483647">        
+      <multiplicity id="17" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="26">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="27" name="longTermForecast">        
-        <position height="17" width="96" x="665" y="-391"/>      
+  <association id="18">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="19" name="shortTermForecast">        
+        <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="28" minimum="0" maximum="1">        
+      <multiplicity id="20" minimum="0" maximum="2147483647">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <nesting id="29">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="7"/>  
-  </nesting>  
-  <association id="30">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="31" name="shortTermForecast">        
-        <position height="0" width="0" x="0" y="0"/>      
+  <association id="21">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="22" name="longTermForecast">        
+        <position height="17" width="96" x="665" y="-391"/>      
       </attribute>      
-      <multiplicity id="32" minimum="0" maximum="2147483647">        
+      <multiplicity id="23" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <nesting id="33">    
-    <end type="SOURCE" refId="9"/>    
+  <dependency id="24">    
+    <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <association id="25">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="26" name="longTermForecast">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="27" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="28">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
   </nesting>  
-  <nesting id="34">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="4"/>  
+  <association id="29">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="30" name="prefs">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="31" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="32">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
   </nesting>  
+  <nesting id="33">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="8"/>  
+  </nesting>  
+  <dependency id="34">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="35">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
