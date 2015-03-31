@@ -1358,7 +1358,6 @@ public class MainFrame {
 				listLocations.ensureIndexIsVisible(index);
 
 			} catch (Exception err) {
-				System.out.println("An invalid location was entered.");
 				barSearch.setText("Please enter a valid location.");
 			}
 		}

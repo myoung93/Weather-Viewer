@@ -99,13 +99,13 @@ public class LongTermForecast {
 	 * Data type that contains longterm weather data
 	 */
 	public class LongTermWeather{
-		private String date, skycon; 
+		private String date, skyCon; 
 		private double temp, high, low, rain, snow;
 		private int weatherID;
 		
-		public LongTermWeather(String date, String skycon, double temp, double high, double low, double rain, double snow, int weatherID){
+		public LongTermWeather(String date, String skyCon, double temp, double high, double low, double rain, double snow, int weatherID){
 			this.date = Conversion.unixToDate((date));
-			this.skycon = skycon;
+			this.skyCon = skyCon;
 			this.temp = temp;
 			this.high = high;
 			this.low= low;

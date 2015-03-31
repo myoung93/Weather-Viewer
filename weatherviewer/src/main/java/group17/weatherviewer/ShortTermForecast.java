@@ -93,13 +93,13 @@ public class ShortTermForecast {
 	
 	//helper class
 	public class ShortTermWeather{
-		private String time, skycon; 
+		private String time, skyCon; 
 		private double temp, rain, snow;
 		private int weatherID;
 		
-		public ShortTermWeather(String time, String skycon, double temp, double rain, double snow, int weatherID){
+		public ShortTermWeather(String time, String skyCon, double temp, double rain, double snow, int weatherID){
 			this.time = time;
-			this.skycon = skycon;
+			this.skyCon = skyCon;
 			this.temp = temp;
 			this.rain = rain;
 			this.snow = snow;
@@ -113,7 +113,7 @@ public class ShortTermForecast {
 		}
 		
 		public String getSkyCon(){
-			return this.skycon;
+			return this.skyCon;
 		}
 		
 		/**
