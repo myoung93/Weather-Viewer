@@ -53,6 +53,7 @@ public class LongTermForecast {
 
 		//Short term shows daily forecast, for at least 5 days forecast
 		for (int i = 0; i < Term; i++) {
+
 			JSONObject ObjDay = Arraylist.getJSONObject(i);
 
 			// Rain

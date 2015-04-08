@@ -10,18 +10,20 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.lang.*;
 
-//A data type class to hold all necessary information for the Current Weather view.
+/*
+ * data type class to hold all necessary information for the Current Weather view.
+ */
 public class CurrentWeather {
 
-    //Data fields required for Current Weather view
+    // data fields required for Current Weather view
 	private String city, skyCon, sunrise, sunset, country;
 	private double temp, pressure, humidity, maxTemp, minTemp, windSpeed, windDir;
-	//weather ID the API gives for this day
+	// weather ID the API gives for this day
 	private int weatherID;
 
     /**
-     * Constructor for CurrentWeather
-     * Takes a city name as parameter, retrieves and parses the JSON for that city and stores the data
+     * constructor for CurrentWeather
+     * takes a city name as parameter, retrieves and parses the JSON for that city and stores the data
      * @param cityName is the name of the city for which we're storing and parsing information
      * @throws UnsupportedEncodingException if the JSON retrieval fails
      */
@@ -53,12 +55,12 @@ public class CurrentWeather {
 			// parse JSON data, JSON_Data:weatherData
 
 			JSONObject jsonData = JSONObject.fromObject(weatherData);
-			// Save all weather information��
+			// save all weather information��
 			
 			// get information from sys object
 			JSONObject objSys = jsonData.getJSONObject("sys");// country
 			country = objSys.getString("country");
-			//grab sunrise/sunset and convert to real time
+			// grab sunrise/sunset and convert to real time
 			sunrise = Conversion.unixToTime(objSys.getString("sunrise"));
 			sunset = Conversion.unixToTime(objSys.getString("sunset"));
 			
@@ -67,11 +69,11 @@ public class CurrentWeather {
 			
 			// get information from main object
 			JSONObject objMain = jsonData.getJSONObject("main");
-			//we subtract 273 from each temperature value because there is no need to store the kelvin value
+			// we subtract 273 from each temperature value because there is no need to store the kelvin value
 			temp = objMain.getDouble("temp") - 273;// temperature
 			minTemp = objMain.getDouble("temp_min") - 273;// min temperature
 			maxTemp = objMain.getDouble("temp_max") - 273;// max temperature
-			//divide by 10 to convert from hPa to kPa
+			// divide by 10 to convert from hPa to kPa
 			pressure = objMain.getDouble("pressure")/10; // pressure
 			humidity = objMain.getDouble("humidity");// humidity
 			
@@ -87,7 +89,7 @@ public class CurrentWeather {
 			skyCon = objWea.getString("description");
 			
 
-			//get weatherID info
+			// get weatherID info
 			weatherID = objWea.getInt("id");
 		}
 		catch (IOException e) {
@@ -98,7 +100,7 @@ public class CurrentWeather {
 	// Getters -> Modified to return Strings instead of Doubles -TE
 
     /**
-     * Getter method for city
+     * getter method for city
      * @return the city from which this weather data was gathered
      */
     public String getCity() {
@@ -107,14 +109,14 @@ public class CurrentWeather {
     }
 
     /**
-     * Getter method for windSpeed
+     * getter method for windSpeed
      * @return the current wind speed
      */
 	public String getWindSpeed() {
 		return String.valueOf(Math.round(windSpeed*3.6));
 	}
     /**
-     * Getter method for pressure
+     * getter method for pressure
      * @return the current pressure
      */
 	public String getPressure() {
@@ -132,28 +134,28 @@ public class CurrentWeather {
 	}
 
     /**
-     * Getter method for humidity
+     * getter method for humidity
      * @return the current humidity in %
      */
 	public String getHumidity() {
 		return String.valueOf((int)humidity);
 	}
     /**
-     * Getter method for sunrise
+     * getter method for sunrise
      * @return the current sunrise time in Unix time
      */
 	public String getSunriseTime() {
 		return sunrise;
 	}
     /**
-     * Getter method for sunset
+     * getter method for sunset
      * @return the current sunset time in Unix time
      */
 	public String getSunsetTime() {
 		return sunset;
 	}
     /**
-     * Getter method for wind direction
+     * getter method for wind direction
      * @return the current wind direction in degrees
      */
 	public String getWindDirection() {
@@ -182,7 +184,7 @@ public class CurrentWeather {
 	}
 
     /**
-     * Getter method for Celsius temperature
+     * getter method for Celsius temperature
      * @return the current temp in degrees C (will be only temp method in later versions)
      */
 	public String getTemp(char tempUnit) {
@@ -239,7 +241,7 @@ public class CurrentWeather {
         return String.valueOf(t).substring(0,substringLength) + '°' + Character.toUpperCase(unit);
     }
     /**
-     * Getter method for country name
+     * getter method for country name
      * @return the name of the country the city is in
      */
 	public String getCountry() {
@@ -247,7 +249,7 @@ public class CurrentWeather {
 	}
 
     /**
-     * Getter method for sky condition
+     * getter method for sky condition
      * @return a string representing sky condition
      */
 	public String getSkyCondition() {

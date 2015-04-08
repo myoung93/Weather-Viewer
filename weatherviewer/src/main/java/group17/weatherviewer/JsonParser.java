@@ -12,13 +12,21 @@ import net.sf.json.JSONObject;
 
 public class JsonParser {
 
-	String OwmUrl;
+	String owmUrl;
 
 	// get link from other weather classes and return data as string
+	/**
+	 * constructor
+	 * @param url url to be used in the connection
+	 */
 	public JsonParser(String url) throws UnsupportedEncodingException {
-		this.OwmUrl = url;
+		this.owmUrl = url;
 	}
 
+	/**
+	 * gets weather data as string
+	 * @return string of weather data
+	 */
 	public String getData() {
 
 		StringBuffer SBR;
@@ -26,7 +34,7 @@ public class JsonParser {
 		SBR = new StringBuffer();
 
 		try {
-			URL url = new URL(OwmUrl);
+			URL url = new URL(owmUrl);
 			URLConnection connection = url.openConnection();
 			BufferedReader BReader = new BufferedReader(new InputStreamReader(
 					connection.getInputStream()));

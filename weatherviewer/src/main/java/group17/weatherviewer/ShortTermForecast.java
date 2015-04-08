@@ -17,8 +17,8 @@ public class ShortTermForecast {
 	private double totalRain = 0, totalSnow = 0;
 	private int weatherID;
 
-	// arraylist of weather information for the day in question
-	private ArrayList<ShortTermWeather> shortTermForecast = new ArrayList<>();
+	// arraylist of all weather information
+	private ArrayList<ShortTermWeather> shortTermForecast = new ArrayList<ShortTermWeather>();
 
 	/**
 	 * Retrieves short term weather data and constructs an array of ShortTermForecast objects from the JSON returned
@@ -51,8 +51,12 @@ public class ShortTermForecast {
 
 			// rain
 			if (ObjList.containsKey("rain")) {
+
 				JSONObject ObjRain = ObjList.getJSONObject("rain");
 				rain = ObjRain.getDouble("3h");
+
+			} else {
+				rain = 0;
 			}
 			else
 				rain = 0;
@@ -63,6 +67,10 @@ public class ShortTermForecast {
 			if (ObjList.containsKey("snow")) {
 				JSONObject ObjSnow = ObjList.getJSONObject("snow");
 				snow = ObjSnow.getDouble("3h");
+
+			} else {
+				snow = 0;
+				
 			}
 			else
 				snow = 0;
