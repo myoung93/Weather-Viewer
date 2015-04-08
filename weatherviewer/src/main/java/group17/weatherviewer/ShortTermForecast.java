@@ -55,8 +55,6 @@ public class ShortTermForecast {
 				JSONObject ObjRain = ObjList.getJSONObject("rain");
 				rain = ObjRain.getDouble("3h");
 
-			} else {
-				rain = 0;
 			}
 			else
 				rain = 0;
@@ -68,9 +66,6 @@ public class ShortTermForecast {
 				JSONObject ObjSnow = ObjList.getJSONObject("snow");
 				snow = ObjSnow.getDouble("3h");
 
-			} else {
-				snow = 0;
-				
 			}
 			else
 				snow = 0;

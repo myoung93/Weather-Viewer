@@ -1345,15 +1345,8 @@ public class MainFrame {
 
 				listModel.insertElementAt(barSearch.getText(), index);
 
-
-				// add element to user preferences as well
-				try {
-					// add the element to the position at index index
-					prefs.addLocation(index, barSearch.getText());
-				} catch (WeatherException exception) {
-					System.out.println(exception.getMessage());
-				}
-
+				// add the element to the position at index index
+				prefs.addLocation(index, barSearch.getText());
 
 				// reset the text field.
 				barSearch.requestFocusInWindow();
