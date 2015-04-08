@@ -1371,22 +1371,19 @@ public class MainFrame {
 			return listModel.contains(name);
 		}
 
-		/*
+		/**
 		 * overrides documentListener method
 		 * @param e document event
 		 */
-
 		@Override
 		public void insertUpdate(DocumentEvent e) {
 			enableButton();
 		}
 
-
 		/**
 		 * overrides documentListener method
 		 * @param e document event
 		 */
-
 		@Override
 		public void removeUpdate(DocumentEvent e) {
 			handleEmptyTextField(e);
@@ -1396,7 +1393,6 @@ public class MainFrame {
 		 * overrides documentListener method
 		 * @param e document event
 		 */
-
 		@Override
 		public void changedUpdate(DocumentEvent e) {
 			if (!handleEmptyTextField(e)) {
