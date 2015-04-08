@@ -17,10 +17,12 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+/**
+ * Contains all GUI elements - the parent Frame, the main Panel, and all the labels and other fields contained within
+ * the panel.
+ */
 public class MainFrame {
 
-	// this is incredibly messy
-	// a lot of these can be local fields too
 	private static Font font;
 
 	private JFrame frame;
@@ -32,7 +34,6 @@ public class MainFrame {
 
 	private JLabel backgroundLabel;
 
-	private JTextField textField;
 	private JTextField barSearch;
 
 	private JScrollPane scrollPane;
@@ -173,9 +174,10 @@ public class MainFrame {
 	private ArrayList<JLabel> longTermPrecip = new ArrayList<JLabel>();
 
 	/**
-	 * Launch the application.
+	 * Main method used to launch the application
 	 */
 	public static void main(String[] args) {
+		//start runnable to create and run the frame.
 		EventQueue.invokeLater(new Runnable() {
 			@Override
 			public void run() {
@@ -1158,11 +1160,13 @@ public class MainFrame {
 	}
 
 	/**
-	 * called once by the constructor to initialize font data from file before drawing
+	 * Called once by the constructor to initialize font data from the fonts file before drawing
 	 */
 	private void createFont() {
+		//create input stream from the fonts file
 		java.io.InputStream fontInputStream = this.getClass()
 				.getResourceAsStream("/fonts/HelveticaNeue-Medium.otf");
+		//create font from stream
 		try {
 			font = Font.createFont(Font.TRUETYPE_FONT, fontInputStream);
 		} catch (Exception e) {
@@ -1174,7 +1178,7 @@ public class MainFrame {
 
 	/**
 	 * refreshes the weather data throughout the UI
- 	 * @param location the city for which we are viewing weather data
+ 	 * @param location the city for which we are viewing weather data right now
 	 */
 	public void refresh(String location) {
 		try {
@@ -1227,7 +1231,7 @@ public class MainFrame {
 
 	/**
 	 * Sets all the temperature fields in the interface. This is called when data is refreshed, but also when C/F
-	 * unit is changed - which is why it is kept seperate from non-temperature fields.
+	 * unit is changed - which is why it is kept separate from non-temperature fields.
 	 */
     private void setTemperatureFields() {
     	char tempUnit = prefs.getTempUnit();
@@ -1289,7 +1293,6 @@ public class MainFrame {
     	}
     }
 
-
 	/**
 	 * Class representing the action listener for adding locations to the list
 	 */
@@ -1309,7 +1312,7 @@ public class MainFrame {
 		}
 
 		/**
-		 * overrided ActionListener interface method which is executed whenever an event is fired
+		 * Override from actionlistener - executed whenever an event is fired
 		 * @param e the event fired that caused the method call
 		 */
 		@Override
@@ -1343,14 +1346,9 @@ public class MainFrame {
 
 				listModel.insertElementAt(barSearch.getText(), index);
 
-
 				// add element to user preferences as well
-				try {
-					// add the element to the position at index index
-					prefs.addLocation(index, barSearch.getText());
-				} catch (WeatherException exception) {
-					System.out.println(exception.getMessage());
-				}
+				// add the element to the position at index index
+				prefs.addLocation(index, barSearch.getText());
 
 
 				// reset the text field.
@@ -1376,22 +1374,19 @@ public class MainFrame {
 			return listModel.contains(name);
 		}
 
-		/*
+		/**
 		 * overrides documentListener method
 		 * @param e document event
 		 */
-
 		@Override
 		public void insertUpdate(DocumentEvent e) {
 			enableButton();
 		}
 
-
 		/**
 		 * overrides documentListener method
 		 * @param e document event
 		 */
-
 		@Override
 		public void removeUpdate(DocumentEvent e) {
 			handleEmptyTextField(e);
@@ -1401,7 +1396,6 @@ public class MainFrame {
 		 * overrides documentListener method
 		 * @param e document event
 		 */
-
 		@Override
 		public void changedUpdate(DocumentEvent e) {
 			if (!handleEmptyTextField(e)) {
@@ -1419,7 +1413,7 @@ public class MainFrame {
 		}
 
 		/**
-		 * handles empty text field
+		 * handles empty text field, enables or disables the button accordingly
 		 */
 		private boolean handleEmptyTextField(DocumentEvent e) {
 			if (e.getDocument().getLength() <= 0) {
@@ -1478,8 +1472,6 @@ public class MainFrame {
 		for (JLabel label: shortTermPrecip){
 			label.setVisible(b);
 		}
-			
-		
 	}
 
 	/**
