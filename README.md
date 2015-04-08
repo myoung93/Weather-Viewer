@@ -22,4 +22,4 @@ mvn package
 java -jar target/17_weatherviewer-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 ```
 
-[Here]() is an video example of how to use WeatherViewer, enjoy!
+[Here](https://www.youtube.com/watch?v=wWyd0Rn3mPQ) is an video example of how to use WeatherViewer, enjoy!
