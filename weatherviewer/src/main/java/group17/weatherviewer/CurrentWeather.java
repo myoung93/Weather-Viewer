@@ -100,7 +100,7 @@ public class CurrentWeather {
 	// Getters -> Modified to return Strings instead of Doubles -TE
 
     /**
-     * Getter method for city
+     * getter method for city
      * @return the city from which this weather data was gathered
      */
     public String getCity() {
@@ -109,14 +109,14 @@ public class CurrentWeather {
     }
 
     /**
-     * Getter method for windSpeed
+     * getter method for windSpeed
      * @return the current wind speed
      */
 	public String getWindSpeed() {
 		return String.valueOf(Math.round(windSpeed*3.6));
 	}
     /**
-     * Getter method for pressure
+     * getter method for pressure
      * @return the current pressure
      */
 	public String getPressure() {
@@ -134,28 +134,28 @@ public class CurrentWeather {
 	}
 
     /**
-     * Getter method for humidity
+     * getter method for humidity
      * @return the current humidity in %
      */
 	public String getHumidity() {
 		return String.valueOf((int)humidity);
 	}
     /**
-     * Getter method for sunrise
+     * getter method for sunrise
      * @return the current sunrise time in Unix time
      */
 	public String getSunriseTime() {
 		return sunrise;
 	}
     /**
-     * Getter method for sunset
+     * getter method for sunset
      * @return the current sunset time in Unix time
      */
 	public String getSunsetTime() {
 		return sunset;
 	}
     /**
-     * Getter method for wind direction
+     * getter method for wind direction
      * @return the current wind direction in degrees
      */
 	public String getWindDirection() {
@@ -184,7 +184,7 @@ public class CurrentWeather {
 	}
 
     /**
-     * Getter method for Celsius temperature
+     * getter method for Celsius temperature
      * @return the current temp in degrees C (will be only temp method in later versions)
      */
 	public String getTemp(char tempUnit) {
@@ -241,7 +241,7 @@ public class CurrentWeather {
         return String.valueOf(t).substring(0,substringLength) + '°' + Character.toUpperCase(unit);
     }
     /**
-     * Getter method for country name
+     * getter method for country name
      * @return the name of the country the city is in
      */
 	public String getCountry() {
@@ -249,7 +249,7 @@ public class CurrentWeather {
 	}
 
     /**
-     * Getter method for sky condition
+     * getter method for sky condition
      * @return a string representing sky condition
      */
 	public String getSkyCondition() {

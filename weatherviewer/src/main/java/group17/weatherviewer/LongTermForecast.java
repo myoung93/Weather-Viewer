@@ -89,6 +89,7 @@ public class LongTermForecast {
 	//getter methods
 
 	/**
+	 * getter method for longTermForecast class
 	 * @return a reference to the arraylist of long term weathers, ie returns all the retrieved data in java object form
 	 */
 	public ArrayList<LongTermWeather> getLongTermForecast(){
@@ -96,7 +97,7 @@ public class LongTermForecast {
 	}
 
 	/**
-	 * Data type that contains longterm weather data
+	 * data type that contains longterm weather data
 	 */
 	public class LongTermWeather{
 		private String date, skyCon; 
@@ -115,14 +116,18 @@ public class LongTermForecast {
 		}
 			
 		//getter methods
-		
+		/**
+	     * Getter method for date
+	     * @return date
+	     */
 		public String getDate(){
 			return this.date;
 		}
 		
 		/**
-	     * Getter method for Celsius temperature
-	     * @return the current temp in degrees C (will be only temp method in later versions)
+	     * Getter method for temperature
+	     * @param tempUnit unit of desired temperature, can be 'c' for celsius or 'f' for fahrenheit
+	     * @return the current temperature in either celcius of fahrenheit
 	     */
 		public String getTemp(char tempUnit) {
 			if(tempUnit == 'f')
@@ -131,6 +136,11 @@ public class LongTermForecast {
 	            return cleanTemp(temp, tempUnit);
 		}
 
+		/**
+	     * Getter method for high temperature
+	     * @param tempUnit unit of desired temperature, can be 'c' for celsius or 'f' for fahrenheit
+	     * @return high temperature in either celcius of fahrenheit
+	     */
 	    public String getHigh(char tempUnit) {
 	        if(tempUnit == 'f')
 	            return cleanTemp(this.high * 9 / 5 + 32, tempUnit);
@@ -138,6 +148,11 @@ public class LongTermForecast {
 	            return cleanTemp(this.high, tempUnit);
 	    }
 
+		/**
+	     * Getter method for low temperature
+	     * @param tempUnit unit of desired temperature, can be 'c' for celsius or 'f' for fahrenheit
+	     * @return low temperature in either celcius of fahrenheit
+	     */
 	    public String getLow(char tempUnit) {
 	        if(tempUnit == 'f')
 	            return cleanTemp(this.low * 9 / 5 + 32, tempUnit);
@@ -145,7 +160,12 @@ public class LongTermForecast {
 	            return cleanTemp(this.low, tempUnit);
 	    }
 
-	    //puts the temperature into a readable form
+	 
+	    /**
+	     * puts the temperature into a readable form
+	     * @param t number of characters to take
+	     * @param tempUnit unit of desired temperature, can be 'c' for celsius or 'f' for fahrenheit
+	     */
 	    private String cleanTemp(double t, char unit) {
 	        int substringLength = 1;
 	        //correct for negative zero
@@ -160,6 +180,10 @@ public class LongTermForecast {
 	        return String.valueOf(t).substring(0,substringLength) + '°' + Character.toUpperCase(unit);
 	    }
 		
+		/**
+	     * Getter method for rain
+	     * @return rain percentage
+	     */
 	    public String getRain(){
 			if (0 < this.rain && this.rain < 1)
 				return "< 1";	
@@ -167,6 +191,10 @@ public class LongTermForecast {
 				return String.valueOf(Math.round(this.rain));
 		}
 		
+		/**
+	     * Getter method for snow
+	     * @return snow percentage
+	     */
 		public String getSnow(){
 			if (0 < this.snow && this.snow < 1)
 				return "< 1";	
@@ -174,10 +202,18 @@ public class LongTermForecast {
 				return String.valueOf(Math.round(this.snow));
 		}
 		
+		/**
+	     * Getter method for sky condition
+	     * @return sky condition string
+	     */
 		public String getSkyCondition() {
 			return skyCon.substring(0, 1).toUpperCase() + skyCon.substring(1);
 		}
 		
+		/**
+	     * Getter method for weatherID
+	     * @return weatherID
+	     */
 		public int getWeatherID(){
 			return this.weatherID;
 		}

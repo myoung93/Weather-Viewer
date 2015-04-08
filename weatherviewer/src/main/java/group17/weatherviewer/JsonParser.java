@@ -15,10 +15,18 @@ public class JsonParser {
 	String owmUrl;
 
 	// get link from other weather classes and return data as string
+	/**
+	 * constructor
+	 * @param url url to be used in the connection
+	 */
 	public JsonParser(String url) throws UnsupportedEncodingException {
 		this.owmUrl = url;
 	}
 
+	/**
+	 * gets weather data as string
+	 * @return string of weather data
+	 */
 	public String getData() {
 
 		StringBuffer SBR;
